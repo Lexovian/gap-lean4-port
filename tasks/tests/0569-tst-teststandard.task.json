@@ -1,0 +1,187 @@
+{
+  "task_cid": "baguqeera36fi5cgywan4pnjlhb36gp3opsqqolxy5pftg6e3pnpfynkyalha",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0569",
+  "layer": "tests",
+  "module": "tst/teststandard",
+  "title": "Port tst/teststandard (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/stablesort.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/stablesort.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/stablesort.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Stablesort",
+      "code_lines": 133,
+      "definitions": 14,
+      "effort_person_days": 2.1,
+      "header_quote": "This aims to test the various implementations of StableSort.\nThere are a few cases we must cover:\n\n* We can choose if we pass a comparator\n* We can do Sort or SortParallel\n* We specialise for plain lists\nMost of these checks are generate a whole bunch of random tests\n\nWe check StableSort implements Sort correctly\nand also have a special 'stability' check."
+    },
+    {
+      "path": "tst/teststandard/ctblisoc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ctblisoc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ctblisoc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ctblisoc",
+      "code_lines": 141,
+      "definitions": 0,
+      "effort_person_days": 1.52,
+      "header_quote": "@local g, t, iso, t3, iso3, orders, n, iso2, filt, outer, c, ord, pi, sort"
+    },
+    {
+      "path": "tst/teststandard/direct_factors.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/direct_factors.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/direct_factors.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.DirectFactors",
+      "code_lines": 124,
+      "definitions": 0,
+      "effort_person_days": 1.32,
+      "header_quote": "@local D, Df, U, V, G, N, n, C, Q, F, x, y"
+    },
+    {
+      "path": "tst/teststandard/permgrp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/permgrp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/permgrp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Permgrp",
+      "code_lines": 123,
+      "definitions": 0,
+      "effort_person_days": 1.27,
+      "header_quote": "############################################################################\n#\n#  Some tests for permutation groups and friends(takes a few seconds to run)\n#\n@local g, dc, ac, p, s, dc1, u, part, iso,l,it,i,w,d,a,hom,act"
+    },
+    {
+      "path": "tst/teststandard/twocohom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/twocohom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/twocohom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Twocohom",
+      "code_lines": 85,
+      "definitions": 0,
+      "effort_person_days": 0.85,
+      "header_quote": "Extensions nonsolvable"
+    },
+    {
+      "path": "tst/teststandard/union.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/union.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/union.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Union",
+      "code_lines": 64,
+      "definitions": 0,
+      "effort_person_days": 0.84,
+      "header_quote": "gap> START_TEST(\"union.tst\");\ngap> for i in [-4..4] do\n>      for j in [-3,-2,-1,1,2,3] do\n>        for k in [-2..2] do\n>          for a in [-6..6] do"
+    },
+    {
+      "path": "tst/teststandard/innerfunc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/innerfunc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/innerfunc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Innerfunc",
+      "code_lines": 60,
+      "definitions": 8,
+      "effort_person_days": 0.71,
+      "header_quote": "@local len, y, list1, list2, list3, i\n@local captureLocal, deepCaptureLocal, changeCaptureLocal"
+    },
+    {
+      "path": "tst/teststandard/ctblfuns.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ctblfuns.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ctblfuns.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ctblfuns",
+      "code_lines": 51,
+      "definitions": 0,
+      "effort_person_days": 0.51,
+      "header_quote": "@local ordtbl, modtbl, irr, chi, const, ibr, phi"
+    },
+    {
+      "path": "tst/teststandard/ctblsymm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ctblsymm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ctblsymm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ctblsymm",
+      "code_lines": 45,
+      "definitions": 0,
+      "effort_person_days": 0.49,
+      "header_quote": "@local c3, n, wr, irr, betas, i, G, reps, t, G1, t1, charparam1, classparam1\n@local pi, G2, t2, tr"
+    },
+    {
+      "path": "tst/teststandard/simplegrpit.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/simplegrpit.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/simplegrpit.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Simplegrpit",
+      "code_lines": 43,
+      "definitions": 0,
+      "effort_person_days": 0.47,
+      "header_quote": "# The independence test is not really correct because the simple groups\n# iterator is not required to output the finite simple groups in order."
+    },
+    {
+      "path": "tst/teststandard/algext.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/algext.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/algext.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Algext",
+      "code_lines": 43,
+      "definitions": 0,
+      "effort_person_days": 0.43,
+      "header_quote": "############################################################################\n#\n#  Test of algebraic extensions.\n#\n@local t, f0, p1, f1, p2, f2, p3, f3, p4, f4, x, l, a, ll, b, pol, K, xinv, c"
+    },
+    {
+      "path": "tst/teststandard/hash2.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/hash2.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/hash2.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Hash2",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.42,
+      "header_quote": "############################################################################\n#\n#  Test orbit algorithms, which use hashing\n#  Exclude from testinstall.g as it takes considerable time.\n#"
+    },
+    {
+      "path": "tst/teststandard/stabchain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/stabchain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/stabchain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Stabchain",
+      "code_lines": 38,
+      "definitions": 0,
+      "effort_person_days": 0.4,
+      "header_quote": "############################################################################\n#\n#  Test orbit algorithms, which use hashing\n#  Also a few direct tests of SCRSift, since I have been working on it.\n#     SL\n#  Exclude from testinstall.g as it takes considerable time.\n#\n@local G, S, it, it2, a, b, l, m"
+    },
+    {
+      "path": "tst/teststandard/arith.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/arith.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/arith.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Arith",
+      "code_lines": 22,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "@local x, D"
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "code_lines": 1006,
+    "definitions": 22,
+    "effort_person_days": 11.71
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

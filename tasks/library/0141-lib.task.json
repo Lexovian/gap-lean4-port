@@ -1,0 +1,62 @@
+{
+  "task_cid": "baguqeeraa5lpxpalcufkcjnxfzsaxcbubukxy7ingakx7bzvpxzowdkkhjcq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0141",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/dicthf.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/dicthf.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/dicthf.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Dicthf",
+      "code_lines": 210,
+      "definitions": 34,
+      "effort_person_days": 4.084,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Gene Cooperman, Scott Murray, Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains some hashfunctions for objects in the GAP library.\n#  This code was factored out from dict.gi to prevent cross dependencies"
+    },
+    {
+      "path": "lib/filter.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/filter.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/filter.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Filter",
+      "code_lines": 206,
+      "definitions": 11,
+      "effort_person_days": 3.946,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler, Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with filters.\n#"
+    },
+    {
+      "path": "lib/fpsemi.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/fpsemi.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/fpsemi.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Fpsemi",
+      "code_lines": 222,
+      "definitions": 38,
+      "effort_person_days": 3.891,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon and Isabel Araújo.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for finitely presented semigroups.\n#"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 638,
+    "definitions": 83,
+    "effort_person_days": 11.92
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

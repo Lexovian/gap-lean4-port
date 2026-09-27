@@ -1,0 +1,77 @@
+{
+  "task_cid": "baguqeeranntoc2ddxkuhqepdcmqkcxvyd5rnqdinjqwsgtsytmw22wam5kqa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0453",
+  "layer": "tests",
+  "module": "tst/test-compile",
+  "title": "Port tst/test-compile (tests)",
+  "files": [
+    {
+      "path": "tst/test-compile/ranges.g.dynamic.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/ranges.g.dynamic.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/ranges.g.dynamic.c",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.RangesGDynamic",
+      "code_lines": 339,
+      "definitions": 4,
+      "effort_person_days": 3.78,
+      "header_quote": "C file produced by GAC */"
+    },
+    {
+      "path": "tst/test-compile/basics.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/basics.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/basics.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.Basics",
+      "code_lines": 221,
+      "definitions": 11,
+      "effort_person_days": 3.01,
+      "header_quote": "Test all kinds of basic features of the compiler, e.g.\nwhether it compiles constants correctly."
+    },
+    {
+      "path": "tst/test-compile/assert.g.dynamic.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/assert.g.dynamic.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/assert.g.dynamic.c",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.AssertGDynamic",
+      "code_lines": 232,
+      "definitions": 4,
+      "effort_person_days": 2.71,
+      "header_quote": "C file produced by GAC */"
+    },
+    {
+      "path": "tst/test-compile/info.g.dynamic.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/info.g.dynamic.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/info.g.dynamic.c",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.InfoGDynamic",
+      "code_lines": 210,
+      "definitions": 4,
+      "effort_person_days": 2.32,
+      "header_quote": "C file produced by GAC */"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 1002,
+    "definitions": 23,
+    "effort_person_days": 11.82
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

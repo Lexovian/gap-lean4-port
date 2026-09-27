@@ -1,0 +1,74 @@
+{
+  "task_cid": "baguqeera4b5l7mf7e6jqrdqs66nxxrjyuotdj5od6h5jywqwc27f3n763cga",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0340",
+  "layer": "groupdata",
+  "module": "benchmark/smallgrp",
+  "title": "Port benchmark/smallgrp (groupdata)",
+  "files": [
+    {
+      "path": "benchmark/smallgrp/testgrps.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/smallgrp/testgrps.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/smallgrp/testgrps.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Smallgrp.Testgrps",
+      "code_lines": 21,
+      "definitions": 1,
+      "effort_person_days": 0.187,
+      "header_quote": "Check that the sum of the orders of conjugacy classes\nequals to the order of the group"
+    },
+    {
+      "path": "benchmark/smallgrp/test1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/smallgrp/test1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/smallgrp/test1.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Smallgrp.Test1",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the small groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops\npackages"
+    },
+    {
+      "path": "benchmark/smallgrp/test2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/smallgrp/test2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/smallgrp/test2.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Smallgrp.Test2",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the small groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops\npackages"
+    },
+    {
+      "path": "benchmark/smallgrp/test3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/smallgrp/test3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/smallgrp/test3.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Smallgrp.Test3",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the small groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops\npackages"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 66,
+    "definitions": 1,
+    "effort_person_days": 0.54
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

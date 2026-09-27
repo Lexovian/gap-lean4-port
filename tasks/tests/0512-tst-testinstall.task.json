@@ -1,0 +1,110 @@
+{
+  "task_cid": "baguqeera4gfirfo4szuuucqojlpf7wg3vpqxukrreeuyfjzh7mm4gngsgtka",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0512",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/randlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/randlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/randlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Randlist",
+      "code_lines": 159,
+      "definitions": 0,
+      "effort_person_days": 1.59,
+      "header_quote": "@if 8*GAPInfo.BytesPerVariable = 32"
+    },
+    {
+      "path": "tst/testinstall/recordname.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/recordname.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/recordname.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Recordname",
+      "code_lines": 154,
+      "definitions": 0,
+      "effort_person_days": 1.56,
+      "header_quote": "############################################################################\n#\n#  This file tests record comparison and names, in particular long names.\n#\n@local aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa…"
+    },
+    {
+      "path": "tst/testinstall/smgrpfre.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/smgrpfre.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/smgrpfre.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Smgrpfre",
+      "code_lines": 152,
+      "definitions": 0,
+      "effort_person_days": 1.54,
+      "header_quote": "@local F"
+    },
+    {
+      "path": "tst/testinstall/compressed.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/compressed.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/compressed.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Compressed",
+      "code_lines": 145,
+      "definitions": 1,
+      "effort_person_days": 1.53,
+      "header_quote": "@local o,dir,fname,rawfname,checkGzippedFile,stream,str"
+    },
+    {
+      "path": "tst/testinstall/integer.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/integer.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/integer.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Integer",
+      "code_lines": 150,
+      "definitions": 0,
+      "effort_person_days": 1.53,
+      "header_quote": "I  FactorsInt: used the following factor(s) which are probably primes:\nI        57896044618658097711785492504343953926634992332820282019728792003956564819949"
+    },
+    {
+      "path": "tst/testinstall/localvars.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/localvars.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/localvars.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Localvars",
+      "code_lines": 98,
+      "definitions": 7,
+      "effort_person_days": 1.53,
+      "header_quote": "@local a,f,func,g"
+    },
+    {
+      "path": "tst/testinstall/monofree.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/monofree.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/monofree.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Monofree",
+      "code_lines": 147,
+      "definitions": 0,
+      "effort_person_days": 1.49,
+      "header_quote": "@local F,M,M2,a,b,enum,first50,firstfifty,gens,iter,i"
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "code_lines": 1005,
+    "definitions": 8,
+    "effort_person_days": 10.77
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

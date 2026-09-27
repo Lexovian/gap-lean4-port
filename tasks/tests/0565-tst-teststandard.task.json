@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeera6j6p4t5fvq5rvzuw7xymovltsky5jaq2gta7kgdkp7h4usnrraha",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0565",
+  "layer": "tests",
+  "module": "tst/teststandard",
+  "title": "Port tst/teststandard (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/grppcnrm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/grppcnrm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/grppcnrm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Grppcnrm",
+      "code_lines": 557,
+      "definitions": 1,
+      "effort_person_days": 5.69,
+      "header_quote": "############################################################################"
+    },
+    {
+      "path": "tst/teststandard/matrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/matrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/matrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Matrix",
+      "code_lines": 531,
+      "definitions": 3,
+      "effort_person_days": 5.48,
+      "header_quote": "############################################################################\n#\n#  Exclude from testinstall.g: why? (takes a few seconds to run)\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 1088,
+    "definitions": 4,
+    "effort_person_days": 11.17
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

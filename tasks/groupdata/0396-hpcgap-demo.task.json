@@ -1,0 +1,85 @@
+{
+  "task_cid": "baguqeera5ekmwi74ikini2wm6g5aogoqtu2j2q2f3d6fw3qxsra3yktiny3q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0396",
+  "layer": "groupdata",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parkit.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parkit.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parkit.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parkit",
+      "code_lines": 414,
+      "definitions": 20,
+      "effort_person_days": 3.273,
+      "header_quote": "ParkitManagerDefaultOpts := rec(maxRunningTasks := 4);\nif not IsBound(InfoParkit) then\n    DeclareInfoClass(\"InfoParkit\");\nfi;\nNewSimpleMap := function()"
+    },
+    {
+      "path": "hpcgap/demo/karatsuba.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/karatsuba.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/karatsuba.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Karatsuba",
+      "code_lines": 309,
+      "definitions": 5,
+      "effort_person_days": 2.584,
+      "header_quote": "############################################################################\n\nKARATSUBA MULTIPLICATION FOR POLYNOMIALS\n\n############################################################################"
+    },
+    {
+      "path": "hpcgap/demo/Echelon.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/Echelon.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/Echelon.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Echelon",
+      "code_lines": 234,
+      "definitions": 11,
+      "effort_person_days": 1.861,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains functions to compute echelon forms of matrices using\n#  multiple threads."
+    },
+    {
+      "path": "hpcgap/demo/orbit2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/orbit2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/orbit2.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Orbit2",
+      "code_lines": 228,
+      "definitions": 20,
+      "effort_person_days": 1.738,
+      "header_quote": "Hash orbits using tasks"
+    },
+    {
+      "path": "hpcgap/demo/demo.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/demo.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/demo.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Demo",
+      "code_lines": 217,
+      "definitions": 16,
+      "effort_person_days": 1.458,
+      "header_quote": "############################################################################\n\nThe code in this file should run in the HPC-GAP version\n\n############################################################################"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 1402,
+    "definitions": 72,
+    "effort_person_days": 10.91
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

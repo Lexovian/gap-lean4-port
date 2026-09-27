@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeramz2jneac52g2kkdxzkwmqzn5dpkrawtpwbgitxe4wswtbvepjpoa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0561",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/stack-trace-depth.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-trace-depth.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-trace-depth.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackTraceDepthG",
+      "code_lines": 92,
+      "definitions": 0,
+      "effort_person_days": 1.03,
+      "header_quote": "gap> f11 := function()\n>     Error(\"foo\");\n> end;;\ngap> f10 := function()\n>     return f11();"
+    },
+    {
+      "path": "tst/testspecial/trace.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/trace.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/trace.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Trace",
+      "code_lines": 66,
+      "definitions": 15,
+      "effort_person_days": 0.72,
+      "header_quote": "tracing of operations"
+    },
+    {
+      "path": "tst/testspecial/up-down-env.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/up-down-env.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/up-down-env.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.UpDownEnvG",
+      "code_lines": 69,
+      "definitions": 0,
+      "effort_person_days": 0.7,
+      "header_quote": "gap> #############################################################################\ngap> ##\ngap> ##  Test UpEnv and DownEnv, and what happens when they are asked to go beyond\ngap> ##  the first/last active execution context.\ngap> ##"
+    },
+    {
+      "path": "tst/testspecial/debug-var.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/debug-var.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/debug-var.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.DebugVar",
+      "code_lines": 49,
+      "definitions": 7,
+      "effort_person_days": 0.55,
+      "header_quote": "check coding of dvars"
+    },
+    {
+      "path": "tst/testspecial/backtrace2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/backtrace2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/backtrace2.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Backtrace2",
+      "code_lines": 45,
+      "definitions": 3,
+      "effort_person_days": 0.53,
+      "header_quote": "############################################################################\n#\n#\n#  This file tests the combination of Where and DownEnv/UpEnv, and also the\n#  initial backtrace (for which Where is executed in a slightly different\n#  execution context compared to the later Where invocations from the break\n#  prompt)\n#\n#  We test with three slightly different ways to trigger an error, as they\n#  exhibit slight differences in how they interact with the error handling\n#  code.\n#"
+    },
+    {
+      "path": "tst/testspecial/print-formatting.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/print-formatting.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/print-formatting.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.PrintFormattingG",
+      "code_lines": 46,
+      "definitions": 0,
+      "effort_person_days": 0.52,
+      "header_quote": "gap> # test formatting status for stdout\ngap> old := PrintFormattingStatus(\"*stdout*\");\ntrue\ngap> SetPrintFormattingStatus(\"*stdout*\", false);\ngap> PrintFormattingStatus(\"*stdout*\");"
+    },
+    {
+      "path": "tst/testspecial/stack-trace-depth.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-trace-depth.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-trace-depth.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackTraceDepth",
+      "code_lines": 39,
+      "definitions": 11,
+      "effort_person_days": 0.49,
+      "header_quote": "f11 := function()\n    Error(\"foo\");\nend;;\nf10 := function()\n    return f11();"
+    },
+    {
+      "path": "tst/testspecial/stack-depth-func2.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-depth-func2.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-depth-func2.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackDepthFunc2G",
+      "code_lines": 35,
+      "definitions": 0,
+      "effort_person_days": 0.39,
+      "header_quote": "gap> f := function() local x; x := f(); return x; end;\nfunction(  ) ... end\ngap> y := f();\nError, recursion depth trap (5000)\nStack trace:"
+    },
+    {
+      "path": "tst/testspecial/stack-depth-func.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-depth-func.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-depth-func.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackDepthFuncG",
+      "code_lines": 35,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "gap> f := function() f(); end;\nfunction(  ) ... end\ngap> f();\nError, recursion depth trap (5000)\nStack trace:"
+    },
+    {
+      "path": "tst/testspecial/syntax-err-eof-sentinel.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/syntax-err-eof-sentinel.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/syntax-err-eof-sentinel.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.SyntaxErrEofSentinelG",
+      "code_lines": 36,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "gap> # Regression test for a 0xFF byte leak in syntax-error context lines.\ngap> #\ngap> # When a syntax error fires after the scanner has advanced past EOF\ngap> # (e.g. parsing \"h := ;\" via READ_ALL_COMMANDS from a string with no\ngap> # trailing newline), the input-line buffer is replaced with the"
+    },
+    {
+      "path": "tst/testspecial/current-env.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/current-env.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/current-env.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.CurrentEnvG",
+      "code_lines": 28,
+      "definitions": 0,
+      "effort_person_days": 0.36,
+      "header_quote": "gap> f := function()\n>     local i;\n>     for i in 1 do\n>         return 1;\n>     od;"
+    },
+    {
+      "path": "tst/testspecial/bugfix-2019-09-27-LastPV.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bugfix-2019-09-27-LastPV.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bugfix-2019-09-27-LastPV.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Bugfix20190927LastPVG",
+      "code_lines": 32,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> filt:=NewFilter(\"BreakPrint\");;\ngap> InstallMethod(ViewObj, [filt], SUM_FLAGS, x -> 0/0);;\ngap> badgroup := Group(());\nGroup(())\ngap> SetFilterObj(badgroup, filt);"
+    },
+    {
+      "path": "tst/testspecial/line-continuation.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/line-continuation.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/line-continuation.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.LineContinuationG",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.31,
+      "header_quote": "gap> #\ngap> # Verify that a CRLF after a line continuation increments the current line\ngap> # counter only once, so that both examples below report the error in line 2.\ngap> #\ngap> EvalString(\"123\\\\\\n45x;\");"
+    },
+    {
+      "path": "tst/testspecial/run_all.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/run_all.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/run_all.sh",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.RunAll",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "!/usr/bin/env bash"
+    },
+    {
+      "path": "tst/testspecial/method-not-found-where.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/method-not-found-where.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/method-not-found-where.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.MethodNotFoundWhereG",
+      "code_lines": 22,
+      "definitions": 0,
+      "effort_person_days": 0.26,
+      "header_quote": "gap> # test method-not-found traceback rendering while preserving helper access\ngap> f := a -> IsDiagonalMat(a);;\ngap> f(());\nError, no method found! For debugging hints type ?Recovery from NoMethodFound\nError, no 1st choice method found for `IsDiagonalMatrix' on 1 arguments"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 644,
+    "definitions": 36,
+    "effort_person_days": 7.22
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

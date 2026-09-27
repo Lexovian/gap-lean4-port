@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerabjvwfbppxh6rfid2g4f6dqotii5ndxazzjflyludvj3np5oxhfyq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0483",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2024-09-14-actdomain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-09-14-actdomain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-09-14-actdomain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240914Actdomain",
+      "code_lines": 84,
+      "definitions": 0,
+      "effort_person_days": 0.84,
+      "header_quote": "Fix #5786 and error reported by Len Soicher in support list"
+    },
+    {
+      "path": "tst/testbugfix/2025-04-12-ClusterConjugacy.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-04-12-ClusterConjugacy.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-04-12-ClusterConjugacy.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250412ClusterConjugacy",
+      "code_lines": 81,
+      "definitions": 0,
+      "effort_person_days": 0.81,
+      "header_quote": "Fix #5981 ClusterConjugacy"
+    },
+    {
+      "path": "tst/testbugfix/2012-04-13-t00244.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-04-13-t00244.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-04-13-t00244.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120413T00244",
+      "code_lines": 78,
+      "definitions": 0,
+      "effort_person_days": 0.78,
+      "header_quote": "2012/04/13 (MN)"
+    },
+    {
+      "path": "tst/testbugfix/2026-01-26-IsomorphismPermGroupForMatrixGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-01-26-IsomorphismPermGroupForMatrixGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-01-26-IsomorphismPermGroupForMatrixGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260126IsomorphismPermGroupForMatrixGroup",
+      "code_lines": 75,
+      "definitions": 0,
+      "effort_person_days": 0.75,
+      "header_quote": "Fix bug in IsomorphismPermGroupForMatrixGroup, see #6205\n@local G, iso, H, nice"
+    },
+    {
+      "path": "tst/testbugfix/2024-03-16-FpGroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-03-16-FpGroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-03-16-FpGroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240316FpGroups",
+      "code_lines": 59,
+      "definitions": 0,
+      "effort_person_days": 0.59,
+      "header_quote": "Issue #6031 - too small max. cosets"
+    },
+    {
+      "path": "tst/testbugfix/2017-10-20-runprocess.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-10-20-runprocess.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-10-20-runprocess.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20171020Runprocess",
+      "code_lines": 40,
+      "definitions": 2,
+      "effort_person_days": 0.58,
+      "header_quote": "This is based on an older fragile test - 2006/01/11 (MC)\nWe want to check two cases:\nFirstly we ensure we read a whole line, by using a while loop"
+    },
+    {
+      "path": "tst/testbugfix/2005-05-03-t00324.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-05-03-t00324.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-05-03-t00324.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050503T00324",
+      "code_lines": 38,
+      "definitions": 0,
+      "effort_person_days": 0.52,
+      "header_quote": "2005/05/03 (BH)"
+    },
+    {
+      "path": "tst/testbugfix/2021-04-08-non-associative-semigroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-04-08-non-associative-semigroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-04-08-non-associative-semigroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210408NonAssociativeSemigroup",
+      "code_lines": 48,
+      "definitions": 0,
+      "effort_person_days": 0.48,
+      "header_quote": "https://github.com/gap-system/gap/issues/4030"
+    },
+    {
+      "path": "tst/testbugfix/2021-05-11-LeftModHom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-05-11-LeftModHom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-05-11-LeftModHom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210511LeftModHom",
+      "code_lines": 46,
+      "definitions": 0,
+      "effort_person_days": 0.48,
+      "header_quote": "4481, issue reported by Chris Wensley"
+    },
+    {
+      "path": "tst/testbugfix/2024-03-25-compressed-mat-scalar.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-03-25-compressed-mat-scalar.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-03-25-compressed-mat-scalar.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240325CompressedMatScalar",
+      "code_lines": 46,
+      "definitions": 0,
+      "effort_person_days": 0.46,
+      "header_quote": "Multiplying a compressed matrix by a scalar could result\nin corrupt data. See <https://github.com/gap-system/gap/issues/5684>"
+    },
+    {
+      "path": "tst/testbugfix/2017-09-07-FroidurePinExtendedAlg.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-09-07-FroidurePinExtendedAlg.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-09-07-FroidurePinExtendedAlg.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170907FroidurePinExtendedAlg",
+      "code_lines": 41,
+      "definitions": 1,
+      "effort_person_days": 0.42,
+      "header_quote": "Issue related to FroidurePinExtendedAlg\nExamples reported on issue #1674 on github.com/gap-system/gap"
+    },
+    {
+      "path": "tst/testbugfix/2020-02-12-Conjtest.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2020-02-12-Conjtest.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2020-02-12-Conjtest.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20200212Conjtest",
+      "code_lines": 42,
+      "definitions": 0,
+      "effort_person_days": 0.42,
+      "header_quote": "Conjugacy test using Solvable radical method."
+    },
+    {
+      "path": "tst/testbugfix/2022-12-24-IsomorphismGroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-12-24-IsomorphismGroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-12-24-IsomorphismGroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20221224IsomorphismGroups",
+      "code_lines": 38,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "Reported by B.Sambale on 12/24/22 and 01/19/23 in the forum"
+    },
+    {
+      "path": "tst/testbugfix/2018-05-09-submagma.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-05-09-submagma.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-05-09-submagma.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180509Submagma",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "There was a bug where we marked a sub additive magma\nwith empty generator list as trivial, even though it is empty.\n\nThere was also a wrong implication, from \"IsFiniteOrderElementCollection and\nIsMagma\" to IsMagmaWithInverses. But a collection with the former filters may\nbe empty, and then it isn't a IsMagmaWithInverses."
+    },
+    {
+      "path": "tst/testbugfix/2019-09-17-Maxsub.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-09-17-Maxsub.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-09-17-Maxsub.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190917Maxsub",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "Fix a bug in `MaximalSubgroupClassReps`, reported by Andries Brouwer"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 790,
+    "definitions": 3,
+    "effort_person_days": 8.25
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

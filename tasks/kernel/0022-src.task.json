@@ -1,0 +1,71 @@
+{
+  "task_cid": "baguqeeray2v2jod65avo2iqcwvchjcrkgguh6boktfw46gjpz66k45nqqlza",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0022",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/finfield.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/finfield.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/finfield.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Finfield",
+      "code_lines": 114,
+      "definitions": 8,
+      "effort_person_days": 3.04,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the  functions  to compute  with elements  from  small\nfinite fields."
+    },
+    {
+      "path": "src/intobj.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/intobj.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/intobj.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Intobj",
+      "code_lines": 109,
+      "definitions": 11,
+      "effort_person_days": 3.02,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file implements helper for dealing with GAP immediate integers.\n\nSmall integers are represented by an immediate integer handle, containing"
+    },
+    {
+      "path": "src/stringobj.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/stringobj.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/stringobj.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Stringobj",
+      "code_lines": 123,
+      "definitions": 20,
+      "effort_person_days": 2.86,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions which mainly deal with strings.\n\nA *string* is a  list that  has no  holes, and  whose  elements  are  all"
+    },
+    {
+      "path": "src/vars.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/vars.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/vars.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Vars",
+      "code_lines": 119,
+      "definitions": 19,
+      "effort_person_days": 2.76,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions of variables package.\n\nThe variables  package is  the  part of   the interpreter  that  executes"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 465,
+    "definitions": 58,
+    "effort_person_days": 11.68
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

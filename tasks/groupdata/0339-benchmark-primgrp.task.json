@@ -1,0 +1,74 @@
+{
+  "task_cid": "baguqeera2hpdr3fgrnwj6367pbnlr5b7ttoie5btpogsgkiueipfvvkh6nwa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0339",
+  "layer": "groupdata",
+  "module": "benchmark/primgrp",
+  "title": "Port benchmark/primgrp (groupdata)",
+  "files": [
+    {
+      "path": "benchmark/primgrp/testprim.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/primgrp/testprim.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/primgrp/testprim.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Primgrp.Testprim",
+      "code_lines": 21,
+      "definitions": 2,
+      "effort_person_days": 0.181,
+      "header_quote": "Checks that the sum of the orders of conjugacy classes\nequals to the order of the group"
+    },
+    {
+      "path": "benchmark/primgrp/test1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/primgrp/test1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/primgrp/test1.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Primgrp.Test1",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the primitive groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops"
+    },
+    {
+      "path": "benchmark/primgrp/test2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/primgrp/test2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/primgrp/test2.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Primgrp.Test2",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the primitive groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops"
+    },
+    {
+      "path": "benchmark/primgrp/test3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/primgrp/test3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/primgrp/test3.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Primgrp.Test3",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.117,
+      "header_quote": "description Consistency checks for the primitive groups library\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 66,
+    "definitions": 2,
+    "effort_person_days": 0.53
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

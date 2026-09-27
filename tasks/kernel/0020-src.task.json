@@ -1,0 +1,181 @@
+{
+  "task_cid": "baguqeerab2tlsnypawazib6jxqztfpqvtj6lf2ein3dlkjyp26yizvqohnja",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0020",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/exprs.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/exprs.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/exprs.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Exprs",
+      "code_lines": 44,
+      "definitions": 4,
+      "effort_person_days": 1.16,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions of the expressions package.\n\nThe expressions  package is the  part  of the interpreter  that evaluates"
+    },
+    {
+      "path": "src/sysstr.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/sysstr.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/sysstr.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Sysstr",
+      "code_lines": 42,
+      "definitions": 4,
+      "effort_person_days": 1.12,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file implements low-level functions dealing with C strings and\ncharacters."
+    },
+    {
+      "path": "src/trycatch.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/trycatch.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/trycatch.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Trycatch",
+      "code_lines": 47,
+      "definitions": 2,
+      "effort_person_days": 1.12,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis module declares the functions to read  expressions  and  statements."
+    },
+    {
+      "path": "src/bags.inc",
+      "language": "inc",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/bags.inc",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/bags.inc",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Bags",
+      "code_lines": 48,
+      "definitions": 0,
+      "effort_person_days": 1.02,
+      "header_quote": "/****************************************************************************\n**\n**  This file is part of GAP, a system for computational discrete algebra.\n**\n**  Copyright of GAP belongs to its developers, whose names are too numerous"
+    },
+    {
+      "path": "src/version.c.in",
+      "language": "in",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/version.c.in",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/version.c.in",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.VersionC",
+      "code_lines": 44,
+      "definitions": 0,
+      "effort_person_days": 1.0,
+      "header_quote": "/****************************************************************************\n**\n**  This file is part of GAP, a system for computational discrete algebra.\n**\n**  Copyright of GAP belongs to its developers, whose names are too numerous"
+    },
+    {
+      "path": "src/vecgf2.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/vecgf2.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/vecgf2.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Vecgf2",
+      "code_lines": 43,
+      "definitions": 0,
+      "effort_person_days": 0.96,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/gasman_intern.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/gasman_intern.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/gasman_intern.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.GasmanIntern",
+      "code_lines": 39,
+      "definitions": 0,
+      "effort_person_days": 0.8,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/records.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/records.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/records.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Records",
+      "code_lines": 36,
+      "definitions": 5,
+      "effort_person_days": 0.78,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions of the generic record package.\n\nThis package  provides a uniform  interface to  the functions that access"
+    },
+    {
+      "path": "src/objfgelm.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/objfgelm.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/objfgelm.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Objfgelm",
+      "code_lines": 38,
+      "definitions": 0,
+      "effort_person_days": 0.76,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/collectors.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/collectors.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/collectors.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Collectors",
+      "code_lines": 35,
+      "definitions": 0,
+      "effort_person_days": 0.72,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/symbols.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/symbols.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/symbols.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Symbols",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.7,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/sysmem.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/sysmem.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/sysmem.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Sysmem",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.62,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares functions and variables related to memory management,\nfor use by GASMAN."
+    },
+    {
+      "path": "src/objcftl.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/objcftl.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/objcftl.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Objcftl",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.58,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the function collecting from the left with polycyclic\npresentations."
+    },
+    {
+      "path": "src/rational.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/rational.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/rational.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Rational",
+      "code_lines": 25,
+      "definitions": 4,
+      "effort_person_days": 0.54,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares  the  functions  for  the  artithmetic  of  rationals.\n\nRationals  are  the union of  integers  and fractions.   A fraction  is a"
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "code_lines": 533,
+    "definitions": 19,
+    "effort_person_days": 11.88
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

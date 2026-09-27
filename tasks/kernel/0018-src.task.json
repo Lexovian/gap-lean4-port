@@ -1,0 +1,82 @@
+{
+  "task_cid": "baguqeeratbbhi66nkvvqn6tvibmksjquvqtx7yd3ornxzcl6uuzvp5sf6zua",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0018",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/error.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/error.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/error.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Error",
+      "code_lines": 125,
+      "definitions": 2,
+      "effort_person_days": 2.7,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares functions for raising user errors and interacting\nwith the break loop."
+    },
+    {
+      "path": "src/info.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/info.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/info.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Info",
+      "code_lines": 102,
+      "definitions": 6,
+      "effort_person_days": 2.38,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions handling Info statements."
+    },
+    {
+      "path": "src/bits_intern.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/bits_intern.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/bits_intern.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.BitsIntern",
+      "code_lines": 95,
+      "definitions": 2,
+      "effort_person_days": 2.36,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/scanner.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/scanner.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/scanner.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Scanner",
+      "code_lines": 117,
+      "definitions": 2,
+      "effort_person_days": 2.34,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions of the scanner, which provides a very\nabstractions, namely the concept that an input file is a stream of\nsymbols, such nasty things as <space>, <tab>, <newline> characters or"
+    },
+    {
+      "path": "src/blister.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/blister.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/blister.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Blister",
+      "code_lines": 91,
+      "definitions": 17,
+      "effort_person_days": 2.16,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis  file declares the functions  that mainly operate  on boolean lists.\nBecause boolean lists are  just a special case  of lists many  things are\ndone in the list package."
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 530,
+    "definitions": 29,
+    "effort_person_days": 11.94
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraoxey3otz6yg64shhwmhzkkvysdvsgi2xdjuwjjive2d6zt33n65q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0530",
+  "layer": "tests",
+  "module": "tst/testinstall/MatrixObj",
+  "title": "Port tst/testinstall/MatrixObj (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/MatrixObj/CompanionMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/CompanionMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/CompanionMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.CompanionMatrix",
+      "code_lines": 106,
+      "definitions": 0,
+      "effort_person_days": 1.06,
+      "header_quote": "IsGF2MatrixRep"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/matobjplist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/matobjplist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/matobjplist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Matobjplist",
+      "code_lines": 102,
+      "definitions": 0,
+      "effort_person_days": 1.02,
+      "header_quote": "@local e, v, w, M, v2, z"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/IdentityMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/IdentityMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/IdentityMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.IdentityMatrix",
+      "code_lines": 98,
+      "definitions": 0,
+      "effort_person_days": 0.98,
+      "header_quote": "IsGF2MatrixRep"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ZeroMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ZeroMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ZeroMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ZeroMatrix",
+      "code_lines": 97,
+      "definitions": 0,
+      "effort_person_days": 0.97,
+      "header_quote": "IsGF2MatrixRep"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/MultVector.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/MultVector.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/MultVector.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.MultVector",
+      "code_lines": 90,
+      "definitions": 0,
+      "effort_person_days": 0.9,
+      "header_quote": "Dense plain lists"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/CopySubVector.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/CopySubVector.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/CopySubVector.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.CopySubVector",
+      "code_lines": 68,
+      "definitions": 0,
+      "effort_person_days": 0.77,
+      "header_quote": "@local l1, v1, l2, v2, v3, v4, x, src, dst, expected, from, to, len, one\n@local l3, l4"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ZeroVector.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ZeroVector.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ZeroVector.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ZeroVector",
+      "code_lines": 73,
+      "definitions": 0,
+      "effort_person_days": 0.73,
+      "header_quote": "IsGF2VectorRep"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/RandomMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/RandomMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/RandomMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.RandomMatrix",
+      "code_lines": 57,
+      "definitions": 0,
+      "effort_person_days": 0.57,
+      "header_quote": "@local rs, M"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/Matrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/Matrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/Matrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Matrix",
+      "code_lines": 46,
+      "definitions": 0,
+      "effort_person_days": 0.46,
+      "header_quote": "gap> START_TEST(\"Matrix.tst\");\n#\ngap> m := Matrix( [[1,2],[3,4]] );\n<2x2-matrix over Rationals>\ngap> Display(m);"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/BaseDomain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/BaseDomain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/BaseDomain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.BaseDomain",
+      "code_lines": 40,
+      "definitions": 0,
+      "effort_person_days": 0.4,
+      "header_quote": "FIXME: BUG:  -> vecmat.gi, code does not check!\ngap> BaseDomain(Matrix(GF(2), m));\nRationals"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/DiagonalMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/DiagonalMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/DiagonalMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.DiagonalMatrix",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "@local M"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/RandomInvertibleMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/RandomInvertibleMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/RandomInvertibleMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.RandomInvertibleMatrix",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "@local rs, M"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/DirectSumMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/DirectSumMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/DirectSumMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.DirectSumMat",
+      "code_lines": 36,
+      "definitions": 0,
+      "effort_person_days": 0.36,
+      "header_quote": "@local F, l, N, M"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/DistanceOfVectors.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/DistanceOfVectors.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/DistanceOfVectors.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.DistanceOfVectors",
+      "code_lines": 32,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> START_TEST( \"DistanceOfVectors.tst\" );\ngap> l1 := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, l1);\n<plist vector over Rationals of length 6>"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/PositionNonZero.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/PositionNonZero.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/PositionNonZero.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.PositionNonZero",
+      "code_lines": 32,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> START_TEST( \"PositionNonZero.tst\" );\ngap> l1 := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, l1);\n<plist vector over Rationals of length 6>"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 951,
+    "definitions": 0,
+    "effort_person_days": 9.61
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

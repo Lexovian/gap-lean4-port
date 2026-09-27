@@ -1,0 +1,84 @@
+{
+  "task_cid": "baguqeera7w3smxvzm3dek2rcszqyh7ixbpmu4fq3luvybbs6hgmq7swjsuea",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0146",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/fastendo.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/fastendo.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/fastendo.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Fastendo",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.014,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Contains the declarations for the transformation representation\n#  of endomorphisms. Computing with EndoGeneralMappings as transformations"
+    },
+    {
+      "path": "lib/helpt2t.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/helpt2t.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/helpt2t.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Helpt2t",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.014,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler, Alexander Hulpke, Greg Gamble.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  The files helpt2t.g{d,i}  contain  the function  to convert  TeX source\n#  code written in `gapmacro.tex' style  into text for the \"screen\" online"
+    },
+    {
+      "path": "lib/pager.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/pager.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/pager.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Pager",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.014,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  The  files  pager.g{d,i}  contain  the `Pager'  utility.  A  rudimentary\n#  version of this  was integrated in first versions of  GAP's help system."
+    },
+    {
+      "path": "lib/proto.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/proto.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/proto.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Proto",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.014,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Declarations of utilities for fast prototyping of new GAP objects.\n#"
+    },
+    {
+      "path": "lib/rvecempt.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/rvecempt.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/rvecempt.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Rvecempt",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.014,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementation of immutable empty row vectors.\n#  An empty row vector is an immutable empty list whose family is"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 5,
+    "definitions": 5,
+    "effort_person_days": 0.07
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

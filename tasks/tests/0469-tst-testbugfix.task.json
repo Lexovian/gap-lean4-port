@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerajq4npcu6dsxn7r2udx62hhum22aimmi2sp6gkburxxicvhwu6dba",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0469",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2012-09-07-t00253b.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-09-07-t00253b.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-09-07-t00253b.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120907T00253b",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "Check that \\in method works for groups handled by a nice monomorphism\ncreated with a custom SeedFaithfulAction.\nFix and test case added by MH on 2012-09-07."
+    },
+    {
+      "path": "tst/testbugfix/2012-11-25-t00264.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-11-25-t00264.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-11-25-t00264.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121125T00264",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2012/11/25 (AK)\nFix of a bug that was reproducible in GAP 4.5.6 with FGA 1.1.1"
+    },
+    {
+      "path": "tst/testbugfix/2012-12-17-t00269.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-12-17-t00269.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-12-17-t00269.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121217T00269",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2012/12/17 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2013-02-27-t00280.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-02-27-t00280.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-02-27-t00280.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130227T00280",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2013/02/27 (AK)"
+    },
+    {
+      "path": "tst/testbugfix/2013-04-01-t00289.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-04-01-t00289.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-04-01-t00289.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130401T00289",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2013/04/01 (MN)"
+    },
+    {
+      "path": "tst/testbugfix/2013-08-20-t00293.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-20-t00293.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-20-t00293.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130820T00293",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2013/08/20 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2013-08-29-t00296.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-29-t00296.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-29-t00296.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130829T00296",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2013/08/29 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2015-10-20-t00315.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-10-20-t00315.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-10-20-t00315.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20151020T00315",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2015/10/20 (Chris Jefferson)"
+    },
+    {
+      "path": "tst/testbugfix/2016-03-01-t00331.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-03-01-t00331.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-03-01-t00331.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160301T00331",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2016/3/1 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2016-08-22-t00347.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-08-22-t00347.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-08-22-t00347.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160822T00347",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "2016/8/22 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2018-06-11-mapping.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-06-11-mapping.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-06-11-mapping.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180611Mapping",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "There was a bug where composition of an identity mapping and another\nmapping x where the Source of the identity mapping contained the\nImagesSource of x, but not its whole range, simply returned x,\nresulting in a composition whose Range was strictly bigger than that\nof its first argument, and causing problems in IsomorphismPermGroup"
+    },
+    {
+      "path": "tst/testbugfix/2021-09-25-RootSystem.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-09-25-RootSystem.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-09-25-RootSystem.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210925RootSystem",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "Fix GitHub issue #4661, reported by Lars Göttgens"
+    },
+    {
+      "path": "tst/testbugfix/2024-07-29-fpgroup-enum.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-07-29-fpgroup-enum.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-07-29-fpgroup-enum.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240729FpgroupEnum",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "Sometimes GAP was able to compute the size of an fp group but then\nfor any further action failed to compute a permutation representation.\nSee https://github.com/gap-system/gap/issues/5764 for the report,\nand https://github.com/gap-system/gap/pull/5770 for the fix."
+    },
+    {
+      "path": "tst/testbugfix/2025-06-11-DoubleCosets-Error.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-06-11-DoubleCosets-Error.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-06-11-DoubleCosets-Error.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250611DoubleCosetsError",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "gap> S := SymmetricGroup( 4 );; A := AlternatingGroup( 4 );;\ngap> DoubleCosets( A, S, A );\nError, not contained\ngap> DoubleCosets( A, A, S );\nError, not contained"
+    },
+    {
+      "path": "tst/testbugfix/2025-11-06-PermrepExtension.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-11-06-PermrepExtension.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-11-06-PermrepExtension.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20251106PermrepExtension",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "permrep of extension, computed automatically\nSee <https://github.com/gap-system/gap/issues/6151>."
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 105,
+    "definitions": 0,
+    "effort_person_days": 1.05
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

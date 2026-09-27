@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeerat45sa6dcgprar32sozosi6ifyqcdv3cnisddtrkwuawfzy6drf4q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0167",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/groebner.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/groebner.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/groebner.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Groebner",
+      "code_lines": 1074,
+      "definitions": 59,
+      "effort_person_days": 21.326,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke, David Joyner.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementations for monomial orderings and Groebner\n#  bases."
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1074,
+    "definitions": 59,
+    "effort_person_days": 21.33
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

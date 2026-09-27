@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeeras7xzj6yydiocve6l3v3utos6vrl45d2vbu3bbhivuqhujfrdixiq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0441",
+  "layer": "tests",
+  "module": "tst/example-dir",
+  "title": "Port tst/example-dir (tests)",
+  "files": [
+    {
+      "path": "tst/example-dir/readme.txt",
+      "language": "txt",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/example-dir/readme.txt",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/example-dir/readme.txt",
+      "suggested_lean_module": "RequestProject.Gap.Tests.ExampleDir.Readme",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "This directory is here to allow us to have a known directory,\nwith known files, in a known place, for the purposes of testing GAP\nfunctions which read and write files.\nExplanation\n-----------"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 8,
+    "definitions": 0,
+    "effort_person_days": 0.1
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

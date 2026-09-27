@@ -1,0 +1,195 @@
+{
+  "task_cid": "baguqeerazeuymvjk77kal3rlczjzuwprwupaokua4dubwcwxzhuuhfscoqya",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0398",
+  "layer": "groupdata",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/demo/testparkit.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/testparkit.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/testparkit.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Testparkit",
+      "code_lines": 201,
+      "definitions": 18,
+      "effort_person_days": 1.301,
+      "header_quote": "SetInfoLevel(InfoParkit,2);\nTest1 := function()\n    local   m,  NoOp,  type,  outs;\n    m := CreateParkitManager();\n    NoOp := function(taskid, m, inputs)"
+    },
+    {
+      "path": "hpcgap/demo/orbit.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/orbit.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/orbit.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Orbit",
+      "code_lines": 152,
+      "definitions": 4,
+      "effort_person_days": 1.213,
+      "header_quote": "Main routine"
+    },
+    {
+      "path": "hpcgap/demo/sumeuler.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/sumeuler.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/sumeuler.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Sumeuler",
+      "code_lines": 131,
+      "definitions": 11,
+      "effort_person_days": 1.021,
+      "header_quote": "Calculating time interval between t1 (start) and t2 (end) in microseconds"
+    },
+    {
+      "path": "hpcgap/demo/factor.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/factor.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/factor.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Factor",
+      "code_lines": 119,
+      "definitions": 7,
+      "effort_person_days": 0.997,
+      "header_quote": "Specialized faster version of RootInt(n,2) from integer.gi"
+    },
+    {
+      "path": "hpcgap/demo/atomic.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/atomic.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/atomic.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Atomic",
+      "code_lines": 127,
+      "definitions": 9,
+      "effort_person_days": 0.951,
+      "header_quote": "############################################################################"
+    },
+    {
+      "path": "hpcgap/demo/parlist.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parlist.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parlist.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parlist",
+      "code_lines": 111,
+      "definitions": 7,
+      "effort_person_days": 0.898,
+      "header_quote": "Workers communicate"
+    },
+    {
+      "path": "hpcgap/demo/strassen.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/strassen.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/strassen.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Strassen",
+      "code_lines": 140,
+      "definitions": 3,
+      "effort_person_days": 0.887,
+      "header_quote": "This is basically intended to be the simplkest natural parallel\nimplementation of Strassen-Winograd. Also included is a sequential version\nand a parallel divide-and-conquer that does not use Strassen (so 8 recursive\ncalls instead of 7)."
+    },
+    {
+      "path": "hpcgap/demo/matmult2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/matmult2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/matmult2.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Matmult2",
+      "code_lines": 84,
+      "definitions": 7,
+      "effort_person_days": 0.653,
+      "header_quote": "R := PolynomialRing(GF(7), [\"x\", \"y\", \"z\"]);"
+    },
+    {
+      "path": "hpcgap/demo/matmult.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/matmult.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/matmult.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Matmult",
+      "code_lines": 76,
+      "definitions": 5,
+      "effort_person_days": 0.572,
+      "header_quote": "First, see if it works"
+    },
+    {
+      "path": "hpcgap/demo/unittest.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/unittest.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/unittest.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Unittest",
+      "code_lines": 66,
+      "definitions": 6,
+      "effort_person_days": 0.537,
+      "header_quote": "CurrentTestPrefix := \"\";\nNumTestErrors := 0;\nTestPrefix := function(title)\n  CurrentTestPrefix := title;\nend;"
+    },
+    {
+      "path": "hpcgap/demo/iterator.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/iterator.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/iterator.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Iterator",
+      "code_lines": 65,
+      "definitions": 3,
+      "effort_person_days": 0.519,
+      "header_quote": "############################################################################\n\nExample 11. Parallel iterator\nBrute force computation of the sum of orders of elements of a permutation group\n(we deliberately not using representatives of conjugacy classes)"
+    },
+    {
+      "path": "hpcgap/demo/testwp.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/testwp.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/testwp.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Testwp",
+      "code_lines": 56,
+      "definitions": 0,
+      "effort_person_days": 0.496,
+      "header_quote": "iter := 10000000/2;\nn := 1000;\nm := 256;\ndata := [];\nfor i in [1..n] do"
+    },
+    {
+      "path": "hpcgap/demo/karatsuba2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/karatsuba2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/karatsuba2.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Karatsuba2",
+      "code_lines": 69,
+      "definitions": 4,
+      "effort_person_days": 0.478,
+      "header_quote": "CUTOFF := 100;\nKaratsubaTaskedInner := function(cf, cg)\n    local  deg, n, cf1, cg1, cf2, cg2, sf, sg, p1, p2, p3, finalPart;\n    deg := Maximum(Length(cf), Length(cg));\n    if deg <= CUTOFF then"
+    },
+    {
+      "path": "hpcgap/demo/partests.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/partests.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/partests.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Partests",
+      "code_lines": 56,
+      "definitions": 7,
+      "effort_person_days": 0.408,
+      "header_quote": "SpinsPerSecond := rec();\nSpinInners := MakeImmutable(rec(\n                  smallint := function(loops)\n    local   i,  x;\n    x := 0;"
+    },
+    {
+      "path": "hpcgap/demo/nqueens.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/nqueens.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/nqueens.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Nqueens",
+      "code_lines": 44,
+      "definitions": 5,
+      "effort_person_days": 0.367,
+      "header_quote": "NewBoard := function(n)\n  return List([1..n],\n    x->List([1..n], y->false));\nend;\nLegalMove := function(board, n, x, y)"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 1497,
+    "definitions": 96,
+    "effort_person_days": 11.3
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

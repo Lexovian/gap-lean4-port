@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeera4jejxeqaxvmf3bsjk5jcb7s4xnooijmojnu3nxueolojjvepc77q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0567",
+  "layer": "tests",
+  "module": "tst/teststandard",
+  "title": "Port tst/teststandard (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/minimalgeneratingset.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/minimalgeneratingset.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/minimalgeneratingset.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Minimalgeneratingset",
+      "code_lines": 521,
+      "definitions": 0,
+      "effort_person_days": 5.21,
+      "header_quote": "############################################################################\n#\n#  Some tests for computing MinimalGeneratingSet of permutation groups\n#  (takes on the order of a seconds to run)\n#\n@local groups"
+    },
+    {
+      "path": "tst/teststandard/sort.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/sort.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/sort.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Sort",
+      "code_lines": 172,
+      "definitions": 16,
+      "effort_person_days": 2.61,
+      "header_quote": "This aims to test the various implementations of Sort. There are a few cases\nwe must cover:\n\n* We can choose if we pass a comparator\n* We can do Sort or SortParallel\n* We specialise for plain lists\nMost of these checks are generate a whole bunch of random tests"
+    },
+    {
+      "path": "tst/teststandard/helptools.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/helptools.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/helptools.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Helptools",
+      "code_lines": 193,
+      "definitions": 1,
+      "effort_person_days": 2.17,
+      "header_quote": "This test checks various auxiliary functions used by the help system.\n\nFor the test that systematically checks each manual section, see\ntst/testextra/helpsys.tst"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 886,
+    "definitions": 17,
+    "effort_person_days": 9.99
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

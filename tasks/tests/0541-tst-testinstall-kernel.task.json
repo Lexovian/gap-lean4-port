@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeramf4m7vqwybx5tymj6nu2hmf53emsoswe6t5ysfn3cjtmvembeh3q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0541",
+  "layer": "tests",
+  "module": "tst/testinstall/kernel",
+  "title": "Port tst/testinstall/kernel (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/kernel/integer.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/integer.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/integer.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Integer",
+      "code_lines": 93,
+      "definitions": 0,
+      "effort_person_days": 0.93,
+      "header_quote": "Tests for functions defined in src/integer.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/exprs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/exprs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/exprs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Exprs",
+      "code_lines": 79,
+      "definitions": 9,
+      "effort_person_days": 0.88,
+      "header_quote": "Tests for functions defined in src/exprs.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/objects.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/objects.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/objects.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Objects",
+      "code_lines": 69,
+      "definitions": 0,
+      "effort_person_days": 0.71,
+      "header_quote": "Tests for functions defined in src/objects.c\n\n@local x, t1c, t2c, t1p, t2p"
+    },
+    {
+      "path": "tst/testinstall/kernel/set.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/set.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/set.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Set",
+      "code_lines": 63,
+      "definitions": 7,
+      "effort_person_days": 0.63,
+      "header_quote": "Tests for functions defined in src/set.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/records.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/records.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/records.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Records",
+      "code_lines": 59,
+      "definitions": 5,
+      "effort_person_days": 0.61,
+      "header_quote": "Tests for functions defined in src/records.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/sctable.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/sctable.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/sctable.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Sctable",
+      "code_lines": 43,
+      "definitions": 0,
+      "effort_person_days": 0.43,
+      "header_quote": "Tests for functions defined in src/sctable.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/stats.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/stats.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/stats.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Stats",
+      "code_lines": 31,
+      "definitions": 17,
+      "effort_person_days": 0.35,
+      "header_quote": "Tests for functions defined in src/stats.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/plist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/plist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/plist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Plist",
+      "code_lines": 31,
+      "definitions": 0,
+      "effort_person_days": 0.31,
+      "header_quote": "Tests for functions defined in src/plist.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/macfloat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/macfloat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/macfloat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Macfloat",
+      "code_lines": 28,
+      "definitions": 0,
+      "effort_person_days": 0.28,
+      "header_quote": "Tests for functions defined in src/macfloat.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/bool.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/bool.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/bool.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Bool",
+      "code_lines": 26,
+      "definitions": 0,
+      "effort_person_days": 0.26,
+      "header_quote": "Tests for functions defined in src/bool.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/intrprtr.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/intrprtr.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/intrprtr.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Intrprtr",
+      "code_lines": 25,
+      "definitions": 0,
+      "effort_person_days": 0.25,
+      "header_quote": "Tests for functions defined in src/intrprtr.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/pperm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/pperm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/pperm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Pperm",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.19,
+      "header_quote": "Tests for functions defined in src/pperm.cc"
+    },
+    {
+      "path": "tst/testinstall/kernel/intfuncs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/intfuncs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/intfuncs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Intfuncs",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "Tests for functions defined in src/intfuncs.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/objfgelm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/objfgelm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/objfgelm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Objfgelm",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "Tests for functions defined in src/objfgelm.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/modules.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/modules.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/modules.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Modules",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Tests for functions defined in src/modules.c"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 607,
+    "definitions": 38,
+    "effort_person_days": 6.24
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

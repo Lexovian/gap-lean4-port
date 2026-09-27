@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerawplgja6ytgyvmfpizo4jvixuor47xbmnwuh2s5dyhtjravmuxtlq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0556",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/child-process.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/child-process.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/child-process.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ChildProcessG",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "gap> d := DirectoryCurrent();;\ngap> f := Filename(DirectoriesSystemPrograms(), \"rev\");;\ngap> s := InputOutputLocalProcess(d,f,[]);;\ngap> Sleep(1);\ngap> CloseStream(s); Print(\"\\n\");"
+    },
+    {
+      "path": "tst/testspecial/help.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/help.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/help.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Help",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "trick: in general, we cannot assume the GAP documentation was built\nprior to running this test; but that of GAPDoc definitely is available"
+    },
+    {
+      "path": "tst/testspecial/test-1.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/test-1.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/test-1.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Test1",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "gap> a:=SymmetricGroup(5);;\ngap> # ... do some tests\ngap> a:=SymmetricGroup(1 0);;\ngap> Length(Elements(a)) = Factorial(10);\ntrue"
+    },
+    {
+      "path": "tst/testspecial/bad-add.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-add.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-add.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadAdd",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    return 1 + \"abc\";\nend;\nf();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-double-1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-double-1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-double-1.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayDouble1",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    return \"abc\"[1,1];\nend;\nf();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-int-1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-int-1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-int-1.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayInt1",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    return 1[1];\nend;\nf();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-string.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-string.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-string.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayString",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    return 1[\"abc\"];\nend;\nf();"
+    },
+    {
+      "path": "tst/testspecial/bad-minus.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-minus.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-minus.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadMinus",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    return 1 - \"abc\";\nend;\nf();"
+    },
+    {
+      "path": "tst/testspecial/broken-test-1.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-1.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-1.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest1",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "@if false"
+    },
+    {
+      "path": "tst/testspecial/child-process.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/child-process.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/child-process.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ChildProcess",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "d := DirectoryCurrent();;\nf := Filename(DirectoriesSystemPrograms(), \"rev\");;\ns := InputOutputLocalProcess(d,f,[]);;\nSleep(1);\nCloseStream(s); Print(\"\\n\");"
+    },
+    {
+      "path": "tst/testspecial/mem-overflow.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/mem-overflow.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/mem-overflow.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.MemOverflow",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "double a list until there is a memory overflow"
+    },
+    {
+      "path": "tst/testspecial/method-not-found-where.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/method-not-found-where.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/method-not-found-where.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.MethodNotFoundWhere",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "test method-not-found traceback rendering while preserving helper access"
+    },
+    {
+      "path": "tst/testspecial/stack-depth-func2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-depth-func2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-depth-func2.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackDepthFunc2",
+      "code_lines": 3,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function() local x; x := f(); return x; end;\ny := f();\nreturn; # try once more"
+    },
+    {
+      "path": "tst/testspecial/stack-trace-label.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-trace-label.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-trace-label.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackTraceLabel",
+      "code_lines": 5,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "f := function()\n    Error(\"foo\");\nend;;\nf();\nquit;"
+    },
+    {
+      "path": "tst/testspecial/syntax-tree-error.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/syntax-tree-error.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/syntax-tree-error.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.SyntaxTreeError",
+      "code_lines": 5,
+      "definitions": 1,
+      "effort_person_days": 0.05,
+      "header_quote": "func := function ( )\n    Error( \"oops\" );\nend;\nfunc := SYNTAX_TREE_CODE( SYNTAX_TREE( func ) );\nfunc( );"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 66,
+    "definitions": 8,
+    "effort_person_days": 0.78
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

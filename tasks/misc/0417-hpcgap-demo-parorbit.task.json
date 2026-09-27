@@ -1,0 +1,42 @@
+{
+  "task_cid": "baguqeerai2gn2duooh6jzq5sssz6xn6kqd2xshsmucftteaoibfipvtw2loa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0417",
+  "layer": "misc",
+  "module": "hpcgap/demo/parorbit",
+  "title": "Port hpcgap/demo/parorbit (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parorbit/HNdata2.g.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/HNdata2.g.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/HNdata2.g.gz",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.HNdata2G",
+      "code_lines": 23641,
+      "definitions": 0,
+      "effort_person_days": 289.9,
+      "header_quote": "�\b\b~\u001cCQ\u0002\u0003HNdata2.g\u0000��ˎm��ei��*�\b�B�\"\u00127B\nj�\u001a\u0015�_\u0002�\u0002��\u0015\u001e�͞�m� ~)>�|O�>��{���������/�����\u001f����?����?�?�����\u001f�W���������������������_���?�������+����~���?���Q��O���t?|��ڏ�����T�����Ͽ�T�#��\u001e�\u0005��]��w�\u0017���\u001f>��9:�T��_����w�\u0017/�߾P��T��\u0005��S��\u0011�ۿ�������o!�]��a��_��\u0014=8�NO��_��\u0011��/��\u0017��\u0011\n~\u0014x�~{\"����d��\u0011x�\\��:��\u000e\u000e�7g�o_������y\u0002\u000f�����\u001f��\u0007��A��ۢ�\u0017�3�\u0019\u0006O;��\u0007/��#��\u0003�o��_4q���\u000f�8X\u0014]<\f�}��Z\u00146q�'\u0004h���\u0002�\u00128�N_�_���g�\u001e}`8������� ��\b��Eѥ�����|ц\u001f�w.Z�ә_;�\tjы���L�āb��5�A�\u0007\u0006�\u0017��E�����\u0017�U0H�\u0018���\u0011������?�E/�;q;ã/��~ۼ�i�A����������OE\u001f\b/���뢂\t.-x=\\\u0014�\u0017\u000b*�~�g8�i`K\t7%�a\u0000c������ő\u00076���\u0006Ԡp[y0_��z���X�_�\u001d�k\u001f6$�Ź�m�E\u001fL��z�o�b�!�8�\u000eVקO;,g/�R`�\u0006�\u000b��\n�1\u0017S�߾{��\u0007�D\u001b\u001cȿ��.��p/xp2�]�E�\u0007\u000fdP3\u0004�\u0012�\\�N\u001e�\u0018O�N��)X]�nL��\u001fv\u0013���x��*}O\u000f��S�����\u0007A\u0013w�\u0017\u0004�a8�\u0005��덠T\u000b�ԋ�/�&�!\u0003j�`I\f�%�x�N%�\u0017e-���9\u0003P8�˼��Ņ>f�6\u000b�����EG\u000f���G�K�Ӎ\\��\u0000��Ӂ�\u001b\u0003\u001bh�\u0006…"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 23641,
+    "definitions": 0,
+    "effort_person_days": 289.9
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

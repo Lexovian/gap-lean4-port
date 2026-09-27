@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeerago6536464wqfers3qd3nt75yqzjeppldnvwa2qr6b5u27xjj5tba",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0287",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/rwspccoc.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/rwspccoc.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/rwspccoc.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Rwspccoc",
+      "code_lines": 351,
+      "definitions": 52,
+      "effort_person_days": 5.665,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Werner Nickel.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file implements a combinatorial collector as an extension of the\n#  representation of a single collector as defined in rwspcsng.gi."
+    },
+    {
+      "path": "lib/grpramat.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grpramat.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grpramat.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grpramat",
+      "code_lines": 306,
+      "definitions": 34,
+      "effort_person_days": 5.624,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Franz Gähler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains operations for matrix groups over the rationals\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 657,
+    "definitions": 86,
+    "effort_person_days": 11.29
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

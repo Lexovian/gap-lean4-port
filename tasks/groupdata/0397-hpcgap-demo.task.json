@@ -1,0 +1,195 @@
+{
+  "task_cid": "baguqeeraklekuo77m6tnn7cmwnkagvw7lo4qcm2yg5r4a5io26csl3hdxsia",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0397",
+  "layer": "groupdata",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/demo/serialize3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/serialize3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/serialize3.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Serialize3",
+      "code_lines": 43,
+      "definitions": 2,
+      "effort_person_days": 0.309,
+      "header_quote": "CheckSerialization := function(x)\n  local err, x2;\n  x2 := DeserializeNativeString(SerializeToNativeString(x));\n  if DeserializeNativeString(SerializeToNativeString(x)) <> x or\n     TNUM_OBJ(x) <> TNUM_OBJ(x2) then"
+    },
+    {
+      "path": "hpcgap/demo/serialize4.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/serialize4.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/serialize4.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Serialize4",
+      "code_lines": 35,
+      "definitions": 8,
+      "effort_person_days": 0.28,
+      "header_quote": "InstallSerializer(\"8-bit vectors\", [ Is8BitVectorRep ], function(obj)\n  return [1, \"Vec8Bit\", obj, Q_VEC8BIT(obj), IS_MUTABLE_OBJ(obj)];\nend);\nInstallDeserializer(\"Vec8Bit\", function(obj, q, mut)\n  SET_TYPE_OBJ(obj, TYPE_VEC8BIT(q, mut));"
+    },
+    {
+      "path": "hpcgap/demo/fibtasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/fibtasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/fibtasks.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Fibtasks",
+      "code_lines": 33,
+      "definitions": 3,
+      "effort_person_days": 0.268,
+      "header_quote": "ReadGapRoot(\"demo/unittest.g\");\nResetCache := function()\n  UNBIND_GLOBAL(\"FibCache\");\n  BIND_GLOBAL(\"FibCache\", AtomicList(1024, -1));\n  MakeReadWriteGVar(\"FibCache\");"
+    },
+    {
+      "path": "hpcgap/demo/rec-perf.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/rec-perf.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/rec-perf.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.RecPerf",
+      "code_lines": 26,
+      "definitions": 8,
+      "effort_person_days": 0.245,
+      "header_quote": "Populate RNam table"
+    },
+    {
+      "path": "hpcgap/demo/gc-bench.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/gc-bench.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/gc-bench.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.GcBench",
+      "code_lines": 30,
+      "definitions": 2,
+      "effort_person_days": 0.233,
+      "header_quote": "This file can be read in HPC-GAP and legacy GAP\n\nAll runtimes are in seconds, time taken by gettimeofday syscall"
+    },
+    {
+      "path": "hpcgap/demo/threads.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/threads.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/threads.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Threads",
+      "code_lines": 25,
+      "definitions": 5,
+      "effort_person_days": 0.163,
+      "header_quote": "############################################################################\n\nPrototypes of functions for shared memory programming in GAP\n\n############################################################################"
+    },
+    {
+      "path": "hpcgap/demo/actortest.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/actortest.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/actortest.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Actortest",
+      "code_lines": 23,
+      "definitions": 4,
+      "effort_person_days": 0.134,
+      "header_quote": "Simple actor test"
+    },
+    {
+      "path": "hpcgap/demo/creator.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/creator.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/creator.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Creator",
+      "code_lines": 18,
+      "definitions": 1,
+      "effort_person_days": 0.134,
+      "header_quote": "Creator := function(obj)\n  local result, creators;\n  creators := CREATOR_OF(obj);\n  result := [];\n  if creators[1] <> fail then"
+    },
+    {
+      "path": "hpcgap/demo/intersection.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/intersection.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/intersection.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Intersection",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.122,
+      "header_quote": "This is a test that Chris Jefferson <caj21@st-andrews.ac.uk> ran to benchmark\nHPC-GAP against legacy GAP\n\nThis file can be read in HPC-GAP and legacy GAP\n\nAll runtimes are in seconds, time taken by gettimeofday syscall\n\nOn: Intel(R) Core(TM) i5-3320M CPU @ 2.60GHz 12GB RAM\nDragonFly v4.3.1.522.geab4ae-DEVELOPMENT\n\nGAP\nv4.7.8-405-gd56a79a"
+    },
+    {
+      "path": "hpcgap/demo/serialize2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/serialize2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/serialize2.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Serialize2",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.122,
+      "header_quote": "ReadGapRoot(\"demo/serialize4.g\");\nl := List([1..6], x -> One(GF(7)) * x);\nConvertToVectorRep(l, 7);\nl2 := List([1..6], x -> One(GF(2)) * x);\nConvertToVectorRep(l2, 2);"
+    },
+    {
+      "path": "hpcgap/demo/testcvec.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/testcvec.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/testcvec.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Testcvec",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.105,
+      "header_quote": "Run parametrized test suites"
+    },
+    {
+      "path": "hpcgap/demo/migrate.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/migrate.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/migrate.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Migrate",
+      "code_lines": 14,
+      "definitions": 1,
+      "effort_person_days": 0.087,
+      "header_quote": "AdoptSingleObj([1,2,3]);\nf := function()\n local ds, r, l;\n ds := ShareSingleObj([]);\n l:=LOCK(ds);"
+    },
+    {
+      "path": "hpcgap/demo/nqrun.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/nqrun.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/nqrun.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Nqrun",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.087,
+      "header_quote": "ReadGapRoot(\"demo/bench.g\");\nReadGapRoot(\"demo/nqueens.g\");\nif IsBound(SetMaxTaskWorkers) then\n  SetMaxTaskWorkers(12);\nfi;"
+    },
+    {
+      "path": "hpcgap/demo/actortest2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/actortest2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/actortest2.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Actortest2",
+      "code_lines": 12,
+      "definitions": 5,
+      "effort_person_days": 0.07,
+      "header_quote": "The following calls are asynchronous rather than synchronous\nand return immediately; they will be executed when the actor\nreceives the underlying message."
+    },
+    {
+      "path": "hpcgap/demo/bench.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/bench.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/bench.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Bench",
+      "code_lines": 10,
+      "definitions": 2,
+      "effort_person_days": 0.07,
+      "header_quote": "TimeDiff := function(t,t2)\n    return (t2-t)*1.E-9;\nend;\nBench := function(f)\n    local tstart, tend;"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 329,
+    "definitions": 41,
+    "effort_person_days": 2.43
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

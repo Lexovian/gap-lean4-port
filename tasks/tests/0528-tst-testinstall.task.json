@@ -1,0 +1,110 @@
+{
+  "task_cid": "baguqeeraqmguogsw7bcpl2onfvjxo4dg7cmc3g26bonfvykeafitrfmc4ika",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0528",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/zlattice.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/zlattice.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/zlattice.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Zlattice",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.15,
+      "header_quote": "@local A"
+    },
+    {
+      "path": "tst/testinstall/eigen.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/eigen.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/eigen.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Eigen",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "@local A"
+    },
+    {
+      "path": "tst/testinstall/teaching.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/teaching.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/teaching.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Teaching",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "@local H, G"
+    },
+    {
+      "path": "tst/testinstall/triviso.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/triviso.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/triviso.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Triviso",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "@local G,inv,phi"
+    },
+    {
+      "path": "tst/testinstall/tuples.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/tuples.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/tuples.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Tuples",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "gap> START_TEST(\"tuples.tst\");\ngap> D8 := DihedralGroup(IsPermGroup, 8);;\ngap> fam := FamilyObj(D8);\n<Family: \"CollectionsFamily(...)\">\ngap> ElementsFamily(fam);"
+    },
+    {
+      "path": "tst/testinstall/polyrat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/polyrat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/polyrat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Polyrat",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "@local A,Fam7,Fam8,Famp,G,R,enum,l,len,m,m2,m3,m4,one,p\n@local rings,x,z0,z1,z2,z3,i,a,b,y"
+    },
+    {
+      "path": "tst/testinstall/stbcbckt.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/stbcbckt.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/stbcbckt.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Stbcbckt",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "@local G,p"
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "code_lines": 76,
+    "definitions": 0,
+    "effort_person_days": 0.78
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,157 @@
+{
+  "root": "baguqeera7547imupy4nxti4etpx2eoo5ri3invnaahyfrnvuhcjmvks4qzgq",
+  "node": {
+    "kind": "gap-to-lean-port-estimate",
+    "schema": "harmonic.gap-port-estimate/1",
+    "source_repository": "https://github.com/gap-system/gap",
+    "generated_by": "tools/gap_port_estimator.py",
+    "quote_copyright": "GAP, a system for computational discrete algebra.\n\nGAP is free software; you can redistribute it and/or modify it under\nthe terms of the GNU General Public License as published by the Free\nSoftware Foundation; either version 2 of the License, or (at your\noption) any later version.\n\nGAP is distributed in the hope that it will be useful, but WITHOUT",
+    "quote_readme": "[![Build Status](https://github.com/gap-system/gap/actions/workflows/CI.yml/badge.svg)](https://github.com/gap-system/gap/actions/workflows/CI.yml)\n[![Code Coverage](https://codecov.io/gh/gap-system/gap/branch/master/graphs/badge.svg)](https://codecov.io/gh/gap-system/gap/branch/master)\n[![ref](https://img.shields.io/badge/docs-ref-blue)](https://gap-system.github.io/gap/doc/ref/chap0_mj.html)\n[![dev](https://img.shields.io/badge/docs-dev-blue)](https://gap-system.github.io/gap/doc/dev/chap0_mj.html)\n[![hpc](https://img.shields.io/badge/docs-hpc-blue)](https://gap-system.github.io/gap/doc/hpc/chap0_mj.html)\n[![tut](https://img.shields.io/badge/docs-tut-blue)](https://gap-system.github.io/gap/doc/tut/chap0_mj.html)",
+    "totals": {
+      "files": 2322,
+      "total_lines": 1542573,
+      "code_lines": 1203252,
+      "definitions": 37836,
+      "effort_person_days": 12642.2,
+      "effort_person_months": 602.0,
+      "effort_person_years": 50.17
+    },
+    "knowledge": {
+      "/": "baguqeerauysnk42xwvomgksdgfze6ybqjxvcfhqljfwcmvzbwjeodbrs3rba"
+    },
+    "top_level": [
+      {
+        "/": "baguqeerazfakp6doowpgq7lqaxobyfqvg7e6ijqv4efsiapxpv6udgwz7h4a"
+      },
+      {
+        "/": "baguqeera55vpx5rosw3ohpqtzy6lxf3kq7yie263t64cqmgxx37ok3cxosma"
+      },
+      {
+        "/": "baguqeeraegmwh7ciihkiipv63ve2qjynw2nhlkb5uyf52fnnmy3kqkmoo6pq"
+      },
+      {
+        "/": "baguqeeraan2eue7t3iyjepdq3kluu7t3zex4d6o3aiswo2we7m7eeqf2v7ba"
+      },
+      {
+        "/": "baguqeeraf5vxcbvxbkb3wp3eehf2ipjkeccfpkxtxlurqvzmp753xlzciz2q"
+      },
+      {
+        "/": "baguqeera7tddfuubq27tah3uqjp74yxiicxdbvdjxd6lsl2fn4lh2czovksa"
+      },
+      {
+        "/": "baguqeera5bcqr5uv234enxdq7fdauowdcrymfrye7mhg4apjws2vp4hyt2cq"
+      },
+      {
+        "/": "baguqeeraxqqgyf7vye627myici375cgnrwvz32kbi5kmrv2zlznfr2ve4sca"
+      },
+      {
+        "/": "baguqeera3nmf76lahxjcbmt23qc2w2joqzfy473rrmuezt5jbuwyyxe56edq"
+      },
+      {
+        "/": "baguqeerajgrbxuzuygdphu5ay6lda3rmp43wrvebdn6zsopcws5bumpq5rkq"
+      }
+    ],
+    "top_level_summary": [
+      {
+        "name": "src/",
+        "cid": {
+          "/": "baguqeerazfakp6doowpgq7lqaxobyfqvg7e6ijqv4efsiapxpv6udgwz7h4a"
+        },
+        "files": 202,
+        "code_lines": 90168,
+        "effort_person_days": 2236.9,
+        "effort_person_months": 106.52
+      },
+      {
+        "name": "lib/",
+        "cid": {
+          "/": "baguqeera55vpx5rosw3ohpqtzy6lxf3kq7yie263t64cqmgxx37ok3cxosma"
+        },
+        "files": 515,
+        "code_lines": 259247,
+        "effort_person_days": 4819.77,
+        "effort_person_months": 229.51
+      },
+      {
+        "name": "grp/",
+        "cid": {
+          "/": "baguqeeraegmwh7ciihkiipv63ve2qjynw2nhlkb5uyf52fnnmy3kqkmoo6pq"
+        },
+        "files": 81,
+        "code_lines": 620896,
+        "effort_person_days": 3897.73,
+        "effort_person_months": 185.61
+      },
+      {
+        "name": "tst/",
+        "cid": {
+          "/": "baguqeeraan2eue7t3iyjepdq3kluu7t3zex4d6o3aiswo2we7m7eeqf2v7ba"
+        },
+        "files": 1104,
+        "code_lines": 87925,
+        "effort_person_days": 940.74,
+        "effort_person_months": 44.8
+      },
+      {
+        "name": "doc/",
+        "cid": {
+          "/": "baguqeeraf5vxcbvxbkb3wp3eehf2ipjkeccfpkxtxlurqvzmp753xlzciz2q"
+        },
+        "files": 155,
+        "code_lines": 58781,
+        "effort_person_days": 0.0,
+        "effort_person_months": 0.0
+      },
+      {
+        "name": "cnf/",
+        "cid": {
+          "/": "baguqeera7tddfuubq27tah3uqjp74yxiicxdbvdjxd6lsl2fn4lh2czovksa"
+        },
+        "files": 22,
+        "code_lines": 6983,
+        "effort_person_days": 27.01,
+        "effort_person_months": 1.29
+      },
+      {
+        "name": "etc/",
+        "cid": {
+          "/": "baguqeera5bcqr5uv234enxdq7fdauowdcrymfrye7mhg4apjws2vp4hyt2cq"
+        },
+        "files": 29,
+        "code_lines": 5508,
+        "effort_person_days": 21.68,
+        "effort_person_months": 1.03
+      },
+      {
+        "name": "dev/",
+        "cid": {
+          "/": "baguqeeraxqqgyf7vye627myici375cgnrwvz32kbi5kmrv2zlznfr2ve4sca"
+        },
+        "files": 45,
+        "code_lines": 7716,
+        "effort_person_days": 0.0,
+        "effort_person_months": 0.0
+      },
+      {
+        "name": "benchmark/",
+        "cid": {
+          "/": "baguqeera3nmf76lahxjcbmt23qc2w2joqzfy473rrmuezt5jbuwyyxe56edq"
+        },
+        "files": 41,
+        "code_lines": 5031,
+        "effort_person_days": 60.14,
+        "effort_person_months": 2.86
+      },
+      {
+        "name": "hpcgap/",
+        "cid": {
+          "/": "baguqeerajgrbxuzuygdphu5ay6lda3rmp43wrvebdn6zsopcws5bumpq5rkq"
+        },
+        "files": 128,
+        "code_lines": 60997,
+        "effort_person_days": 638.24,
+        "effort_person_months": 30.39
+      }
+    ]
+  }
+}

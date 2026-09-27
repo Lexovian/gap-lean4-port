@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraggjmgx7t74xco6ael2qlyw5qrrtv4lytw7nitx3errzy4hesbauq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0548",
+  "layer": "tests",
+  "module": "tst/testinstall/opers",
+  "title": "Port tst/testinstall/opers (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/opers/Socle.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/Socle.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/Socle.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.Socle",
+      "code_lines": 96,
+      "definitions": 0,
+      "effort_person_days": 0.96,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/MemoryUsage.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/MemoryUsage.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/MemoryUsage.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.MemoryUsage",
+      "code_lines": 71,
+      "definitions": 0,
+      "effort_person_days": 0.71,
+      "header_quote": "test internal objects"
+    },
+    {
+      "path": "tst/testinstall/opers/RandomInvertibleMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/RandomInvertibleMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/RandomInvertibleMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.RandomInvertibleMat",
+      "code_lines": 44,
+      "definitions": 1,
+      "effort_person_days": 0.68,
+      "header_quote": "default ring = Integers"
+    },
+    {
+      "path": "tst/testinstall/opers/FrattiniSubgroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/FrattiniSubgroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/FrattiniSubgroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.FrattiniSubgroup",
+      "code_lines": 66,
+      "definitions": 0,
+      "effort_person_days": 0.66,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/IsCentral.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/IsCentral.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/IsCentral.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.IsCentral",
+      "code_lines": 54,
+      "definitions": 0,
+      "effort_person_days": 0.54,
+      "header_quote": "for groups"
+    },
+    {
+      "path": "tst/testinstall/opers/MaximalNormalSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/MaximalNormalSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/MaximalNormalSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.MaximalNormalSubgroups",
+      "code_lines": 54,
+      "definitions": 0,
+      "effort_person_days": 0.54,
+      "header_quote": "some infinite fp-groups"
+    },
+    {
+      "path": "tst/testinstall/opers/BindingsOfClosure.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/BindingsOfClosure.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/BindingsOfClosure.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.BindingsOfClosure",
+      "code_lines": 40,
+      "definitions": 6,
+      "effort_person_days": 0.46,
+      "header_quote": "Test bad input"
+    },
+    {
+      "path": "tst/testinstall/opers/RandomMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/RandomMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/RandomMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.RandomMat",
+      "code_lines": 30,
+      "definitions": 1,
+      "effort_person_days": 0.46,
+      "header_quote": "gap> START_TEST(\"RandomMat.tst\");\n#\ngap> check:=function(M, m, n, R)\n>   Assert(0, Length(M) = m, \"bad row count\");\n>   Assert(0, ForAll(M, row -> Length(row) = n), \"bad row length\");"
+    },
+    {
+      "path": "tst/testinstall/opers/HexStringBlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/HexStringBlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/HexStringBlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.HexStringBlist",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.42,
+      "header_quote": "Test corner cases"
+    },
+    {
+      "path": "tst/testinstall/opers/RandomUnimodularMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/RandomUnimodularMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/RandomUnimodularMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.RandomUnimodularMat",
+      "code_lines": 30,
+      "definitions": 1,
+      "effort_person_days": 0.38,
+      "header_quote": "check with default random source"
+    },
+    {
+      "path": "tst/testinstall/opers/FittingSubgroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/FittingSubgroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/FittingSubgroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.FittingSubgroup",
+      "code_lines": 36,
+      "definitions": 0,
+      "effort_person_days": 0.36,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/IsInfiniteAbelianizationGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/IsInfiniteAbelianizationGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/IsInfiniteAbelianizationGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.IsInfiniteAbelianizationGroup",
+      "code_lines": 31,
+      "definitions": 0,
+      "effort_person_days": 0.31,
+      "header_quote": "Finite groups never have infinite abelianization"
+    },
+    {
+      "path": "tst/testinstall/opers/NormalClosure.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/NormalClosure.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/NormalClosure.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.NormalClosure",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.31,
+      "header_quote": "@local S4, A4, S5, F, H, N"
+    },
+    {
+      "path": "tst/testinstall/opers/SubdirectProducts.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/SubdirectProducts.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/SubdirectProducts.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.SubdirectProducts",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "for the next couple tests, StructureDescription gives different outputs\ndepending on which packages are loaded; e.g. for SubdirectProducts(H, H):\n[ \"((C2 x C2 x C2 x C2) : C3) : C2\", \"(A4 x A4) : C2\", \"S4\", \"S4 x S4\" ]\n[ \"(C2 x C2) : ((C3 x A4) : C2)\", \"(C2 x C2) : S4\", \"S4\", \"S4 x S4\" ]\nthus we use IdGroup if available, and else fall back to a weaker size test.\n@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/EmptyPlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/EmptyPlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/EmptyPlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.EmptyPlist",
+      "code_lines": 28,
+      "definitions": 0,
+      "effort_person_days": 0.28,
+      "header_quote": "gap> START_TEST(\"EmptyPlist.tst\");\n#\ngap> EmptyPlist(-1);\nError, EmptyPlist: <len> must be a non-negative small integer (not the integer\\\n -1)"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 672,
+    "definitions": 9,
+    "effort_person_days": 7.36
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

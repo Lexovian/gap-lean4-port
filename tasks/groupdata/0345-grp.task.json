@@ -1,0 +1,41 @@
+{
+  "task_cid": "baguqeera46yararjmt7a56nuc2zlvzbmhqrp3nuzguyysrav5nvy4ainhutq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0345",
+  "layer": "groupdata",
+  "module": "grp",
+  "title": "Port grp (groupdata)",
+  "files": [
+    {
+      "path": "grp/classic.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/classic.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/classic.gi",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Classic",
+      "code_lines": 1390,
+      "definitions": 50,
+      "effort_person_days": 10.692,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler, Heiko Theißen, Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1390,
+    "definitions": 50,
+    "effort_person_days": 10.69
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

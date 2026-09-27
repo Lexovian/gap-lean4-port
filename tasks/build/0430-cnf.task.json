@@ -1,0 +1,142 @@
+{
+  "task_cid": "baguqeera7dbpajrxo7lux3isxom5retcdduhs2mo645oqxfdplf7xk277ekq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0430",
+  "layer": "build",
+  "module": "cnf",
+  "title": "Port cnf (build)",
+  "files": [
+    {
+      "path": "cnf/config.guess",
+      "language": "guess",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/config.guess",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/config.guess",
+      "suggested_lean_module": "RequestProject.Gap.Build.Config",
+      "code_lines": 1751,
+      "definitions": 0,
+      "effort_person_days": 7.23,
+      "header_quote": "#! /bin/sh\n# Attempt to guess a canonical system name.\n#   Copyright 1992-2025 Free Software Foundation, Inc.\n# shellcheck disable=SC2006,SC2268 # see below for rationale\ntimestamp='2025-07-10'"
+    },
+    {
+      "path": "cnf/install-sh",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/install-sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/install-sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.InstallSh",
+      "code_lines": 466,
+      "definitions": 0,
+      "effort_person_days": 2.173,
+      "header_quote": "#!/bin/sh\n# install - install a program, script, or datafile\nscriptversion=2020-11-14.01; # UTC\n# This originates from X11R5 (mit/util/scripts/install.sh), which was\n# later released in X11R6 (xc/config/util/install.sh) with the"
+    },
+    {
+      "path": "cnf/gac.in",
+      "language": "in",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/gac.in",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/gac.in",
+      "suggested_lean_module": "RequestProject.Gap.Build.Gac",
+      "code_lines": 345,
+      "definitions": 0,
+      "effort_person_days": 1.437,
+      "header_quote": "#!/bin/sh\n#############################################################################\n##\n##  This file is part of GAP, a system for computational discrete algebra.\n##"
+    },
+    {
+      "path": "cnf/gap-version-gen.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/gap-version-gen.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/gap-version-gen.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.GapVersionGen",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "!/bin/sh"
+    },
+    {
+      "path": "cnf/build-extern.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/build-extern.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/build-extern.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.BuildExtern",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.097,
+      "header_quote": "!/usr/bin/env bash\n\nThis script is used by the build system to build external dependencies\nsuch as GMP and Boehm GC in a controlled and uniform way"
+    },
+    {
+      "path": "cnf/gap-c-gen.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/gap-c-gen.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/gap-c-gen.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.GapCGen",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.083,
+      "header_quote": "!/bin/sh -e"
+    },
+    {
+      "path": "cnf/regen-symlink.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/regen-symlink.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/regen-symlink.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.RegenSymlink",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "!/bin/sh"
+    },
+    {
+      "path": "cnf/build-cygwin-zlib.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/build-cygwin-zlib.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/build-cygwin-zlib.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.BuildCygwinZlib",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.033,
+      "header_quote": "!/usr/bin/env bash\nzlib on Cygwin requires a special build procedure\nThe following is taken from the zlib package in Cygwin"
+    },
+    {
+      "path": "cnf/download.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/download.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/download.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.Download",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.023,
+      "header_quote": "!/bin/sh\n\nThis script expects a single argument, which should be an URL pointing to a\nfile for download; it then tries to download that file, into a local file\nwith the same name as the remote file."
+    },
+    {
+      "path": "cnf/update-config.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/cnf/update-config.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/cnf/update-config.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.UpdateConfig",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.013,
+      "header_quote": "!/bin/sh\nFetch latest versions of config.guess and config.sub"
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "code_lines": 2667,
+    "definitions": 0,
+    "effort_person_days": 11.29
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

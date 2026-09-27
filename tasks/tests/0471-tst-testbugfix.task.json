@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraub6siuarddlxorwzdz3mgkova2lpklbrx2h2ccqi4rcplyflx4ra",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0471",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2013-08-08-t00301.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-08-t00301.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-08-t00301.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130808T00301",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2013/08/08 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2016-02-03-mapping.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-02-03-mapping.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-02-03-mapping.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160203Mapping",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "The following test verifies we handle pcgs with large primes in them efficiently.\nSee also GitHub pull requests #576 and #578"
+    },
+    {
+      "path": "tst/testbugfix/2016-11-08-t00348.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-11-08-t00348.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-11-08-t00348.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20161108T00348",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2016/11/08 (MP), #838, output of OrthognalEmbeddings is very long"
+    },
+    {
+      "path": "tst/testbugfix/2017-02-18-t00351.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-02-18-t00351.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-02-18-t00351.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170218T00351",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2017-02-18 (MH): Comparing recursive data structures should not\ncrash. See issue #1150"
+    },
+    {
+      "path": "tst/testbugfix/2017-06-19-repaction.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-06-19-repaction.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-06-19-repaction.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170619Repaction",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "These functions all worked incorrectly when given symmetric or alternating groups\nwhich were not defined on a domain of the form [1..n]"
+    },
+    {
+      "path": "tst/testbugfix/2017-07-06-DoImmutableMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-07-06-DoImmutableMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-07-06-DoImmutableMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170706DoImmutableMatrix",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "handling of finite fields of size q <= 256 but not GF(q)"
+    },
+    {
+      "path": "tst/testbugfix/2017-07-27.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-07-27.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-07-27.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170727",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "RepresentativeAction used to produce incorrect answers for both\nsymmetric and alternating groups, with both OnTuples and OnSets, by\nproducing elements outside the group.\nThis bug was originally reported by Mun See Chang."
+    },
+    {
+      "path": "tst/testbugfix/2017-09-13-PrimePGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-09-13-PrimePGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-09-13-PrimePGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170913PrimePGroup",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "Issue related to PrimePGroup for filter IsPGroup and HasDirectProductInfo\nExamples reported on issue #1719 on github.com/gap-system/gap"
+    },
+    {
+      "path": "tst/testbugfix/2017-10-23-MagmaWith.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-10-23-MagmaWith.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-10-23-MagmaWith.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20171023MagmaWith",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "Issue related to MagmaWith[One|Inverses] with family specified"
+    },
+    {
+      "path": "tst/testbugfix/2018-01-29-NUMBER_VEC.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-01-29-NUMBER_VEC.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-01-29-NUMBER_VEC.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180129NUMBERVEC",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "Fix NUMBER_GF2VEC crash if input is empty vector\nSee https://github.com/gap-system/gap/issues/2121"
+    },
+    {
+      "path": "tst/testbugfix/2018-03-27-float-group.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-03-27-float-group.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-03-27-float-group.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180327FloatGroup",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "Disallow creating groups with non-associative generators.\nSee issue #823"
+    },
+    {
+      "path": "tst/testbugfix/2018-06-28-varadic.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-06-28-varadic.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-06-28-varadic.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180628Varadic",
+      "code_lines": 7,
+      "definitions": 1,
+      "effort_person_days": 0.08,
+      "header_quote": "gap> f := atomic function(readwrite a, readwrite b...)\n>     return b;\n> end;;\ngap> f(1);\n[  ]"
+    },
+    {
+      "path": "tst/testbugfix/2019-01-18-grplatt.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-01-18-grplatt.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-01-18-grplatt.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190118Grplatt",
+      "code_lines": 8,
+      "definitions": 2,
+      "effort_person_days": 0.08,
+      "header_quote": "gap> LatticeSubgroups(Group(()));\n<subgroup lattice of Group(()), 1 class, 1 subgroup>\ngap> IsomorphismFpGroup(SymmetricGroup(1));\nMappingByFunction( Group(()), <fp group on the generators \n[  ]>, function( x ) ... end, function( x ) ... end )"
+    },
+    {
+      "path": "tst/testbugfix/2019-03-08-IsomorphismGroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-03-08-IsomorphismGroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-03-08-IsomorphismGroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190308IsomorphismGroups",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "see https://github.com/gap-system/gap/pull/3331"
+    },
+    {
+      "path": "tst/testbugfix/2019-04-09-Lattice.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-04-09-Lattice.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-04-09-Lattice.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190409Lattice",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "see https://github.com/gap-system/gap/pull/3397\nand https://github.com/gap-system/gap/issues/3496"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 119,
+    "definitions": 3,
+    "effort_person_days": 1.2
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

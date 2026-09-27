@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraizbqlj4euedg5zrjm742exzabcryj2bc6hot73aekksm5ow7qgfa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0454",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/00000.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00000.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00000.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00000",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "gap> DeclareGlobalVariable(\"foo73\");\ngap> InstallValue(foo73,true);\nError, InstallValue: <value> cannot be immediate, boolean or character, and it\\\n should rather be a record or a list"
+    },
+    {
+      "path": "tst/testbugfix/00006.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00006.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00006.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00006",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# iterated autgp (5)"
+    },
+    {
+      "path": "tst/testbugfix/00009.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00009.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00009.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00009",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# GQuotients"
+    },
+    {
+      "path": "tst/testbugfix/00011.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00011.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00011.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00011",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# Testing if an element is in a Green's D equivalence class (fix 2 no. 12)"
+    },
+    {
+      "path": "tst/testbugfix/00017.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00017.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00017.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00017",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "#  bug 11 for fix 4."
+    },
+    {
+      "path": "tst/testbugfix/00018.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00018.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00018.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00018",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "bug in ReducedSCTable:"
+    },
+    {
+      "path": "tst/testbugfix/00037.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00037.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00037.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00037",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# bug 3 for fix 2"
+    },
+    {
+      "path": "tst/testbugfix/00038.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00038.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00038.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00038",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# bug 5 for fix 2"
+    },
+    {
+      "path": "tst/testbugfix/00040.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00040.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00040.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00040",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "# bug 10 for fix 2"
+    },
+    {
+      "path": "tst/testbugfix/2005-04-21-t00066.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-04-21-t00066.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-04-21-t00066.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050421T00066",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/04/21 (FL)"
+    },
+    {
+      "path": "tst/testbugfix/2005-04-26-t00067.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-04-26-t00067.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-04-26-t00067.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050426T00067",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/04/26 (SL, FL)"
+    },
+    {
+      "path": "tst/testbugfix/2005-06-08-t00101.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-06-08-t00101.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-06-08-t00101.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050608T00101",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/06/08 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2005-07-20-t00104.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-07-20-t00104.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-07-20-t00104.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050720T00104",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/07/20 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2005-07-21-t00105.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-07-21-t00105.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-07-21-t00105.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050721T00105",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/07/21 (FL)"
+    },
+    {
+      "path": "tst/testbugfix/2005-08-19-t00090.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-08-19-t00090.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-08-19-t00090.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050819T00090",
+      "code_lines": 4,
+      "definitions": 1,
+      "effort_person_days": 0.04,
+      "header_quote": "2005/08/19 (JS)"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 60,
+    "definitions": 2,
+    "effort_person_days": 0.6
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

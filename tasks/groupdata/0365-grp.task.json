@@ -1,0 +1,41 @@
+{
+  "task_cid": "baguqeera2kofawsp6ewqq3feoy76tl6j447a347mdrag3dtsq6rx2rqr3wma",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0365",
+  "layer": "groupdata",
+  "module": "grp",
+  "title": "Port grp (groupdata)",
+  "files": [
+    {
+      "path": "grp/perf11.grp",
+      "language": "grp",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/perf11.grp",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/perf11.grp",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Perf11",
+      "code_lines": 1548,
+      "definitions": 34,
+      "effort_person_days": 9.228,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Volkmar Felsch, Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the perfect groups of sizes 524880-786240\n#  All data is based on Holt/Plesken: Perfect Groups, OUP 1989"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1548,
+    "definitions": 34,
+    "effort_person_days": 9.23
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

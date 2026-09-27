@@ -1,0 +1,99 @@
+{
+  "task_cid": "baguqeeratz66zwnf44f3fso25dhhzdky7jbjisr7xnnub7zs42tqcwkavpca",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0490",
+  "layer": "tests",
+  "module": "tst/testextra",
+  "title": "Port tst/testextra (tests)",
+  "files": [
+    {
+      "path": "tst/testextra/ctbl.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/ctbl.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/ctbl.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.Ctbl",
+      "code_lines": 83,
+      "definitions": 1,
+      "effort_person_days": 1.37,
+      "header_quote": "############################################################################\n#\n#  excluded from 'testinstall.g' as it takes considerable time\n#\n@local tmpSolvableResiduum, n, i, g, t, l"
+    },
+    {
+      "path": "tst/testextra/switch_obj.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/switch_obj.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/switch_obj.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.SwitchObj",
+      "code_lines": 63,
+      "definitions": 1,
+      "effort_person_days": 0.96,
+      "header_quote": "This test is designed to check we handle swapping master pointers in various\ndifferent cases. There are various things we test:\n1) Do we correctly handle if the swapped objects are young or old?\n2) Do we correctly handle objects allocated before, between, and after the objects?"
+    },
+    {
+      "path": "tst/testextra/ctblpope.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/ctblpope.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/ctblpope.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.Ctblpope",
+      "code_lines": 46,
+      "definitions": 0,
+      "effort_person_days": 0.5,
+      "header_quote": "############################################################################\n#\n#  excluded from 'testinstall.g' as it takes considerable time\n#"
+    },
+    {
+      "path": "tst/testextra/small_groups2.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/small_groups2.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/small_groups2.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.SmallGroups2",
+      "code_lines": 22,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> START_TEST(\"small_groups2.tst\");\ngap> bad := [];;\ngap> for n in [1..Length(NAMES_OF_SMALL_GROUPS)] do\n>   if not IsBound(NAMES_OF_SMALL_GROUPS[n]) then continue; fi;\n>   for i in [1..NrSmallGroups(n)] do"
+    },
+    {
+      "path": "tst/testextra/perfect.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/perfect.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/perfect.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.Perfect",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "############################################################################\n#\n#  Test for cohomology and isomorphism: Recompute perfect groups\n#"
+    },
+    {
+      "path": "tst/testextra/helpsys.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testextra/helpsys.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testextra/helpsys.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testextra.Helpsys",
+      "code_lines": 15,
+      "definitions": 2,
+      "effort_person_days": 0.19,
+      "header_quote": "############################################################################\n#\n#  This produces the text version of each help section which can be reached\n#  from GAPs help system.\n#"
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "code_lines": 250,
+    "definitions": 4,
+    "effort_person_days": 3.55
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

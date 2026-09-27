@@ -1,0 +1,42 @@
+{
+  "task_cid": "baguqeera2loze2yhtledifvg5xw75ebxyjdirbpbdgqaooq7u4g5r5zbi5nq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0422",
+  "layer": "misc",
+  "module": "hpcgap/demo/parorbit",
+  "title": "Port hpcgap/demo/parorbit (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parorbit/speedupHNhash3.eps",
+      "language": "eps",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/speedupHNhash3.eps",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/speedupHNhash3.eps",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.SpeedupHNhash3",
+      "code_lines": 1775,
+      "definitions": 0,
+      "effort_person_days": 18.24,
+      "header_quote": "%!PS-Adobe-3.0 EPSF-3.0\n%%BoundingBox: 20 118 575 673\n%%Creator: FreeHEP Graphics2D Driver\n%%Producer: com.maplesoft.mathdoc.view.plot.paint.PlotPSGraphics2D Revision: 12753 \n%%For:"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1775,
+    "definitions": 0,
+    "effort_person_days": 18.24
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

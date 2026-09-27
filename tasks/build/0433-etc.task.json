@@ -1,0 +1,164 @@
+{
+  "task_cid": "baguqeerafl3eoqjjmt4e6hjhbd3yjgswbinzofz4dqpbc4dfgmxtttayn4ca",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0433",
+  "layer": "build",
+  "module": "etc",
+  "title": "Port etc (build)",
+  "files": [
+    {
+      "path": "etc/convert.pl",
+      "language": "pl",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/convert.pl",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/convert.pl",
+      "suggested_lean_module": "RequestProject.Gap.Build.Convert",
+      "code_lines": 2042,
+      "definitions": 0,
+      "effort_person_days": 8.53,
+      "header_quote": "#!/usr/bin/perl -w\n#\n# Script to convert GAP manual TeX files to HTML\n# Usage:\n#  convert.pl [-csti] [-f <frontpage>] [-n <pkgname>] <doc-dir> [<html-dir>]"
+    },
+    {
+      "path": "etc/ffgen.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/ffgen.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/ffgen.c",
+      "suggested_lean_module": "RequestProject.Gap.Build.Ffgen",
+      "code_lines": 171,
+      "definitions": 6,
+      "effort_person_days": 0.74,
+      "header_quote": "Generate ffdata.{c,h} for finite fields, used in"
+    },
+    {
+      "path": "etc/Makefile.gappkg",
+      "language": "gappkg",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/Makefile.gappkg",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/Makefile.gappkg",
+      "suggested_lean_module": "RequestProject.Gap.Build.Makefile",
+      "code_lines": 186,
+      "definitions": 0,
+      "effort_person_days": 0.737,
+      "header_quote": "########################################################################\n#\n# The build rules in this file are intended for use by GAP packages that\n# want to build a simple GAP kernel extensions. They are based on the\n# GAP build system, and require GNU make. To use this in your GAP"
+    },
+    {
+      "path": "etc/gen_conway.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/gen_conway.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/gen_conway.g",
+      "suggested_lean_module": "RequestProject.Gap.Build.GenConway",
+      "code_lines": 84,
+      "definitions": 2,
+      "effort_person_days": 0.377,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This files's authors include Jan De Beule, Max Horn.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains code to regenerate the PolsFF table in\n#  src/finfield_conway.h."
+    },
+    {
+      "path": "etc/Makefile.gappkg.simple",
+      "language": "simple",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/Makefile.gappkg.simple",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/Makefile.gappkg.simple",
+      "suggested_lean_module": "RequestProject.Gap.Build.MakefileGappkg",
+      "code_lines": 83,
+      "definitions": 0,
+      "effort_person_days": 0.303,
+      "header_quote": "########################################################################\n#\n# The build rules in this file are intended for use by GAP packages that\n# want to build a simple GAP kernel extensions. They are based on the\n# GAP build system, and require GNU make. To use this in your GAP"
+    },
+    {
+      "path": "etc/xrmtcmd.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/xrmtcmd.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/xrmtcmd.c",
+      "suggested_lean_module": "RequestProject.Gap.Build.Xrmtcmd",
+      "code_lines": 57,
+      "definitions": 1,
+      "effort_person_days": 0.247,
+      "header_quote": "Program to send a string to an X-Window as if it was keypresses\nThis is used by the xdvi help viewer to flip pages.\nFirst, very rudimentary version that does only recognize a few keys.\nThe neat XWindows event code is due to Shane Smit (ssmit@caldera.com),\nthe atrocious wraper loop running over a string is by A.Hulpke (who\nstill cannot code proper C...) 27-Nov-00 */"
+    },
+    {
+      "path": "etc/log2html.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/log2html.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/log2html.g",
+      "suggested_lean_module": "RequestProject.Gap.Build.Log2html",
+      "code_lines": 47,
+      "definitions": 1,
+      "effort_person_days": 0.21,
+      "header_quote": "############################################################################\n#\nW  log2html.g             GAP *.log - File --> HTML              Stefan Kohl\n#\n#\n#  Utility to convert GAP log files to XHTML 1.0 Strict.\n#\n#  Usage:\n#\n#  - Load this file into GAP.\n#\n#  - Issue Log2HTML( <logfilename> ), where the path must be relative to"
+    },
+    {
+      "path": "etc/ctags.readme.md",
+      "language": "md",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/ctags.readme.md",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/ctags.readme.md",
+      "suggested_lean_module": "RequestProject.Gap.Build.CtagsReadme",
+      "code_lines": 43,
+      "definitions": 0,
+      "effort_person_days": 0.197,
+      "header_quote": "# Ctags for GAP\nThis file describes how to set up Ctags to work with GAP source files.\nCtags is a tool that can be used to generate an index file of names found in\nsource files. This index file can then be used by editors to jump to the\ndefinition of any indexed name."
+    },
+    {
+      "path": "etc/ctags_for_gap",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/ctags_for_gap",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/ctags_for_gap",
+      "suggested_lean_module": "RequestProject.Gap.Build.CtagsForGap",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "--langdef=GAP\n--langmap=GAP:.g.gd.gi.gap\n--regex-GAP=/([a-zA-Z0-9_]+) *:= *function/\\1/f,function/\n--regex-GAP=/BindGlobal *\\( *\"([a-zA-Z0-9_]+)\"/\\1/v,value/\n--regex-GAP=/BIND_GLOBAL *\\( *\"([a-zA-Z0-9_]+)\"/\\1/v,value/"
+    },
+    {
+      "path": "etc/gaplog.css",
+      "language": "css",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/gaplog.css",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/gaplog.css",
+      "suggested_lean_module": "RequestProject.Gap.Build.Gaplog",
+      "code_lines": 30,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "/* ####################################################################### */\n/* ##                                                                   ## */\n/* ##  gaplog.css          GAP *.log - File Style          Stefan Kohl  ## */\n/* ##                                                                   ## */\n/* ##                                                                   ## */"
+    },
+    {
+      "path": "etc/README.md",
+      "language": "md",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/README.md",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/README.md",
+      "suggested_lean_module": "RequestProject.Gap.Build.README",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.077,
+      "header_quote": "# The GAP etc/ directory\nHere is an overview of the files in this directory. Most of them\ncontain comments with a more detailed description of what they do.\n## Files for GAP developers\nThe following are tools for people working on the GAP code base itself"
+    },
+    {
+      "path": "etc/tags.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/tags.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/tags.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.Tags",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "!/bin/sh"
+    }
+  ],
+  "totals": {
+    "files": 12,
+    "code_lines": 2790,
+    "definitions": 10,
+    "effort_person_days": 11.67
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

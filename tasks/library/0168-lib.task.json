@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeeradl62qsps3rvxqtd36sqsibgq4r5l6h4nfy56chcsaflqjbslpniq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0168",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/grp.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grp.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grp.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grp",
+      "code_lines": 313,
+      "definitions": 180,
+      "effort_person_days": 4.304,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler, Bettina Eick,\n#  Heiko Theißen.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations of operations for groups."
+    },
+    {
+      "path": "lib/fampred.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/fampred.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/fampred.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Fampred",
+      "code_lines": 255,
+      "definitions": 56,
+      "effort_person_days": 4.276,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Etaoin Shrdlu.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file defines all family predicates\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 568,
+    "definitions": 236,
+    "effort_person_days": 8.58
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

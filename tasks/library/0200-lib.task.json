@@ -1,0 +1,73 @@
+{
+  "task_cid": "baguqeeraidy4qvlwe6i7guovuj44lbgt7266ev2ubns3yg3knmndl6rw6juq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0200",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/ieee754.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/ieee754.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/ieee754.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Ieee754",
+      "code_lines": 124,
+      "definitions": 52,
+      "effort_person_days": 2.544,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton, Stefan Kohl, Laurent Bartholdi.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with macfloats\n#"
+    },
+    {
+      "path": "lib/ctblfuns.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/ctblfuns.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/ctblfuns.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Ctblfuns",
+      "code_lines": 182,
+      "definitions": 123,
+      "effort_person_days": 2.516,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the definition of categories of class functions,\n#  and the corresponding properties, attributes, and operations."
+    },
+    {
+      "path": "lib/fastendo.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/fastendo.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/fastendo.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Fastendo",
+      "code_lines": 138,
+      "definitions": 26,
+      "effort_person_days": 2.461,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Conversion to, and fast methods for, transformation representation\n#  of EndoMappings."
+    },
+    {
+      "path": "lib/mapphomo.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/mapphomo.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/mapphomo.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Mapphomo",
+      "code_lines": 135,
+      "definitions": 24,
+      "effort_person_days": 2.461,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, and Heiko Theißen.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the definitions of properties of mappings preserving\n#  algebraic structure."
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 579,
+    "definitions": 225,
+    "effort_person_days": 9.98
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerabgagbhbxpmyvgszfhiydsqraunbv4qzqj4ndsxhgzflvzgpm6b6q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0496",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/ctblmoli.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ctblmoli.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ctblmoli.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ctblmoli",
+      "code_lines": 52,
+      "definitions": 0,
+      "effort_person_days": 0.52,
+      "header_quote": "@local G,molser,psi,x,y,tbl,irr,lin,deg3,ser,ser2,m2"
+    },
+    {
+      "path": "tst/testinstall/magma.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/magma.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/magma.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Magma",
+      "code_lines": 49,
+      "definitions": 0,
+      "effort_person_days": 0.49,
+      "header_quote": "@local F,M,T"
+    },
+    {
+      "path": "tst/testinstall/onecohom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/onecohom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/onecohom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Onecohom",
+      "code_lines": 48,
+      "definitions": 0,
+      "effort_person_days": 0.48,
+      "header_quote": "@local b,com,g,n,ocr"
+    },
+    {
+      "path": "tst/testinstall/gprd.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/gprd.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/gprd.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Gprd",
+      "code_lines": 47,
+      "definitions": 0,
+      "effort_person_days": 0.47,
+      "header_quote": "@local g1,g2,g3,d1,d2,d3,d4"
+    },
+    {
+      "path": "tst/testinstall/xgap.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/xgap.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/xgap.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Xgap",
+      "code_lines": 47,
+      "definitions": 0,
+      "effort_person_days": 0.47,
+      "header_quote": "@local c2,e,f,g,gg,i,k,l,n,t,a,b"
+    },
+    {
+      "path": "tst/testinstall/method-rankfns.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/method-rankfns.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/method-rankfns.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MethodRankfns",
+      "code_lines": 46,
+      "definitions": 5,
+      "effort_person_days": 0.46,
+      "header_quote": "@local myOp, myC, xxx, obj, myUprankFilt\n@exec myFilt:= NewFilter(\"myFilt\", 0);;\n@exec myAltFilt:= NewFilter(\"myAltFilt\", 0);;"
+    },
+    {
+      "path": "tst/testinstall/declarefunction.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/declarefunction.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/declarefunction.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Declarefunction",
+      "code_lines": 44,
+      "definitions": 10,
+      "effort_person_days": 0.45,
+      "header_quote": "@local name, testfunctionA, func"
+    },
+    {
+      "path": "tst/testinstall/method-reordering.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/method-reordering.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/method-reordering.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MethodReordering",
+      "code_lines": 40,
+      "definitions": 5,
+      "effort_person_days": 0.45,
+      "header_quote": "gap> START_TEST(\"method-reordering.tst\");\ngap> CheckReorder := function(explicit)\n>    local  f1, f2, f3, myOp, fam, t, o, o2, myC;\n>    CHECK_ALL_METHOD_RANKS();\n>    f1 := NewFilter(\"filter1\",100);"
+    },
+    {
+      "path": "tst/testinstall/sha256.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/sha256.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/sha256.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Sha256",
+      "code_lines": 45,
+      "definitions": 0,
+      "effort_person_days": 0.45,
+      "header_quote": "test input validation for the kernel functions"
+    },
+    {
+      "path": "tst/testinstall/startendwith.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/startendwith.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/startendwith.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Startendwith",
+      "code_lines": 44,
+      "definitions": 0,
+      "effort_person_days": 0.44,
+      "header_quote": "@local"
+    },
+    {
+      "path": "tst/testinstall/weakptr-badargs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/weakptr-badargs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/weakptr-badargs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.WeakptrBadargs",
+      "code_lines": 44,
+      "definitions": 0,
+      "effort_person_days": 0.44,
+      "header_quote": "############################################################################\n@local w"
+    },
+    {
+      "path": "tst/testinstall/invsgp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/invsgp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/invsgp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Invsgp",
+      "code_lines": 42,
+      "definitions": 0,
+      "effort_person_days": 0.42,
+      "header_quote": "@local S"
+    },
+    {
+      "path": "tst/testinstall/meatauto.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/meatauto.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/meatauto.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Meatauto",
+      "code_lines": 42,
+      "definitions": 0,
+      "effort_person_days": 0.42,
+      "header_quote": "@local F, e, M, v, N, G, p, hc, A"
+    },
+    {
+      "path": "tst/testinstall/linecontinuation.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/linecontinuation.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/linecontinuation.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Linecontinuation",
+      "code_lines": 41,
+      "definitions": 2,
+      "effort_person_days": 0.41,
+      "header_quote": "This file tests line continuations, i.e., GAP commands which span multiple\nlines with help of a backslash just before the new line, inside various\nkinds of GAP expressions"
+    },
+    {
+      "path": "tst/testinstall/method.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/method.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/method.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Method",
+      "code_lines": 31,
+      "definitions": 5,
+      "effort_person_days": 0.41,
+      "header_quote": "Check names are set correctly"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 662,
+    "definitions": 27,
+    "effort_person_days": 6.78
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

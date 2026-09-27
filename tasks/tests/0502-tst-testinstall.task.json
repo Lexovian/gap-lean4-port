@@ -1,0 +1,121 @@
+{
+  "task_cid": "baguqeera4aozga64n675hyjxdyo3wr4ukfs4kesmr3y3tf4ia5iysm4bspmq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0502",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/grpperm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grpperm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grpperm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grpperm",
+      "code_lines": 143,
+      "definitions": 0,
+      "effort_person_days": 1.47,
+      "header_quote": "@local F,G,N,cube,g,s,x,y,a,b,sym,h,iso"
+    },
+    {
+      "path": "tst/testinstall/infinity.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/infinity.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/infinity.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Infinity",
+      "code_lines": 89,
+      "definitions": 0,
+      "effort_person_days": 1.46,
+      "header_quote": "@local cycls,i,j,op"
+    },
+    {
+      "path": "tst/testinstall/objmap.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/objmap.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/objmap.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Objmap",
+      "code_lines": 120,
+      "definitions": 0,
+      "effort_person_days": 1.42,
+      "header_quote": "@local MAPvals,a,b,c,p,x,i,y,keyresult,valresult"
+    },
+    {
+      "path": "tst/testinstall/immutable.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/immutable.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/immutable.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Immutable",
+      "code_lines": 140,
+      "definitions": 0,
+      "effort_person_days": 1.4,
+      "header_quote": "@local v,x"
+    },
+    {
+      "path": "tst/testinstall/matblock.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/matblock.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/matblock.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Matblock",
+      "code_lines": 138,
+      "definitions": 0,
+      "effort_person_days": 1.38,
+      "header_quote": "@local dim,m1,m2,m3,mm,o1,o2,p1,p2,p3,p4,tmp,z,R,G,H,reps,ind,img"
+    },
+    {
+      "path": "tst/testinstall/ratfun_gf5.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ratfun_gf5.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ratfun_gf5.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.RatfunGf5",
+      "code_lines": 134,
+      "definitions": 0,
+      "effort_person_days": 1.34,
+      "header_quote": "test basic properties"
+    },
+    {
+      "path": "tst/testinstall/boolean.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/boolean.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/boolean.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Boolean",
+      "code_lines": 116,
+      "definitions": 33,
+      "effort_person_days": 1.33,
+      "header_quote": "No local variables\n@local"
+    },
+    {
+      "path": "tst/testinstall/semirel.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/semirel.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/semirel.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Semirel",
+      "code_lines": 133,
+      "definitions": 0,
+      "effort_person_days": 1.33,
+      "header_quote": "@local H,L,R,S,a,b,f,gjp,gjp1,glp,glp1,grp,grp1,rels,s1,s2,s3,sc,t1,t2,t20\n@local t3,t4,t5,D"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "code_lines": 1013,
+    "definitions": 33,
+    "effort_person_days": 11.13
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

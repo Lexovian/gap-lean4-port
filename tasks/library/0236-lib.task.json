@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeerapzmy2nmcsfm5wmcyx22vup4d5eqncm4r2jxdts6jkh6ym5svzmea",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0236",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/norad.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/norad.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/norad.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Norad",
+      "code_lines": 750,
+      "definitions": 19,
+      "effort_person_days": 13.351,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains functions that compute normalizers by the\n#  fitting-free/solvable radical method. It can be competitive even in the case"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 750,
+    "definitions": 19,
+    "effort_person_days": 13.35
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

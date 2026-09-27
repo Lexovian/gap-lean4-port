@@ -1,0 +1,118 @@
+{
+  "task_cid": "baguqeeranngj4no2h7qgndqrehdmv3azuk6pzyjr677djrqyvxapnmbdoumq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0409",
+  "layer": "groupdata",
+  "module": "hpcgap/lib/distributed",
+  "title": "Port hpcgap/lib/distributed (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/distributed/loutils.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/loutils.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/loutils.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Loutils",
+      "code_lines": 152,
+      "definitions": 9,
+      "effort_person_days": 1.196,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/messageman.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/messageman.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/messageman.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Messageman",
+      "code_lines": 88,
+      "definitions": 6,
+      "effort_person_days": 0.811,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/locomm.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/locomm.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/locomm.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Locomm",
+      "code_lines": 86,
+      "definitions": 8,
+      "effort_person_days": 0.607,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/globalobject_io.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/globalobject_io.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/globalobject_io.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.GlobalobjectIo",
+      "code_lines": 38,
+      "definitions": 5,
+      "effort_person_days": 0.373,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/collective.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/collective.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/collective.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Collective",
+      "code_lines": 30,
+      "definitions": 5,
+      "effort_person_days": 0.262,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/hicomm.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/hicomm.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/hicomm.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Hicomm",
+      "code_lines": 35,
+      "definitions": 0,
+      "effort_person_days": 0.204,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/globalobject.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/globalobject.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/globalobject.gd",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Globalobject",
+      "code_lines": 26,
+      "definitions": 25,
+      "effort_person_days": 0.152,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/distgap.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/distgap.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/distgap.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Distgap",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "code_lines": 467,
+    "definitions": 58,
+    "effort_person_days": 3.68
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

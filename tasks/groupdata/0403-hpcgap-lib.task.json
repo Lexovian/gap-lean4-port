@@ -1,0 +1,107 @@
+{
+  "task_cid": "baguqeeraegkxostycnnvas2ot5wn2nnkpjszjjj6egsvrtzb7z2f4fbhannq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0403",
+  "layer": "groupdata",
+  "module": "hpcgap/lib",
+  "title": "Port hpcgap/lib (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/polyconw.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/polyconw.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/polyconw.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Polyconw",
+      "code_lines": 325,
+      "definitions": 15,
+      "effort_person_days": 2.788,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementation part of functions and data around\n#  Conway polynomials."
+    },
+    {
+      "path": "hpcgap/lib/tuples.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/tuples.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/tuples.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Tuples",
+      "code_lines": 339,
+      "definitions": 61,
+      "effort_person_days": 2.718,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for direct product elements.\n#"
+    },
+    {
+      "path": "hpcgap/lib/cmdleditx.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/cmdleditx.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/cmdleditx.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Cmdleditx",
+      "code_lines": 292,
+      "definitions": 16,
+      "effort_person_days": 2.567,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This is outdated experimental code for command line editing and a history\n#  and demo mechanism which is only used when GAP is not compiled with"
+    },
+    {
+      "path": "hpcgap/lib/variable.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/variable.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/variable.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Variable",
+      "code_lines": 177,
+      "definitions": 18,
+      "effort_person_days": 1.441,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the functions for the special handling of those global\n#  variables in {\\GAP} library files that are *not* functions;"
+    },
+    {
+      "path": "hpcgap/lib/basis.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/basis.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/basis.gd",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Basis",
+      "code_lines": 65,
+      "definitions": 36,
+      "effort_person_days": 0.397,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for bases of free left modules.\n#"
+    },
+    {
+      "path": "hpcgap/lib/filter.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/filter.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/filter.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Filter",
+      "code_lines": 45,
+      "definitions": 4,
+      "effort_person_days": 0.385,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/mapping1.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/mapping1.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/mapping1.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Mapping1",
+      "code_lines": 36,
+      "definitions": 3,
+      "effort_person_days": 0.309,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Martin Schönert, Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains\n#  1. the design of families of general mappings"
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "code_lines": 1279,
+    "definitions": 153,
+    "effort_person_days": 10.61
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

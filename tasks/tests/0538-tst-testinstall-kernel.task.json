@@ -1,0 +1,77 @@
+{
+  "task_cid": "baguqeerai2gktec72ubnyur42lfupkohfvcku7zm7lagukle2nnenzr3tmua",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0538",
+  "layer": "tests",
+  "module": "tst/testinstall/kernel",
+  "title": "Port tst/testinstall/kernel (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/kernel/ariths.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/ariths.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/ariths.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Ariths",
+      "code_lines": 303,
+      "definitions": 12,
+      "effort_person_days": 3.31,
+      "header_quote": "Tests for functions defined in src/ariths.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/blister.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/blister.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/blister.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Blister",
+      "code_lines": 310,
+      "definitions": 0,
+      "effort_person_days": 3.22,
+      "header_quote": "Tests for functions defined in src/blister.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/opers.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/opers.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/opers.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Opers",
+      "code_lines": 266,
+      "definitions": 8,
+      "effort_person_days": 2.71,
+      "header_quote": "Tests for functions defined in src/opers.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/streams.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/streams.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/streams.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Streams",
+      "code_lines": 246,
+      "definitions": 4,
+      "effort_person_days": 2.46,
+      "header_quote": "Tests for functions defined in src/streams.c"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 1125,
+    "definitions": 24,
+    "effort_person_days": 11.7
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,60 @@
+{
+  "task_cid": "baguqeeraagwuyr5pxcqfptj2l7is3jl3o2yjgma2kf3zomru6htbbrnxe3gq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0074",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/sysroots.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/sysroots.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/sysroots.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Sysroots",
+      "code_lines": 126,
+      "definitions": 3,
+      "effort_person_days": 3.42,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/vec8bit.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/vec8bit.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/vec8bit.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Vec8bit",
+      "code_lines": 142,
+      "definitions": 27,
+      "effort_person_days": 3.4,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/dynarray.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/dynarray.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/dynarray.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Dynarray",
+      "code_lines": 141,
+      "definitions": 11,
+      "effort_person_days": 3.34,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nWARNING: This file should NOT be directly included. It is designed\nto instantiate a generic dynamic array type based on #defines that\nhave to be set before including the file, and the file can be included"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 409,
+    "definitions": 41,
+    "effort_person_days": 10.16
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

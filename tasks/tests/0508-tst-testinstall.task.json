@@ -1,0 +1,77 @@
+{
+  "task_cid": "baguqeera2jecx3jmez3duz5rdmv6433j2fnrnpkfdlgwyidn4t3e4rw7bb6a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0508",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/mgmfree.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/mgmfree.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/mgmfree.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Mgmfree",
+      "code_lines": 261,
+      "definitions": 0,
+      "effort_person_days": 2.61,
+      "header_quote": "@local M"
+    },
+    {
+      "path": "tst/testinstall/pgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/pgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/pgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Pgroups",
+      "code_lines": 258,
+      "definitions": 0,
+      "effort_person_days": 2.61,
+      "header_quote": "@local A,B,C,D,F,G,H,H1,H2,H3,H4,K,L,N,Q,g,hom,myList,newList,r,s"
+    },
+    {
+      "path": "tst/testinstall/wordrep.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/wordrep.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/wordrep.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Wordrep",
+      "code_lines": 255,
+      "definitions": 0,
+      "effort_person_days": 2.57,
+      "header_quote": "ExponentSums"
+    },
+    {
+      "path": "tst/testinstall/algmat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/algmat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/algmat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Algmat",
+      "code_lines": 253,
+      "definitions": 0,
+      "effort_person_days": 2.53,
+      "header_quote": "@local a,b,c,cen,cenu,cenv,d,f,fullcen,l,mat,n,r,rada,radc,sum\n@local u,ua,ub,uc,ud,uz,v,z,zero"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 1027,
+    "definitions": 0,
+    "effort_person_days": 10.32
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeerallelycvzmhvyqfi2rfkb3ypsdo57mv3liwysuu37kgu7bmdnqryq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0321",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/vecmat.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/vecmat.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/vecmat.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Vecmat",
+      "code_lines": 1724,
+      "definitions": 261,
+      "effort_person_days": 33.743,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains  the basic methods for  creating and doing  arithmetic\n#  with GF2 vectors and matrices."
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1724,
+    "definitions": 261,
+    "effort_person_days": 33.74
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeeraa5yc32dcm4tsbqnujqwmsuss2yf6hkd4xlxsr3ti5plubncfsmzq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0550",
+  "layer": "tests",
+  "module": "tst/testkernel",
+  "title": "Port tst/testkernel (tests)",
+  "files": [
+    {
+      "path": "tst/testkernel/dstruct.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testkernel/dstruct.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testkernel/dstruct.c",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testkernel.Dstruct",
+      "code_lines": 135,
+      "definitions": 6,
+      "effort_person_days": 1.6,
+      "header_quote": "Small program to test data structures used by the Julia GC integration."
+    },
+    {
+      "path": "tst/testkernel/dstruct.expect",
+      "language": "expect",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testkernel/dstruct.expect",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testkernel/dstruct.expect",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testkernel.Dstruct",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.27,
+      "header_quote": "# Testing balanced trees.\nTree state: 1048576 nodes, 33 depth.\nMissing nodes: 0\n# Removing half of all nodes.\nTree state: 524288 nodes, 20 depth."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 162,
+    "definitions": 6,
+    "effort_person_days": 1.87
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

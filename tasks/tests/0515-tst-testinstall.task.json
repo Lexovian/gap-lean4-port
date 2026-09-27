@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeera5ovyttja5orelatmex5lofxd64zl3jl2phjn5g56sudez2doze4q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0515",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/reesmat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/reesmat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/reesmat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Reesmat",
+      "code_lines": 800,
+      "definitions": 3,
+      "effort_person_days": 8.01,
+      "header_quote": "@local D,F,R,S,T,U,enum,inv,iso,x,z"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 800,
+    "definitions": 3,
+    "effort_person_days": 8.01
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

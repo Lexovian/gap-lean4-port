@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraqoqnzlfr3arrcpi6ke75pxisk423m3n4d3vc6iu6dhi63vcmvesa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0468",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2011-01-16-t00230.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2011-01-16-t00230.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2011-01-16-t00230.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20110116T00230",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Reported by FL on 2010/05/05, added by AK on 2011/01/16"
+    },
+    {
+      "path": "tst/testbugfix/2011-03-24-t00233.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2011-03-24-t00233.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2011-03-24-t00233.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20110324T00233",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Problem with printing when GAP is compiled with GMP 5.0.1 under macOS\nin 32-bit mode. Does not occur with GMP 4.3.2 or in 64-bit mode.\nReported by BH on 2011/02/06, added by AK on 2011/03/24"
+    },
+    {
+      "path": "tst/testbugfix/2011-12-18-t00239.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2011-12-18-t00239.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2011-12-18-t00239.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20111218T00239",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Reported by Ilko Brauch on 2011/12/16, added by MH on 2011/12/18"
+    },
+    {
+      "path": "tst/testbugfix/2012-06-15-t00246.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-06-15-t00246.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-06-15-t00246.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120615T00246",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2012/06/15 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2012-09-11-t00254.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-09-11-t00254.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-09-11-t00254.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120911T00254",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Check that overloading of a loaded help book by another one works. This\nmakes sense if a book of a not loaded package is loaded in a workspace\nand GAP is started with a root path that contains a newer version.\nReported by Sebastian Gutsche, fixed by FL on 2012-09-11"
+    },
+    {
+      "path": "tst/testbugfix/2012-10-26-t00261.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-10-26-t00261.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-10-26-t00261.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121026T00261",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2012/10/26 (SL)\nFix a crash when a logfile opened with LogTo() is closed with LogInputTo()"
+    },
+    {
+      "path": "tst/testbugfix/2012-11-10-t00273.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-11-10-t00273.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-11-10-t00273.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121110T00273",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2012/11/10 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2012-11-26-t00265.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-11-26-t00265.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-11-26-t00265.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121126T00265",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2012/11/26 (MN)"
+    },
+    {
+      "path": "tst/testbugfix/2013-03-27-t00288.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-03-27-t00288.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-03-27-t00288.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130327T00288",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2013/03/27 (AK)"
+    },
+    {
+      "path": "tst/testbugfix/2015-02-16-t00313.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-02-16-t00313.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-02-16-t00313.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20150216T00313",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2015/02/16 (CJ, Reported by TB)"
+    },
+    {
+      "path": "tst/testbugfix/2016-02-04-t00330.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-02-04-t00330.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-02-04-t00330.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160204T00330",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2016/2/4 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2016-04-29-t00339.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-04-29-t00339.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-04-29-t00339.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160429T00339",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2016/04/29 (FL) and a third bug"
+    },
+    {
+      "path": "tst/testbugfix/2017-01-09-t00350.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-01-09-t00350.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-01-09-t00350.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170109T00350",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "2017-01-09 (MH); see also issue #817"
+    },
+    {
+      "path": "tst/testbugfix/2017-08-03-StringFilterSetter.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-08-03-StringFilterSetter.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-08-03-StringFilterSetter.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170803StringFilterSetter",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Bug: NewSetterFilter from opers.c was being called before the\nInitLibrary function from opers.c was, leading to StringFilterSetter\nnot being initialized. This would cause the setter for IS_MUTABLE_OBJ\nto get an essentially undefined name, resp. \"garbage\"."
+    },
+    {
+      "path": "tst/testbugfix/2018-04-30-IteratorOfCartesianProduct.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-04-30-IteratorOfCartesianProduct.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-04-30-IteratorOfCartesianProduct.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180430IteratorOfCartesianProduct",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "test iterating over an empty cartesian product;\nsee https://github.com/gap-system/gap/issues/2420"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 60,
+    "definitions": 0,
+    "effort_person_days": 0.6
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

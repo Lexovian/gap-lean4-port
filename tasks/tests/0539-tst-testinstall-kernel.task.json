@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeerah6jcuedoaopwhedxn4uwpcp5zo36h7npoyqo7lnepjvayfqgh7ba",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0539",
+  "layer": "tests",
+  "module": "tst/testinstall/kernel",
+  "title": "Port tst/testinstall/kernel (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/kernel/funcs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/funcs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/funcs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Funcs",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Tests for functions defined in src/funcs.c"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 5,
+    "definitions": 0,
+    "effort_person_days": 0.05
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

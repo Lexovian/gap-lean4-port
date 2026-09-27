@@ -1,0 +1,62 @@
+{
+  "task_cid": "baguqeerabbdkfswzfxmyrq2fgxw7ox5cu4fnwrgbcfe56mbvlpck4x5vcala",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0121",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/conwdat2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/conwdat2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/conwdat2.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Conwdat2",
+      "code_lines": 279,
+      "definitions": 0,
+      "effort_person_days": 3.836,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the data for precomputed Conway polynomials for\n#  primes"
+    },
+    {
+      "path": "lib/mgmadj.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/mgmadj.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/mgmadj.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Mgmadj",
+      "code_lines": 194,
+      "definitions": 33,
+      "effort_person_days": 3.822,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains generic methods for magmas with zero adjoined.\n#"
+    },
+    {
+      "path": "lib/upoly.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/upoly.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/upoly.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Upoly",
+      "code_lines": 189,
+      "definitions": 12,
+      "effort_person_days": 3.822,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains methods for univariate polynomials\n#"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 662,
+    "definitions": 45,
+    "effort_person_days": 11.48
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

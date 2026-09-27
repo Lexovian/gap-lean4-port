@@ -1,0 +1,121 @@
+{
+  "task_cid": "baguqeera3hj6johjlefj27gfaqax75gjfvkohyt6egih5pwshs25xtlyjcdq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0547",
+  "layer": "tests",
+  "module": "tst/testinstall/opers",
+  "title": "Port tst/testinstall/opers (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/opers/SimpleGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/SimpleGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/SimpleGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.SimpleGroup",
+      "code_lines": 252,
+      "definitions": 0,
+      "effort_person_days": 2.78,
+      "header_quote": "skip baby monster for now"
+    },
+    {
+      "path": "tst/testinstall/opers/ListWreathProductElement.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/ListWreathProductElement.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/ListWreathProductElement.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.ListWreathProductElement",
+      "code_lines": 192,
+      "definitions": 0,
+      "effort_person_days": 1.92,
+      "header_quote": "Perm Wreath Product In Imprimitive Action"
+    },
+    {
+      "path": "tst/testinstall/opers/MinimalNormalSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/MinimalNormalSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/MinimalNormalSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.MinimalNormalSubgroups",
+      "code_lines": 114,
+      "definitions": 0,
+      "effort_person_days": 1.24,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/IsSolvableGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/IsSolvableGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/IsSolvableGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.IsSolvableGroup",
+      "code_lines": 123,
+      "definitions": 0,
+      "effort_person_days": 1.23,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/StructureDescription.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/StructureDescription.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/StructureDescription.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.StructureDescription",
+      "code_lines": 118,
+      "definitions": 0,
+      "effort_person_days": 1.18,
+      "header_quote": "# Examples from manual\n@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/Quotient.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/Quotient.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/Quotient.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.Quotient",
+      "code_lines": 110,
+      "definitions": 0,
+      "effort_person_days": 1.12,
+      "header_quote": "the following case has some issues, as the polynomial\ndivision code"
+    },
+    {
+      "path": "tst/testinstall/opers/NormalHallSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/NormalHallSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/NormalHallSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.NormalHallSubgroups",
+      "code_lines": 90,
+      "definitions": 0,
+      "effort_person_days": 1.08,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/NormalSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/NormalSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/NormalSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.NormalSubgroups",
+      "code_lines": 105,
+      "definitions": 0,
+      "effort_person_days": 1.05,
+      "header_quote": "Natural symmetric groups"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "code_lines": 1104,
+    "definitions": 0,
+    "effort_person_days": 11.6
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

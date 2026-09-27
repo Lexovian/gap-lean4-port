@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeeraxo4yglcxz7hu3h3lzbe7jfahkc7rjzyj7ohq2ewbpcqfrg5a4ffq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0517",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/rwspcgrp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/rwspcgrp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/rwspcgrp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Rwspcgrp",
+      "code_lines": 763,
+      "definitions": 0,
+      "effort_person_days": 7.9,
+      "header_quote": "@local a,f,f1,f10,f11,f12,f13,f14,f15,f16,f17,f18,f19,f2,f20,f21,f22,f23,f24\n@local f25,f26,f27,f28,f29,f3,f30,f31,f32,f33,f34,f35,f36,f37,f38,f39,f4,f40\n@local f41,f42,f43,f44,f45,f46,f47,f48,f49,f5,f50,f51,f52,f53,f54,f55,f56\n@local f57,f58,f59,f6,f60,f61,f7,f8,f9,g,grp,l,p,r,rws,w,x,i"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 763,
+    "definitions": 0,
+    "effort_person_days": 7.9
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

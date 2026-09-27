@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeeramn3zqwtom6v2s2rfiq52eoi3hijcgzlnyk44kiwajgkbmp4w2ara",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0165",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/gprdpc.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/gprdpc.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/gprdpc.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Gprdpc",
+      "code_lines": 306,
+      "definitions": 19,
+      "effort_person_days": 5.253,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Bettina Eick.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/grpreps.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grpreps.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grpreps.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grpreps",
+      "code_lines": 265,
+      "definitions": 11,
+      "effort_person_days": 5.184,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Bettina Eick and Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 571,
+    "definitions": 30,
+    "effort_person_days": 10.44
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

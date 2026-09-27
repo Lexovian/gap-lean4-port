@@ -1,0 +1,194 @@
+{
+  "task_cid": "baguqeeraipfirbnznwvyn3ow4y5euowy2io4sydgs56gpnll5ood6ajtlria",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0182",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/grppcaut.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grppcaut.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grppcaut.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grppcaut",
+      "code_lines": 9,
+      "definitions": 5,
+      "effort_person_days": 0.151,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Bettina Eick.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/grptbl.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grptbl.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grptbl.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grptbl",
+      "code_lines": 11,
+      "definitions": 11,
+      "effort_person_days": 0.151,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementation of magmas, monoids, and groups from\n#  a multiplication table."
+    },
+    {
+      "path": "lib/memusage.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/memusage.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/memusage.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Memusage",
+      "code_lines": 8,
+      "definitions": 2,
+      "effort_person_days": 0.151,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/mgmadj.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/mgmadj.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/mgmadj.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Mgmadj",
+      "code_lines": 11,
+      "definitions": 9,
+      "effort_person_days": 0.151,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains declarations for magmas with zero adjoined.\n#"
+    },
+    {
+      "path": "lib/smgideal.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/smgideal.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/smgideal.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Smgideal",
+      "code_lines": 11,
+      "definitions": 7,
+      "effort_person_days": 0.151,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Robert Arthur.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains declarations relating to semigroup ideals.\n#"
+    },
+    {
+      "path": "lib/adjoin.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/adjoin.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/adjoin.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Adjoin",
+      "code_lines": 10,
+      "definitions": 10,
+      "effort_person_days": 0.138,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for functions pertaining to\n#  adjoining an identity element to a semigroup."
+    },
+    {
+      "path": "lib/basismut.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/basismut.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/basismut.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Basismut",
+      "code_lines": 10,
+      "definitions": 9,
+      "effort_person_days": 0.138,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the categories and operations for mutable bases.\n#  <#GAPDoc Label=\"[1]{basismut}\">"
+    },
+    {
+      "path": "lib/galois.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/galois.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/galois.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Galois",
+      "code_lines": 10,
+      "definitions": 9,
+      "effort_person_days": 0.138,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for the computation of Galois Groups.\n#"
+    },
+    {
+      "path": "lib/grppclat.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grppclat.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grppclat.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grppclat",
+      "code_lines": 10,
+      "definitions": 7,
+      "effort_person_days": 0.138,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This  file contains declarations for the subgroup lattice functions for\n#  pc groups."
+    },
+    {
+      "path": "lib/matobjgeneric.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/matobjgeneric.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/matobjgeneric.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Matobjgeneric",
+      "code_lines": 10,
+      "definitions": 1,
+      "effort_person_days": 0.138,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#"
+    },
+    {
+      "path": "lib/randiso.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/randiso.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/randiso.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Randiso",
+      "code_lines": 9,
+      "definitions": 8,
+      "effort_person_days": 0.124,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Bettina Eick.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/read2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/read2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/read2.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Read2",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.124,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/syntaxtree.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/syntaxtree.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/syntaxtree.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Syntaxtree",
+      "code_lines": 7,
+      "definitions": 3,
+      "effort_person_days": 0.124,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#"
+    },
+    {
+      "path": "lib/zmodnze.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/zmodnze.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/zmodnze.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Zmodnze",
+      "code_lines": 9,
+      "definitions": 7,
+      "effort_person_days": 0.124,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Konovalov.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the design of the rings $ Z / n Z (epsilon) $, where\n#  epsilon is the primitive root of unity of degree m (not depending on n)."
+    },
+    {
+      "path": "lib/custom_streams.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/custom_streams.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/custom_streams.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.CustomStreams",
+      "code_lines": 8,
+      "definitions": 5,
+      "effort_person_days": 0.11,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Custom streams for HPC-GAP\n#"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 140,
+    "definitions": 93,
+    "effort_person_days": 2.05
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

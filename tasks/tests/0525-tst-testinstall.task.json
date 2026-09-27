@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeeraikqj4rgk7spa6gyjaoml4zui3qfctxd5iavaabpwaawvj7ti3uvq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0525",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/vspcmali.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/vspcmali.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/vspcmali.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Vspcmali",
+      "code_lines": 373,
+      "definitions": 0,
+      "effort_person_days": 3.73,
+      "header_quote": "############################################################################\n#\n#  This file contains tests for vector spaces of Lie matrices.\n#\n#  (The test files 'vspcrow.tst' and 'vspcmat.tst' should contain the same\n#  tests.)\n#\n@local b,bv,c,c1,c2,f,lc,mb,n,u,uu,uuu,uuuu,v,w,ww,z"
+    },
+    {
+      "path": "tst/testinstall/range.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/range.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/range.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Range",
+      "code_lines": 354,
+      "definitions": 2,
+      "effort_person_days": 3.57,
+      "header_quote": "@local TestPrintRangeRep,g,ranges,x,y,z,a,f"
+    },
+    {
+      "path": "tst/testinstall/vspcmat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/vspcmat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/vspcmat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Vspcmat",
+      "code_lines": 345,
+      "definitions": 0,
+      "effort_person_days": 3.45,
+      "header_quote": "############################################################################\n#\n#  (The test file 'vspcrow.tst' should contain the same tests.)\n#\n@local b,bv,c,c1,c2,f,lc,mb,n,u,uu,uuu,uuuu,v,w,ww,z"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 1072,
+    "definitions": 2,
+    "effort_person_days": 10.75
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

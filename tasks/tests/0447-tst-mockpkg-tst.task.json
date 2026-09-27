@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeeral4gns4xszdhvaoaumj6j7bwne7y2nckvnn2zroqdl6aglqijuviq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0447",
+  "layer": "tests",
+  "module": "tst/mockpkg/tst",
+  "title": "Port tst/mockpkg/tst (tests)",
+  "files": [
+    {
+      "path": "tst/mockpkg/tst/kext.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/tst/kext.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/tst/kext.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Tst.Kext",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "Try to load its kernel extension"
+    },
+    {
+      "path": "tst/mockpkg/tst/testall.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/tst/testall.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/tst/testall.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Tst.Testall",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "mockpkg: A mock package for use by the GAP test suite\n\nThis file runs package tests. It is also referenced in the package\nmetadata in PackageInfo.g."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 12,
+    "definitions": 0,
+    "effort_person_days": 0.13
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

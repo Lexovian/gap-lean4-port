@@ -1,0 +1,88 @@
+{
+  "task_cid": "baguqeeraogf7e7mlvdoh7z7tih2inctuaooql4hqtz7sl4c3dfgjrwplnsya",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0533",
+  "layer": "tests",
+  "module": "tst/testinstall/files",
+  "title": "Port tst/testinstall/files (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/files/files.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/files/files.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/files/files.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Files.Files",
+      "code_lines": 102,
+      "definitions": 1,
+      "effort_person_days": 1.55,
+      "header_quote": "Perform some general tests for reading from streams\ntestName : A nice name to print out on failure\nopenFunc : A zero-argument function which returns an InputStream\nlines : A list of the lines which should be in the file\nsupportsPosition : Does the InputStream support\nPositionStream/SeekPositionStream/RewindStream?"
+    },
+    {
+      "path": "tst/testinstall/files/testdata.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/files/testdata.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/files/testdata.gz",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Files.Testdata",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "�\b\b�92\\\u0000\u0003out\u0000�gr�0\f���4\\u��bq�\u0014'+���\u0004f�K�%\u0012؏\u00042\u001a\u0013�\u001b�ǿ�����e|~�����ߗ�\u001f��Op�?\u0003{\u000e��;z~\u0005��k\u0018�_�\u0014z\u001ds�\u001d,[��o�۹��;��V��k�U���.�\u001a_�\u0005��+�\nu��nSq��ۡ��w�d���\u0000-��?D���\u000fR���ä���\u0004}��?�\"����*����+�G�/�&\u001e����x����q��+�G\u001an�N\u001ek��by���*���+�G\u001c\"�v\u001es��\u0003x�!Ү�q�h;�G\u001e#�\u001e\u001e{���x�1�.����;�g\u0018\u0013�F�cL�Cy�1Ѯ�y�d;�g\u001a\u0013�n�kL��y�)q\u0014���䑁g�2D\u000b�s�\u0012Ax�)ST�y�l��g�2F\u001f�{�\u001a�x�)s����쑋-�\u000bD3�a.\u0012�؊�P�c;�b��-�\u000bFG�e.\u001a1ٚ�p\u0014e{�⑕-�\u0005D[�i\u0016\u0011�٪EHTf�\u00161��-[\u0004Eo�m\u0011\u0015�ٺEX�g�\u0016q��-\\\u0004f\u0003�q\u0011�!��Eh�`;\u0017���-���\u000b��Eg\u001c��\u000b�Bl�\u0017���b_A�b�}\u0015\u0019����d5��W���r_Q�c�}U\u0019����,M�8�0�\u0005\u001f�*̩�n�U�k�=��4\t\u0007���6=����8s\u0007]��:�����<�o8\u0006W�\u001f\u0004\u001b������s\u000f����<\\�8x�Nb�C�-���g��t\u0015�3\tmz���\u0016�:��c$����\u00132ͺ���?�z�#G�\u001av\u001e�\u000en����siMK�����V\u0001g\u000e\u00166.\u0004�\u001d�l]\u000b�=\u001dڼ\u001c8\u0002�}Ep嘯\u0002Qp�0�\u0006]p�̶\nip�l�\u000eun\u001d�W\"\u0010�\u001bТ\u0011�VVP#\u0013�W�У\u0014b��P$\u0016�\u0014\bѤ\u0017b�CQ%\u0019��ѥ\u001ab\u0016�Q&\u001c��Ѧ]��F��C�JN�\u0014D��U\nED��]\u001auD�Ze*�D�\u001am:�D��tJ\u0005Eڲ|Z5EꊄjeE�j�z��R�R���S…"
+    },
+    {
+      "path": "tst/testinstall/files/example.csv",
+      "language": "csv",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/files/example.csv",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/files/example.csv",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Files.Example",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "f1;f;f 2\n1;2;3\n4;;6\n7;\n;11;12"
+    },
+    {
+      "path": "tst/testinstall/files/example.txt",
+      "language": "txt",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/files/example.txt",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/files/example.txt",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Files.Example",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "here is line 1\nhere is line 2"
+    },
+    {
+      "path": "tst/testinstall/files/examplegz.txt.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/files/examplegz.txt.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/files/examplegz.txt.gz",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Files.ExamplegzTxt",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.01,
+      "header_quote": "�\b\bW��Z\u0000\u0003examplegz.txt\u0000�H-JU�,V���KU0���@�\u001bq\u0001\u0000p�|h\u001f\u0000\u0000\u0000"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 116,
+    "definitions": 1,
+    "effort_person_days": 1.74
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

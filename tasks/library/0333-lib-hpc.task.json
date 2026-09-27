@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeeracgscvb7dpymjjumvr5usp4m7ks7rh3b6txcsmptlzzvytqo2mcaq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0333",
+  "layer": "library",
+  "module": "lib/hpc",
+  "title": "Port lib/hpc (library)",
+  "files": [
+    {
+      "path": "lib/hpc/thread1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/hpc/thread1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/hpc/thread1.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Hpc.Thread1",
+      "code_lines": 180,
+      "definitions": 17,
+      "effort_person_days": 3.424,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Chris Jefferson.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file provides trivial mocks of thread-related primitives for\n#  traditional GAP."
+    },
+    {
+      "path": "lib/hpc/tasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/hpc/tasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/hpc/tasks.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Hpc.Tasks",
+      "code_lines": 18,
+      "definitions": 4,
+      "effort_person_days": 0.358,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Chris Jefferson.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file provides trivial mocks of task-related primitives for\n#  traditional GAP."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 198,
+    "definitions": 21,
+    "effort_person_days": 3.78
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

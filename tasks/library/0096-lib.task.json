@@ -1,0 +1,84 @@
+{
+  "task_cid": "baguqeeravsvcqipxgcq7has6ewfypo44j5os2pqcgqvnzex7obje2mewxmcq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0096",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/addcoset.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/addcoset.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/addcoset.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Addcoset",
+      "code_lines": 142,
+      "definitions": 31,
+      "effort_person_days": 2.448,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains methods for additive cosets.\n#"
+    },
+    {
+      "path": "lib/monofree.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/monofree.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/monofree.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Monofree",
+      "code_lines": 132,
+      "definitions": 15,
+      "effort_person_days": 2.42,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the methods for free monoids.\n#"
+    },
+    {
+      "path": "lib/variable.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/variable.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/variable.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Variable",
+      "code_lines": 134,
+      "definitions": 18,
+      "effort_person_days": 2.393,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the functions for the special handling of those global\n#  variables in {\\GAP} library files that are *not* functions;"
+    },
+    {
+      "path": "lib/function.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/function.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/function.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Function",
+      "code_lines": 116,
+      "definitions": 16,
+      "effort_person_days": 2.31,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementations of the functions and operations\n#  relating to functions and function-calling which are not so basic"
+    },
+    {
+      "path": "lib/string.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/string.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/string.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.String",
+      "code_lines": 119,
+      "definitions": 8,
+      "effort_person_days": 2.31,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with strings and characters.\n#"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 643,
+    "definitions": 88,
+    "effort_person_days": 11.88
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

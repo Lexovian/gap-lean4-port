@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeeranymtxmcrihgk6r34l6gp5fq3v5cg3d55z2ymubnuvpyogxicabja",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0477",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2019-11-19-backtrack.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-11-19-backtrack.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-11-19-backtrack.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20191119Backtrack",
+      "code_lines": 627,
+      "definitions": 0,
+      "effort_person_days": 6.27,
+      "header_quote": "Work-around a problem in backtrack"
+    },
+    {
+      "path": "tst/testbugfix/2024-03-20-Test-rewriteToFile-option.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-03-20-Test-rewriteToFile-option.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-03-20-Test-rewriteToFile-option.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240320TestRewriteToFileOption",
+      "code_lines": 330,
+      "definitions": 0,
+      "effort_person_days": 4.24,
+      "header_quote": "Fix issue with `rewriteToFile` option in test cases with mixed input/output\nSee https://github.com/gap-system/gap/issues/5685"
+    },
+    {
+      "path": "tst/testbugfix/2018-02-21-int-mul-pow.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-02-21-int-mul-pow.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-02-21-int-mul-pow.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180221IntMulPow",
+      "code_lines": 55,
+      "definitions": 0,
+      "effort_person_days": 0.84,
+      "header_quote": "in the past, the kernel functions IsNegInt ProdIntObj and PowObjInt were\napplicable to almost arbitrary objects, which lead to some strange\nexpressions being evaluated by GAP. Here we verify that these now produce\nerrors instead."
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 1012,
+    "definitions": 0,
+    "effort_person_days": 11.35
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

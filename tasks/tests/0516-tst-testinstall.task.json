@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerasxkd4ghlximn7gtwpzy67f545miygnpy666hj7zamunmkleoxzja",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0516",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/ringpoly.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ringpoly.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ringpoly.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ringpoly",
+      "code_lines": 41,
+      "definitions": 0,
+      "effort_person_days": 0.41,
+      "header_quote": "@local R,P,F,fam,f,PP,PF,old_ITER_POLY_WARN"
+    },
+    {
+      "path": "tst/testinstall/misc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/misc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/misc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Misc",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.4,
+      "header_quote": "test InstallAttributeMethodByGroupGeneralMappingByImages indirectly"
+    },
+    {
+      "path": "tst/testinstall/obsolete.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/obsolete.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/obsolete.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Obsolete",
+      "code_lines": 39,
+      "definitions": 2,
+      "effort_person_days": 0.4,
+      "header_quote": "I  'obsoletetestfunc' is obsolete.\nI  It may be removed in a future release of GAP.\nI  Use newfunc instead."
+    },
+    {
+      "path": "tst/testinstall/upoly.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/upoly.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/upoly.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Upoly",
+      "code_lines": 40,
+      "definitions": 0,
+      "effort_person_days": 0.4,
+      "header_quote": "gap> START_TEST(\"upoly.tst\");\n#\ngap> CyclotomicPol(501);\n[ 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, \n  -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1, 0, 1, -1,"
+    },
+    {
+      "path": "tst/testinstall/domain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/domain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/domain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Domain",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "equality for a list and an infinite domain"
+    },
+    {
+      "path": "tst/testinstall/oper.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/oper.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/oper.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Oper",
+      "code_lines": 33,
+      "definitions": 0,
+      "effort_person_days": 0.38,
+      "header_quote": "@local newop"
+    },
+    {
+      "path": "tst/testinstall/dir.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/dir.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/dir.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Dir",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "@local badbase,baddirbase,base,dirTest,dirbase,dirs"
+    },
+    {
+      "path": "tst/testinstall/fpmon.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/fpmon.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/fpmon.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Fpmon",
+      "code_lines": 37,
+      "definitions": 0,
+      "effort_person_days": 0.37,
+      "header_quote": "@local F,M,S,inv,iso,map,rels,x,y"
+    },
+    {
+      "path": "tst/testinstall/auto.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/auto.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/auto.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Auto",
+      "code_lines": 36,
+      "definitions": 3,
+      "effort_person_days": 0.36,
+      "header_quote": "@if IsHPCGAP"
+    },
+    {
+      "path": "tst/testinstall/constructor.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/constructor.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/constructor.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Constructor",
+      "code_lines": 34,
+      "definitions": 5,
+      "effort_person_days": 0.36,
+      "header_quote": "constructors with zero arguments cannot be created"
+    },
+    {
+      "path": "tst/testinstall/modifiers.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/modifiers.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/modifiers.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Modifiers",
+      "code_lines": 35,
+      "definitions": 3,
+      "effort_person_days": 0.35,
+      "header_quote": "@local l,x,y"
+    },
+    {
+      "path": "tst/testinstall/object.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/object.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/object.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Object",
+      "code_lines": 34,
+      "definitions": 0,
+      "effort_person_days": 0.34,
+      "header_quote": "Tests for objectify"
+    },
+    {
+      "path": "tst/testinstall/depth.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/depth.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/depth.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Depth",
+      "code_lines": 27,
+      "definitions": 1,
+      "effort_person_days": 0.32,
+      "header_quote": "@local curdepth,dive"
+    },
+    {
+      "path": "tst/testinstall/table.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/table.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/table.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Table",
+      "code_lines": 30,
+      "definitions": 1,
+      "effort_person_days": 0.3,
+      "header_quote": "@local u,v, check"
+    },
+    {
+      "path": "tst/testinstall/grpreps.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grpreps.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grpreps.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grpreps",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "@local G1, G2, F, res1, res2;"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 523,
+    "definitions": 15,
+    "effort_person_days": 5.43
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

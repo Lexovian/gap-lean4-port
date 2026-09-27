@@ -1,0 +1,86 @@
+{
+  "task_cid": "baguqeerajtkqnj3nyqwhqsuoonmr6moltd3mrkax7qgmj2f7n4sp6u7yis6q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0418",
+  "layer": "misc",
+  "module": "hpcgap/demo/parorbit",
+  "title": "Port hpcgap/demo/parorbit (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parorbit/J4data2.g.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/J4data2.g.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/J4data2.g.gz",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.J4data2G",
+      "code_lines": 493,
+      "definitions": 0,
+      "effort_person_days": 6.26,
+      "header_quote": "�\b\b�zCQ\u0002\u0003J4data2.g\u0000��O�}[~��~��ۄ\bE@\u0013�NҢ��P�FJ\u0015��\u0005q\u0002��\u0018+y��M��P�����<c�kܸ��uj�}֚��g�g��_��?�����O���O���_����/�������\u001f������������������Տ������O�Џ�\u001d?���G�Ч����O��~�?�E��O����\u000f>�\u001f��\u000e>�\u001f�Q����\u0007�է���_��\u001f��~���_��������\u0017�����a8�T�>G����_��\u001f���\u0000�{\u0007�\u0007?���k�rO\u001f�\u000f�+�\u001a?�4�z8��\u000f\u000e�?�\u000b��Ow�\u000e\u001e��z��S�����x�\u0017|��������โ/Χ��OuQW}z��� �\u000b>-c\u000f\u000e����i\u0007?������f����_��/��k��5n\u001f���ʃ��ӯ��k�x�\u0007�۶\u000f|zj\u001e|��\u001fu�:��>�\u0019\u000e�\"�:�\u001fu�R\u001eL=\u001et^A%\u0013�\f�u��d�6\"��\f���b\u001b\\��}WG5\u0003�/���k\u0002v���B��?���!sQl\u001f<\f�~��a����\u0012���*��N����R>x\u0007�0\u0013<\f\u0017�3, �0\u0013����\u0004�\n�\u001fO\u000fdx�d��G5�A�\u0007'E�ۀ�\u0017�\u0005�G\u001f����z������\u0006Á�~�hv�O����?�3��\u00038b�;����ۥUY{�\u000b\u0006_;��\u0005s�pQ��C\u0002\u0016�?�Z��!�w�G\u001f��\u000f���]�����:\u0018f�~G`�\u001a̐\u000f~����bGzN}�M\u0000\tש�\u000e��.�����ň\u0015\\^��GxȀ��BS\u0004^�\u000b��i_\bF�����\u0006\u0012*}ç\u001dj�.j����R�B�\u0004���s�@A��}���๺�\u0005\u001f�\u0019����k\u0007��@\u0015vQ3�Z\u0014�j\u0007'�`�\u0003���1�\u0010Z���t/xQl_h ��0���:��\u0005\u0000���_��\u0007�\u001f5\u0018\u001b\u000e&�p\u0013wq2�J��_…"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/J4data.g.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/J4data.g.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/J4data.g.gz",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.J4dataG",
+      "code_lines": 104,
+      "definitions": 0,
+      "effort_person_days": 1.3,
+      "header_quote": "�\b\b��/Q\u0002\u0003J4data.g\u0000՝M�]�\u0011E��+z\b�\u0007��XL�\u0011\u0003���\fb9�\t\n!\u0001;\u0002c%�>�\u0015[�t��U�֮K\"\u0005�6�ׯ�;�>�^�ۛ�?]���Փ���'����w����\u000f����_\u001f���w�?��˽�χ��徿����]�]_��_�����\u000b��]��]���/u��}ߏ���.�W��U��\u0004���\u000f���{��\t\u001e���o��O��Xx��{\u0018~�箟��\"O\u000e?Ow��\u000bOy��x�����\\x\b�?�\u0003_\n�Ɂ\u0007q�=+\u001căӳ�\u001e\n���Ǹ�\u0001:pN���\u001a��}�p�z��c���P��\u001a��ѿ�q+\u0017�T��\u0007�W��`�j-�W�o�{\"4������y5�8׮��{\u0005�h�7x��P-�\u001b\u001f���^-�\u001bEv�i�\u001e}�+��Ӟ9E�^\u0013@%�x\u0018��(P@6���{5�\f�Nы'\u0003P\u0014U\u000f�F�Vx\u0018�\u0002R�����j\u00076\u0018�4�A��>��\u001b�W�38��T����|��r��P��\n�0@\u0001���!S��\u000bS���^}�\u0007\u0007r��)�@}U��\f&�@�\u0004\\\u0013���œ�:�h�\f�p`0�\u001e\u001c2�G\u0012x�"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/Lydata.g.gz",
+      "language": "gz",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/Lydata.g.gz",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/Lydata.g.gz",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.LydataG",
+      "code_lines": 81,
+      "definitions": 0,
+      "effort_person_days": 1.08,
+      "header_quote": "�\b\bj�/Q\u0002\u0003Lydata.g\u0000�ͯeGu��篸C;���]b\u0002b��\u0018 $�QZ�dD\u0003N������>m���{��^�u\u001e\u0011�o�RZ�뮾�Ω]�c}����_�~�����v�no����\u001f�������E��[����R\u0017Ke��Է��>�߾��o�ߎl��Y*;�h�\u0018\n^\u0014\u0015��?���S�\u0006/�\n��\u001f�R٩D�+Q!��c^*;�h�\u0012��װTv*р�\u0012��״Tv*� \u0013�,��!� \u0013�,��!� ��,�!�{���h�^t��Őh�^t��Őh�^t��Őh�^t��Őh�^t��Őh\u0010\u001a]��Őh�\tU��Őh�\tU��Őh�\tU��Őh�\tU��Őh�\tU��Őh�\tU��Őh�\tUަ\\\f�\u0006�P��\u0005��h�\tU�]�\u000b�\u0006�%\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB��r1$\u001adB�M�Őh�\tU6=\u0017C�A&T��\\\f�\u0006�Pe�r1$\u001adB���Őh��\u0002]�R�!� \u0013�,��!� \u0013�,��!���wB�o���R�\bYj�\f٫,����>D��U�JD�R�i�Ia���R�\b�~bu!2d۳T\"~jeD�l{�JDx5�+\u0010\u0019�WY*\u0011���\u001a�Ȑ��R�\b�6d��T\"B�\n�!KɈ��ի�6��U�:�\u00112��R�D�*\u0011!��,�\u001cڰ�W�\b�]e���\"{����U��#C��5�\u001a2��R*2d�^��1��,��\f٫׌G\b-7K=�\f٫ �B��R�6$\"����\u0002mHD\b-7K\u0005ڐ�\u0010Zn�\n�!\u0011!��,\u0015hC\"Bh�Y*ІD��r�T�"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/TIMINGS",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/TIMINGS",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/TIMINGS",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.TIMINGS",
+      "code_lines": 82,
+      "definitions": 0,
+      "effort_person_days": 0.86,
+      "header_quote": "J4\n  5 hash servers, 10 workers, with Richard:\n  8 hash servers, 8 workers, with Richard : 132 seconds\n  6 hash servers, 6 workers, with Richard :\n  1 hash server, 1 worker, with Richard   : 857 seconds"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/README",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/README",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/README",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.README",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "The main file to use is parallelorbit2.g, which requires a working version of 'orb' package.\nThe main function from parallelorbit2.g for computing orbits in parallel is ParallelOrbit.\nIt is called via ParallelOrbit (gens, pt, op, opt), where \n   - 'gens' is a list of generators, \n   - 'pt' is the initial point of the orbit,"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 771,
+    "definitions": 0,
+    "effort_person_days": 9.62
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

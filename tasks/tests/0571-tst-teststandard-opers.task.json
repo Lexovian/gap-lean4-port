@@ -1,0 +1,143 @@
+{
+  "task_cid": "baguqeeraikoed5fzndcxyxk4m4zk4kiaezai23nkxssjlridn4u2zwnkg2oa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0571",
+  "layer": "tests",
+  "module": "tst/teststandard/opers",
+  "title": "Port tst/teststandard/opers (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/opers/SemidirectDecompositions.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/SemidirectDecompositions.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/SemidirectDecompositions.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.SemidirectDecompositions",
+      "code_lines": 84,
+      "definitions": 0,
+      "effort_person_days": 0.94,
+      "header_quote": "gap> START_TEST(\"Semidirectdecompositions.tst\");\ngap> List(AllSmallGroups(12),G->List(SemidirectDecompositions(G), NH->[IdGroup(NH[1]), IdGroup(NH[2])]));\n[ [ [ [ 1, 1 ], [ 12, 1 ] ], [ [ 3, 1 ], [ 4, 1 ] ], [ [ 12, 1 ], [ 1, 1 ] ] ]\n    , \n  [ [ [ 1, 1 ], [ 12, 2 ] ], [ [ 3, 1 ], [ 4, 1 ] ], [ [ 4, 1 ], [ 3, 1 ] ],"
+    },
+    {
+      "path": "tst/teststandard/opers/AutomorphismGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/AutomorphismGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/AutomorphismGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.AutomorphismGroup",
+      "code_lines": 38,
+      "definitions": 1,
+      "effort_person_days": 0.44,
+      "header_quote": "Assertions at level 2 kill runtime of automorphism group computations"
+    },
+    {
+      "path": "tst/teststandard/opers/ComplementClassesRepresentatives.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/ComplementClassesRepresentatives.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/ComplementClassesRepresentatives.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.ComplementClassesRepresentatives",
+      "code_lines": 33,
+      "definitions": 0,
+      "effort_person_days": 0.4,
+      "header_quote": "@local n, G, N"
+    },
+    {
+      "path": "tst/teststandard/opers/PerfectGroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/PerfectGroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/PerfectGroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.PerfectGroups",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "gap> START_TEST(\"PerfectGroups.tst\");\n#\ngap> Sum(SizesPerfectGroups(),NrPerfectGroups);\n15768\ngap> l:=[61440, 86016, 122880, 172032, 245760, 344064, 368640, 491520,"
+    },
+    {
+      "path": "tst/teststandard/opers/Matobjnz.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/Matobjnz.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/Matobjnz.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.Matobjnz",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "gap> START_TEST(\"Matobjnz.tst\");\n#\ngap> p:=NextPrimeInt(MAXSIZE_GF_INTERNAL);;\ngap> g:=AlternatingGroup(5);;\ngap> mo:=IrreducibleModules(g,GF(p));;"
+    },
+    {
+      "path": "tst/teststandard/opers/Normalizer.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/Normalizer.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/Normalizer.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.Normalizer",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "gap> START_TEST(\"Normalizer.tst\");\ngap> r:=Integers mod 4;;\ngap> maz:=[ [ [ 3, 1, 2, 1 ], [ 1, 2, 1, 1 ], [ 2, 1, 1, 3 ], [ 1, 1, 3, 2 ] ],\n>   [ [ 1, 1, 3, 2 ], [ 1, 3, 2, 3 ], [ 3, 2, 3, 3 ], [ 2, 3, 3, 1 ] ] ];;\ngap> G:=GL(4,r);;"
+    },
+    {
+      "path": "tst/teststandard/opers/IsomorphismGroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/IsomorphismGroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/IsomorphismGroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.IsomorphismGroups",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "Assertions at level 2 kill runtime of automorphism group computations"
+    },
+    {
+      "path": "tst/teststandard/opers/Ctbl.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/Ctbl.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/Ctbl.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.Ctbl",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "gap> START_TEST(\"Ctbl.tst\");\n#\ngap> g:=Group((1,2,3),(1,2));;w:=WreathProductImprimitiveAction(g,g);;\ngap> w:=Image(IsomorphismSpecialPcGroup(w));;\ngap> Length(ConjugacyClasses(w));"
+    },
+    {
+      "path": "tst/teststandard/opers/Lattice.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/Lattice.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/Lattice.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.Lattice",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "gap> START_TEST(\"Lattice.tst\");\n#\ngap> g:=PerfectGroup(IsPermGroup,30720,10);;\ngap> l:=LowLayerSubgroups(g,2);;\ngap> [Length(l),Sum(l,Size)];"
+    },
+    {
+      "path": "tst/teststandard/opers/StructureDescription.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/opers/StructureDescription.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/opers/StructureDescription.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Opers.StructureDescription",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "gap> START_TEST(\"StructureDescription.tst\");\ngap> G := Group([ (6,7,8,9,10), (8,9,10), (1,2)(6,7), (1,2,3,4,5)(6,7,8,9,10) ]);;\ngap> StructureDescription(G);\n\"A5 : S5\"\ngap> STOP_TEST(\"StructureDescription.tst\");"
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "code_lines": 223,
+    "definitions": 1,
+    "effort_person_days": 2.46
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,60 @@
+{
+  "task_cid": "baguqeeraao2qrstgekxlovh2f3gt6gyzoqxyec3hscjmiwuw4v5tr6xgzoxa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0077",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/tracing.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/tracing.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/tracing.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Tracing",
+      "code_lines": 135,
+      "definitions": 10,
+      "effort_person_days": 3.14,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file contains functionality for tracing how often internal operations\n(like +, ^, -) are executed on each TNUM."
+    },
+    {
+      "path": "src/libgap-api.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/libgap-api.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/libgap-api.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.LibgapApi",
+      "code_lines": 138,
+      "definitions": 1,
+      "effort_person_days": 3.1,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/compiled.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/compiled.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/compiled.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Compiled",
+      "code_lines": 117,
+      "definitions": 5,
+      "effort_person_days": 3.04,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis package defines macros and functions that are used by compiled code.\nThose macros and functions should go into the appropriate packages."
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 390,
+    "definitions": 16,
+    "effort_person_days": 9.28
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

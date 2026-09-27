@@ -1,0 +1,62 @@
+{
+  "task_cid": "baguqeerada3verdam2bqazdnczbckou2ci3lrrvwh3upge6wkuy22mnvt7uq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0318",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/unknown.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/unknown.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/unknown.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Unknown",
+      "code_lines": 169,
+      "definitions": 42,
+      "effort_person_days": 3.438,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This  file  implements the  arithmetic  for unknown values,  unknowns for\n#  short.  Unknowns  are written as `Unknown(<n>)'  where  <n> is an integer"
+    },
+    {
+      "path": "lib/grppcint.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grppcint.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grppcint.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grppcint",
+      "code_lines": 185,
+      "definitions": 11,
+      "effort_person_days": 3.424,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler, Bettina Eick.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the methods for the intersection of polycyclic groups.\n#"
+    },
+    {
+      "path": "lib/rwssmg.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/rwssmg.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/rwssmg.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Rwssmg",
+      "code_lines": 182,
+      "definitions": 33,
+      "effort_person_days": 3.369,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Isabel Araújo.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for semigroups defined by rws."
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 536,
+    "definitions": 86,
+    "effort_person_days": 10.23
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

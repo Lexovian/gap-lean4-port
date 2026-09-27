@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeera5fmrnupuewfa76sk6bpu5p3k2blxxzganvilomlao3t226lq3bca",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0230",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/mgmcong.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/mgmcong.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/mgmcong.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Mgmcong",
+      "code_lines": 609,
+      "definitions": 86,
+      "effort_person_days": 11.55,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Robert F. Morse.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains generic methods for magma congruences\n#"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 609,
+    "definitions": 86,
+    "effort_person_days": 11.55
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

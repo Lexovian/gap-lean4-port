@@ -1,0 +1,97 @@
+{
+  "task_cid": "baguqeeraxnukmx2qwobz2cmem67zar7vrxs2zk2oqxd3ms4ntomxgzhufdsa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0426",
+  "layer": "misc",
+  "module": "hpcgap/demo/parorbit/jobskeep",
+  "title": "Port hpcgap/demo/parorbit/jobskeep (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/HN2parmore2",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/HN2parmore2",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/HN2parmore2",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.HN2parmore2",
+      "code_lines": 219,
+      "definitions": 0,
+      "effort_person_days": 2.19,
+      "header_quote": "hpcgap -S -m 64g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit2.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/HNdata2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := 2000001,\n  nrhash := 1, nrwork := 9, disthf := MakeDistributionHF(v,1)));;"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/HN3parmore2",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/HN3parmore2",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/HN3parmore2",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.HN3parmore2",
+      "code_lines": 219,
+      "definitions": 0,
+      "effort_person_days": 2.19,
+      "header_quote": "hpcgap -S -m 64g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit3.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/HNdata2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := 2000001,\n  nrhash := 1, nrwork := 9, disthf := MakeDistributionHF(v,1)));;"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/J4p2parmore2",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/J4p2parmore2",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/J4p2parmore2",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.J4p2parmore2",
+      "code_lines": 219,
+      "definitions": 0,
+      "effort_person_days": 2.19,
+      "header_quote": "hpcgap -S -m 128g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit2.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/J4data2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := NextPrimeInt(400000000),\n  nrhash := 1, nrwork := 9, disthf := MakeDistributionHF(v,1)));;"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/J4p3parmore2",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/J4p3parmore2",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/J4p3parmore2",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.J4p3parmore2",
+      "code_lines": 219,
+      "definitions": 0,
+      "effort_person_days": 2.19,
+      "header_quote": "hpcgap -S -m 128g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit3.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/J4data2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := NextPrimeInt(400000000),\n  nrhash := 1, nrwork := 9, disthf := MakeDistributionHF(v,1)));;"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/HN2parbig",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/HN2parbig",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/HN2parbig",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.HN2parbig",
+      "code_lines": 131,
+      "definitions": 0,
+      "effort_person_days": 1.31,
+      "header_quote": "hpcgap -S -m 64g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit2.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/HNdata2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := 2000001,\n  nrhash := 1, nrwork := 4, disthf := MakeDistributionHF(v,1)));;"
+    },
+    {
+      "path": "hpcgap/demo/parorbit/jobskeep/HN2parmore",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/jobskeep/HN2parmore",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/jobskeep/HN2parmore",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Jobskeep.HN2parmore",
+      "code_lines": 131,
+      "definitions": 0,
+      "effort_person_days": 1.31,
+      "header_quote": "hpcgap -S -m 64g\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/parallelorbit2.g\");\nRead(\"/scratch/neunhoef/hpcgap/demo/parorbit/HNdata2.g\");\nr := ParallelOrbit(gens,v,OnRightRO,rec( hashlen := 2000001,\n  nrhash := 3, nrwork := 9, disthf := MakeDistributionHF(v,3)));;"
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "code_lines": 1138,
+    "definitions": 0,
+    "effort_person_days": 11.38
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

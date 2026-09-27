@@ -1,0 +1,85 @@
+{
+  "task_cid": "baguqeera6dhr2fbadt34zydujmyn5anp4bqzuddpalqmwo37p7tbdtcxujva",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0395",
+  "layer": "groupdata",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/demo/cancel.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/cancel.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/cancel.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Cancel",
+      "code_lines": 10,
+      "definitions": 2,
+      "effort_person_days": 0.07,
+      "header_quote": "task := RunTask(function()\n  while true do\n    OnTaskCancellation({}->99);\n  od;\nend);"
+    },
+    {
+      "path": "hpcgap/demo/serialize.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/serialize.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/serialize.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Serialize",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "Declare globals"
+    },
+    {
+      "path": "hpcgap/demo/testtasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/testtasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/testtasks.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Testtasks",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.029,
+      "header_quote": "ReadGapRoot(\"demo/unittest.g\");\nTestPrefix(\"Concurrent Method Dispatch\");\nTestEqual(TaskResult(RunTask(x->SortedList(x), [3,2,1])), [1,2,3], \"Sorting\");\nTestEqual(TaskResult(RunTask(x->Factorial(x), 99)), Factorial(99), \"Factorial\");\nTestReportAndExit();"
+    },
+    {
+      "path": "hpcgap/demo/debugview.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/debugview.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/debugview.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Debugview",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.006,
+      "header_quote": "CustomView := UNSAFE_VIEW;"
+    },
+    {
+      "path": "hpcgap/demo/view.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/view.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/view.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.View",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.006,
+      "header_quote": "CustomView := ViewSharedObj;"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 27,
+    "definitions": 2,
+    "effort_person_days": 0.18
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,42 @@
+{
+  "task_cid": "baguqeera3panimouxgddwbi2w3cnrxbphn5kuqe4x54bohnz7xkc22sczstq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0429",
+  "layer": "misc",
+  "module": "hpcgap/demo/parorbit/results",
+  "title": "Port hpcgap/demo/parorbit/results (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/parorbit/results/resultsHNladybank03",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/parorbit/results/resultsHNladybank03",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/parorbit/results/resultsHNladybank03",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Parorbit.Results.ResultsHNladybank03",
+      "code_lines": 96,
+      "definitions": 0,
+      "effort_person_days": 0.96,
+      "header_quote": "gap> NHASH = 1, NWORK = 1, TIME = 21.711197\ngap> NHASH = 1, NWORK = 2, TIME = 11.364078\ngap> NHASH = 1, NWORK = 3, TIME = 8.700588\ngap> NHASH = 1, NWORK = 4, TIME = 8.192916\ngap> NHASH = 1, NWORK = 5, TIME = 7.334946"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 96,
+    "definitions": 0,
+    "effort_person_days": 0.96
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

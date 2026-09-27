@@ -1,0 +1,143 @@
+{
+  "task_cid": "baguqeera5fi7f7zgvuu5dlkkguhvzpz3in4sh3x74iily456aonge2i7bjma",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0448",
+  "layer": "tests",
+  "module": "tst/test-compile",
+  "title": "Port tst/test-compile (tests)",
+  "files": [
+    {
+      "path": "tst/test-compile/and_filter.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/and_filter.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/and_filter.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.AndFilterG",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "false\ntrue\nfalse\ntrue\n<Property \"IsAssociative\">"
+    },
+    {
+      "path": "tst/test-compile/run_interpreted.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/run_interpreted.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/run_interpreted.sh",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.RunInterpreted",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "!/usr/bin/env bash"
+    },
+    {
+      "path": "tst/test-compile/print_various.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/print_various.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/print_various.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.PrintVarious",
+      "code_lines": 7,
+      "definitions": 1,
+      "effort_person_days": 0.07,
+      "header_quote": "runtest := function()\n    Print(1,\"\\n\");\n    Print(\"abc\",\"\\n\");\n    Print((1,2)(5,6),\"\\n\");\n    Print([1,\"abc\"],\"\\n\");"
+    },
+    {
+      "path": "tst/test-compile/README.md",
+      "language": "md",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/README.md",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/README.md",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.README",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "These tests are designed to check the GAP -> C compiler\n./run_compiled_dynamic.sh : Run a single test, after compiling it\n   into a dynamic module and loading it\n./run_interpreted.sh : Run a single test without compiling it\n./run_all.sh : Run all tests with and without compiling"
+    },
+    {
+      "path": "tst/test-compile/info.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/info.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/info.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.InfoG",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "1\n#I  print this A\n2\n#I  print this B\n#I  print this C"
+    },
+    {
+      "path": "tst/test-compile/print_various.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/print_various.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/print_various.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.PrintVariousG",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "1\nabc\n(1,2)(5,6)\n[ 1, \"abc\" ]\nGroup( [ (1,2,3) ] )"
+    },
+    {
+      "path": "tst/test-compile/plus.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/plus.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/plus.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.Plus",
+      "code_lines": 3,
+      "definitions": 1,
+      "effort_person_days": 0.04,
+      "header_quote": "runtest := function()\n    return 1 + 2;\nend;"
+    },
+    {
+      "path": "tst/test-compile/assert.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/assert.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/assert.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.AssertG",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "0\n2\nError, Assertion failure: pass!"
+    },
+    {
+      "path": "tst/test-compile/.gitignore",
+      "language": "gitignore",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/.gitignore",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/.gitignore",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.Mod",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "*.bad\n*.tmp"
+    },
+    {
+      "path": "tst/test-compile/plus.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/test-compile/plus.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/test-compile/plus.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.TestCompile.PlusG",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.01,
+      "header_quote": "3"
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "code_lines": 50,
+    "definitions": 2,
+    "effort_person_days": 0.51
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

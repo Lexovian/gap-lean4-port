@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeerappkotehx4xn2v3cvfbhpp3vnzj65ljtqfauzg2md5sibumg5ob4q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0446",
+  "layer": "tests",
+  "module": "tst/mockpkg/src",
+  "title": "Port tst/mockpkg/src (tests)",
+  "files": [
+    {
+      "path": "tst/mockpkg/src/mockpkg.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/src/mockpkg.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/src/mockpkg.c",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Src.Mockpkg",
+      "code_lines": 29,
+      "definitions": 4,
+      "effort_person_days": 0.33,
+      "header_quote": "Table of functions to export"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 29,
+    "definitions": 4,
+    "effort_person_days": 0.33
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

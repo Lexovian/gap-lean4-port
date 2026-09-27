@@ -1,0 +1,76 @@
+{
+  "task_cid": "baguqeeraruet4hxd6fca6s4mpikhk3wlhrrfxcr5bymddfsbubodrdx27yjq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0435",
+  "layer": "build",
+  "module": "etc/emscripten/web-template",
+  "title": "Port etc/emscripten/web-template (build)",
+  "files": [
+    {
+      "path": "etc/emscripten/web-template/index.html",
+      "language": "html",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/web-template/index.html",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/web-template/index.html",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.WebTemplate.Index",
+      "code_lines": 173,
+      "definitions": 0,
+      "effort_person_days": 0.617,
+      "header_quote": "<!DOCTYPE html>\n<html lang=\"en\">\n  <head>\n    <meta charset=\"UTF-8\">\n    <meta name=\"viewport\" content=\"width=device-width, initial-scale=1\">"
+    },
+    {
+      "path": "etc/emscripten/web-template/coi-serviceworker.js",
+      "language": "js",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/web-template/coi-serviceworker.js",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/web-template/coi-serviceworker.js",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.WebTemplate.CoiServiceworker",
+      "code_lines": 101,
+      "definitions": 0,
+      "effort_person_days": 0.473,
+      "header_quote": "/*! coi-serviceworker v0.1.6 - Guido Zuidhof, licensed under MIT */\nlet coepCredentialless = false;\nif (typeof window === 'undefined') {\n    self.addEventListener(\"install\", () => self.skipWaiting());\n    self.addEventListener(\"activate\", (event) => event.waitUntil(self.clients.claim()));"
+    },
+    {
+      "path": "etc/emscripten/web-template/gap-fs.js",
+      "language": "js",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/web-template/gap-fs.js",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/web-template/gap-fs.js",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.WebTemplate.GapFs",
+      "code_lines": 110,
+      "definitions": 0,
+      "effort_person_days": 0.433,
+      "header_quote": "// Instrument fetch and XMLHttpRequest so the page can collect the list of\n// URLs the worker actually requests, for rebuilding startup_manifest.json\n// without scraping the browser network panel. Each unique URL is posted\n// to the main thread as { type: \"gap-fetched\", url: ... }.\n(function instrumentFetches() {"
+    },
+    {
+      "path": "etc/emscripten/web-template/gap-worker.js",
+      "language": "js",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/web-template/gap-worker.js",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/web-template/gap-worker.js",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.WebTemplate.GapWorker",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "importScripts(\"https://cdn.jsdelivr.net/npm/xterm-pty@0.9.4/workerTools.js\");\nonmessage = (msg) => {\n  // Prepare the Module object BEFORE importing gap.js\n  self.Module = self.Module || {};\n  importScripts(\"gap-fs.js\");"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 392,
+    "definitions": 0,
+    "effort_person_days": 1.55
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

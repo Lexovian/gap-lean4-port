@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeerafom3awhdjrdxbcmebp5bfkc7534apf2cwwy7f6kywynuikc56y5a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0526",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/vspcrow.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/vspcrow.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/vspcrow.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Vspcrow",
+      "code_lines": 336,
+      "definitions": 0,
+      "effort_person_days": 3.44,
+      "header_quote": "############################################################################\n#\n#  (The test file `vspcmat.tst' should contain the same tests,\n#  applied to matrix spaces.)\n#\n@local A,F,b,c,c1,c2,dims,erg,f,i,im,iter,l,lc,m,mb,n,nv,p,subsp\n@local u,uu,uuu,uuuu,v,w,ww,z,vecs,g"
+    },
+    {
+      "path": "tst/testinstall/constant.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/constant.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/constant.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Constant",
+      "code_lines": 164,
+      "definitions": 11,
+      "effort_person_days": 3.33,
+      "header_quote": "@local f\n@exec boolfalsevar := 0;\n@exec booltruevar := 0;\n@exec newtestvar := 0;\n@exec testvar := 0;\ncreate a plain global var and perform some test"
+    },
+    {
+      "path": "tst/testinstall/semitran.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/semitran.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/semitran.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Semitran",
+      "code_lines": 302,
+      "definitions": 9,
+      "effort_person_days": 3.33,
+      "header_quote": "@local BruteForceAntiIsoCheck,BruteForceInverseCheck,BruteForceIsoCheck\n@local G,H,I,S,T,enum,inv,map,x,y"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 802,
+    "definitions": 20,
+    "effort_person_days": 10.1
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

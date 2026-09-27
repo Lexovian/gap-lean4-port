@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerabckizqpon66uyvksapybajokclxy54uccypud2q3lwo5d74hwnaa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0474",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2014-12-05-t00307.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2014-12-05-t00307.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2014-12-05-t00307.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20141205T00307",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "# For bugfixes\n2014/12/05 (CJ, reported by Matt Fayers; see also tst/union.tst)"
+    },
+    {
+      "path": "tst/testbugfix/2015-01-08-t00310.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-01-08-t00310.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-01-08-t00310.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20150108T00310",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "2015/01/08 (JM, reported by Nick Loughlin)"
+    },
+    {
+      "path": "tst/testbugfix/2016-03-16-t00334.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-03-16-t00334.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-03-16-t00334.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160316T00334",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "2016/3/16 (AH, issue #675)"
+    },
+    {
+      "path": "tst/testbugfix/2016-04-29-t00337.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-04-29-t00337.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-04-29-t00337.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160429T00337",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "2016/04/29 (FL, bug reported on support list)"
+    },
+    {
+      "path": "tst/testbugfix/2016-04-29-t00338.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-04-29-t00338.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-04-29-t00338.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160429T00338",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "2016/04/29 (FL) another bug, detected when fixing the previous one"
+    },
+    {
+      "path": "tst/testbugfix/2016-07-20-t00343.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-07-20-t00343.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-07-20-t00343.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160720T00343",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "2016/07/20 (CJ, github issue #861)"
+    },
+    {
+      "path": "tst/testbugfix/2017-04-25-pr1248.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-04-25-pr1248.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-04-25-pr1248.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170425Pr1248",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "gap> Stabilizer(PrimitiveGroup(3,1), [ [  ], [ 1, 4, 5, 7, 8, 10, 12 ], [ 2, 3 ], [ 6, 11 ], [ 9 ] ], OnSetsDisjointSets);\nGroup(())"
+    },
+    {
+      "path": "tst/testbugfix/2017-11-02-PRINT_CURRENT_STATEMENT.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-11-02-PRINT_CURRENT_STATEMENT.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-11-02-PRINT_CURRENT_STATEMENT.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20171102PRINTCURRENTSTATEMENT",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "PRINT_CURRENT_STATEMENT could lead to crashes when invoked on\nkernel functions.\nSee <https://github.com/gap-system/gap/issues/1844>"
+    },
+    {
+      "path": "tst/testbugfix/2018-12-01-Nathom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-01-Nathom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-01-Nathom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181201Nathom",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "Reported in github PR 3070\nDegenerate example where the subgroup can be formed without finiteness test (as the group\nis cyclic)."
+    },
+    {
+      "path": "tst/testbugfix/2019-01-29-gac-arg-names.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-01-29-gac-arg-names.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-01-29-gac-arg-names.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190129GacArgNames",
+      "code_lines": 2,
+      "definitions": 1,
+      "effort_person_days": 0.02,
+      "header_quote": "verify that gac preserve function argument names"
+    },
+    {
+      "path": "tst/testbugfix/2019-10-02-Irreps.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-10-02-Irreps.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-10-02-Irreps.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20191002Irreps",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "representations for trivial group, #3681"
+    },
+    {
+      "path": "tst/testbugfix/2019-11-28-IrrConlon.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-11-28-IrrConlon.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-11-28-IrrConlon.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20191128IrrConlon",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "the following used to run into an error\nreported by Benjamin Sambale"
+    },
+    {
+      "path": "tst/testbugfix/2021-06-07-Exponents.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-06-07-Exponents.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-06-07-Exponents.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210607Exponents",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "Fix GitHub issue #4541: A wrong improvement of calculating exponents WRT canonical pcgs\ncaused the following code to fail"
+    },
+    {
+      "path": "tst/testbugfix/2022-09-06-ConjugacyClassesSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-09-06-ConjugacyClassesSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-09-06-ConjugacyClassesSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220906ConjugacyClassesSubgroups",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "The following used to work in GAP 4.10, but was broken in GAP\n4.11.x and also 4.12.0.\nSee https://github.com/gap-system/gap/issues/4854"
+    },
+    {
+      "path": "tst/testbugfix/2024-05-28-Mindeg.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-05-28-Mindeg.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-05-28-Mindeg.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240528Mindeg",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "Fix #5729"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 30,
+    "definitions": 1,
+    "effort_person_days": 0.3
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,38 @@
+{
+  "task_cid": "baguqeeradejbt3tfejpbr57fbxkve7gcqnwc7jy4w4lr3x5lke3prdo75wsa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0044",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/objcftl.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/objcftl.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/objcftl.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Objcftl",
+      "code_lines": 317,
+      "definitions": 9,
+      "effort_person_days": 7.98,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nObjects Collected From The Left.\nThis file contains a collector from the left for polycyclic\npresentations."
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 317,
+    "definitions": 9,
+    "effort_person_days": 7.98
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

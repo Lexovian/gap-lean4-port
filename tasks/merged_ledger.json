@@ -1,0 +1,21 @@
+{
+  "schema": "harmonic.gap-port-result-ledger/1",
+  "taskset_root_cid": "baguqeeraykhbhp2afmcuxp7dpgb72dhnpkng2qpcybegfu3lqqdilezq3hzq",
+  "results": [
+    {
+      "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
+      "task_id": "GAP-0331",
+      "status": "verified",
+      "worker": "pcworm-antigravity",
+      "timestamp": "2026-09-27T21:25:25.834702+00:00",
+      "artifacts": [
+        {
+          "lean_module": "RequestProject.Gap.Library.Zmodnz",
+          "sha256": "efc36d7f0b351e62408918ebda8f7478dac4c3eff246de92915a44732af3fa26",
+          "note": "Port of lib/zmodnz.gi"
+        }
+      ],
+      "notes": "Formalized lib/zmodnz.gi modular ring & field methods in RequestProject.Gap.Library.Zmodnz with 0 sorry, 0 admit, passing lake build with standard axioms [propext, Classical.choice, Quot.sound]."
+    }
+  ]
+}

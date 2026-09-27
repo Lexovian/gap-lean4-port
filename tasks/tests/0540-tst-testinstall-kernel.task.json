@@ -1,0 +1,132 @@
+{
+  "task_cid": "baguqeeraswhsm66jpww5umwziirpgaplbi52opl4gteosay43ssp6rbavo7a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0540",
+  "layer": "tests",
+  "module": "tst/testinstall/kernel",
+  "title": "Port tst/testinstall/kernel (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/kernel/gap.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/gap.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/gap.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Gap",
+      "code_lines": 209,
+      "definitions": 10,
+      "effort_person_days": 2.14,
+      "header_quote": "Tests for functions defined in src/gap.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/read.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/read.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/read.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Read",
+      "code_lines": 178,
+      "definitions": 19,
+      "effort_person_days": 2.0,
+      "header_quote": "Tests for functions defined in src/read.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/range.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/range.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/range.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Range",
+      "code_lines": 123,
+      "definitions": 0,
+      "effort_person_days": 1.23,
+      "header_quote": "Tests for functions defined in src/range.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/permutat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/permutat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/permutat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Permutat",
+      "code_lines": 110,
+      "definitions": 2,
+      "effort_person_days": 1.17,
+      "header_quote": "Tests for functions defined in src/permutat.cc"
+    },
+    {
+      "path": "tst/testinstall/kernel/calls.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/calls.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/calls.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Calls",
+      "code_lines": 110,
+      "definitions": 8,
+      "effort_person_days": 1.12,
+      "header_quote": "Tests for functions defined in src/calls.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/stringobj.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/stringobj.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/stringobj.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Stringobj",
+      "code_lines": 111,
+      "definitions": 0,
+      "effort_person_days": 1.11,
+      "header_quote": "Tests for functions defined in src/strinobj.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/lists.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/lists.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/lists.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Lists",
+      "code_lines": 102,
+      "definitions": 3,
+      "effort_person_days": 1.08,
+      "header_quote": "Tests for functions defined in src/lists.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/listfunc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/listfunc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/listfunc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Listfunc",
+      "code_lines": 96,
+      "definitions": 3,
+      "effort_person_days": 1.02,
+      "header_quote": "Tests for functions defined in src/listfunc.c"
+    },
+    {
+      "path": "tst/testinstall/kernel/vecffe.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kernel/vecffe.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kernel/vecffe.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kernel.Vecffe",
+      "code_lines": 99,
+      "definitions": 0,
+      "effort_person_days": 0.99,
+      "header_quote": "Tests for functions defined in src/vecffe.c"
+    }
+  ],
+  "totals": {
+    "files": 9,
+    "code_lines": 1138,
+    "definitions": 45,
+    "effort_person_days": 11.86
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

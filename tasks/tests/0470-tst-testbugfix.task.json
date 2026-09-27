@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeratwpzucftopqocaofbcplkpb26xm5rlfsys4px3is6gpzlo6pb5gq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0470",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2012-11-01-t00268.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-11-01-t00268.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-11-01-t00268.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121101T00268",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "2012/11/01 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2023-09-01-EpimorphismSchurCover.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-09-01-EpimorphismSchurCover.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-09-01-EpimorphismSchurCover.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20230901EpimorphismSchurCover",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "I  Warning: EpimorphismSchurCover via Holt's algorithm is under construction"
+    },
+    {
+      "path": "tst/testbugfix/2005-05-04-t00062.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-05-04-t00062.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-05-04-t00062.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050504T00062",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2005/05/04 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2005-10-14-t00326.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-10-14-t00326.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-10-14-t00326.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051014T00326",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2005/10/14 (BH)"
+    },
+    {
+      "path": "tst/testbugfix/2012-08-20-t00256.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-08-20-t00256.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-08-20-t00256.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120820T00256",
+      "code_lines": 11,
+      "definitions": 1,
+      "effort_person_days": 0.12,
+      "header_quote": "Check that removing wrong PrintObj method fixes delegations accordingly\nto documented behaviour for PrintObj/ViewObj/Display.\nReported by TB, fixed by MN on 2012-08-20."
+    },
+    {
+      "path": "tst/testbugfix/2012-11-20-t00274.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-11-20-t00274.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-11-20-t00274.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121120T00274",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2012/11/20 (BH)"
+    },
+    {
+      "path": "tst/testbugfix/2013-02-27-t00279.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-02-27-t00279.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-02-27-t00279.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130227T00279",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2013/02/27 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2013-05-02-t00290.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-05-02-t00290.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-05-02-t00290.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130502T00290",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2013/05/02 (BH)"
+    },
+    {
+      "path": "tst/testbugfix/2013-11-19-t00299.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-11-19-t00299.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-11-19-t00299.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20131119T00299",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2013/11/19 (AK)"
+    },
+    {
+      "path": "tst/testbugfix/2016-08-04-t00345.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-08-04-t00345.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-08-04-t00345.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160804T00345",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "2016/8/4 (AH, Reported by D. Savchuk)"
+    },
+    {
+      "path": "tst/testbugfix/2017-09-29-PrimePGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-09-29-PrimePGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-09-29-PrimePGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170929PrimePGroup",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "Issue related to PrimePGroup for a direct product of trivial groups"
+    },
+    {
+      "path": "tst/testbugfix/2018-03-21-MagmaWithInversesByGenerators.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-03-21-MagmaWithInversesByGenerators.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-03-21-MagmaWithInversesByGenerators.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180321MagmaWithInversesByGenerators",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "GAP used to set the IsFinitelyGeneratedGroup property for every finitely\ngenerated magma-with-inverses, even those which are not groups."
+    },
+    {
+      "path": "tst/testbugfix/2019-06-25-IsAlmostSimpleGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-06-25-IsAlmostSimpleGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-06-25-IsAlmostSimpleGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190625IsAlmostSimpleGroup",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "IsSimpleGroup does *not* imply IsAlmostSimpleGroup, as the latter only\nholds for certain extensions of *nonabelian* simple groups."
+    },
+    {
+      "path": "tst/testbugfix/2021-02-04-zero-dim-hom_components.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-02-04-zero-dim-hom_components.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-02-04-zero-dim-hom_components.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210204ZeroDimHomComponents",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "zero-dimensional hom_components #4245"
+    },
+    {
+      "path": "tst/testbugfix/2021-09-17-Stabilizer.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-09-17-Stabilizer.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-09-17-Stabilizer.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210917Stabilizer",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "Fix GitHub issue #4659, reported by Daniel Pook-Kolb"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 175,
+    "definitions": 1,
+    "effort_person_days": 1.82
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeerax2g5nuvafj7mcxyhivttxwqs7m5dz6btbnlglsryrpqkedy2qbya",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0552",
+  "layer": "tests",
+  "module": "tst/testprofiling",
+  "title": "Port tst/testprofiling (tests)",
+  "files": [
+    {
+      "path": "tst/testprofiling/prof.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testprofiling/prof.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testprofiling/prof.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testprofiling.Prof",
+      "code_lines": 53,
+      "definitions": 2,
+      "effort_person_days": 0.7,
+      "header_quote": "This test would badly break if we run it while profiling is active\nSo in that case we just make sure we don't break anything"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 53,
+    "definitions": 2,
+    "effort_person_days": 0.7
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

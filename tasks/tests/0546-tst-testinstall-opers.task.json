@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerakml3w32ctfexeggkooym54dwdma2c4jc5n64jwkuf3fd2y6ccgwq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0546",
+  "layer": "tests",
+  "module": "tst/testinstall/opers",
+  "title": "Port tst/testinstall/opers (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/opers/HallSubgroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/HallSubgroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/HallSubgroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.HallSubgroup",
+      "code_lines": 28,
+      "definitions": 0,
+      "effort_person_days": 0.28,
+      "header_quote": "@if IsPackageMarkedForLoading( \"smallgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/opers/SolvableQuotient.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/SolvableQuotient.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/SolvableQuotient.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.SolvableQuotient",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.27,
+      "header_quote": "gap> START_TEST(\"SolvableQuotient.tst\");\n#\ngap> f := FreeGroup( \"a\", \"b\", \"c\", \"d\" );;\ngap> fp := f / [ f.1^2, f.2^2, f.3^2, f.4^2, f.1*f.2*f.1*f.2*f.1*f.2,\n>  f.2*f.3*f.2*f.3*f.2*f.3*f.2*f.3, f.3*f.4*f.3*f.4*f.3*f.4,"
+    },
+    {
+      "path": "tst/testinstall/opers/CyclesFromList.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/CyclesFromList.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/CyclesFromList.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.CyclesFromList",
+      "code_lines": 26,
+      "definitions": 0,
+      "effort_person_days": 0.26,
+      "header_quote": "Errors"
+    },
+    {
+      "path": "tst/testinstall/opers/SubdirectProduct.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/SubdirectProduct.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/SubdirectProduct.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.SubdirectProduct",
+      "code_lines": 26,
+      "definitions": 0,
+      "effort_person_days": 0.26,
+      "header_quote": "gap> START_TEST(\"SubdirectProduct.tst\");\ngap> f:=FreeGroup(\"a\", \"b\");;\ngap> g:=f/[ f.1^6, f.2^4, f.1^3*f.2^(-2), f.2^(-1)*f.1*f.2*f.1];;\ngap> Size(g);\n12"
+    },
+    {
+      "path": "tst/testinstall/opers/AutomorphismGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/AutomorphismGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/AutomorphismGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.AutomorphismGroup",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.23,
+      "header_quote": "abelian group"
+    },
+    {
+      "path": "tst/testinstall/opers/TriangulizedMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/TriangulizedMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/TriangulizedMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.TriangulizedMat",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.23,
+      "header_quote": "gap> START_TEST(\"TriangulizedMat.tst\");\n#\ngap> a:=[];;\ngap> b:=TriangulizedMat(a);\n[  ]"
+    },
+    {
+      "path": "tst/testinstall/opers/IsFinitelyGenerated.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/IsFinitelyGenerated.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/IsFinitelyGenerated.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.IsFinitelyGenerated",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "gap> START_TEST(\"IsFinitelyGenerated.tst\");\n#\ngap> R:=RingWithOne([1,1/2]);\n<ring-with-one, with 2 generators>\ngap> IsMonoid(R);"
+    },
+    {
+      "path": "tst/testinstall/opers/LocationFunc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/LocationFunc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/LocationFunc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.LocationFunc",
+      "code_lines": 20,
+      "definitions": 1,
+      "effort_person_days": 0.2,
+      "header_quote": "regular GAP function"
+    },
+    {
+      "path": "tst/testinstall/opers/StructuralCopy.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/StructuralCopy.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/StructuralCopy.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.StructuralCopy",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.2,
+      "header_quote": "Blist"
+    },
+    {
+      "path": "tst/testinstall/opers/ListBlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/ListBlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/ListBlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.ListBlist",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "gap> START_TEST(\"ListBlist.tst\");\n#\ngap> ListBlist([],[false,true]);\nError, LIST_BLIST: <blist> must have the same length as <list> (lengths are 2 \\\nand 0)"
+    },
+    {
+      "path": "tst/testinstall/opers/LatticeByCyclicExtension.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/LatticeByCyclicExtension.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/LatticeByCyclicExtension.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.LatticeByCyclicExtension",
+      "code_lines": 17,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "construct SmallGroup(500,1)"
+    },
+    {
+      "path": "tst/testinstall/opers/Concatenation.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/Concatenation.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/Concatenation.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.Concatenation",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "gap> START_TEST(\"Concatenation.tst\");\n#\ngap> Concatenation( );\n[  ]\ngap> Concatenation( [ ] );"
+    },
+    {
+      "path": "tst/testinstall/opers/InverseMatMod.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/InverseMatMod.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/InverseMatMod.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.InverseMatMod",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "gap> START_TEST(\"InverseMatMod.tst\");\n#\ngap> for d in [1..10] do\n>     id:=IdentityMat(d);\n>     m:=RandomUnimodularMat(d);"
+    },
+    {
+      "path": "tst/testinstall/opers/CyclotomicField.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/CyclotomicField.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/CyclotomicField.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.CyclotomicField",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "gap> START_TEST(\"CyclotomicField.tst\");\ngap> x := List([1..8], CyclotomicField);\n[ Rationals, Rationals, CF(3), GaussianRationals, CF(5), CF(3), CF(7), CF(8) ]\ngap> y := List([1..8], CyclotomicField);\n[ Rationals, Rationals, CF(3), GaussianRationals, CF(5), CF(3), CF(7), CF(8) ]"
+    },
+    {
+      "path": "tst/testinstall/opers/IsPNilpotent.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/opers/IsPNilpotent.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/opers/IsPNilpotent.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Opers.IsPNilpotent",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "gap> START_TEST(\"IsPNilpotent.tst\");\n#\ngap> G:=SymmetricGroup(3);;\ngap> List([2,3,5], p -> IsPNilpotent(G,p));\n[ true, false, true ]"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 295,
+    "definitions": 1,
+    "effort_person_days": 2.99
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

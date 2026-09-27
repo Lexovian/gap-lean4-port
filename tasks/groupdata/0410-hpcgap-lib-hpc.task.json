@@ -1,0 +1,74 @@
+{
+  "task_cid": "baguqeerata6qptmssix2ny6xj7t5yzm6ilms5jenoc6gxbkgllhkye7mqanq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0410",
+  "layer": "groupdata",
+  "module": "hpcgap/lib/hpc",
+  "title": "Port hpcgap/lib/hpc (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/hpc/actor.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/actor.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/actor.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Actor",
+      "code_lines": 70,
+      "definitions": 5,
+      "effort_person_days": 0.548,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/hpc/serialize.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/serialize.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/serialize.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Serialize",
+      "code_lines": 63,
+      "definitions": 21,
+      "effort_person_days": 0.438,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/hpc/smallrgn.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/smallrgn.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/smallrgn.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Smallrgn",
+      "code_lines": 36,
+      "definitions": 3,
+      "effort_person_days": 0.262,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Reimer Behrends.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file introduces support for regions for small objects. Multiple\n#  small objects can share the same region at the potential cost of"
+    },
+    {
+      "path": "hpcgap/lib/hpc/altview.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/altview.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/altview.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Altview",
+      "code_lines": 24,
+      "definitions": 4,
+      "effort_person_days": 0.152,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 193,
+    "definitions": 33,
+    "effort_person_days": 1.4
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

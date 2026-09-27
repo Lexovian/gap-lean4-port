@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeera6g5h4aomjfrpvld4hzhbkb3hufvmeru7kiivjzioxufnmwh7czia",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0519",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/semipperm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/semipperm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/semipperm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Semipperm",
+      "code_lines": 366,
+      "definitions": 12,
+      "effort_person_days": 3.91,
+      "header_quote": "@local BruteForceInverseCheck,BruteForceIsoCheck,I,PPermDisplayLimit\n@local PPermNotation,S,inv,x,f,T"
+    },
+    {
+      "path": "tst/testinstall/vecmat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/vecmat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/vecmat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Vecmat",
+      "code_lines": 364,
+      "definitions": 2,
+      "effort_person_days": 3.81,
+      "header_quote": "@local F,F9,TestReadMatEntry,dim,m,v,w,checkShift,testlens,types,vecs,i,j\n@local v1,v2,G"
+    },
+    {
+      "path": "tst/testinstall/ctbl.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ctbl.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ctbl.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ctbl",
+      "code_lines": 370,
+      "definitions": 1,
+      "effort_person_days": 3.74,
+      "header_quote": "@local g,t,lin,G"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 1100,
+    "definitions": 15,
+    "effort_person_days": 11.46
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

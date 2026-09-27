@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeratmxmxn2hsx3va4fdn426vwgq22xvqpilal2u3xfn5ujngr36up6a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0472",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2013-08-11-t00302.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-11-t00302.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-11-t00302.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130811T00302",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "2013/08/11 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2013-08-21-t00295.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-21-t00295.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-21-t00295.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130821T00295",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "2013/08/21 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2015-02-01-t00311.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-02-01-t00311.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-02-01-t00311.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20150201T00311",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "2015/02/01 (MP, reported by WdG and HD )"
+    },
+    {
+      "path": "tst/testbugfix/2015-02-02-t00312.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-02-02-t00312.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-02-02-t00312.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20150202T00312",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "2015/02/02 (AH, reported by Petr Savicky)"
+    },
+    {
+      "path": "tst/testbugfix/2016-05-02-t00336.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-05-02-t00336.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-05-02-t00336.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160502T00336",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "2016/5/2 (MP)"
+    },
+    {
+      "path": "tst/testbugfix/2017-09-06-CodePcGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-09-06-CodePcGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-09-06-CodePcGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170906CodePcGroup",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Issue #1664 on github.com/gap-system/gap"
+    },
+    {
+      "path": "tst/testbugfix/2018-01-30-triv-aff-space.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-01-30-triv-aff-space.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-01-30-triv-aff-space.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180130TrivAffSpace",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Verify that enumerating \"extended\" vectors\" over a trivial vector space\nworks as intended (this used to fail, because testing whether the empty\nlist [] is contained in the vector space V defined below, which is\ncollection, by definition always fails in GAP, even though [] is e.g. equal\nto Zero(V). This is a major problem by itself, but difficult to resolve.\n\nIn any case, we sidestep this larger issue, and just worry about the\nparticular case of \"extended\" vectors."
+    },
+    {
+      "path": "tst/testbugfix/2018-03-21-IsFinitelyGeneratedGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-03-21-IsFinitelyGeneratedGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-03-21-IsFinitelyGeneratedGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180321IsFinitelyGeneratedGroup",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "There was an incorrect method for IsFinitelyGeneratedGroup which assumed\nthat a group given by an infinite generating set is not finitely generated,\nwhich is of course false: any finitely generated infinite group is generated\nby its set of elements.\n\nTest that this is not the case anymore:"
+    },
+    {
+      "path": "tst/testbugfix/2018-11-16-ConjugacyClasses.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-11-16-ConjugacyClasses.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-11-16-ConjugacyClasses.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181116ConjugacyClasses",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Reported in github PR 2990\nNeeds a GAP compiled with --enable-valgrind, then run as\nvalgrind ./gap, to detect the problem which was fixed."
+    },
+    {
+      "path": "tst/testbugfix/2018-12-06-GroupWithGenerators.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-06-GroupWithGenerators.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-06-GroupWithGenerators.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181206GroupWithGenerators",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "These are undocumented, but should still work"
+    },
+    {
+      "path": "tst/testbugfix/2019-04-10-SSortedList.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-04-10-SSortedList.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-04-10-SSortedList.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190410SSortedList",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Check we can make non-homogeneous lists into SSortedLists."
+    },
+    {
+      "path": "tst/testbugfix/2022-03-29-MagmaWithInversesByGenerators.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-03-29-MagmaWithInversesByGenerators.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-03-29-MagmaWithInversesByGenerators.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220329MagmaWithInversesByGenerators",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Fix family for MagmaWithInversesByGenerators with empty generators"
+    },
+    {
+      "path": "tst/testbugfix/2022-04-19-conjcl.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-04-19-conjcl.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-04-19-conjcl.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220419Conjcl",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "ConjugacyClasses, #4866"
+    },
+    {
+      "path": "tst/testbugfix/2022-05-10-SubgroupsSolvableGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-05-10-SubgroupsSolvableGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-05-10-SubgroupsSolvableGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220510SubgroupsSolvableGroup",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "Verify SubgroupsSolvableGroup honor retnorm=true if the\ninput is a trivial group.\nSee https://github.com/gap-system/gap/pull/4855"
+    },
+    {
+      "path": "tst/testbugfix/2022-09-09-MinimalGeneratingSet.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-09-09-MinimalGeneratingSet.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-09-09-MinimalGeneratingSet.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220909MinimalGeneratingSet",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.06,
+      "header_quote": "gap> START_TEST(\"2022-09-09-MinimalGeneratingSet.tst\");\ngap> G:=Group((1,2),(2,3),(3,4));;\ngap> H:=Image(IsomorphismFpGroup(G));;\ngap> MinimalGeneratingSet(H);\n[ F1^-1*F2^-1*F3^-1, F1^-1*F2^-1*F3^-1*F2^-1*F1^-1 ]"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 90,
+    "definitions": 0,
+    "effort_person_days": 0.9
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

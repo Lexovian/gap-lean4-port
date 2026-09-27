@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeeralwqqazlvxqymhuckprwnipg37zrmqj4mv34oqzu2ok2u6in36tlq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0494",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/coll.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/coll.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/coll.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Coll",
+      "code_lines": 484,
+      "definitions": 11,
+      "effort_person_days": 4.98,
+      "header_quote": "############################################################################\n#\n#  Test operations defined in coll.gd\n#"
+    },
+    {
+      "path": "tst/testinstall/perm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/perm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/perm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Perm",
+      "code_lines": 484,
+      "definitions": 3,
+      "effort_person_days": 4.88,
+      "header_quote": "@local checklens,n,permAll,permBig,permSml,x,y,moved,p,r,t,l"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 968,
+    "definitions": 14,
+    "effort_person_days": 9.86
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

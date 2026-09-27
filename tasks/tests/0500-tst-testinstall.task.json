@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeraprmcz5ff2soexyd7o7lbde5gz3pkqpsujait6u44ge3o2hi7nmwa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0500",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/flush.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/flush.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/flush.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Flush",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.27,
+      "header_quote": "@local"
+    },
+    {
+      "path": "tst/testinstall/mgmring.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/mgmring.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/mgmring.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Mgmring",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.27,
+      "header_quote": "@local centre,img,m,membrm,r,rembrm,rm"
+    },
+    {
+      "path": "tst/testinstall/print-formatting.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/print-formatting.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/print-formatting.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.PrintFormatting",
+      "code_lines": 24,
+      "definitions": 2,
+      "effort_person_days": 0.26,
+      "header_quote": "for comparison"
+    },
+    {
+      "path": "tst/testinstall/ElmsBlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ElmsBlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ElmsBlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.ElmsBlist",
+      "code_lines": 17,
+      "definitions": 1,
+      "effort_person_days": 0.25,
+      "header_quote": "gap> START_TEST(\"ElmsBlist.tst\");\ngap> doTests := function(startrange, lengthrange)\n>    local source, s, l, copy, i;    \n>    source := BlistStringDecode(\"DEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEFDEADBEEF\");\n>    for s in startrange do"
+    },
+    {
+      "path": "tst/testinstall/dict.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/dict.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/dict.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Dict",
+      "code_lines": 22,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "@local dict,i"
+    },
+    {
+      "path": "tst/testinstall/hashkeybag.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/hashkeybag.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/hashkeybag.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Hashkeybag",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "@local"
+    },
+    {
+      "path": "tst/testinstall/maxsub.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/maxsub.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/maxsub.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Maxsub",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "@if IsPackageMarkedForLoading( \"primgrp\", \"\" )"
+    },
+    {
+      "path": "tst/testinstall/pragma.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/pragma.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/pragma.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Pragma",
+      "code_lines": 18,
+      "definitions": 4,
+      "effort_person_days": 0.22,
+      "header_quote": "% pragma"
+    },
+    {
+      "path": "tst/testinstall/stbc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/stbc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/stbc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Stbc",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.19,
+      "header_quote": "@local sc"
+    },
+    {
+      "path": "tst/testinstall/ring.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ring.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ring.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ring",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "####################################################################\n\nTests for IsIntegralRing\n\nTrivial ring"
+    },
+    {
+      "path": "tst/testinstall/dlog.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/dlog.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/dlog.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Dlog",
+      "code_lines": 17,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "@local R, o"
+    },
+    {
+      "path": "tst/testinstall/ConjNatSym.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ConjNatSym.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ConjNatSym.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.ConjNatSym",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "The following two test use the new version for natural symmetric group"
+    },
+    {
+      "path": "tst/testinstall/oprtperm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/oprtperm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/oprtperm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Oprtperm",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "@local"
+    },
+    {
+      "path": "tst/testinstall/ctblmaps.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ctblmaps.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ctblmaps.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ctblmaps",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.15,
+      "header_quote": "@local s, t, maps"
+    },
+    {
+      "path": "tst/testinstall/nanoseconds.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/nanoseconds.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/nanoseconds.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Nanoseconds",
+      "code_lines": 12,
+      "definitions": 1,
+      "effort_person_days": 0.15,
+      "header_quote": "@local f,t,t2"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 292,
+    "definitions": 8,
+    "effort_person_days": 3.15
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

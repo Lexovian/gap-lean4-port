@@ -1,0 +1,96 @@
+{
+  "task_cid": "baguqeerad5dushcuubia3csls4cvenmcbpt36qrd4nmejnuzt4gbqsroh3bq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0337",
+  "layer": "groupdata",
+  "module": "benchmark/matobj",
+  "title": "Port benchmark/matobj (groupdata)",
+  "files": [
+    {
+      "path": "benchmark/matobj/bench-matelm-access.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench-matelm-access.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench-matelm-access.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.BenchMatelmAccess",
+      "code_lines": 138,
+      "definitions": 11,
+      "effort_person_days": 1.085,
+      "header_quote": "ReadGapRoot(\"benchmark/matobj/bench.g\");\nTestReadingMatrix := function(m)\n    local f;\n    PrintHeadline(\"m[i][j]\");\n    MyBench(function()"
+    },
+    {
+      "path": "benchmark/matobj/bench.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.Bench",
+      "code_lines": 101,
+      "definitions": 7,
+      "effort_person_days": 0.741,
+      "header_quote": "Benchmark( func[, optrec] )\n\nfunc - a function taking no arguments\noptrec - an optional record with various options\n\nMeasures how long executing the given function \"func\" takes.\nIn order to improve accuracy, it invokes the function repeatedly.\nBefore each repetition, the garbage collector is run, and\n(unless turned off by an option) the random number generators\nare reset.\nAt the end, it outputs the average, median, and std deviation."
+    },
+    {
+      "path": "benchmark/matobj/bench-matobj-creation.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench-matobj-creation.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench-matobj-creation.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.BenchMatobjCreation",
+      "code_lines": 90,
+      "definitions": 12,
+      "effort_person_days": 0.665,
+      "header_quote": "test for old-style matrix constructors, as reference"
+    },
+    {
+      "path": "benchmark/matobj/bench-submat.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench-submat.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench-submat.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.BenchSubmat",
+      "code_lines": 66,
+      "definitions": 7,
+      "effort_person_days": 0.472,
+      "header_quote": "TODO: also add cvec matrices"
+    },
+    {
+      "path": "benchmark/matobj/bench-subvec.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench-subvec.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench-subvec.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.BenchSubvec",
+      "code_lines": 64,
+      "definitions": 7,
+      "effort_person_days": 0.461,
+      "header_quote": "ReadGapRoot(\"benchmark/matobj/bench.g\");\nTestExtractingSubvector := function(v)\n    local cols;\n    cols := [3..Length(v)-1];\n    if not IsPlistVectorRep(v) then"
+    },
+    {
+      "path": "benchmark/matobj/bench-vecobj-creation.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/matobj/bench-vecobj-creation.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/matobj/bench-vecobj-creation.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Matobj.BenchVecobjCreation",
+      "code_lines": 61,
+      "definitions": 10,
+      "effort_person_days": 0.414,
+      "header_quote": "test for old-style vector constructors, as reference"
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "code_lines": 520,
+    "definitions": 54,
+    "effort_person_days": 3.84
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

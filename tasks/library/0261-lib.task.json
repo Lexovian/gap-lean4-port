@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeerax5uhyp274g54oh4yxih3h2m2aderscxwvb6gd3omxbofrrb3pica",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0261",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/permutat.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/permutat.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/permutat.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Permutat",
+      "code_lines": 243,
+      "definitions": 45,
+      "effort_person_days": 4.565,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with permutations.\n#"
+    },
+    {
+      "path": "lib/ctbl.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/ctbl.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/ctbl.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Ctbl",
+      "code_lines": 306,
+      "definitions": 113,
+      "effort_person_days": 4.441,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Götz Pfeiffer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the definition of categories of character table like\n#  objects, and their properties, attributes, operations, and functions."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 549,
+    "definitions": 158,
+    "effort_person_days": 9.01
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

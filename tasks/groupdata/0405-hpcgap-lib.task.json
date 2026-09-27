@@ -1,0 +1,52 @@
+{
+  "task_cid": "baguqeeravqdc5lz6f4pkv6ka5hqmgunwb5aqmcdfdqqlfxogx6lslnnpn55a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0405",
+  "layer": "groupdata",
+  "module": "hpcgap/lib",
+  "title": "Port hpcgap/lib (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/rwspcgrp.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/rwspcgrp.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/rwspcgrp.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Rwspcgrp",
+      "code_lines": 755,
+      "definitions": 72,
+      "effort_person_days": 5.635,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file   contains  the methods  for  groups  defined  by  a polycyclic\n#  collector."
+    },
+    {
+      "path": "hpcgap/lib/primality.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/primality.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/primality.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Primality",
+      "code_lines": 524,
+      "definitions": 39,
+      "effort_person_days": 4.976,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Jack Schmidt.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains declarations for the primality test in the integers.\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 1279,
+    "definitions": 111,
+    "effort_person_days": 10.61
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

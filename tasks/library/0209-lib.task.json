@@ -1,0 +1,95 @@
+{
+  "task_cid": "baguqeeraixhdvt3vrmjephmrw52tg25sr7o3y2ya3xog6mkganypk3sm4qbq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0209",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/list.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/list.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/list.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.List",
+      "code_lines": 145,
+      "definitions": 82,
+      "effort_person_days": 1.994,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert, Werner Nickel.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the definition of operations and functions for lists.\n#"
+    },
+    {
+      "path": "lib/function.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/function.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/function.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Function",
+      "code_lines": 102,
+      "definitions": 5,
+      "effort_person_days": 1.925,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with functions.\n#"
+    },
+    {
+      "path": "lib/global.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/global.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/global.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Global",
+      "code_lines": 111,
+      "definitions": 24,
+      "effort_person_days": 1.925,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#\n#  This file contains the second stage of the \"public\" interface to"
+    },
+    {
+      "path": "lib/demo.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/demo.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/demo.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Demo",
+      "code_lines": 102,
+      "definitions": 3,
+      "effort_person_days": 1.911,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Werner Nickel.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains functions that support running demonstrations with\n#  Gap."
+    },
+    {
+      "path": "lib/wpobj.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/wpobj.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/wpobj.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Wpobj",
+      "code_lines": 103,
+      "definitions": 12,
+      "effort_person_days": 1.87,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the implementations for weak pointer objects\n#"
+    },
+    {
+      "path": "lib/clasperm.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/clasperm.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/clasperm.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Clasperm",
+      "code_lines": 103,
+      "definitions": 13,
+      "effort_person_days": 1.856,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Heiko Theißen.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This   file contains the functions   that calculate ordinary and rational\n#  classes for permutation groups."
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "code_lines": 666,
+    "definitions": 139,
+    "effort_person_days": 11.48
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

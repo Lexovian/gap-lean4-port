@@ -1,0 +1,62 @@
+{
+  "task_cid": "baguqeeraln52w4yersykhdbkuprko3t3sk2bfbc7ubl2pbkthvk2gmafzloa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0228",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/methsel.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/methsel.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/methsel.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Methsel",
+      "code_lines": 185,
+      "definitions": 13,
+      "effort_person_days": 3.713,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler, Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file defines the less frequently used functions to select\n#  methods. More frequently used functions used to be in methsel1.g,"
+    },
+    {
+      "path": "lib/mgmideal.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/mgmideal.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/mgmideal.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Mgmideal",
+      "code_lines": 220,
+      "definitions": 38,
+      "effort_person_days": 3.699,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains generic methods for magma ideals\n#"
+    },
+    {
+      "path": "lib/transatl.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/transatl.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/transatl.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Transatl",
+      "code_lines": 194,
+      "definitions": 2,
+      "effort_person_days": 3.671,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains synonym declarations for functions that are spelled\n#  differently on different sides of the Atlantic, such as"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 599,
+    "definitions": 53,
+    "effort_person_days": 11.08
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

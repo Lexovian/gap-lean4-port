@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeera2szbdmtkad33lelemzg3st5czgvnigune2lw3uzyctfupmxd26uq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0534",
+  "layer": "tests",
+  "module": "tst/testinstall/grp",
+  "title": "Port tst/testinstall/grp (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/grp/basic.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/basic.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/basic.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Basic",
+      "code_lines": 484,
+      "definitions": 0,
+      "effort_person_days": 5.6,
+      "header_quote": "@local A,inputs,ints,filt,G,Q,F,gens,n,i"
+    },
+    {
+      "path": "tst/testinstall/grp/classic-forms.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/classic-forms.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/classic-forms.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.ClassicForms",
+      "code_lines": 338,
+      "definitions": 18,
+      "effort_person_days": 4.11,
+      "header_quote": "@local CheckGeneratorsInvertible, CheckGeneratorsSpecial, CheckField\n@local CheckBilinearForm, CheckBilinearFormUpToScalars\n@local CheckQuadraticForm, frob, CheckSesquilinearForm\n@local CheckSize, CheckClasses, CheckMembershipFromForm\n@local CheckMembershipBilinear, CheckMembershipBilinear2\n@local CheckMembershipBilinearUpToScalars\n@local CheckMembershipBilinearUpToScalars2\n@local CheckMembershipSesquilinear\n@local CheckMembershipQuadratic, CheckMembershipQuadratic2\n@local grps1, grps2, grps, d, q, G, m\n\nTests invariant forms of classic groups"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 822,
+    "definitions": 18,
+    "effort_person_days": 9.71
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

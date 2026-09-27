@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeerah46cphnecyr643cq4sqyokonqyvr7qiw4yii25keodefbb4dzt2a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0498",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/ffeconway.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ffeconway.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ffeconway.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ffeconway",
+      "code_lines": 741,
+      "definitions": 0,
+      "effort_person_days": 7.51,
+      "header_quote": "############################################################################\n#\n#  This  file  tests  the large finite fields.\n#\n@local fieldpairs,fieldsizes,iF,iPI,iW,izs,zs,iFI,x,i,F"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 741,
+    "definitions": 0,
+    "effort_person_days": 7.51
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

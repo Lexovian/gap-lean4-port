@@ -1,0 +1,183 @@
+{
+  "task_cid": "baguqeera6co6fvn537xyzvtoqi5tadkn4h5bqybihd4y53rqtflmjvqwfdjq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0265",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/pperm.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/pperm.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/pperm.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Pperm",
+      "code_lines": 66,
+      "definitions": 57,
+      "effort_person_days": 0.935,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include James D. Mitchell.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "lib/stbc.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/stbc.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/stbc.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Stbc",
+      "code_lines": 68,
+      "definitions": 66,
+      "effort_person_days": 0.935,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Heiko Theißen, Ákos Seress.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/basis.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/basis.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/basis.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Basis",
+      "code_lines": 61,
+      "definitions": 36,
+      "effort_person_days": 0.866,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for bases of free left modules.\n#"
+    },
+    {
+      "path": "lib/module.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/module.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/module.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Module",
+      "code_lines": 63,
+      "definitions": 22,
+      "effort_person_days": 0.866,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for left modules, right modules,\n#  and bimodules."
+    },
+    {
+      "path": "lib/relation.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/relation.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/relation.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Relation",
+      "code_lines": 63,
+      "definitions": 43,
+      "effort_person_days": 0.866,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for binary relations on sets.\n#"
+    },
+    {
+      "path": "lib/semirel.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/semirel.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/semirel.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Semirel",
+      "code_lines": 62,
+      "definitions": 54,
+      "effort_person_days": 0.853,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include James D Mitchell.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for equivalence relations on\n#  semigroups. Of particular interest are Green's relations,"
+    },
+    {
+      "path": "lib/field.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/field.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/field.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Field",
+      "code_lines": 60,
+      "definitions": 44,
+      "effort_person_days": 0.839,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for division rings.\n#"
+    },
+    {
+      "path": "lib/operdebug.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/operdebug.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/operdebug.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Operdebug",
+      "code_lines": 45,
+      "definitions": 4,
+      "effort_person_days": 0.839,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Undocumented  utilities to  write out  infos  about all  methods of  all\n#  operations with  location and rank, and  to write out all  filters by name"
+    },
+    {
+      "path": "lib/dict.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/dict.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/dict.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Dict",
+      "code_lines": 60,
+      "definitions": 35,
+      "effort_person_days": 0.825,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Gene Cooperman, Scott Murray, Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declarations for dictionaries and for improved\n#  hash tables."
+    },
+    {
+      "path": "lib/conwdat1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/conwdat1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/conwdat1.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Conwdat1",
+      "code_lines": 59,
+      "definitions": 0,
+      "effort_person_days": 0.811,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the data for precomputed Conway polynomials for\n#  primes"
+    },
+    {
+      "path": "lib/vspc.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/vspc.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/vspc.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Vspc",
+      "code_lines": 55,
+      "definitions": 11,
+      "effort_person_days": 0.784,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file declares the operations for vector spaces.\n#"
+    },
+    {
+      "path": "lib/obsolete.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/obsolete.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/obsolete.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Obsolete",
+      "code_lines": 41,
+      "definitions": 3,
+      "effort_person_days": 0.756,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains a helpers for declaring synonyms for functions which\n#  are now deprecated."
+    },
+    {
+      "path": "lib/package.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/package.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/package.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Package",
+      "code_lines": 51,
+      "definitions": 34,
+      "effort_person_days": 0.742,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler, Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains support for &GAP; packages.\n#"
+    },
+    {
+      "path": "lib/newprofile.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/newprofile.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/newprofile.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Newprofile",
+      "code_lines": 36,
+      "definitions": 4,
+      "effort_person_days": 0.715,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Chris Jefferson.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the gap frontend of profile.c in src.\n#"
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "code_lines": 790,
+    "definitions": 413,
+    "effort_person_days": 11.63
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

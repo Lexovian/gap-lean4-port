@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeerapbw5gvquuemsze3ygyt24l6jnxc3cs622fs4a7fvx4hmsnwuoqfa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0306",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/tcsemi.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/tcsemi.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/tcsemi.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Tcsemi",
+      "code_lines": 315,
+      "definitions": 14,
+      "effort_person_days": 6.05,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Götz Pfeiffer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Installed in GAP4 by Andrew Solomon for Semigroups instead of Monoids.\n#"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 315,
+    "definitions": 14,
+    "effort_person_days": 6.05
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

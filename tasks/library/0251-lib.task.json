@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeera47ksiuaq7mh4unqbvn2y3msduo4bgbcgywjycckw3lo2z5psumsa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0251",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/pager.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/pager.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/pager.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Pager",
+      "code_lines": 239,
+      "definitions": 7,
+      "effort_person_days": 4.923,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  The  files  pager.g{d,i}  contain  the `Pager'  utility.  A  rudimentary\n#  version of this  was integrated in first versions of  GAP's help system."
+    },
+    {
+      "path": "lib/info.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/info.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/info.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Info",
+      "code_lines": 260,
+      "definitions": 38,
+      "effort_person_days": 4.84,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This package sets up a GAP level prototype of the new Info messages\n#  system, parts of which will eventually have to be moved into"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 499,
+    "definitions": 45,
+    "effort_person_days": 9.76
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

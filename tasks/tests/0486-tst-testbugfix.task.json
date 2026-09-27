@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerapzqczmbqsr6lokpbll7kr5mbebdzk6usn3jjrrf4nq2yy5clhxlq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0486",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2025-05-09-ratfun-coeff.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-05-09-ratfun-coeff.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-05-09-ratfun-coeff.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250509RatfunCoeff",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Fix #5988 CoefficientsOfUnivariateRationalFunction"
+    },
+    {
+      "path": "tst/testbugfix/2025-06-04-SpecialPcgs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-06-04-SpecialPcgs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-06-04-SpecialPcgs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250604SpecialPcgs",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Verify <https://github.com/gap-system/gap/issues/6000> is fixed"
+    },
+    {
+      "path": "tst/testbugfix/2026-02-23-AbelianInvariants.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-02-23-AbelianInvariants.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-02-23-AbelianInvariants.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260223AbelianInvariants",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Fix bug in MaximalAbelianQuotient\n(format of the AbelianInvariants value)\n@local G"
+    },
+    {
+      "path": "tst/testbugfix/00008.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00008.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00008.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00008",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "# EulerianFunction (10)"
+    },
+    {
+      "path": "tst/testbugfix/2005-07-21-t00085.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-07-21-t00085.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-07-21-t00085.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050721T00085",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "2005/07/21 (JS)"
+    },
+    {
+      "path": "tst/testbugfix/2005-11-25-t00122.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-11-25-t00122.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-11-25-t00122.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051125T00122",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "2005/11/25 (JS)"
+    },
+    {
+      "path": "tst/testbugfix/2008-09-02-t00201.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2008-09-02-t00201.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2008-09-02-t00201.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20080902T00201",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "2008/09/02 (FL)"
+    },
+    {
+      "path": "tst/testbugfix/2009-05-28-t00220.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2009-05-28-t00220.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2009-05-28-t00220.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20090528T00220",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "2009/05/28 (BH)"
+    },
+    {
+      "path": "tst/testbugfix/2013-02-28-t00281.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-02-28-t00281.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-02-28-t00281.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130228T00281",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "2013/02/28 (BH). More tests added by AK"
+    },
+    {
+      "path": "tst/testbugfix/2013-08-21-t00294.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-08-21-t00294.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-08-21-t00294.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130821T00294",
+      "code_lines": 10,
+      "definitions": 2,
+      "effort_person_days": 0.1,
+      "header_quote": "2013/08/21 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2014-08-11-t00303.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2014-08-11-t00303.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2014-08-11-t00303.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20140811T00303",
+      "code_lines": 9,
+      "definitions": 1,
+      "effort_person_days": 0.1,
+      "header_quote": "2014/08/11 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2020-07-16-BoundedRefinement.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2020-07-16-BoundedRefinement.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2020-07-16-BoundedRefinement.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20200716BoundedRefinement",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "Unrefinable series"
+    },
+    {
+      "path": "tst/testbugfix/2022-07-14-IrrConlon.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-07-14-IrrConlon.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-07-14-IrrConlon.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220714IrrConlon",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "gap> G := Group([ (5,9)(10,14)(11,12)(15,16), (2,3)(4,7)(5,10)(9,14)(11,12)(15,16), (2,4)(3,5)(6,12)(7,9)(10,14)(11,13), (1,2)(3,6)(4,8)(5,11)(7,13)(9,12)(10,15)(14,16) ]);;\ngap> Order(G);\n1024\ngap> c := Set(IrrConlon(G));;\ngap> bc := Set(IrrBaumClausen(G));;"
+    },
+    {
+      "path": "tst/testbugfix/2022-10-07-DefaultMatrixRepForBaseDomain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-10-07-DefaultMatrixRepForBaseDomain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-10-07-DefaultMatrixRepForBaseDomain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20221007DefaultMatrixRepForBaseDomain",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "Make sure that 'DefaultMatrixRepForBaseDomain' works for\nthe fields provided by the StandardFF package."
+    },
+    {
+      "path": "tst/testbugfix/2022-10-18-RewriteVec8Bit.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-10-18-RewriteVec8Bit.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-10-18-RewriteVec8Bit.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20221018RewriteVec8Bit",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "avoid crashes when converting certain compressed vectors\nsee <https://github.com/gap-system/gap/issues/5123>"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 148,
+    "definitions": 3,
+    "effort_person_days": 1.53
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,36 @@
+{
+  "schema": "harmonic.gap-port-taskset/1",
+  "taskset_root_cid": "baguqeeraykhbhp2afmcuxp7dpgb72dhnpkng2qpcybegfu3lqqdilezq3hzq",
+  "car_file": "gap_port_tasks.car",
+  "car_blocks": 581,
+  "source_repository": "https://github.com/gap-system/gap",
+  "distribution": {
+    "model": "torrent",
+    "merge_tool": "tools/merge_tasks.py",
+    "merge_key": "task_cid",
+    "status_lattice": [
+      "todo",
+      "claimed",
+      "in_progress",
+      "done",
+      "verified"
+    ],
+    "note": "Workers torrent this bundle, port tasks, publish result records keyed by task_cid, and re-seed the merged ledger. Union of monotone status + artifacts converges to the complete port."
+  },
+  "result_record_schema": "harmonic.gap-port-result/1",
+  "result_record_fields": {
+    "task_cid": "CID of the task being reported on (merge key).",
+    "status": "one of the status lattice values; merge keeps the max.",
+    "worker": "free-form worker / team identifier.",
+    "timestamp": "ISO-8601 UTC of this update.",
+    "artifacts": "list of {lean_module, sha256, note} produced.",
+    "notes": "free-form progress notes."
+  },
+  "totals": {
+    "tasks": 574,
+    "files": 2110,
+    "effort_person_days": 12642.2,
+    "effort_person_months": 602.0,
+    "effort_person_years": 50.17
+  }
+}

@@ -1,0 +1,85 @@
+{
+  "task_cid": "baguqeera6zvhkdqx7x65aigtifjerusjy64ktnnhvzj5cta2k5bivjcgfhfq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0412",
+  "layer": "groupdata",
+  "module": "hpcgap/lib/hpc",
+  "title": "Port hpcgap/lib/hpc (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/hpc/stdtasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/stdtasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/stdtasks.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Stdtasks",
+      "code_lines": 564,
+      "definitions": 46,
+      "effort_person_days": 4.498,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/hpc/tasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/tasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/tasks.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Tasks",
+      "code_lines": 429,
+      "definitions": 24,
+      "effort_person_days": 3.535,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/hpc/thread1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/thread1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/thread1.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Thread1",
+      "code_lines": 204,
+      "definitions": 28,
+      "effort_person_days": 1.668,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Reimer Behrends.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file provides the necessary thread initialization code code needed\n#  early in GAP's initialization process. The rest can be found in thread.g."
+    },
+    {
+      "path": "hpcgap/lib/hpc/queue.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/queue.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/queue.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Queue",
+      "code_lines": 157,
+      "definitions": 10,
+      "effort_person_days": 1.225,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Reimer Behrends.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file implements queues. These can be used both as FIFO queues,\n#  as deques, and as stacks."
+    },
+    {
+      "path": "hpcgap/lib/hpc/thread.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/hpc/thread.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/hpc/thread.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Hpc.Thread",
+      "code_lines": 128,
+      "definitions": 39,
+      "effort_person_days": 0.945,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Reimer Behrends.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Types and threading primitives for shared memory concurrency.\n#"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 1482,
+    "definitions": 147,
+    "effort_person_days": 11.87
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

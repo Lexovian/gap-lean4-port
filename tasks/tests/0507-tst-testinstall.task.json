@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeerabp3i2dasiln5dinn6sd5zu6doszidc5lvikpra2hgcdes2fosxqa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0507",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/mat8bit.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/mat8bit.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/mat8bit.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Mat8bit",
+      "code_lines": 602,
+      "definitions": 0,
+      "effort_person_days": 6.05,
+      "header_quote": "@local m, z, zm, mz, mm;"
+    },
+    {
+      "path": "tst/testinstall/mapping.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/mapping.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/mapping.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Mapping",
+      "code_lines": 500,
+      "definitions": 0,
+      "effort_person_days": 5.0,
+      "header_quote": "@local A,B,C,M,anticomp,com,comp,conj,d,g,g2,i,i2,inv,j,map,map1,map2\n@local mapBijective,nice,res,t,t1,t2,tuples,vecs,hom,aut,dp"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 1102,
+    "definitions": 0,
+    "effort_person_days": 11.05
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

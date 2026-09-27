@@ -1,0 +1,73 @@
+{
+  "task_cid": "baguqeerark2brzzeyo5odt7utrqxo72jhcvpnloufwfbls7gusj76nyex4lq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0276",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/read5.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/read5.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/read5.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Read5",
+      "code_lines": 204,
+      "definitions": 1,
+      "effort_person_days": 2.805,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/overload.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/overload.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/overload.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Overload",
+      "code_lines": 153,
+      "definitions": 73,
+      "effort_person_days": 2.764,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the declaration and methods of ``overloaded''\n#  operations, that is, operations for which the meaning of the result"
+    },
+    {
+      "path": "lib/process.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/process.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/process.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Process",
+      "code_lines": 152,
+      "definitions": 11,
+      "effort_person_days": 2.764,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the methods for process.\n#"
+    },
+    {
+      "path": "lib/grpcompl.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/grpcompl.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/grpcompl.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Grpcompl",
+      "code_lines": 148,
+      "definitions": 4,
+      "effort_person_days": 2.723,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the operations for the computation of complements in\n#  'white box groups'"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 657,
+    "definitions": 89,
+    "effort_person_days": 11.06
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

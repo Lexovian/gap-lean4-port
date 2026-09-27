@@ -1,0 +1,38 @@
+{
+  "task_cid": "baguqeerawguq644ccneojyhinoyq2t4c4izgi4knqb6o2pw5nil6d54dgaoa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0019",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/exprs.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/exprs.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/exprs.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Exprs",
+      "code_lines": 885,
+      "definitions": 58,
+      "effort_person_days": 21.48,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file contains the functions of the expressions package.\n\nThe expressions  package is the  part  of the interpreter  that evaluates"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 885,
+    "definitions": 58,
+    "effort_person_days": 21.48
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

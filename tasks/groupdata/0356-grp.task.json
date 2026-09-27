@@ -1,0 +1,52 @@
+{
+  "task_cid": "baguqeeraznger2zw4eitao5vhszujhcr5szq2szx4c7xnqctxm4vgbjy4rba",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0356",
+  "layer": "groupdata",
+  "module": "grp",
+  "title": "Port grp (groupdata)",
+  "files": [
+    {
+      "path": "grp/imf22.grp",
+      "language": "grp",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/imf22.grp",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/imf22.grp",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Imf22",
+      "code_lines": 873,
+      "definitions": 0,
+      "effort_person_days": 5.093,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Volkmar Felsch.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains,  for each  Q-class representative  of the irreducible\n#  maximal finite integral matrix groups of dimension 22,"
+    },
+    {
+      "path": "grp/imf12.grp",
+      "language": "grp",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/imf12.grp",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/imf12.grp",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Imf12",
+      "code_lines": 850,
+      "definitions": 0,
+      "effort_person_days": 4.958,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Volkmar Felsch.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains,  for each  Q-class representative  of the irreducible\n#  maximal finite integral matrix groups of dimension 12,"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 1723,
+    "definitions": 0,
+    "effort_person_days": 10.05
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

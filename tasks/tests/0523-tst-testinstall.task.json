@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerasl3adzmcxvwvdl3scdtpt3gddn35xoaaakt6bpancwjriy4itora",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0523",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/type.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/type.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/type.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Type",
+      "code_lines": 70,
+      "definitions": 0,
+      "effort_person_days": 0.71,
+      "header_quote": "@local test,filters"
+    },
+    {
+      "path": "tst/testinstall/zmodnze.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/zmodnze.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/zmodnze.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Zmodnze",
+      "code_lines": 71,
+      "definitions": 0,
+      "effort_person_days": 0.71,
+      "header_quote": "@local R,a,b,c,d"
+    },
+    {
+      "path": "tst/testinstall/associate.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/associate.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/associate.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Associate",
+      "code_lines": 47,
+      "definitions": 1,
+      "effort_person_days": 0.68,
+      "header_quote": "@local checkStandardAssociate, A, x, R"
+    },
+    {
+      "path": "tst/testinstall/error.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/error.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/error.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Error",
+      "code_lines": 41,
+      "definitions": 5,
+      "effort_person_days": 0.68,
+      "header_quote": "#\ngap> function() 123; end;\nSyntax error: while parsing a function: statement or 'end' expected in stream:\\\n1\nfunction() 123; end;"
+    },
+    {
+      "path": "tst/testinstall/oprt.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/oprt.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/oprt.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Oprt",
+      "code_lines": 68,
+      "definitions": 0,
+      "effort_person_days": 0.68,
+      "header_quote": "@local G,c5,d,eo,es,ess,gens,res"
+    },
+    {
+      "path": "tst/testinstall/straight.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/straight.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/straight.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Straight",
+      "code_lines": 68,
+      "definitions": 0,
+      "effort_person_days": 0.68,
+      "header_quote": "#  IntegratedStraightLineProgram:\n#  'prg0' returns an empty list,\n#  'prg1' is overwriting and returns an element,\n#  'prg2' is non-overwriting and returns an element,\n#  'prg3' is overwriting and returns a nonempty list of elements.\n#  Test all combinations of these programs.\n#"
+    },
+    {
+      "path": "tst/testinstall/action.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/action.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/action.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Action",
+      "code_lines": 56,
+      "definitions": 0,
+      "effort_person_days": 0.64,
+      "header_quote": "The following session documents what happens currently\nif one specifies \"group actions\" that are in fact not actions.\n(When some of these tests fail then parts of the documentation\nmay have to be changed.)"
+    },
+    {
+      "path": "tst/testinstall/restrictedperm.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/restrictedperm.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/restrictedperm.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Restrictedperm",
+      "code_lines": 64,
+      "definitions": 0,
+      "effort_person_days": 0.64,
+      "header_quote": "RestrictedPerm misbehaved when given non-integer values"
+    },
+    {
+      "path": "tst/testinstall/gprdmat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/gprdmat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/gprdmat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Gprdmat",
+      "code_lines": 61,
+      "definitions": 0,
+      "effort_person_days": 0.61,
+      "header_quote": "MatDirectProduct"
+    },
+    {
+      "path": "tst/testinstall/rationals.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/rationals.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/rationals.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Rationals",
+      "code_lines": 60,
+      "definitions": 0,
+      "effort_person_days": 0.61,
+      "header_quote": "'Rat' -- converting things to a rational"
+    },
+    {
+      "path": "tst/testinstall/switch.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/switch.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/switch.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Switch",
+      "code_lines": 59,
+      "definitions": 0,
+      "effort_person_days": 0.61,
+      "header_quote": "@local x,x2,y,y2\n# Test SWITCH_OBJ and FORCE_SWITCH_OBJ"
+    },
+    {
+      "path": "tst/testinstall/morpheus.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/morpheus.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/morpheus.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Morpheus",
+      "code_lines": 57,
+      "definitions": 0,
+      "effort_person_days": 0.59,
+      "header_quote": "############################################################################\n#\n#  This  file  tests the automorphism routines\n#\n@local a,autd8,d8,g,inn,inn2,iso1,iso2,iso3,iso4,p,r,s4"
+    },
+    {
+      "path": "tst/testinstall/help.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/help.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/help.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Help",
+      "code_lines": 32,
+      "definitions": 3,
+      "effort_person_days": 0.57,
+      "header_quote": "Test help"
+    },
+    {
+      "path": "tst/testinstall/bound.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/bound.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/bound.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Bound",
+      "code_lines": 49,
+      "definitions": 4,
+      "effort_person_days": 0.53,
+      "header_quote": "@local S,f,r"
+    },
+    {
+      "path": "tst/testinstall/primality.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/primality.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/primality.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Primality",
+      "code_lines": 53,
+      "definitions": 0,
+      "effort_person_days": 0.53,
+      "header_quote": "@local p, proof"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 856,
+    "definitions": 13,
+    "effort_person_days": 9.47
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

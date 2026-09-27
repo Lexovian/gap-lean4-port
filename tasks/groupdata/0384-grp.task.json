@@ -1,0 +1,41 @@
+{
+  "task_cid": "baguqeera44ebx7xemdsa4gy76hzmv7aiq7fwvfp7dygd5za6kvjacajr2ewa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0384",
+  "layer": "groupdata",
+  "module": "grp",
+  "title": "Port grp (groupdata)",
+  "files": [
+    {
+      "path": "grp/perf30.grp",
+      "language": "grp",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/perf30.grp",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/perf30.grp",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Perf30",
+      "code_lines": 9339,
+      "definitions": 65,
+      "effort_person_days": 54.857,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  It contains the perfect groups of order 1749600\n#  This data was computed by Alexander Hulpke\n#  It is distributed under the artistic license 2.0\n#  https://opensource.org/licenses/Artistic-2.0\n#  as well as (dual licensing) under GPL 2"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 9339,
+    "definitions": 65,
+    "effort_person_days": 54.86
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

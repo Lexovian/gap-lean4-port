@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerampzwvj6e4i23utjuis6cjdhzgkhfsmazum6xrueql7jd3qcfjkoa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0482",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2024-05-06-IsomorphismPermGroupOrFailFpGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-05-06-IsomorphismPermGroupOrFailFpGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-05-06-IsomorphismPermGroupOrFailFpGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240506IsomorphismPermGroupOrFailFpGroup",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "Verify regression in IsomorphismPermGroupOrFailFpGroup is\nresolved, see <https://github.com/gap-system/gap/issues/5697>"
+    },
+    {
+      "path": "tst/testbugfix/2005-05-17-t00074.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-05-17-t00074.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-05-17-t00074.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050517T00074",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "2005/05/17 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2011-02-22-t00003.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2011-02-22-t00003.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2011-02-22-t00003.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20110222T00003",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "#  Check that a new SpecialPcgs is created for which\n#    LGWeights can be set properly\n#    see my mail of 2011/02/22 to gap-dev for details. BH\n#"
+    },
+    {
+      "path": "tst/testbugfix/2013-03-07-t00283.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-03-07-t00283.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-03-07-t00283.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130307T00283",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "2013/03/07 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2016-08-18-t00346.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-08-18-t00346.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-08-18-t00346.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160818T00346",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "2016/8/18 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2019-07-17-cyclic-size.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-07-17-cyclic-size.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-07-17-cyclic-size.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190717CyclicSize",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "Fix a bug that only occurs if all packages are loaded"
+    },
+    {
+      "path": "tst/testbugfix/2021-02-04-ObjectsWithMemoryEquality.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-02-04-ObjectsWithMemoryEquality.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-02-04-ObjectsWithMemoryEquality.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210204ObjectsWithMemoryEquality",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "Equality operation for x with objects with memory, Pull Request #4239"
+    },
+    {
+      "path": "tst/testbugfix/2023-01-19-vector-types.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-01-19-vector-types.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-01-19-vector-types.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20230119VectorTypes",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "see https://github.com/gap-system/gap/issues/5330"
+    },
+    {
+      "path": "tst/testbugfix/2023-06-28-MTC.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-06-28-MTC.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-06-28-MTC.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20230628MTC",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "Overly eager cyclic replace in MTC, #5467"
+    },
+    {
+      "path": "tst/testbugfix/00021.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00021.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00021.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00021",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "#  bugs 12 and 14 for fix 4"
+    },
+    {
+      "path": "tst/testbugfix/00029.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00029.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00029.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00029",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "#  bug 10 for fix 5"
+    },
+    {
+      "path": "tst/testbugfix/2005-05-18-t00075.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-05-18-t00075.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-05-18-t00075.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050518T00075",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2005/05/18 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2005-08-29-t00318.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-08-29-t00318.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-08-29-t00318.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050829T00318",
+      "code_lines": 6,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2005/08/29 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2012-12-06-t00266.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-12-06-t00266.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-12-06-t00266.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20121206T00266",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2012/12/06 (AK)"
+    },
+    {
+      "path": "tst/testbugfix/2013-01-17-t00276.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-01-17-t00276.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-01-17-t00276.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130117T00276",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "2013/01/17 (AK)"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 125,
+    "definitions": 0,
+    "effort_person_days": 1.3
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

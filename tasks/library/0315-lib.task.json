@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeerakdzbtypwvitmxudmr3fzxkio67x4qfurf4kgakuxhbrehwebxvna",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0315",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/type.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/type.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/type.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Type",
+      "code_lines": 251,
+      "definitions": 26,
+      "effort_person_days": 4.386,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file defines the format of families and types. Some functions\n#  are moved to type1.g, which is compiled"
+    },
+    {
+      "path": "lib/monoid.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/monoid.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/monoid.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Monoid",
+      "code_lines": 226,
+      "definitions": 29,
+      "effort_person_days": 4.373,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains generic methods for monoids.\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 477,
+    "definitions": 55,
+    "effort_person_days": 8.76
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

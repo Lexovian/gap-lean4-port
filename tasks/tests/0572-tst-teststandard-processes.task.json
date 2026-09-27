@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeera3n5bz4aqnalgvcanzgzl72pof7k5dxdizyp356nfzmyju6qi65aa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0572",
+  "layer": "tests",
+  "module": "tst/teststandard/processes",
+  "title": "Port tst/teststandard/processes (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/processes/children.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/processes/children.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/processes/children.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Processes.Children",
+      "code_lines": 19,
+      "definitions": 1,
+      "effort_person_days": 0.33,
+      "header_quote": "If IO is loaded, disable its signal handler"
+    },
+    {
+      "path": "tst/teststandard/processes/check.pl",
+      "language": "pl",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/processes/check.pl",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/processes/check.pl",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Processes.Check",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.1,
+      "header_quote": "#!/usr/bin/env perl\nuse strict;\nuse warnings;\nuse Time::HiRes;\nif ( $ARGV[1] == 1 ) {"
+    },
+    {
+      "path": "tst/teststandard/processes/slowwrite.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/processes/slowwrite.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/processes/slowwrite.sh",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Processes.Slowwrite",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "!/usr/bin/env sh"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 31,
+    "definitions": 1,
+    "effort_person_days": 0.46
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

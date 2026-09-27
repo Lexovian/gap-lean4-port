@@ -1,0 +1,84 @@
+{
+  "task_cid": "baguqeera4oqbfsz7lyw25oqee7fiagfe7ti2ly4iuuxmvqk6tgpc36zdh3jq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0270",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/proto.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/proto.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/proto.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Proto",
+      "code_lines": 110,
+      "definitions": 31,
+      "effort_person_days": 2.269,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Andrew Solomon.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Declarations of utilities for fast prototyping of new GAP objects.\n#"
+    },
+    {
+      "path": "lib/matrix.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/matrix.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/matrix.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Matrix",
+      "code_lines": 154,
+      "definitions": 105,
+      "effort_person_days": 2.131,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler, Alexander Hulpke, Heiko Theißen, Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains those functions that mainly deal with matrices.\n#"
+    },
+    {
+      "path": "lib/pcgscomp.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/pcgscomp.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/pcgscomp.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Pcgscomp",
+      "code_lines": 119,
+      "definitions": 16,
+      "effort_person_days": 2.076,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file  contains the methods  for polycyclic generating systems dealing\n#  with or defined by a pc series."
+    },
+    {
+      "path": "lib/list.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/list.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/list.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.List",
+      "code_lines": 137,
+      "definitions": 6,
+      "effort_person_days": 2.049,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains some  list types and functions that  have to be  known\n#  very early in the bootstrap stage (therefore they are not in list.gi)"
+    },
+    {
+      "path": "lib/matobj2.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/matobj2.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/matobj2.gd",
+      "suggested_lean_module": "RequestProject.Gap.Library.Matobj2",
+      "code_lines": 146,
+      "definitions": 99,
+      "effort_person_days": 2.008,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 666,
+    "definitions": 257,
+    "effort_person_days": 10.53
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,41 @@
+{
+  "task_cid": "baguqeerazk3mkvlrlxwmax7j3rql5cy3o2tr4ytgo65kpmsmfkzeow3ts4qa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0401",
+  "layer": "groupdata",
+  "module": "hpcgap/lib",
+  "title": "Port hpcgap/lib (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/ffeconway.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/ffeconway.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/ffeconway.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Ffeconway",
+      "code_lines": 1092,
+      "definitions": 113,
+      "effort_person_days": 9.007,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains methods for `FFE's represented as library objects by\n#  coefficients of polynomials modulo the Conway polynomial."
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1092,
+    "definitions": 113,
+    "effort_person_days": 9.01
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

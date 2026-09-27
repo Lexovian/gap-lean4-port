@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeerahmtizhd5l5gja3t4ub6zloj2m32sukbpmwjpks746xypjw66i25q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0492",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/algsc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/algsc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/algsc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Algsc",
+      "code_lines": 854,
+      "definitions": 0,
+      "effort_person_days": 8.55,
+      "header_quote": "@local T0,T1,T2,T3,a,b,c,coeff,der,e,fam,g,gens,i,id,j,k,l1,l2,l3,lcs,orb\n@local TestMonomialUseLattice_Orig,permgrp,ps,q,s,s1,s2,s3,sc,t,theta\n@local U,ucs,v,vecs,vectors,w,z,A,V,W\n@local L,l"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 854,
+    "definitions": 0,
+    "effort_person_days": 8.55
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

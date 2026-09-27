@@ -1,0 +1,143 @@
+{
+  "task_cid": "baguqeeramosvj4eialfohjfaqb5watke4ute5yzq2w376wvv67etwv4wosfa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0513",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/random.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/random.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/random.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Random",
+      "code_lines": 120,
+      "definitions": 3,
+      "effort_person_days": 1.31,
+      "header_quote": "@local R,a,rm,g,orbs,orb,i,getOneInt"
+    },
+    {
+      "path": "tst/testinstall/cset.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/cset.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/cset.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Cset",
+      "code_lines": 128,
+      "definitions": 1,
+      "effort_person_days": 1.29,
+      "header_quote": "############################################################################\n#\n#  test of group intersection and RightCoset\n#"
+    },
+    {
+      "path": "tst/testinstall/methwhy.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/methwhy.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/methwhy.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Methwhy",
+      "code_lines": 96,
+      "definitions": 29,
+      "effort_person_days": 1.24,
+      "header_quote": "also install multi argument methods, to make sure that there\nis no bug which just happens to work with 1 argument"
+    },
+    {
+      "path": "tst/testinstall/testrandom.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/testrandom.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/testrandom.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Testrandom",
+      "code_lines": 87,
+      "definitions": 3,
+      "effort_person_days": 1.24,
+      "header_quote": "Perform a variety of tests on Random Sources and functions which create\nrandom objects.\n\nThis function is used for a variety is different tests:\n\nTest that 'Random(C)' and 'Random(GlobalMersenneTwister, C)' produce\nthe same answer.\n\nTest that 'Random(rs,C)' only uses 'rs', and no other source of random\n\nTest Random and RandomList"
+    },
+    {
+      "path": "tst/testinstall/dt.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/dt.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/dt.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Dt",
+      "code_lines": 100,
+      "definitions": 1,
+      "effort_person_days": 1.15,
+      "header_quote": "############################################################################\n#\n#  Test the (undocumented!) deep thought collector code implemented by\n#  src/dt.{c,h}, src/dteval.{c,h}, lib/dt.g, lib/rwsdt.gi, lib/rwspcclt.gd\n#\n@local g,UnitriangularPcGroup,G,H,iso,k,famG,collG,famH,collH,i,h"
+    },
+    {
+      "path": "tst/testinstall/alghom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/alghom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/alghom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Alghom",
+      "code_lines": 112,
+      "definitions": 2,
+      "effort_person_days": 1.13,
+      "header_quote": "@local A,B,C,ExampleRing,I,O,P,Q,R,T,b,coker,f,gensq,id,ker,m1,m2,map,pols\n@local pr,q,x,y,z,inv,gens,map1,map2"
+    },
+    {
+      "path": "tst/testinstall/objset.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/objset.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/objset.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Objset",
+      "code_lines": 94,
+      "definitions": 0,
+      "effort_person_days": 1.12,
+      "header_quote": "@local a,b,c,p,setvals,x,i,y,result"
+    },
+    {
+      "path": "tst/testinstall/algrep.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/algrep.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/algrep.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Algrep",
+      "code_lines": 110,
+      "definitions": 0,
+      "effort_person_days": 1.11,
+      "header_quote": "creating subalgebra"
+    },
+    {
+      "path": "tst/testinstall/xfuncs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/xfuncs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/xfuncs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Xfuncs",
+      "code_lines": 92,
+      "definitions": 29,
+      "effort_person_days": 1.11,
+      "header_quote": "@local list,set,sum,sumlim,testXfuncs"
+    },
+    {
+      "path": "tst/testinstall/testenumerator.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/testenumerator.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/testenumerator.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Testenumerator",
+      "code_lines": 76,
+      "definitions": 1,
+      "effort_person_days": 1.08,
+      "header_quote": "############################################################################\n#\nF  TestConsistencyOfEnumeratorByFunctions( <enum> )\n#\n#  This (currently undocumented) function is thought for checking newly\n#  implemented enumerators in `IsEnumeratorByFunctions'.\n#  Whenever a test fails then a message about this is printed, and `false'\n#  is returned in the end.\n#  If no obvious errors are found then `true' is returned.\n#  (Note that for enumerators of length up to 1000, also access to too large\n#  positions is checked.)\n#"
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "code_lines": 1015,
+    "definitions": 69,
+    "effort_person_days": 11.78
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

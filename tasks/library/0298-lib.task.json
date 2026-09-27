@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeeraswrhbk4leh7bqadkeydfbltyrm56yso4jegeof6mbivt54a3cxra",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0298",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/smgideal.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/smgideal.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/smgideal.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Smgideal",
+      "code_lines": 214,
+      "definitions": 30,
+      "effort_person_days": 4.139,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Robert Arthur.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains generic methods for semigroup ideals.\n#"
+    },
+    {
+      "path": "lib/gaussian.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/gaussian.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/gaussian.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Gaussian",
+      "code_lines": 214,
+      "definitions": 28,
+      "effort_person_days": 4.125,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains methods for Gaussian rationals and Gaussian integers.\n#"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 428,
+    "definitions": 58,
+    "effort_person_days": 8.26
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

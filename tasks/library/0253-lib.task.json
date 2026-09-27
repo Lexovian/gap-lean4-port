@@ -1,0 +1,40 @@
+{
+  "task_cid": "baguqeeramtgorcez5c233k2w3h5b7wl4cklzacji2zd4k55qidshuhe6ns6q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0253",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/pcgs.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/pcgs.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/pcgs.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Pcgs",
+      "code_lines": 1167,
+      "definitions": 153,
+      "effort_person_days": 21.093,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the methods for polycyclic generating systems.\n#"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1167,
+    "definitions": 153,
+    "effort_person_days": 21.09
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeratycygck5wmypjbu27aafcxz5oapmtgttad7g72mqwds7avuhdpnq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0555",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/broken-test-8.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-8.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-8.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest8",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "@elif 1 = 1"
+    },
+    {
+      "path": "tst/testspecial/broken-test-9.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-9.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-9.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest9",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "@if 1 = 1"
+    },
+    {
+      "path": "tst/testspecial/funccall-ReadEvalError.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/funccall-ReadEvalError.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/funccall-ReadEvalError.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.FunccallReadEvalError",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Read(InputTextString(\"quit;\")); # trigger GAP_THROW in EvalOrExecCall\n1+1;\nREAD(InputTextString(\"quit;\")); # trigger GAP_THROW in IntrFuncCallEnd\n1+1;"
+    },
+    {
+      "path": "tst/testspecial/line-continuation.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/line-continuation.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/line-continuation.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.LineContinuation",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Verify that a CRLF after a line continuation increments the current line\ncounter only once, so that both examples below report the error in line 2."
+    },
+    {
+      "path": "tst/testspecial/stack-depth-func.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-depth-func.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-depth-func.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackDepthFunc",
+      "code_lines": 3,
+      "definitions": 1,
+      "effort_person_days": 0.04,
+      "header_quote": "f := function() f(); end;\nf();\nreturn; # try once more"
+    },
+    {
+      "path": "tst/testspecial/at-exit.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/at-exit.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/at-exit.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.AtExit",
+      "code_lines": 3,
+      "definitions": 3,
+      "effort_person_days": 0.03,
+      "header_quote": "Check InstallAtExit is run in reverse order"
+    },
+    {
+      "path": "tst/testspecial/broken-test-2.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-2.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-2.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest2",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "@if 2 = 1"
+    },
+    {
+      "path": "tst/testspecial/broken-test-3.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-3.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-3.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest3",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "@if 2 = 1"
+    },
+    {
+      "path": "tst/testspecial/good.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/good.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/good.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Good",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "Mess with lvl to check that it doesn't affect the execution context elsewhere."
+    },
+    {
+      "path": "tst/testspecial/last-access.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/last-access.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/last-access.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.LastAccess",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "1;2;3;[last,last2,last3];\nError(\"err\");\n1;2;3;[last,last2,last3];"
+    },
+    {
+      "path": "tst/testspecial/method-not-found.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/method-not-found.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/method-not-found.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.MethodNotFound",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "test returning from a 'method not found' error"
+    },
+    {
+      "path": "tst/testspecial/repl-syntax-err.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/repl-syntax-err.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/repl-syntax-err.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ReplSyntaxErr",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "see <https://github.com/gap-system/gap/issues/4188>\nwe need a line with a statement that gets executed by the immediate\ninterpreter before running into a syntax error (here: a colon instead\nof a semicolon); this leads to a break loop which we quit; the syntax\nerror then is displayed. The next line then contains another syntax\nerror, which wasn't reported correctly before the above issues was\nfixed."
+    },
+    {
+      "path": "tst/testspecial/array_access.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/array_access.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/array_access.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ArrayAccess",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "a := false;;\na{{1..1}};"
+    },
+    {
+      "path": "tst/testspecial/broken-test-4.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test-4.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test-4.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest4",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "@if 1 = 1\n@if 2 = 2"
+    },
+    {
+      "path": "tst/testspecial/error-in-InputTextString.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/error-in-InputTextString.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/error-in-InputTextString.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ErrorInInputTextString",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.02,
+      "header_quote": "Read(InputTextString(\"Print(1 + [()]);\"));\nquit;"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 45,
+    "definitions": 4,
+    "effort_person_days": 0.47
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

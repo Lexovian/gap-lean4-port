@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerazy43hprfitxa7fgiyha66i6yjuc5e6wtdachymf2kireae4lvzja",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0479",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2022-03-20-AlternatingDegree.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-03-20-AlternatingDegree.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-03-20-AlternatingDegree.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220320AlternatingDegree",
+      "code_lines": 11,
+      "definitions": 1,
+      "effort_person_days": 0.12,
+      "header_quote": "Very fix for infinite recursion in AlternatingDegree and SymmetricDegree,\nsee https://github.com/gap-system/gap/issues/4826"
+    },
+    {
+      "path": "tst/testbugfix/2025-08-25-InterpolatedPolynomial.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-08-25-InterpolatedPolynomial.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-08-25-InterpolatedPolynomial.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250825InterpolatedPolynomial",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "InterpolatedPolynomial should always return a polynomial.\nReported by István Szöllősi during GAP Days 2025."
+    },
+    {
+      "path": "tst/testbugfix/00319.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00319.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00319.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00319",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "#  Bug 18 for fix 4"
+    },
+    {
+      "path": "tst/testbugfix/2005-10-05-t00115.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-10-05-t00115.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-10-05-t00115.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051005T00115",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "2005/10/05 (SL and MN)"
+    },
+    {
+      "path": "tst/testbugfix/2005-10-29-t00321.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-10-29-t00321.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-10-29-t00321.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051029T00321",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "2005/10/29 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2006-04-02-t00154.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2006-04-02-t00154.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2006-04-02-t00154.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20060402T00154",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "2006/04/02 (AH)"
+    },
+    {
+      "path": "tst/testbugfix/2011-09-29-t00236.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2011-09-29-t00236.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2011-09-29-t00236.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20110929T00236",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Reported by Radoslav Kirov on 2011/06/11, added by MH on 2011/09/29"
+    },
+    {
+      "path": "tst/testbugfix/2012-03-16-t00241.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-03-16-t00241.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-03-16-t00241.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120316T00241",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "Reported by Burkhard Hoefling on 2012/3/14, added by SL on 2012/3/16\nSHIFT_LEFT_VEC8BIT can fail to clean space to its right, which can then\nbe picked up by a subsequent add to a longer vector"
+    },
+    {
+      "path": "tst/testbugfix/2012-09-14-t00272.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-09-14-t00272.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-09-14-t00272.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120914T00272",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "2012/09/14 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2013-06-14-t00300.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-06-14-t00300.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-06-14-t00300.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130614T00300",
+      "code_lines": 10,
+      "definitions": 2,
+      "effort_person_days": 0.11,
+      "header_quote": "2013/06/14 (AK, MH)"
+    },
+    {
+      "path": "tst/testbugfix/2017-08-05-algfld.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-08-05-algfld.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-08-05-algfld.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170805Algfld",
+      "code_lines": 11,
+      "definitions": 1,
+      "effort_person_days": 0.11,
+      "header_quote": "AlgebraicExtension used to fail for finite fields of size over 256"
+    },
+    {
+      "path": "tst/testbugfix/2018-06-27-ExtendedVectors.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-06-27-ExtendedVectors.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-06-27-ExtendedVectors.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180627ExtendedVectors",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "ExtendedVectors was relying on some specific internal behavior\nof vector space enumerators; but that was brittle, as a change in\nrank can lead to a different enumerator being installed. Make sure\nthis is not the case anymore"
+    },
+    {
+      "path": "tst/testbugfix/2018-06-28-grplatt.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-06-28-grplatt.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-06-28-grplatt.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180628Grplatt",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "verify fix for bug #2586 on GitHub"
+    },
+    {
+      "path": "tst/testbugfix/2021-03-25-IsSemiband.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-03-25-IsSemiband.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-03-25-IsSemiband.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210325IsSemiband",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "#\ngap> tab := [[4, 2, 1, 4], [2, 2, 2, 3], [2, 4, 3, 1], [4, 1, 1, 4]];;\ngap> m := MagmaByMultiplicationTable(tab);;\ngap> m = Submagma(m, Filtered(m, IsIdempotent));\ntrue"
+    },
+    {
+      "path": "tst/testbugfix/2023-10-18-SetDimension.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-10-18-SetDimension.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-10-18-SetDimension.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20231018SetDimension",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "issue reported by Michel Lavrauw on 18 October 2023\n@if LoadPackage(\"fining\",false) <> fail"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 150,
+    "definitions": 4,
+    "effort_person_days": 1.67
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

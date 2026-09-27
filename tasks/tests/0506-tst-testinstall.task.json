@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeera5h5eblogx7w5od6wadk4wsyrta22u44ctaynqimqvudmfyz7u55q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0506",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/listindex.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/listindex.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/listindex.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Listindex",
+      "code_lines": 382,
+      "definitions": 21,
+      "effort_person_days": 4.26,
+      "header_quote": "############################################################################\n#\nA  listindex.tst               GAP 4.0 library                   Steve Linton\n#\n#\n#\n#\n@local foo,l,o,r,res,s,t,x"
+    },
+    {
+      "path": "tst/testinstall/ffe.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ffe.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ffe.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ffe",
+      "code_lines": 397,
+      "definitions": 1,
+      "effort_person_days": 4.22,
+      "header_quote": "@local Rochambeau,e,F,f1,f2,f3,p,pol,qs,r,x,bigPrime,z,odds,evens\n@local r1,r2,r3,sf1,sf2,sf3,q,q2,Fp,fields,C,coeffs,B"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 779,
+    "definitions": 22,
+    "effort_person_days": 8.48
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

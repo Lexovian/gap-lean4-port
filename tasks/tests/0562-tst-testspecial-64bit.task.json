@@ -1,0 +1,99 @@
+{
+  "task_cid": "baguqeeravsyxkxtuinehva5ru3qjfldoyjyxdz3ctias6smgvev4fzjwrvwq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0562",
+  "layer": "tests",
+  "module": "tst/testspecial/64bit",
+  "title": "Port tst/testspecial/64bit (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/64bit/low-mem-plist-1.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-plist-1.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-plist-1.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemPlist1G",
+      "code_lines": 17,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "gap> l := [];\n[  ]\ngap> l[2^50] := 1;\nError, Cannot allocate 9007199254741000 bytes: cannot extend the workspace any more!!!!\nnot in any function at *stdin*:3"
+    },
+    {
+      "path": "tst/testspecial/64bit/low-mem-list-types.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-list-types.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-list-types.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemListTypesG",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "gap> ListWithIdenticalEntries(2^50, 'a');\nError, Cannot allocate 1125899906842633 bytes: cannot extend the workspace any more!!\nnot in any function at *stdin*:2\nyou can enter 'quit;' to quit to outer loop\nbrk> quit;"
+    },
+    {
+      "path": "tst/testspecial/64bit/low-mem-plist-2.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-plist-2.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-plist-2.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemPlist2G",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "gap> EmptyPlist(2^50);\nError, Cannot allocate 9007199254741000 bytes: cannot extend the workspace any more!!\nnot in any function at *stdin*:2\nyou can enter 'quit;' to quit to outer loop\nbrk> quit;"
+    },
+    {
+      "path": "tst/testspecial/64bit/low-mem-plist-1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-plist-1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-plist-1.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemPlist1",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "l := [];\nl[2^50] := 1;\nquit;\nl[2^50] := 2;\nquit;"
+    },
+    {
+      "path": "tst/testspecial/64bit/low-mem-list-types.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-list-types.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-list-types.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemListTypes",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "ListWithIdenticalEntries(2^50, 'a');\nquit;\nListWithIdenticalEntries(2^50, true);\nquit;\nListWithIdenticalEntries(2^50, 2);"
+    },
+    {
+      "path": "tst/testspecial/64bit/low-mem-plist-2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/64bit/low-mem-plist-2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/64bit/low-mem-plist-2.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.64bit.LowMemPlist2",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "EmptyPlist(2^50);\nquit;\nEmptyPlist(2^50);\nquit;\nquit;"
+    }
+  ],
+  "totals": {
+    "files": 6,
+    "code_lines": 64,
+    "definitions": 0,
+    "effort_person_days": 0.64
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

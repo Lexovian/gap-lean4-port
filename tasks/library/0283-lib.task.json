@@ -1,0 +1,106 @@
+{
+  "task_cid": "baguqeeramijap7vivog5zfztak6lfpo4vlppbinv7vcddhtkn4t2pqbgfypa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0283",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/rvecempt.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/rvecempt.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/rvecempt.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Rvecempt",
+      "code_lines": 103,
+      "definitions": 24,
+      "effort_person_days": 1.705,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/methsel2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/methsel2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/methsel2.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Methsel2",
+      "code_lines": 96,
+      "definitions": 8,
+      "effort_person_days": 1.664,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton, Hans Ulrich Besche, Max Neuenhoeffer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file defines some functions associated with method selection,\n#  which do not need to be compiled by default. More performance critical"
+    },
+    {
+      "path": "lib/gasman.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/gasman.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/gasman.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Gasman",
+      "code_lines": 80,
+      "definitions": 9,
+      "effort_person_days": 1.65,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Steve Linton.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains implementations of functions that report information from the\n#  GASMAN garbage collector"
+    },
+    {
+      "path": "lib/upolyirr.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/upolyirr.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/upolyirr.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Upolyirr",
+      "code_lines": 86,
+      "definitions": 9,
+      "effort_person_days": 1.595,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file  contains methods to compute irreducible univariate polynomials\n#"
+    },
+    {
+      "path": "lib/ffe.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/ffe.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/ffe.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Ffe",
+      "code_lines": 93,
+      "definitions": 22,
+      "effort_person_days": 1.54,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file deals with internal finite field elements.\n#"
+    },
+    {
+      "path": "lib/contfrac.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/contfrac.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/contfrac.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Contfrac",
+      "code_lines": 77,
+      "definitions": 4,
+      "effort_person_days": 1.499,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Stefan Kohl.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains code for computing (with) continued fraction\n#  expansions of real numbers."
+    },
+    {
+      "path": "lib/colorprompt.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/colorprompt.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/colorprompt.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Colorprompt",
+      "code_lines": 78,
+      "definitions": 6,
+      "effort_person_days": 1.458,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  A demo for customizing the GAP prompt.\n#"
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "code_lines": 613,
+    "definitions": 82,
+    "effort_person_days": 11.11
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

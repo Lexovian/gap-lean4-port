@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerazd6fsz2kefqx3tmr2j5cbzwb2aas2k763alokxr4rwxjgsqpkmcq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0466",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2008-08-13-t00200.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2008-08-13-t00200.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2008-08-13-t00200.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20080813T00200",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "2008/08/13 (SL)"
+    },
+    {
+      "path": "tst/testbugfix/2013-03-08-t00284.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-03-08-t00284.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-03-08-t00284.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130308T00284",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "2013/03/08 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2015-05-12-t00314.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2015-05-12-t00314.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2015-05-12-t00314.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20150512T00314",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "2015/05/12 (WdG, reported by Istvan Szollosi)"
+    },
+    {
+      "path": "tst/testbugfix/2016-04-14-t00316.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2016-04-14-t00316.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2016-04-14-t00316.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20160414T00316",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "2016/04/14 (Chris Jefferson)"
+    },
+    {
+      "path": "tst/testbugfix/2017-07-09-blowup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-07-09-blowup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-07-09-blowup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170709Blowup",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "Fixes https://github.com/gap-system/gap/issues/826\nModified BlownUpMat to return fail for invalid input"
+    },
+    {
+      "path": "tst/testbugfix/2018-12-11-fphomgenmix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-11-fphomgenmix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-11-fphomgenmix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181211Fphomgenmix",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "test for fpgroup homs on mixed generators (fixing #3100)"
+    },
+    {
+      "path": "tst/testbugfix/2020-01-13-OnSets-Mutability.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2020-01-13-OnSets-Mutability.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2020-01-13-OnSets-Mutability.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20200113OnSetsMutability",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "OnSets would sometimes return a mutable list when it should have returned an\nimmutable one; in HPC-GAP this got worse, as the final object was a mutable\nand *public* list.\n\nThis only happened if the acting element was not internal, i.e., not a\npermutation, partial permutation or transformation."
+    },
+    {
+      "path": "tst/testbugfix/2025-01-16-Comm-for-group-automorphisms.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-01-16-Comm-for-group-automorphisms.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-01-16-Comm-for-group-automorphisms.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250116CommForGroupAutomorphisms",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "@local F,x1,x2,x3,x4,A,u,v,hom\nThe 'IsBijective' and 'Comm's call below used to trigger coset enumeration.\nSee issue https://github.com/gap-system/gap/issues/3898 and also\nhttps://github.com/gap-system/gap/issues/5910"
+    },
+    {
+      "path": "tst/testbugfix/2025-02-10-Isomorphism.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-02-10-Isomorphism.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-02-10-Isomorphism.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250210Isomorphism",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "Fix #5931 Isomorphism test / Characteristic matching"
+    },
+    {
+      "path": "tst/testbugfix/2025-09-11-LowerCentralSeriesOfGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-09-11-LowerCentralSeriesOfGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-09-11-LowerCentralSeriesOfGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250911LowerCentralSeriesOfGroup",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "@local D,G\nFix a bug in LowerCentralSeriesOfGroup for trivial groups\nSee https://github.com/gap-system/gap/issues/6108"
+    },
+    {
+      "path": "tst/testbugfix/2026-03-23-issue-6270.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-03-23-issue-6270.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-03-23-issue-6270.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260323Issue6270",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "gap> m := NewMatrix( IsPlistMatrixRep, GF(3), 2,\n>                    [ [ 0*Z(3), Z(3) ], [ Z(3)^0, 0*Z(3) ] ] );;\ngap> l := Unpack( m );;\ngap> IsMatrix( m );\nfalse"
+    },
+    {
+      "path": "tst/testbugfix/00036.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/00036.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/00036.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.00036",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "#  bug 8 for fix 1"
+    },
+    {
+      "path": "tst/testbugfix/2005-08-15-t00111.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-08-15-t00111.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-08-15-t00111.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20050815T00111",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "2005/08/15 (SK)"
+    },
+    {
+      "path": "tst/testbugfix/2005-12-08-t00322.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-12-08-t00322.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-12-08-t00322.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051208T00322",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "2005/12/08 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2005-12-22-t00129.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-12-22-t00129.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-12-22-t00129.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051222T00129",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "2005/12/22 (Robert F. Morse)\n2011/09/13 (Updated by AK as suggested by JM)\n2013/09/04 (Updated by JM)"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 202,
+    "definitions": 0,
+    "effort_person_days": 2.06
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,44 @@
+{
+  "task_cid": "baguqeeraqkj6rh5iwjd76r2e6uotzcmn4qody5hr5pvyzucmnnlh4p6y2fea",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0563",
+  "layer": "tests",
+  "module": "tst/teststandard",
+  "title": "Port tst/teststandard (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/arithlst.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/arithlst.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/arithlst.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Arithlst",
+      "code_lines": 452,
+      "definitions": 23,
+      "effort_person_days": 6.4,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 452,
+    "definitions": 23,
+    "effort_person_days": 6.4
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

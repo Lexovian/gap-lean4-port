@@ -1,0 +1,110 @@
+{
+  "task_cid": "baguqeeraeawba5dwbep3cadnihs4sqjxwpwtkldhs32woi7abuprjzhnhlia",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0557",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/func-and-proc-call-trace.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/func-and-proc-call-trace.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/func-and-proc-call-trace.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.FuncAndProcCallTraceG",
+      "code_lines": 241,
+      "definitions": 0,
+      "effort_person_days": 2.73,
+      "header_quote": "gap> informproc0 := function(l)\n> Add(l,1);\n> l();\n> end;;\ngap> informproc0([]);"
+    },
+    {
+      "path": "tst/testspecial/debug-var.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/debug-var.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/debug-var.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.DebugVarG",
+      "code_lines": 189,
+      "definitions": 0,
+      "effort_person_days": 1.98,
+      "header_quote": "gap> x:=1;;\ngap> f:=function(a)\n>   local g, y, unbound_higher;\n>   y:=2;\n>   g := function(b)"
+    },
+    {
+      "path": "tst/testspecial/trace.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/trace.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/trace.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.TraceG",
+      "code_lines": 156,
+      "definitions": 0,
+      "effort_person_days": 1.62,
+      "header_quote": "gap> #\ngap> # tracing of operations\ngap> #\ngap> \ngap> # create a dummy operation"
+    },
+    {
+      "path": "tst/testspecial/broken-test.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTestG",
+      "code_lines": 123,
+      "definitions": 0,
+      "effort_person_days": 1.37,
+      "header_quote": "gap> Test(\"broken-test-2.tst\", rec(width := 800));\nError, Invalid test file: #@ command found in the middle of a single test at broken-test-2.tst:5\nStack trace:\n*[1] ErrorNoReturn( s, \" at \", fnam, \":\", i );\n   @ GAPROOT/lib/test.gi:LINE"
+    },
+    {
+      "path": "tst/testspecial/backtrace.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/backtrace.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/backtrace.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Backtrace",
+      "code_lines": 82,
+      "definitions": 16,
+      "effort_person_days": 1.29,
+      "header_quote": "############################################################################\n#\n#  This file tests Where and WhereWithVars, and in particular how backtraces\n#  are reported for different kinds of statements; there used to be various\n#  bugs related to that in the past.\n#"
+    },
+    {
+      "path": "tst/testspecial/func-and-proc-call-trace.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/func-and-proc-call-trace.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/func-and-proc-call-trace.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.FuncAndProcCallTrace",
+      "code_lines": 112,
+      "definitions": 16,
+      "effort_person_days": 1.12,
+      "header_quote": "informproc0 := function(l)\nAdd(l,1);\nl();\nend;;\ninformproc0([]);"
+    },
+    {
+      "path": "tst/testspecial/stack-depth-rec.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/stack-depth-rec.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/stack-depth-rec.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.StackDepthRecG",
+      "code_lines": 103,
+      "definitions": 0,
+      "effort_person_days": 1.08,
+      "header_quote": "gap> r := rec(); for i in [1..10000] do r := rec(a := r); od;\nrec(  )\ngap> Print(r);\nrec(\n  a := rec("
+    }
+  ],
+  "totals": {
+    "files": 7,
+    "code_lines": 1006,
+    "definitions": 32,
+    "effort_person_days": 11.19
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

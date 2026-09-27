@@ -1,0 +1,49 @@
+{
+  "task_cid": "baguqeerabs7n3vd7ijty2xoj3zgcrbqdidm2kq2ya4mijs4y5dvn4gk5qcna",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0001",
+  "layer": "kernel",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (kernel)",
+  "files": [
+    {
+      "path": "hpcgap/demo/sumliouville2.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/sumliouville2.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/sumliouville2.c",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Sumliouville2",
+      "code_lines": 84,
+      "definitions": 3,
+      "effort_person_days": 2.14,
+      "header_quote": "The Liouville function on a integer n is L(n) = (-1)^r where r is"
+    },
+    {
+      "path": "hpcgap/demo/sumliouville.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/sumliouville.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/sumliouville.c",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Sumliouville",
+      "code_lines": 75,
+      "definitions": 3,
+      "effort_person_days": 1.88,
+      "header_quote": "The Liouville function on a integer n is L(n) = (-1)^r where r is"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 159,
+    "definitions": 6,
+    "effort_person_days": 4.02
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

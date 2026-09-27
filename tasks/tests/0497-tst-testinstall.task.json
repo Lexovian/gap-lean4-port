@@ -1,0 +1,66 @@
+{
+  "task_cid": "baguqeera4orb7qvfkev3fscq2i7hgsxwkf5eb5ggxtkh4q4ahv32u4n3xpuq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0497",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/cyclotom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/cyclotom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/cyclotom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Cyclotom",
+      "code_lines": 317,
+      "definitions": 0,
+      "effort_person_days": 3.26,
+      "header_quote": "@local a,b,cyc,gm,i,l1,l2,l3,mat,n,r,ranges,s,x,y,z,sets,lists"
+    },
+    {
+      "path": "tst/testinstall/ctblmono.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/ctblmono.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/ctblmono.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Ctblmono",
+      "code_lines": 304,
+      "definitions": 0,
+      "effort_person_days": 3.19,
+      "header_quote": "@local S4,Sl23,chi,cln,n,test,g,irr\n@local TestMonomialUseLattice_Orig,g1,g2,g3,g4,g5,g6"
+    },
+    {
+      "path": "tst/testinstall/fldabnum.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/fldabnum.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/fldabnum.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Fldabnum",
+      "code_lines": 294,
+      "definitions": 0,
+      "effort_person_days": 2.94,
+      "header_quote": "@local aut,auts,c,f,g,id,pol,x,F,gens,A"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 915,
+    "definitions": 0,
+    "effort_person_days": 9.39
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,187 @@
+{
+  "task_cid": "baguqeerakh3ik7tlkdo5foyoe726txghdydssb32oxffc4kyxty7dbecn6aq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0509",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/oper1.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/oper1.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/oper1.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Oper1",
+      "code_lines": 75,
+      "definitions": 20,
+      "effort_person_days": 0.89,
+      "header_quote": "verify that no new methods were added"
+    },
+    {
+      "path": "tst/testinstall/gaussian.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/gaussian.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/gaussian.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Gaussian",
+      "code_lines": 88,
+      "definitions": 0,
+      "effort_person_days": 0.88,
+      "header_quote": "@local"
+    },
+    {
+      "path": "tst/testinstall/numtheor.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/numtheor.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/numtheor.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Numtheor",
+      "code_lines": 65,
+      "definitions": 1,
+      "effort_person_days": 0.88,
+      "header_quote": "@local JACOBI_INT_GAP,c,d,jac,m,n,oldLevel,t"
+    },
+    {
+      "path": "tst/testinstall/DirectProductElement.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/DirectProductElement.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/DirectProductElement.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.DirectProductElement",
+      "code_lines": 84,
+      "definitions": 0,
+      "effort_person_days": 0.86,
+      "header_quote": "Embryonic test for DirectProductElement objects, could be expanded."
+    },
+    {
+      "path": "tst/testinstall/kbsemi.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/kbsemi.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/kbsemi.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Kbsemi",
+      "code_lines": 75,
+      "definitions": 0,
+      "effort_person_days": 0.83,
+      "header_quote": "Some more tests for Knuth-Bendix rewriting"
+    },
+    {
+      "path": "tst/testinstall/objlist.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/objlist.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/objlist.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Objlist",
+      "code_lines": 82,
+      "definitions": 11,
+      "effort_person_days": 0.82,
+      "header_quote": "Create a list-like object, to test functionality of GAP for objects which implement\nIsSmallList"
+    },
+    {
+      "path": "tst/testinstall/set.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/set.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/set.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Set",
+      "code_lines": 82,
+      "definitions": 0,
+      "effort_person_days": 0.82,
+      "header_quote": "@local a,b,c,g,l"
+    },
+    {
+      "path": "tst/testinstall/bitfields.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/bitfields.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/bitfields.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Bitfields",
+      "code_lines": 64,
+      "definitions": 8,
+      "effort_person_days": 0.81,
+      "header_quote": "@local bf,i,j,vals,x,y,z"
+    },
+    {
+      "path": "tst/testinstall/info.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/info.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/info.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Info",
+      "code_lines": 81,
+      "definitions": 0,
+      "effort_person_days": 0.81,
+      "header_quote": "printing and arithmetic of info classes"
+    },
+    {
+      "path": "tst/testinstall/memoize.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/memoize.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/memoize.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Memoize",
+      "code_lines": 76,
+      "definitions": 2,
+      "effort_person_days": 0.78,
+      "header_quote": "test flushing caches"
+    },
+    {
+      "path": "tst/testinstall/unknown.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/unknown.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/unknown.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Unknown",
+      "code_lines": 75,
+      "definitions": 0,
+      "effort_person_days": 0.75,
+      "header_quote": "@local u"
+    },
+    {
+      "path": "tst/testinstall/euclidean.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/euclidean.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/euclidean.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Euclidean",
+      "code_lines": 48,
+      "definitions": 1,
+      "effort_person_days": 0.74,
+      "header_quote": "@local checkEuclideanRing"
+    },
+    {
+      "path": "tst/testinstall/stabchain.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/stabchain.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/stabchain.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Stabchain",
+      "code_lines": 55,
+      "definitions": 1,
+      "effort_person_days": 0.74,
+      "header_quote": "@local TestGens,m,gensets"
+    },
+    {
+      "path": "tst/testinstall/unbound.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/unbound.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/unbound.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Unbound",
+      "code_lines": 57,
+      "definitions": 24,
+      "effort_person_days": 0.72,
+      "header_quote": "@local f"
+    }
+  ],
+  "totals": {
+    "files": 14,
+    "code_lines": 1007,
+    "definitions": 68,
+    "effort_person_days": 11.33
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

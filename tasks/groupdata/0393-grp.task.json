@@ -1,0 +1,63 @@
+{
+  "task_cid": "baguqeeral34wkz3ysqy7odrr6wh577g53y2m52sbsfurjvorufkum466hrsq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0393",
+  "layer": "groupdata",
+  "module": "grp",
+  "title": "Port grp (groupdata)",
+  "files": [
+    {
+      "path": "grp/simple2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/simple2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/simple2.g",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Simple2",
+      "code_lines": 661,
+      "definitions": 0,
+      "effort_person_days": 3.862,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Stefan Kohl, Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains basic constructions for simple groups of bounded size,\n#  if necessary by calling the `atlasrep' package."
+    },
+    {
+      "path": "grp/classic.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/classic.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/classic.gd",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Classic",
+      "code_lines": 392,
+      "definitions": 45,
+      "effort_person_days": 3.401,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Celler.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the operations for the construction of the classical\n#  group types."
+    },
+    {
+      "path": "grp/imf.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/grp/imf.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/grp/imf.gi",
+      "suggested_lean_module": "RequestProject.Gap.GroupData.Imf",
+      "code_lines": 393,
+      "definitions": 15,
+      "effort_person_days": 3.167,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Volkmar Felsch.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This  file  contains  the  library  functions  for  the  GAP  library  of\n#  irreducible maximal finite integral matrix groups."
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 1446,
+    "definitions": 60,
+    "effort_person_days": 10.43
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

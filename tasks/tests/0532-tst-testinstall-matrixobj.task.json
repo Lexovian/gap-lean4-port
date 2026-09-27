@@ -1,0 +1,88 @@
+{
+  "task_cid": "baguqeera5yfns5fyhvbfgbf5puvo46zughdbcqommucogk5x4tfmsomek3ma",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0532",
+  "layer": "tests",
+  "module": "tst/testinstall/MatrixObj",
+  "title": "Port tst/testinstall/MatrixObj (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/MatrixObj/testmatobj.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/testmatobj.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/testmatobj.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Testmatobj",
+      "code_lines": 242,
+      "definitions": 9,
+      "effort_person_days": 3.96,
+      "header_quote": "make an old-fashioned entry-wise copy of this matrix so we can compare\nall changes made there independent of any special properties of the\nmatrix representation"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/matobjgeneric.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/matobjgeneric.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/matobjgeneric.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Matobjgeneric",
+      "code_lines": 363,
+      "definitions": 0,
+      "effort_person_days": 3.68,
+      "header_quote": "@local e, v, v2, w, M, z, rows, a, b, c, d, p, ev, n, ai, inv, zm, zs, N, T, R"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ElementaryMatrices.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ElementaryMatrices.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ElementaryMatrices.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ElementaryMatrices",
+      "code_lines": 160,
+      "definitions": 0,
+      "effort_person_days": 1.6,
+      "header_quote": "#########"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/CopySubMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/CopySubMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/CopySubMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.CopySubMatrix",
+      "code_lines": 113,
+      "definitions": 10,
+      "effort_person_days": 1.2,
+      "header_quote": "@local m1, m2, m3, m4, m5, AsDummyMatrix, DummyMatrixAsList"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/acthom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/acthom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/acthom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Acthom",
+      "code_lines": 74,
+      "definitions": 1,
+      "effort_person_days": 1.09,
+      "header_quote": "@local right_representation, q, F, d, filt, groups, G, basis, xset, vectors\n@local orbs, len, D1, v, D2, D3, D4, actions, D, hom, i, g, img, pre"
+    }
+  ],
+  "totals": {
+    "files": 5,
+    "code_lines": 952,
+    "definitions": 20,
+    "effort_person_days": 11.53
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

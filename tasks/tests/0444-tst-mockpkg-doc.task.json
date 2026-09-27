@@ -1,0 +1,121 @@
+{
+  "task_cid": "baguqeeraxt66bod2u6skqurjvu37xgznowxc5soavbac534nfvxvfzdsiwfq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0444",
+  "layer": "tests",
+  "module": "tst/mockpkg/doc",
+  "title": "Port tst/mockpkg/doc (tests)",
+  "files": [
+    {
+      "path": "tst/mockpkg/doc/about.tex",
+      "language": "tex",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/about.tex",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/about.tex",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.About",
+      "code_lines": 111,
+      "definitions": 0,
+      "effort_person_days": 1.28,
+      "header_quote": "%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\\Chapter{About this package}\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n\\Section{Testing general text}\nThis is a mock package to be used to test {\\GAP} library code"
+    },
+    {
+      "path": "tst/mockpkg/doc/manual.tex",
+      "language": "tex",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/manual.tex",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/manual.tex",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Manual",
+      "code_lines": 28,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "\\input ../../../doc/gapmacro\n\\Package{mockpkg}\n\\BeginningOfBook{mockpkg}\n%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%\n%%"
+    },
+    {
+      "path": "tst/mockpkg/doc/manual.mst",
+      "language": "mst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/manual.mst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/manual.mst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Manual",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "preamble \"\"\npostamble \"\\n\"\ngroup_skip \"\\n\"\nheadings_flag 1\nheading_prefix \"\\\\letter \""
+    },
+    {
+      "path": "tst/mockpkg/doc/manual.six",
+      "language": "six",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/manual.six",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/manual.six",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Manual",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "C about.tex 1. About this package\nS 1.1. Testing general text\nS 1.2. Testing various mansection formats\nF 1.2. Size\nF 1.2. Size!for permutation groups"
+    },
+    {
+      "path": "tst/mockpkg/doc/manual.idx",
+      "language": "idx",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/manual.idx",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/manual.idx",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Manual",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "\\indexentry {Testing general text@Testing general text|indexit}{3}\n\\indexentry {Testing various mansection formats@Testing various mansection formats|indexit}{4}\n\\indexentry {Size@`Size'}{4}\n\\indexentry {Size@`Size'!for permutation groups}{4}\n\\indexentry {addition}{4}"
+    },
+    {
+      "path": "tst/mockpkg/doc/make_doc",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/make_doc",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/make_doc",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.MakeDoc",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.09,
+      "header_quote": "#!/bin/sh\nset -e\necho \"TeXing documentation\"\n# TeX the manual \ntex manual"
+    },
+    {
+      "path": "tst/mockpkg/doc/manual.pdf",
+      "language": "pdf",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/manual.pdf",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/manual.pdf",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Manual",
+      "code_lines": 2,
+      "definitions": 0,
+      "effort_person_days": 0.03,
+      "header_quote": "This is a placeholder, to enable validation of this mock package,\nwhile avoiding the need to add a binary file to the repository."
+    },
+    {
+      "path": "tst/mockpkg/doc/.gitignore",
+      "language": "gitignore",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/doc/.gitignore",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/doc/.gitignore",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Doc.Mod",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.01,
+      "header_quote": "*.tst"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "code_lines": 188,
+    "definitions": 0,
+    "effort_person_days": 2.09
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

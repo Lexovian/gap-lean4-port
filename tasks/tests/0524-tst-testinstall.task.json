@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeera5jm3fdrrflvt6djxiwcq5bwwlaihdjltkqkh3kayvohqnpvqpkfq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0524",
+  "layer": "tests",
+  "module": "tst/testinstall",
+  "title": "Port tst/testinstall (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/vspchom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/vspchom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/vspchom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Vspchom",
+      "code_lines": 462,
+      "definitions": 0,
+      "effort_person_days": 4.62,
+      "header_quote": "@local a,b,bf,bm,bt,bv,bw,comp1,comp2,comp3,endo,endoendo,f,funs,hom,id,m\n@local map,map1,map2,map3,map4,map5,map6,map7,map8,mb,nathom,sub,sum,t\n@local triv,v,w,zero"
+    },
+    {
+      "path": "tst/testinstall/function.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/function.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/function.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Function",
+      "code_lines": 307,
+      "definitions": 91,
+      "effort_person_days": 4.28,
+      "header_quote": "@local f,g,h,l,mh,r,x,makeCounter,funcloop,funcstr"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 769,
+    "definitions": 91,
+    "effort_person_days": 8.9
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

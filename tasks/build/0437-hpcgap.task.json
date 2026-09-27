@@ -1,0 +1,43 @@
+{
+  "task_cid": "baguqeerat2tiuwkw7v4oxiankx4f4qry4gm2tfxjvtsg2y6qq2e6klmjazpa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0437",
+  "layer": "build",
+  "module": "hpcgap",
+  "title": "Port hpcgap (build)",
+  "files": [
+    {
+      "path": "hpcgap/remove-duplicates.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/remove-duplicates.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/remove-duplicates.sh",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.RemoveDuplicates",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.003,
+      "header_quote": "!/bin/sh -e\n\nFind and remove any files which are identical in the root GAP\ndirectory and the hpcgap subdirectory."
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1,
+    "definitions": 0,
+    "effort_person_days": 0.0
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,49 @@
+{
+  "task_cid": "baguqeerawlrdzm43kmko6wmnp2gty5g6ztebz2ousjc5u7qawp5ut4x4gx2q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0093",
+  "layer": "kernel",
+  "module": "src/hpc",
+  "title": "Port src/hpc (kernel)",
+  "files": [
+    {
+      "path": "src/hpc/traverse.c",
+      "language": "c",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/hpc/traverse.c",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/hpc/traverse.c",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Hpc.Traverse",
+      "code_lines": 341,
+      "definitions": 17,
+      "effort_person_days": 9.06,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    },
+    {
+      "path": "src/hpc/guards.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/hpc/guards.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/hpc/guards.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Hpc.Guards",
+      "code_lines": 96,
+      "definitions": 7,
+      "effort_person_days": 2.68,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 437,
+    "definitions": 24,
+    "effort_person_days": 11.74
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

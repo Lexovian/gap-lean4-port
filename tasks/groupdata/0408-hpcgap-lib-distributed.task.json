@@ -1,0 +1,74 @@
+{
+  "task_cid": "baguqeerargsehh4rloph66hwnfygt5llhwqchh3cmmq75x5zitc6o6bajb4q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0408",
+  "layer": "groupdata",
+  "module": "hpcgap/lib/distributed",
+  "title": "Port hpcgap/lib/distributed (groupdata)",
+  "files": [
+    {
+      "path": "hpcgap/lib/distributed/dist_tasks.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/dist_tasks.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/dist_tasks.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.DistTasks",
+      "code_lines": 537,
+      "definitions": 27,
+      "effort_person_days": 4.422,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/globalobject.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/globalobject.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/globalobject.gi",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.Globalobject",
+      "code_lines": 450,
+      "definitions": 40,
+      "effort_person_days": 3.657,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/globalobject_messages.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/globalobject_messages.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/globalobject_messages.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.GlobalobjectMessages",
+      "code_lines": 287,
+      "definitions": 16,
+      "effort_person_days": 2.403,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "hpcgap/lib/distributed/work_stealing.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/lib/distributed/work_stealing.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/lib/distributed/work_stealing.g",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Lib.Distributed.WorkStealing",
+      "code_lines": 156,
+      "definitions": 9,
+      "effort_person_days": 1.237,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 1430,
+    "definitions": 92,
+    "effort_person_days": 11.72
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

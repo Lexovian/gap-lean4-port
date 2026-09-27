@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeerawzmpqk2t72zsemgkeegjdjr2qehmtqlkjwcdrtiwaxts23ztjxoq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0476",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2019-02-19-cornercase-mtc.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-02-19-cornercase-mtc.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-02-19-cornercase-mtc.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190219CornercaseMtc",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "gap> F := FreeGroup(1);;\ngap> rels := [F.1^2, One(F)];;\ngap> G := F / rels;;\ngap> Order(G);\n2"
+    },
+    {
+      "path": "tst/testbugfix/2019-07-14-NrCols-for-empty-IsMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-07-14-NrCols-for-empty-IsMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-07-14-NrCols-for-empty-IsMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190714NrColsForEmptyIsMatrix",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "https://github.com/gap-system/gap/issues/3570"
+    },
+    {
+      "path": "tst/testbugfix/2019-08-31-MinialFaithfulPermutationDegree.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-08-31-MinialFaithfulPermutationDegree.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-08-31-MinialFaithfulPermutationDegree.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190831MinialFaithfulPermutationDegree",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Fix a bug in `MinimalFaithfulPermutationDegree`, #3636"
+    },
+    {
+      "path": "tst/testbugfix/2020-01-22-SubgroupByFittingFreeData.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2020-01-22-SubgroupByFittingFreeData.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2020-01-22-SubgroupByFittingFreeData.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20200122SubgroupByFittingFreeData",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Induced FFLS, Issue #3864"
+    },
+    {
+      "path": "tst/testbugfix/2021-02-07-IntermediateGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-02-07-IntermediateGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-02-07-IntermediateGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210207IntermediateGroup",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "IntermediateGroup in large index, reported in Forum (Breuer/Anvita) on 2/7/21"
+    },
+    {
+      "path": "tst/testbugfix/2021-03-15-chevallaut.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-03-15-chevallaut.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-03-15-chevallaut.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210315Chevallaut",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Outer automorphisms Chevalley groups miscomputed with triality, #4318"
+    },
+    {
+      "path": "tst/testbugfix/2021-08-05-Automorphisms.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-08-05-Automorphisms.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-08-05-Automorphisms.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210805Automorphisms",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Fix GitHub issue #4624   (second issue), reported by Graham Erskine\nWhen extending the series, must reduce radical automorphisms to valid ones"
+    },
+    {
+      "path": "tst/testbugfix/2021-09-22-MatWreathProduct.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-09-22-MatWreathProduct.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-09-22-MatWreathProduct.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210922MatWreathProduct",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Generators of Matrix Wreath Product with Intransitive Top Group # 4663"
+    },
+    {
+      "path": "tst/testbugfix/2022-09-17-AllHomomorphisms.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-09-17-AllHomomorphisms.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-09-17-AllHomomorphisms.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220917AllHomomorphisms",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Verify AllHomomorphisms works for finite solvable groups\nwhich are not in the filter CanEasilyComputePcgs: for such groups,\nwe used to invoke MinimalGeneratingSet, but it is not actually\nimplemented for them..."
+    },
+    {
+      "path": "tst/testbugfix/2022-12-06-EvalString-syntax-error.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-12-06-EvalString-syntax-error.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-12-06-EvalString-syntax-error.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20221206EvalStringSyntaxError",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "make sure that syntax error messages during EvalString are displayed correctly\nSee https://github.com/gap-system/gap/issues/5242"
+    },
+    {
+      "path": "tst/testbugfix/2024-05-24-Cluster.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-05-24-Cluster.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-05-24-Cluster.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20240524Cluster",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Fix #5717"
+    },
+    {
+      "path": "tst/testbugfix/2024-Halloween-IsomorphismFp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-Halloween-IsomorphismFp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-Halloween-IsomorphismFp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.2024HalloweenIsomorphismFp",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Fix for bug in IsomorphismFp\nreported by Andries Brouwer, 10/31/24"
+    },
+    {
+      "path": "tst/testbugfix/2025-05-09-ratfun-zero-string.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-05-09-ratfun-zero-string.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-05-09-ratfun-zero-string.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20250509RatfunZeroString",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Fix #5987 ExtRepOfPolynomial_String for zero polynomial"
+    },
+    {
+      "path": "tst/testbugfix/2025-10-15-CompatiblePairs.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2025-10-15-CompatiblePairs.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2025-10-15-CompatiblePairs.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20251015CompatiblePairs",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "CompatiblePairs used to ignore the first optional argument in certain cases.\nIn the example below, the last command used to produce the output\n[ 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96, 96 ]\n\nReported by Heiko Dietrich, together with a helpful analysis of the problem\nthat made a fix quite easy."
+    },
+    {
+      "path": "tst/testbugfix/2026-03-23-meataxe.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-03-23-meataxe.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-03-23-meataxe.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260323Meataxe",
+      "code_lines": 5,
+      "definitions": 0,
+      "effort_person_days": 0.05,
+      "header_quote": "Handling of irreducible Meataxe modules with lots of generators was far\nslower than necessary at least via the \"high level\" Meataxe APIs.\nSee also <https://github.com/gap-system/gap/issues/6271>.\n\nThe main test here is for performance: before the fix for issue #6271 this\nwould have run for minutes, with the fix it should take far less than a\nsecond on a modern computer."
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 75,
+    "definitions": 0,
+    "effort_person_days": 0.75
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

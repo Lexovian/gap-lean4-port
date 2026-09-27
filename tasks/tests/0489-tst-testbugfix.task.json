@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeera5c52ly4bsyf2l5b2y3jr3xczhu7rngvsoq2wpv3tkgyrqep7hvta",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0489",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2026-04-20-issue-5771.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-04-20-issue-5771.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-04-20-issue-5771.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260420Issue5771",
+      "code_lines": 24,
+      "definitions": 1,
+      "effort_person_days": 0.27,
+      "header_quote": "# Regression test for #5771. The MinimalGeneratingSet method for pc-groups\n# greedily appended a fifth generator, even though later adjustments make\n# that generator redundant. The minimal generating set for this group has\n# size 4, but GAP gave one of size 5, with one redundant generator."
+    },
+    {
+      "path": "tst/testbugfix/2021-04-08-empty-FreeSemigroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-04-08-empty-FreeSemigroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-04-08-empty-FreeSemigroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210408EmptyFreeSemigroup",
+      "code_lines": 25,
+      "definitions": 0,
+      "effort_person_days": 0.25,
+      "header_quote": "See https://github.com/gap-system/gap/issues/1385"
+    },
+    {
+      "path": "tst/testbugfix/2026-02-26-ShortestVectors-positive.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2026-02-26-ShortestVectors-positive.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2026-02-26-ShortestVectors-positive.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20260226ShortestVectorsPositive",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.25,
+      "header_quote": "Fix: ShortestVectors(..., \"positive\") should also accept vectors\nthat are nonpositive by replacing them with their negation."
+    },
+    {
+      "path": "tst/testbugfix/2017-10-19-IsomorphismPartialPermSemigroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-10-19-IsomorphismPartialPermSemigroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-10-19-IsomorphismPartialPermSemigroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20171019IsomorphismPartialPermSemigroup",
+      "code_lines": 24,
+      "definitions": 6,
+      "effort_person_days": 0.24,
+      "header_quote": "Issue related to IsomorphismPartialPermSemigroup and\nIsomorphismPartialPermMonoid for a trivial perm group with 0 generators\nExamples reported on issue #1783 on github.com/gap-system/gap"
+    },
+    {
+      "path": "tst/testbugfix/2024-10-11-alt-stab.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-10-11-alt-stab.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-10-11-alt-stab.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20241011AltStab",
+      "code_lines": 22,
+      "definitions": 2,
+      "effort_person_days": 0.24,
+      "header_quote": "Fix for https://github.com/gap-system/gap/issues/5808\nSee also https://github.com/gap-system/gap/pull/5811"
+    },
+    {
+      "path": "tst/testbugfix/2006-07-28-t00147.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2006-07-28-t00147.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2006-07-28-t00147.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20060728T00147",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.23,
+      "header_quote": "2006/07/28 (RFM)"
+    },
+    {
+      "path": "tst/testbugfix/2013-02-28-t00287.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2013-02-28-t00287.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2013-02-28-t00287.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20130228T00287",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.23,
+      "header_quote": "2013/02/28 (MH)"
+    },
+    {
+      "path": "tst/testbugfix/2017-05-14-lvars.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2017-05-14-lvars.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2017-05-14-lvars.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20170514Lvars",
+      "code_lines": 19,
+      "definitions": 9,
+      "effort_person_days": 0.23,
+      "header_quote": "gap> GetCurrentLVars();\n<lvars bag>\ngap> ContentsLVars(GetCurrentLVars());\nfail\ngap> f := function() return ContentsLVars(GetCurrentLVars()); end;"
+    },
+    {
+      "path": "tst/testbugfix/2018-10-08-OnLeftInverse.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-10-08-OnLeftInverse.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-10-08-OnLeftInverse.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181008OnLeftInverse",
+      "code_lines": 22,
+      "definitions": 0,
+      "effort_person_days": 0.22,
+      "header_quote": "Ensure OnLeftInverse preserves the mutability of its\ninput arguments."
+    },
+    {
+      "path": "tst/testbugfix/2021-08-19-FuncCallOptionEvalOrder.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-08-19-FuncCallOptionEvalOrder.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-08-19-FuncCallOptionEvalOrder.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210819FuncCallOptionEvalOrder",
+      "code_lines": 20,
+      "definitions": 4,
+      "effort_person_days": 0.22,
+      "header_quote": "@local myfunc, func_call, proc_call\nFix GitHub issue #4631: The evaluation order of arguments versus\noptions in function and procedure calls differed between the immediate\ninterpreter, and the executor for coded statements."
+    },
+    {
+      "path": "tst/testbugfix/2024-10-11-orbit-hash.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2024-10-11-orbit-hash.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2024-10-11-orbit-hash.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20241011OrbitHash",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.22,
+      "header_quote": "Fix a bug reported by Leonard Soicher caused by a bug in\nthe hash function for lists of small positive integers."
+    },
+    {
+      "path": "tst/testbugfix/2005-12-08-t00323.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2005-12-08-t00323.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2005-12-08-t00323.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20051208T00323",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "2005/12/08 (TB)"
+    },
+    {
+      "path": "tst/testbugfix/2012-09-06-t00253.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2012-09-06-t00253.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2012-09-06-t00253.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20120906T00253",
+      "code_lines": 17,
+      "definitions": 3,
+      "effort_person_days": 0.21,
+      "header_quote": "Crash when reading certain pieces of syntactically invalid code\nFix and test case added by MH on 2012-09-06."
+    },
+    {
+      "path": "tst/testbugfix/2018-05-24-IntermediateSubgroups.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-05-24-IntermediateSubgroups.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-05-24-IntermediateSubgroups.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180524IntermediateSubgroups",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "test for MaximalSubgroupClassReps with options (reported through\nobservation by S.Alavi with IntermediateGroup\nMore complicated to construct w/o AtlasSubgroup to ensure the 325 points\naction, as it is too slow otherwise.\nAlso construct the smaller subgroup\ns1 directly.  Finally do not slow down with assertions that don't need\ntesting here"
+    },
+    {
+      "path": "tst/testbugfix/2019-07-15-StoredInv.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2019-07-15-StoredInv.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2019-07-15-StoredInv.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20190715StoredInv",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "When TRIM_PERM causes a permutation 'p' to change TNAM, the stored inverse\nmust be cleared, as the stored inverse of 'p' must have the\nsame TNAM as 'p'"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 321,
+    "definitions": 25,
+    "effort_person_days": 3.44
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

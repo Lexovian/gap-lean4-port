@@ -1,0 +1,73 @@
+{
+  "task_cid": "baguqeerafeh7is5tmbi3zg3ujacviev7ndvsmquqjnqzzwy5irhneo3m2elq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0308",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/teachmod.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/teachmod.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/teachmod.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Teachmod",
+      "code_lines": 115,
+      "definitions": 12,
+      "effort_person_days": 2.723,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Alexander Hulpke.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This  file contains rotines that enable simplified display and turn on\n#  some naive routines, which are primarily of interest in a teaching"
+    },
+    {
+      "path": "lib/debug.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/debug.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/debug.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Debug",
+      "code_lines": 136,
+      "definitions": 16,
+      "effort_person_days": 2.64,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Thomas Breuer, Max Neunhöffer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains some global variables and functions to support\n#  debugging of functions in GAP. See `etc/vim/debugvim.txt' for details."
+    },
+    {
+      "path": "lib/read3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/read3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/read3.g",
+      "suggested_lean_module": "RequestProject.Gap.Library.Read3",
+      "code_lines": 190,
+      "definitions": 0,
+      "effort_person_days": 2.626,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    },
+    {
+      "path": "lib/set.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/set.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/set.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Set",
+      "code_lines": 141,
+      "definitions": 28,
+      "effort_person_days": 2.599,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 582,
+    "definitions": 56,
+    "effort_person_days": 10.59
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

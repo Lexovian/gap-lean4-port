@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeeraom735zofqraiv3o7rgwcazxwxyccqyhn3bde5lsggjl4edub4p7a",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0553",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/backtrace.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/backtrace.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/backtrace.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BacktraceG",
+      "code_lines": 535,
+      "definitions": 0,
+      "effort_person_days": 6.93,
+      "header_quote": "gap> #############################################################################\ngap> ##\ngap> ##  This file tests Where and WhereWithVars, and in particular how backtraces\ngap> ##  are reported for different kinds of statements; there used to be various\ngap> ##  bugs related to that in the past."
+    },
+    {
+      "path": "tst/testspecial/backtrace2.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/backtrace2.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/backtrace2.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Backtrace2G",
+      "code_lines": 322,
+      "definitions": 0,
+      "effort_person_days": 3.34,
+      "header_quote": "gap> #############################################################################\ngap> ##\ngap> ##\ngap> ##  This file tests the combination of Where and DownEnv/UpEnv, and also the\ngap> ##  initial backtrace (for which Where is executed in a slightly different"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 857,
+    "definitions": 0,
+    "effort_person_days": 10.27
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,165 @@
+{
+  "task_cid": "baguqeera3uzun3jjjfbbia6djcw743e3o225zpmohhm74zwikripim75ltcq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0531",
+  "layer": "tests",
+  "module": "tst/testinstall/MatrixObj",
+  "title": "Port tst/testinstall/MatrixObj (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/MatrixObj/WeightOfVector.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/WeightOfVector.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/WeightOfVector.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.WeightOfVector",
+      "code_lines": 32,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> START_TEST( \"WeightOfVector.tst\" );\ngap> l1 := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, l1);\n<plist vector over Rationals of length 6>"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ListOp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ListOp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ListOp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ListOp",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "gap> START_TEST(\"ListOp.tst\");\ngap> ll := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, ll);\n<plist vector over Rationals of length 6>"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/DeterminantMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/DeterminantMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/DeterminantMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.DeterminantMatrix",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "@local M, mat"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ExtractSubMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ExtractSubMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ExtractSubMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ExtractSubMatrix",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "IsGF2MatrixRep"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/Randomize.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/Randomize.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/Randomize.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Randomize",
+      "code_lines": 24,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "gap> START_TEST(\"Randomize.tst\");\ngap> ll := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, ll);\n<plist vector over Rationals of length 6>"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ConcatenationOfVectors.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ConcatenationOfVectors.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ConcatenationOfVectors.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ConcatenationOfVectors",
+      "code_lines": 23,
+      "definitions": 0,
+      "effort_person_days": 0.23,
+      "header_quote": "gap> START_TEST(\"ConcatenationOfVectors.tst\");\ngap> l1 := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> l2 := [6,2,7,4,5,6];\n[ 6, 2, 7, 4, 5, 6 ]"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/arith.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/arith.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/arith.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Arith",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "@local F, matobj, mat"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/RankMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/RankMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/RankMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.RankMatrix",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "@local M, mat"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/ExtractSubvector.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/ExtractSubvector.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/ExtractSubvector.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.ExtractSubvector",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.16,
+      "header_quote": "gap> START_TEST(\"ExtractSubVector.tst\");\ngap> l1 := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> ExtractSubVector( l1, [1,2,4] );\n[ 1, 2, 4 ]"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/TraceMat.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/TraceMat.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/TraceMat.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.TraceMat",
+      "code_lines": 13,
+      "definitions": 0,
+      "effort_person_days": 0.13,
+      "header_quote": "gap> START_TEST( \"TraceMat.tst\" );\ngap> l := [[1,2],[3,4]];\n[ [ 1, 2 ], [ 3, 4 ] ]\ngap> m1 := Matrix(l);;\ngap> m2 := Matrix(Integers,l);;"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/Unpack.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/Unpack.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/Unpack.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Unpack",
+      "code_lines": 12,
+      "definitions": 0,
+      "effort_person_days": 0.12,
+      "header_quote": "gap> START_TEST(\"Unpack.tst\");\ngap> ll := [1,2,3,4,5,6];\n[ 1, 2, 3, 4, 5, 6 ]\ngap> v1 := Vector(IsPlistVectorRep, Rationals, ll);\n<plist vector over Rationals of length 6>"
+    },
+    {
+      "path": "tst/testinstall/MatrixObj/Eigenvalues.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/MatrixObj/Eigenvalues.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/MatrixObj/Eigenvalues.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.MatrixObj.Eigenvalues",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "gap> mat := [[1,2,1],[1,0,1],[0,0,1]];\n[ [ 1, 2, 1 ], [ 1, 0, 1 ], [ 0, 0, 1 ] ]\ngap> Eigenvalues(Rationals,mat);\n[ 2, 1, -1 ]\ngap> matObj1 := NewMatrix(IsPlistMatrixRep,GF(5),3,mat*Z(5)^0);"
+    }
+  ],
+  "totals": {
+    "files": 12,
+    "code_lines": 238,
+    "definitions": 0,
+    "effort_person_days": 2.44
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

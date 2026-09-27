@@ -1,0 +1,49 @@
+{
+  "task_cid": "baguqeerawekcvklso2ud6bkqru4fie2mhoec4o2gyvp7lvi6jaotbmlm2fea",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0003",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/baltree.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/baltree.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/baltree.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Baltree",
+      "code_lines": 236,
+      "definitions": 17,
+      "effort_person_days": 5.98,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nWARNING: This file should NOT be directly included. It is designed\nto instantiate a generic balanced tree type based on #defines that\nhave to be set before including the file, and the file can be included"
+    },
+    {
+      "path": "src/opers.h",
+      "language": "h",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/opers.h",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/opers.h",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Opers",
+      "code_lines": 251,
+      "definitions": 38,
+      "effort_person_days": 5.84,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis file declares the functions of the  filters, operations, attributes,\nand properties package."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 487,
+    "definitions": 55,
+    "effort_person_days": 11.82
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

@@ -1,0 +1,38 @@
+{
+  "task_cid": "baguqeerauevcorokk2pvcenbbdlqaulybeb4welwshxgzlw5tspt2pf6dsta",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0047",
+  "layer": "kernel",
+  "module": "src",
+  "title": "Port src (kernel)",
+  "files": [
+    {
+      "path": "src/objfgelm.cc",
+      "language": "cc",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/src/objfgelm.cc",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/src/objfgelm.cc",
+      "suggested_lean_module": "RequestProject.Gap.Kernel.Objfgelm",
+      "code_lines": 1004,
+      "definitions": 60,
+      "effort_person_days": 25.28,
+      "header_quote": "*********************************************************************\n\nThis file is part of GAP, a system for computational discrete algebra.\n\nCopyright of GAP belongs to its developers, whose names are too numerous\nto list here. Please refer to the COPYRIGHT file for details.\n\nSPDX-License-Identifier: GPL-2.0-or-later\n\nThis  file contains the  C functions for free  group elements.  There are\nbasically three different (internal) types: 8  bits, 16 bits, and 32 bits\nfor  the generator/exponent  pairs.   The  number of  bits  used for  the"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 1004,
+    "definitions": 60,
+    "effort_person_days": 25.28
+  },
+  "depends_on_layers": [],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

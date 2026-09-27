@@ -1,0 +1,53 @@
+{
+  "task_cid": "baguqeeraecm2m64qzaf4mlkn4j7c2myhhczw2accfidlebh4opk3jgpckshq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0415",
+  "layer": "misc",
+  "module": "hpcgap/demo",
+  "title": "Port hpcgap/demo (misc)",
+  "files": [
+    {
+      "path": "hpcgap/demo/testcvec.unit",
+      "language": "unit",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/testcvec.unit",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/testcvec.unit",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Testcvec",
+      "code_lines": 222,
+      "definitions": 0,
+      "effort_person_days": 2.85,
+      "header_quote": "# Testing how vectors are converted into the compressed representation\nlocal F, V, q, d, v, z, z1, z2, z3, oldlevel, HOWCOPY, WHICHREP;\nq := arg[1];\nd := arg[2];\n# Optionally perform some setup whenever an instance of this test suite is run."
+    },
+    {
+      "path": "hpcgap/demo/shellui.html",
+      "language": "html",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/hpcgap/demo/shellui.html",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/hpcgap/demo/shellui.html",
+      "suggested_lean_module": "RequestProject.Gap.HpcGap.Demo.Shellui",
+      "code_lines": 132,
+      "definitions": 0,
+      "effort_person_days": 1.51,
+      "header_quote": "</body>\n</html>\n<!DOCTYPE HTML PUBLIC \"-//W3C//DTD HTML 4.01//EN\"\n      \"http://www.w3.org/TR/html4/strict.dtd\">\n<html>"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 354,
+    "definitions": 0,
+    "effort_person_days": 4.36
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

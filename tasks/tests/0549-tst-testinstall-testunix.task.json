@@ -1,0 +1,55 @@
+{
+  "task_cid": "baguqeerahe7cwaynoszezbqk6bkzwn7hopigbx5qoflpyieeyiaq4tbexada",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0549",
+  "layer": "tests",
+  "module": "tst/testinstall/testunix",
+  "title": "Port tst/testinstall/testunix (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/testunix/streamio.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/testunix/streamio.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/testunix/streamio.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Testunix.Streamio",
+      "code_lines": 42,
+      "definitions": 1,
+      "effort_person_days": 0.53,
+      "header_quote": "@local scriptdir, write, checkPartialRead, process, c"
+    },
+    {
+      "path": "tst/testinstall/testunix/streams.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/testunix/streams.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/testunix/streams.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Testunix.Streams",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "input/output streams"
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 61,
+    "definitions": 1,
+    "effort_person_days": 0.74
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

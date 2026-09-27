@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeera5txdgezin27z6j477shqmleqrp3wm6g7pagtlawy4pz5cogtwfwa",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0560",
+  "layer": "tests",
+  "module": "tst/testspecial",
+  "title": "Port tst/testspecial (tests)",
+  "files": [
+    {
+      "path": "tst/testspecial/repl-syntax-err.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/repl-syntax-err.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/repl-syntax-err.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.ReplSyntaxErrG",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "gap> # see <https://github.com/gap-system/gap/issues/4188>\ngap> # we need a line with a statement that gets executed by the immediate\ngap> # interpreter before running into a syntax error (here: a colon instead\ngap> # of a semicolon); this leads to a break loop which we quit; the syntax\ngap> # error then is displayed. The next line then contains another syntax"
+    },
+    {
+      "path": "tst/testspecial/break-loop-loop.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/break-loop-loop.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/break-loop-loop.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BreakLoopLoopG",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.22,
+      "header_quote": "gap> # test iterating over local variables from within a break loop\ngap> f:=function(x) local y; y:=42; Error(\"bar\"); end;;\ngap> i:=0;\n0\ngap> f(1);"
+    },
+    {
+      "path": "tst/testspecial/bad-minus.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-minus.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-minus.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadMinusG",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "gap> f := function()\n>     return 1 - \"abc\";\n> end;\nfunction(  ) ... end\ngap> f();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-int-0.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-int-0.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-int-0.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayInt0G",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.2,
+      "header_quote": "gap> f := function()\n>     local l;\n>     l := [];\n>     return l[0];\n> end;"
+    },
+    {
+      "path": "tst/testspecial/broken-test.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/broken-test.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/broken-test.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BrokenTest",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.2,
+      "header_quote": "Test(\"broken-test-2.tst\", rec(width := 800));\nquit;\nTest(\"broken-test-3.tst\", rec(width := 800));\nquit;\nTest(\"broken-test-4.tst\", rec(width := 800));"
+    },
+    {
+      "path": "tst/testspecial/mem-overflow.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/mem-overflow.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/mem-overflow.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.MemOverflowG",
+      "code_lines": 16,
+      "definitions": 0,
+      "effort_person_days": 0.2,
+      "header_quote": "gap> # double a list until there is a memory overflow\ngap> l:=[1];; while true do Append(l,l); od;\nError, reached the pre-set memory limit\n(change it with the -o command line option)\nStack trace:"
+    },
+    {
+      "path": "tst/testspecial/testing-test.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/testing-test.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/testing-test.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.TestingTestG",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.2,
+      "header_quote": "gap> Test(\"test-1.tst\", rec(width := 800));\n########> Diff in test-1.tst:3\n# Input is:\na:=SymmetricGroup(1 0);;\n# Expected output:"
+    },
+    {
+      "path": "tst/testspecial/print-formatting.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/print-formatting.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/print-formatting.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.PrintFormatting",
+      "code_lines": 19,
+      "definitions": 0,
+      "effort_person_days": 0.19,
+      "header_quote": "test formatting status for stdout"
+    },
+    {
+      "path": "tst/testspecial/bad-array-double-1.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-double-1.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-double-1.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayDouble1G",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "gap> f := function()\n>     return \"abc\"[1,1];\n> end;\nfunction(  ) ... end\ngap> f();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-string.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-string.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-string.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayStringG",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "gap> f := function()\n>     return 1[\"abc\"];\n> end;\nfunction(  ) ... end\ngap> f();"
+    },
+    {
+      "path": "tst/testspecial/bugfix-2019-09-27-LastPV.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bugfix-2019-09-27-LastPV.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bugfix-2019-09-27-LastPV.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.Bugfix20190927LastPV",
+      "code_lines": 18,
+      "definitions": 1,
+      "effort_person_days": 0.18,
+      "header_quote": "filt:=NewFilter(\"BreakPrint\");;\nInstallMethod(ViewObj, [filt], SUM_FLAGS, x -> 0/0);;\nbadgroup := Group(());\nSetFilterObj(badgroup, filt);\nold_OnBreak:=OnBreak;;"
+    },
+    {
+      "path": "tst/testspecial/syntax-err-eof-sentinel.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/syntax-err-eof-sentinel.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/syntax-err-eof-sentinel.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.SyntaxErrEofSentinel",
+      "code_lines": 18,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "Regression test for a 0xFF byte leak in syntax-error context lines.\n\nWhen a syntax error fires after the scanner has advanced past EOF\n(e.g. parsing \"h := ;\" via READ_ALL_COMMANDS from a string with no\ntrailing newline), the input-line buffer is replaced with the\nscanner's end-of-input sentinel (0xFF). Before the fix in\nsrc/scanner.c the SyntaxErrorOrWarning() pretty-printer would dump\nthat sentinel verbatim alongside the error message — visible as a\nstray `ÿ` glyph in any UTF-8 / log-file consumer of *errout*\n(e.g. the JupyterKernel package)."
+    },
+    {
+      "path": "tst/testspecial/syntax-tree-error.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/syntax-tree-error.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/syntax-tree-error.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.SyntaxTreeErrorG",
+      "code_lines": 17,
+      "definitions": 0,
+      "effort_person_days": 0.18,
+      "header_quote": "gap> func := function ( )\n>     Error( \"oops\" );\n> end;\nfunction(  ) ... end\ngap>"
+    },
+    {
+      "path": "tst/testspecial/bad-add.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-add.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-add.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadAddG",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "gap> f := function()\n>     return 1 + \"abc\";\n> end;\nfunction(  ) ... end\ngap> f();"
+    },
+    {
+      "path": "tst/testspecial/bad-array-undef-1.g.out",
+      "language": "out",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testspecial/bad-array-undef-1.g.out",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testspecial/bad-array-undef-1.g.out",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testspecial.BadArrayUndef1G",
+      "code_lines": 15,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "gap> f := function()\n>     local l,m;\n>     l := [];\n>     return l[m];\n> end;"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 259,
+    "definitions": 1,
+    "effort_person_days": 2.9
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

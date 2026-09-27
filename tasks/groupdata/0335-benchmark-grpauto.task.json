@@ -1,0 +1,63 @@
+{
+  "task_cid": "baguqeeraa3krxj6hix4i4i4c2mkrxkvecejydf6tsljijtsoqf5iva6v3yua",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0335",
+  "layer": "groupdata",
+  "module": "benchmark/grpauto",
+  "title": "Port benchmark/grpauto (groupdata)",
+  "files": [
+    {
+      "path": "benchmark/grpauto/test1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/grpauto/test1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/grpauto/test1.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Grpauto.Test1",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.064,
+      "header_quote": "description\nauthor\ntimelimit\ncmdlineops\npackages"
+    },
+    {
+      "path": "benchmark/grpauto/test2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/grpauto/test2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/grpauto/test2.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Grpauto.Test2",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.064,
+      "header_quote": "description\nauthor\ntimelimit\ncmdlineops\npackages"
+    },
+    {
+      "path": "benchmark/grpauto/test3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/grpauto/test3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/grpauto/test3.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Grpauto.Test3",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.064,
+      "header_quote": "description\nauthor\ntimelimit\ncmdlineops\npackages"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 24,
+    "definitions": 0,
+    "effort_person_days": 0.19
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

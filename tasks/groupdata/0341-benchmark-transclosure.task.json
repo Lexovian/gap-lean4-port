@@ -1,0 +1,63 @@
+{
+  "task_cid": "baguqeerajaced4efwvgh43jc3qp2u4j7ej67y6jjp7rbiligiihg2mvay4lq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0341",
+  "layer": "groupdata",
+  "module": "benchmark/transclosure",
+  "title": "Port benchmark/transclosure (groupdata)",
+  "files": [
+    {
+      "path": "benchmark/transclosure/test1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/transclosure/test1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/transclosure/test1.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Transclosure.Test1",
+      "code_lines": 10,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "description transitive closure of binary relations\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops\npackages: FR (only to construct binary relations for the test)"
+    },
+    {
+      "path": "benchmark/transclosure/test2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/transclosure/test2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/transclosure/test2.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Transclosure.Test2",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.052,
+      "header_quote": "description transitive closure of binary relations\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops -o 1g\npackages: FR (only to construct binary relations for the test)"
+    },
+    {
+      "path": "benchmark/transclosure/test3.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/transclosure/test3.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/transclosure/test3.g",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Transclosure.Test3",
+      "code_lines": 9,
+      "definitions": 0,
+      "effort_person_days": 0.052,
+      "header_quote": "description transitive closure of binary relations\nauthor Alexander Konovalov\ntimelimit 1\ncmdlineops -o 1g\npackages: FR (only to construct binary relations for the test)"
+    }
+  ],
+  "totals": {
+    "files": 3,
+    "code_lines": 28,
+    "definitions": 0,
+    "effort_person_days": 0.17
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

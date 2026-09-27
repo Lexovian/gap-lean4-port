@@ -1,0 +1,143 @@
+{
+  "task_cid": "baguqeeraparlscuwby5erwgid6jps4wrle6pxr3lb32xufnxmji36d4zwcua",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0535",
+  "layer": "tests",
+  "module": "tst/testinstall/grp",
+  "title": "Port tst/testinstall/grp (tests)",
+  "files": [
+    {
+      "path": "tst/testinstall/grp/classic-G.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/classic-G.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/classic-G.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.ClassicG",
+      "code_lines": 231,
+      "definitions": 0,
+      "effort_person_days": 2.48,
+      "header_quote": "Tests for the \"general\" group constructors: GL, GO, GU, GammaL\n\n@local G, H, d, q, S, grps, gens, w, form, g, fld"
+    },
+    {
+      "path": "tst/testinstall/grp/classic-PG.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/classic-PG.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/classic-PG.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.ClassicPG",
+      "code_lines": 116,
+      "definitions": 0,
+      "effort_person_days": 1.43,
+      "header_quote": "Tests for the \"projective general\" group constructors:\nPGL, PGO, POmega, PGU, PGammaL"
+    },
+    {
+      "path": "tst/testinstall/grp/classic-S.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/classic-S.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/classic-S.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.ClassicS",
+      "code_lines": 127,
+      "definitions": 0,
+      "effort_person_days": 1.33,
+      "header_quote": "Tests for the \"special\" group constructors: SL, SO, SU, Sp, SigmaL"
+    },
+    {
+      "path": "tst/testinstall/grp/glzmodmz.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/glzmodmz.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/glzmodmz.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Glzmodmz",
+      "code_lines": 110,
+      "definitions": 5,
+      "effort_person_days": 1.22,
+      "header_quote": "test over non-prime-power rings"
+    },
+    {
+      "path": "tst/testinstall/grp/perf.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/perf.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/perf.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Perf",
+      "code_lines": 101,
+      "definitions": 0,
+      "effort_person_days": 1.01,
+      "header_quote": "I Perfect group 1:  trivial group"
+    },
+    {
+      "path": "tst/testinstall/grp/classic-PS.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/classic-PS.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/classic-PS.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.ClassicPS",
+      "code_lines": 72,
+      "definitions": 0,
+      "effort_person_days": 0.8,
+      "header_quote": "Tests for the \"projective special\" group constructors:\nPSL, PSO, PSU, PSp, PSigmaL"
+    },
+    {
+      "path": "tst/testinstall/grp/imf.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/imf.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/imf.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Imf",
+      "code_lines": 51,
+      "definitions": 0,
+      "effort_person_days": 0.51,
+      "header_quote": "I Z-class 3.1.1:  Solvable, size = 2^4*3\nI   isomorphism type = C2 wr S3 = C2 x S4 = W(B3)\nI   elementary divisors = 1^3\nI   orbit size = 6, minimal norm = 1"
+    },
+    {
+      "path": "tst/testinstall/grp/ree.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/ree.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/ree.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Ree",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "gap> START_TEST(\"ree.tst\");\n#\ngap> G:=ReeGroup(3);\nRee(3)\ngap> IsMatrixGroup(G);"
+    },
+    {
+      "path": "tst/testinstall/grp/suzuki.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/suzuki.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/suzuki.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Suzuki",
+      "code_lines": 27,
+      "definitions": 0,
+      "effort_person_days": 0.29,
+      "header_quote": "gap> START_TEST(\"suzuki.tst\");\n#\ngap> G:=SuzukiGroup(2);\nSz(2)\ngap> IsMatrixGroup(G);"
+    },
+    {
+      "path": "tst/testinstall/grp/clasmax.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testinstall/grp/clasmax.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testinstall/grp/clasmax.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testinstall.Grp.Clasmax",
+      "code_lines": 20,
+      "definitions": 0,
+      "effort_person_days": 0.24,
+      "header_quote": "#\ngap> List(ClassicalMaximals(\"L\",3,2), Size);\n[ 24, 24, 21 ]\ngap> List(ClassicalMaximals(\"L\",3,3), Size);\n[ 432, 432, 39, 24 ]"
+    }
+  ],
+  "totals": {
+    "files": 10,
+    "code_lines": 882,
+    "definitions": 5,
+    "effort_person_days": 9.6
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

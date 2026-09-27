@@ -1,0 +1,42 @@
+{
+  "task_cid": "baguqeerars3uhdw2jgtyk2ope7tqvgwa6o6nstdsjlqumufv3267tj3s4h6q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0414",
+  "layer": "misc",
+  "module": "benchmark/transgrp",
+  "title": "Port benchmark/transgrp (misc)",
+  "files": [
+    {
+      "path": "benchmark/transgrp/examine4",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/benchmark/transgrp/examine4",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/benchmark/transgrp/examine4",
+      "suggested_lean_module": "RequestProject.Gap.Benchmark.Transgrp.Examine4",
+      "code_lines": 3426,
+      "definitions": 0,
+      "effort_person_days": 47.36,
+      "header_quote": "#COMPL:=[];\nTIMING:=rec();\nSetInfoLevel(InfoAli,0);\nDOTRICK27:=true;\n# normalizer in constructing wreat product"
+    }
+  ],
+  "totals": {
+    "files": 1,
+    "code_lines": 3426,
+    "definitions": 0,
+    "effort_person_days": 47.36
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

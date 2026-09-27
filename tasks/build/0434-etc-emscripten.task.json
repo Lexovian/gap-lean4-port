@@ -1,0 +1,120 @@
+{
+  "task_cid": "baguqeera6txrj4zfygtvlxcy662swp2gs27lyhu4ykeftmwrwkqelidm372q",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0434",
+  "layer": "build",
+  "module": "etc/emscripten",
+  "title": "Port etc/emscripten (build)",
+  "files": [
+    {
+      "path": "etc/emscripten/startup_manifest.json",
+      "language": "json",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/startup_manifest.json",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/startup_manifest.json",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.StartupManifest",
+      "code_lines": 1521,
+      "definitions": 0,
+      "effort_person_days": 5.07,
+      "header_quote": "[\n  \"lib/init.g\",\n  \"lib/kernel.g\",\n  \"lib/global.g\",\n  \"lib/system.g\","
+    },
+    {
+      "path": "etc/emscripten/README.md",
+      "language": "md",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/README.md",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/README.md",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.README",
+      "code_lines": 101,
+      "definitions": 0,
+      "effort_person_days": 0.36,
+      "header_quote": "# GAP in the browser\nBuild GAP as a WebAssembly module and serve it as a self-contained website.\nThe terminal interface uses [xterm-pty](https://github.com/mame/xterm-pty),\nso the resulting page behaves like a normal GAP REPL.\n## Quick start"
+    },
+    {
+      "path": "etc/emscripten/build.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/build.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/build.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.Build",
+      "code_lines": 70,
+      "definitions": 0,
+      "effort_person_days": 0.313,
+      "header_quote": "!/usr/bin/env bash\n\nBuild GAP as a WebAssembly module using emscripten.\nRun from the GAP source root: etc/emscripten/build.sh\n\nMost people will want etc/emscripten/build-in-docker.sh instead, which\nwraps this in a pinned emsdk container."
+    },
+    {
+      "path": "etc/emscripten/build-in-docker.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/build-in-docker.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/build-in-docker.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.BuildInDocker",
+      "code_lines": 48,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "!/usr/bin/env bash\n\nOne-stop shop: build GAP for the web inside a pinned container.\n\nUsage (run from the GAP source tree):\netc/emscripten/build-in-docker.sh\n\nOutput: ./web-example/ with a self-contained website. Copy it anywhere\nand serve with COOP/COEP headers (etc/emscripten/serve.py is one option)."
+    },
+    {
+      "path": "etc/emscripten/Dockerfile",
+      "language": "",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/Dockerfile",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/Dockerfile",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.Dockerfile",
+      "code_lines": 45,
+      "definitions": 0,
+      "effort_person_days": 0.17,
+      "header_quote": "# Build environment for compiling GAP to WebAssembly via Emscripten.\n#\n# Pinned to emsdk 3.1.23 for reproducibility. Both pieces of the in-browser\n# REPL are sensitive to the exact toolchain version:\n#"
+    },
+    {
+      "path": "etc/emscripten/assemble-website.sh",
+      "language": "sh",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/assemble-website.sh",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/assemble-website.sh",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.AssembleWebsite",
+      "code_lines": 29,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "!/usr/bin/env bash\n\nAssemble a self-contained website from a completed wasm build.\nOutputs ./web-example/ relative to the GAP source root.\n\nRun after etc/emscripten/build.sh (or have build-in-docker.sh call it)."
+    },
+    {
+      "path": "etc/emscripten/serve.py",
+      "language": "py",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/serve.py",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/serve.py",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.Serve",
+      "code_lines": 25,
+      "definitions": 0,
+      "effort_person_days": 0.093,
+      "header_quote": "!/usr/bin/env python3"
+    },
+    {
+      "path": "etc/emscripten/generate_gap_fs_json.py",
+      "language": "py",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/etc/emscripten/generate_gap_fs_json.py",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/etc/emscripten/generate_gap_fs_json.py",
+      "suggested_lean_module": "RequestProject.Gap.Build.Emscripten.GenerateGapFsJson",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.033,
+      "header_quote": "!/usr/bin/env python3"
+    }
+  ],
+  "totals": {
+    "files": 8,
+    "code_lines": 1847,
+    "definitions": 0,
+    "effort_person_days": 6.39
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

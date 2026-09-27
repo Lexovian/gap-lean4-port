@@ -1,0 +1,198 @@
+{
+  "task_cid": "baguqeeranmcxbfoo47xn4wo3w4sf55npi2aa7ddunqtoux3ce7lxbwimuuka",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0475",
+  "layer": "tests",
+  "module": "tst/testbugfix",
+  "title": "Port tst/testbugfix (tests)",
+  "files": [
+    {
+      "path": "tst/testbugfix/2018-07-02-MakeImmutablePRec.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-07-02-MakeImmutablePRec.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-07-02-MakeImmutablePRec.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180702MakeImmutablePRec",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "the following used to crash GAP due to infinite recursion"
+    },
+    {
+      "path": "tst/testbugfix/2018-08-22-IsConjugatorAutomorphism.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-08-22-IsConjugatorAutomorphism.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-08-22-IsConjugatorAutomorphism.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20180822IsConjugatorAutomorphism",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "gap> a:=Group((9,11)(10,12)(13,15)(14,16), (1,5,3,7)(2,6,4,8));;\ngap> hom:=GroupHomomorphismByImages(a,a,[a.1,a.2*a.1],[a.1,a.2]);;\ngap> IsConjugatorAutomorphism(hom);\nfalse"
+    },
+    {
+      "path": "tst/testbugfix/2018-12-11-fphomord.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-11-fphomord.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-11-fphomord.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181211Fphomord",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "hom. order of infinite group in special case (fixing #3097)"
+    },
+    {
+      "path": "tst/testbugfix/2018-12-17-gquotient.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-17-gquotient.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-17-gquotient.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181217Gquotient",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "reported by Giles Gardam. The code for eliminating element orders can run astray if\na quotent by a generator power is cyclic, but also has cyclic subgroups of infinite\nindex."
+    },
+    {
+      "path": "tst/testbugfix/2018-12-28-IsMonomialMatrix.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-28-IsMonomialMatrix.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-28-IsMonomialMatrix.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181228IsMonomialMatrix",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "gap> Number(SL(2,2), IsMonomialMatrix);\n2\ngap> Number(SL(2,3), IsMonomialMatrix);\n4"
+    },
+    {
+      "path": "tst/testbugfix/2018-12-30-clashom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2018-12-30-clashom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2018-12-30-clashom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20181230Clashom",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Bug #3139"
+    },
+    {
+      "path": "tst/testbugfix/2020-08-19-Uniz.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2020-08-19-Uniz.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2020-08-19-Uniz.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20200819Uniz",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Units in nonassociative algebra # 4096"
+    },
+    {
+      "path": "tst/testbugfix/2021-03-25-InstallMethod.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-03-25-InstallMethod.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-03-25-InstallMethod.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210325InstallMethod",
+      "code_lines": 3,
+      "definitions": 1,
+      "effort_person_days": 0.04,
+      "header_quote": "Installing an operation as a method for itself is forbidden (now, at least;\nit used to lead to a segfault if you ever managed to trigger that \"method\")\nFixes GitHub issues #1286 and #4340."
+    },
+    {
+      "path": "tst/testbugfix/2021-04-13-TryMaximals.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2021-04-13-TryMaximals.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2021-04-13-TryMaximals.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20210413TryMaximals",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "4395, reported by Andries Brouwer"
+    },
+    {
+      "path": "tst/testbugfix/2022-03-20-pcisom.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-03-20-pcisom.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-03-20-pcisom.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220320Pcisom",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Pc Isomorphism #4827"
+    },
+    {
+      "path": "tst/testbugfix/2022-09-07-Centre.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-09-07-Centre.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-09-07-Centre.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20220907Centre",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Centre for PcGroups sometimes returned wrong results.\nSee https://github.com/gap-system/gap/issues/3940"
+    },
+    {
+      "path": "tst/testbugfix/2022-21-10-InfinityLoopFloatMatrices.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2022-21-10-InfinityLoopFloatMatrices.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2022-21-10-InfinityLoopFloatMatrices.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20222110InfinityLoopFloatMatrices",
+      "code_lines": 3,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Make sure that 'characteristic' exists for entries of a matrix\nSee https://github.com/gap-system/gap/issues/5134"
+    },
+    {
+      "path": "tst/testbugfix/2023-01-24-IsomorphismPermGroup.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-01-24-IsomorphismPermGroup.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-01-24-IsomorphismPermGroup.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20230124IsomorphismPermGroup",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "see <https://github.com/gap-system/gap/issues/3601>"
+    },
+    {
+      "path": "tst/testbugfix/2023-08-25-Agemo.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-08-25-Agemo.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-08-25-Agemo.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20230825Agemo",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "fix Agemo(G,p) for trivial G"
+    },
+    {
+      "path": "tst/testbugfix/2023-10-28-GQuotients.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/testbugfix/2023-10-28-GQuotients.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/testbugfix/2023-10-28-GQuotients.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Testbugfix.20231028GQuotients",
+      "code_lines": 4,
+      "definitions": 0,
+      "effort_person_days": 0.04,
+      "header_quote": "Fix unexpected error in GQuotients.\nSee https://github.com/gap-system/gap/issues/5525"
+    }
+  ],
+  "totals": {
+    "files": 15,
+    "code_lines": 57,
+    "definitions": 1,
+    "effort_person_days": 0.6
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

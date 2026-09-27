@@ -1,0 +1,77 @@
+{
+  "task_cid": "baguqeerafo6ptjxbzedwkfxqe2l3fs2w3vhc2rroop2ecxnnipv6nkcbjyna",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0445",
+  "layer": "tests",
+  "module": "tst/mockpkg/gap",
+  "title": "Port tst/mockpkg/gap (tests)",
+  "files": [
+    {
+      "path": "tst/mockpkg/gap/mockpkg.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/gap/mockpkg.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/gap/mockpkg.gi",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Gap.Mockpkg",
+      "code_lines": 10,
+      "definitions": 7,
+      "effort_person_days": 0.11,
+      "header_quote": "mockpkg: A mock package for use by the GAP test suite\n\nImplementations"
+    },
+    {
+      "path": "tst/mockpkg/gap/mockpkg.gd",
+      "language": "gd",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/gap/mockpkg.gd",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/gap/mockpkg.gd",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Gap.Mockpkg",
+      "code_lines": 4,
+      "definitions": 4,
+      "effort_person_days": 0.04,
+      "header_quote": "mockpkg: A mock package for use by the GAP test suite\n\nDeclarations"
+    },
+    {
+      "path": "tst/mockpkg/gap/extension1.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/gap/extension1.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/gap/extension1.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Gap.Extension1",
+      "code_lines": 1,
+      "definitions": 1,
+      "effort_person_days": 0.01,
+      "header_quote": "BindGlobal( \"mockpkg_ExtensionData\", [ 1, 2, 3 ] );"
+    },
+    {
+      "path": "tst/mockpkg/gap/extension2.g",
+      "language": "g",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/mockpkg/gap/extension2.g",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/mockpkg/gap/extension2.g",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Mockpkg.Gap.Extension2",
+      "code_lines": 1,
+      "definitions": 0,
+      "effort_person_days": 0.01,
+      "header_quote": "Error( \"this should not happen\" );"
+    }
+  ],
+  "totals": {
+    "files": 4,
+    "code_lines": 16,
+    "definitions": 12,
+    "effort_person_days": 0.17
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

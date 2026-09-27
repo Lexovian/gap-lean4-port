@@ -1,0 +1,132 @@
+{
+  "task_cid": "baguqeerakn3ha2ln3gx373mfdpepk5rv36utmzkn5gezgt46wgfsxu3kbewq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0564",
+  "layer": "tests",
+  "module": "tst/teststandard",
+  "title": "Port tst/teststandard (tests)",
+  "files": [
+    {
+      "path": "tst/teststandard/function.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/function.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/function.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Function",
+      "code_lines": 23,
+      "definitions": 4,
+      "effort_person_days": 0.33,
+      "header_quote": "@local r,x,funcstr,func"
+    },
+    {
+      "path": "tst/teststandard/nrclclass.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/nrclclass.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/nrclclass.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Nrclclass",
+      "code_lines": 32,
+      "definitions": 0,
+      "effort_person_days": 0.32,
+      "header_quote": "gap> START_TEST(\"nrclclass.tst\");\ngap> NrConjugacyClassesGL(24,27);\n22528399544939174406067288580609952\ngap> NrConjugacyClassesGL(14,27);\n109418989131110078784"
+    },
+    {
+      "path": "tst/teststandard/ctblmono.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ctblmono.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ctblmono.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ctblmono",
+      "code_lines": 26,
+      "definitions": 0,
+      "effort_person_days": 0.26,
+      "header_quote": "the following test comes from https://github.com/gap-system/gap/issues/4452\nthis used to give method not found for non-solvable groups"
+    },
+    {
+      "path": "tst/teststandard/arithlst.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/arithlst.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/arithlst.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Arithlst",
+      "code_lines": 21,
+      "definitions": 0,
+      "effort_person_days": 0.21,
+      "header_quote": "############################################################################\n#\n#  Exclude from testinstall.g because it runs too long.\n#"
+    },
+    {
+      "path": "tst/teststandard/varnames.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/varnames.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/varnames.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Varnames",
+      "code_lines": 20,
+      "definitions": 1,
+      "effort_person_days": 0.2,
+      "header_quote": "############################################################################\n#\n#  Exclude from testinstall.g: too sensitive to the context\n#"
+    },
+    {
+      "path": "tst/teststandard/algebra.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/algebra.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/algebra.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Algebra",
+      "code_lines": 14,
+      "definitions": 0,
+      "effort_person_days": 0.14,
+      "header_quote": "@local f, gens, a, q, dec"
+    },
+    {
+      "path": "tst/teststandard/ctblmoli.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ctblmoli.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ctblmoli.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ctblmoli",
+      "code_lines": 11,
+      "definitions": 0,
+      "effort_person_days": 0.11,
+      "header_quote": "the following test comes from https://github.com/gap-system/gap/issues/300\nthis used to give a wrong value for ValueMolienSeries(m,0) of 26/27 instead\nof the correct value 1"
+    },
+    {
+      "path": "tst/teststandard/ideal.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/ideal.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/ideal.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Ideal",
+      "code_lines": 8,
+      "definitions": 0,
+      "effort_person_days": 0.08,
+      "header_quote": "@local f, a, gens"
+    },
+    {
+      "path": "tst/teststandard/pcgrp.tst",
+      "language": "tst",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/tst/teststandard/pcgrp.tst",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/tst/teststandard/pcgrp.tst",
+      "suggested_lean_module": "RequestProject.Gap.Tests.Teststandard.Pcgrp",
+      "code_lines": 7,
+      "definitions": 0,
+      "effort_person_days": 0.07,
+      "header_quote": "big abelian groups"
+    }
+  ],
+  "totals": {
+    "files": 9,
+    "code_lines": 162,
+    "definitions": 5,
+    "effort_person_days": 1.72
+  },
+  "depends_on_layers": [
+    "kernel",
+    "library",
+    "groupdata",
+    "misc",
+    "build"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

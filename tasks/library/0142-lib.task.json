@@ -1,0 +1,51 @@
+{
+  "task_cid": "baguqeeranffqqvxcq5a7nvz4prtxafetlcpba472qytcv7vu7rvdaxhp72gq",
+  "kind": "gap-port-task",
+  "schema": "harmonic.gap-port-task/1",
+  "source_repository": "https://github.com/gap-system/gap",
+  "id": "GAP-0142",
+  "layer": "library",
+  "module": "lib",
+  "title": "Port lib (library)",
+  "files": [
+    {
+      "path": "lib/domain.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/domain.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/domain.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Domain",
+      "code_lines": 230,
+      "definitions": 42,
+      "effort_person_days": 4.235,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Martin Schönert.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file contains the generic methods for domains.\n#"
+    },
+    {
+      "path": "lib/random.gi",
+      "language": "gi",
+      "source_raw_url": "https://raw.githubusercontent.com/gap-system/gap/master/lib/random.gi",
+      "source_view_url": "https://github.com/gap-system/gap/blob/master/lib/random.gi",
+      "suggested_lean_module": "RequestProject.Gap.Library.Random",
+      "code_lines": 217,
+      "definitions": 27,
+      "effort_person_days": 4.166,
+      "header_quote": "############################################################################\n#\n#  This file is part of GAP, a system for computational discrete algebra.\n#  This file's authors include Frank Lübeck, Max Neunhöffer.\n#\n#  Copyright of GAP belongs to its developers, whose names are too numerous\n#  to list here. Please refer to the COPYRIGHT file for details.\n#\n#  SPDX-License-Identifier: GPL-2.0-or-later\n#\n#  This file implements the basic operations for some types of random\n#  sources."
+    }
+  ],
+  "totals": {
+    "files": 2,
+    "code_lines": 447,
+    "definitions": 69,
+    "effort_person_days": 8.4
+  },
+  "depends_on_layers": [
+    "kernel"
+  ],
+  "definition_of_done": [
+    "Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).",
+    "Definitions are faithful to the GAP semantics (cite the source).",
+    "Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.",
+    "`#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).",
+    "The project builds (`lake build`) with the new files imported."
+  ],
+  "status": "todo"
+}

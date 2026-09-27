@@ -1,0 +1,36 @@
+# GAP-0087 — Port src/hpc (kernel)
+
+- **Task CID:** `baguqeera2qmbrtau42ts6fenfar4rrs3yd2lzxw4k3zcwtobw32ah2wwn2ma`
+- **Layer:** `kernel`   **Module:** `src/hpc`
+- **Size:** 1 file(s), 1701 code lines, 99 definitions
+- **Estimated effort:** 42.54 person-days
+
+## Files to port
+
+### `src/hpc/aobjects.c`  (42.54 person-days)
+- source: [src/hpc/aobjects.c](https://github.com/gap-system/gap/blob/master/src/hpc/aobjects.c)
+- suggested Lean module: `RequestProject.Gap.Kernel.Hpc.Aobjects`
+- 1701 code lines, 99 definitions
+
+> *********************************************************************
+> 
+> This file is part of GAP, a system for computational discrete algebra.
+> 
+> Copyright of GAP belongs to its developers, whose names are too numerous
+> to list here. Please refer to the COPYRIGHT file for details.
+> 
+> SPDX-License-Identifier: GPL-2.0-or-later
+> 
+> This file contains the GAP interface for thread primitives.
+
+## Definition of done
+
+- [ ] Each listed GAP source file has a corresponding Lean 4 file at its suggested module path (or a documented alternative).
+- [ ] Definitions are faithful to the GAP semantics (cite the source).
+- [ ] Stated correctness lemmas are PROVED: no `sorry`, no `admit`, no new `axiom`, no `@[implemented_by]`.
+- [ ] `#print axioms` of the key results lists only the standard axioms (propext, Classical.choice, Quot.sound; Lean.ofReduceBool / Lean.trustCompiler only if genuinely needed).
+- [ ] The project builds (`lake build`) with the new files imported.
+
+## How to submit
+
+Append a result record (see `../README.md`) to your fork of `../results.template.json` keyed by this task's CID `baguqeera2qmbrtau42ts6fenfar4rrs3yd2lzxw4k3zcwtobw32ah2wwn2ma`, then merge with `tools/merge_tasks.py`.
