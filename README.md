@@ -3,6 +3,8 @@
 [![Lean 4](https://img.shields.io/badge/Lean_4-v4.28.0-blue.svg)](https://lean-lang.org/)
 [![Mathlib 4](https://img.shields.io/badge/Mathlib_4-compatible-green.svg)](https://github.com/leanprover-community/mathlib4)
 [![Release](https://img.shields.io/badge/Release-v0.2.0-orange.svg)](https://github.com/pCwOrM/gap-lean4-port/releases/tag/v0.2.0)
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045504.svg)](https://doi.org/10.5281/zenodo.23045504)
+[![Concept DOI](https://img.shields.io/badge/Concept_DOI-10.5281%2Fzenodo.23045503-blue.svg)](https://doi.org/10.5281/zenodo.23045503)
 [![Verification](https://img.shields.io/badge/Verification-35_Theorems_%7C_0_sorry_%7C_0_admit-brightgreen.svg)](https://github.com/pCwOrM/gap-lean4-port)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
@@ -133,3 +135,20 @@ lake build RequestProject
 * Research Lab: Mersin / Istanbul, Turkey  
 
 Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
+
+### Citation
+
+If you build upon or reference this formal verification, please cite:
+
+```bibtex
+@software{dagli_2026_gap_lean4,
+  author       = {Dağlı, Volkan and Dağlı, Zerrin and Dağlı, Dağhan},
+  title        = {{Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions}},
+  month        = sep,
+  year         = 2026,
+  publisher    = {Zenodo},
+  version      = {v0.2.0},
+  doi          = {10.5281/zenodo.23045504},
+  url          = {https://doi.org/10.5281/zenodo.23045504}
+}
+```
