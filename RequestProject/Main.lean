@@ -2,6 +2,9 @@ import Mathlib
 import RequestProject.Gap.Permutation
 import RequestProject.Gap.Atlas
 import RequestProject.Gap.Library.Zmodnz
+import RequestProject.Gap.Library.Partitio
+import RequestProject.Gap.Library.Zmodnze
+import RequestProject.Gap.Library.Stbc
 
 open scoped BigOperators
 open scoped Real
@@ -97,3 +100,26 @@ example : ¬ IsUnit (ZModnZObj.ofNat (n := 6) 4) := by
   decide
 
 end GAP.ZModnZObj
+
+/-!
+## Demonstration of GAP-0332: Ordered Partitions (lib/partitio.gi) & Cyclotomics (lib/zmodnze.gi)
+-/
+
+namespace GAP.Partitio
+
+-- Disjointness of splitting [1, 2, 3] by even predicate
+example : Disjoint (splitCellByPred (fun x => x % 2 == 0) [1, 2, 3]).1
+                  (splitCellByPred (fun x => x % 2 == 0) [1, 2, 3]).2 :=
+  splitCellByPred_disjoint (fun x => x % 2 == 0) [1, 2, 3]
+
+end GAP.Partitio
+
+namespace GAP.Zmodnze
+
+-- Cardinality theorem: |(ℤ/3ℤ)(ε_2)| = 3^2 = 9
+example : Fintype.card (ZmodnZepsObj 3 2) = 9 := by
+  rw [ZmodnZepsObj.card_eq]
+  decide
+
+end GAP.Zmodnze
+
