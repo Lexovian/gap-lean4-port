@@ -79,7 +79,7 @@ Formalizes elements and arithmetic of GAP's cyclotomic extension rings $\mathbb{
   * `AddCommGroup` and convolution group-ring multiplication `mulOp`.
 * **Verified Theorems (0 sorry):**
   * `card_eq`: Machine-checks GAP's exact `Size` formula:
-    $$\operatorname{card}(\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)) = n^m$$
+    $$\text{card}(\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)) = n^m$$
 
 ---
 
