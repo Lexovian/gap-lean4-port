@@ -108,9 +108,9 @@ end GAP.ZModnZObj
 namespace GAP.Partitio
 
 -- Disjointness of splitting [1, 2, 3] by even predicate
-example : Disjoint (splitCellByPred (fun x => x % 2 == 0) [1, 2, 3]).1
-                  (splitCellByPred (fun x => x % 2 == 0) [1, 2, 3]).2 :=
-  splitCellByPred_disjoint (fun x => x % 2 == 0) [1, 2, 3]
+example : List.Disjoint (splitCellByPred [1, 2, 3] (fun x => x % 2 == 0)).1
+                        (splitCellByPred [1, 2, 3] (fun x => x % 2 == 0)).2 :=
+  splitCellByPred_disjoint [1, 2, 3] (fun x => x % 2 == 0)
 
 end GAP.Partitio
 
