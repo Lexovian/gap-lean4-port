@@ -22,7 +22,7 @@ Unproven axioms (sorry / admit / custom): 0
 
 -- 3. Backtrack Ordered Partitions (lib/partitio.gi - GAP-0332)
 #print axioms GAP.Partitio.splitCellByPred_disjoint
-#print axioms GAP.Partitio.splitCellByPred_union
+#print axioms GAP.Partitio.mem_splitCellByPred_iff
 #print axioms GAP.Partitio.splitCellByPred_length_sum
 
 -- 4. Cyclotomic Extension Rings (lib/zmodnze.gi - GAP-0332)
