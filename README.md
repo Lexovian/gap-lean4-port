@@ -146,6 +146,7 @@ Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
 * **Shared Terminology Standard:** Collaborative formal verification standard defined in [Shared Terminology Guide v2](docs/SharedTerminologyGuide.md) (DuPont–Dağlı Specification).
 * **Rung 0–5 Verification Ledger:** Formal accounting of chunks, anchors, pre/post/frame contracts, and degree qualifiers in [docs/RUNG_LEDGER.md](docs/RUNG_LEDGER.md).
 * **Distributed Architecture:** Dual-engine Lean 4 + eBPF/Nix architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+* **Rung 0–5 Verification Bridge & Worker Packets:** Automated bridge generator ([tools/bridge_generator.py](tools/bridge_generator.py)) and consolidated witness report ([tasks/bridge_witness_report.json](tasks/bridge_witness_report.json)) generating turnkey `harmonic.gap-worker-job/1` packets for Mike DuPont's `lean-worker` and `aristotle-cli-rs`.
 
 ---
 
