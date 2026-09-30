@@ -1,6 +1,8 @@
 # Formally Verified Lean 4 Port of GAP: Computational Discrete Algebra
 
 [![Lean 4](https://img.shields.io/badge/Lean_4-v4.28.0-blue.svg)](https://lean-lang.org/)
+[![Lean 4 CI](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml/badge.svg)](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml)
+[![Zulip Chat](https://img.shields.io/badge/zulip-solfunmeme-blue.svg)](https://solfunmeme.zulipchat.com/)
 [![Mathlib 4](https://img.shields.io/badge/Mathlib_4-compatible-green.svg)](https://github.com/leanprover-community/mathlib4)
 [![Release](https://img.shields.io/badge/Release-v0.2.0-orange.svg)](https://github.com/pCwOrM/gap-lean4-port/releases/tag/v0.2.0)
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045504.svg)](https://doi.org/10.5281/zenodo.23045504)
@@ -135,6 +137,17 @@ lake build RequestProject
 * Research Lab: Mersin / Istanbul, Turkey  
 
 Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
+
+---
+
+## Community, Collaboration & Standards
+
+* **Zulip Channel:** Join real-time technical discussions on our Zulip realm at [solfunmeme.zulipchat.com](https://solfunmeme.zulipchat.com/) (Streams: `#general > greetings`, `#general > architecture`).
+* **Shared Terminology Standard:** Collaborative formal verification standard defined in [Shared Terminology Guide v2](docs/SharedTerminologyGuide.md) (DuPont–Dağlı Specification).
+* **Rung 0–5 Verification Ledger:** Formal accounting of chunks, anchors, pre/post/frame contracts, and degree qualifiers in [docs/RUNG_LEDGER.md](docs/RUNG_LEDGER.md).
+* **Distributed Architecture:** Dual-engine Lean 4 + eBPF/Nix architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
+
+---
 
 ### Citation
 

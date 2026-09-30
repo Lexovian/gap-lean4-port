@@ -29,6 +29,7 @@ In accordance with the **Shared Terminology Guide v2**, we make no premature cla
 
 | Chunk ID | Source File (GAP Anchor) | Target Lean Model | Key Proved Contract / Property | Degree Qualifier | Current Rung | Axioms Rollup |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
+| **GAP-Kernel-ProdPerm** | `src/permutat.cc`<br/>`ProdPerm` (`T_PERM`) | `RequestProject.Gap.Permutation` | Permutation image-array memory model; anti-homomorphism to Mathlib `Equiv.Perm` (`toEquivPerm_mul`); shortcut operand reuse frame. | **Support degree** (`largestMovedPoint`) vs **Storage degree** (`degree`) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0331** | `lib/zmodnz.gi`<br/>`InverseOp` | `RequestProject.Gap.Library.Zmodnz` | Bijective ring isomorphism $\mathbb{Z}/n\mathbb{Z} \cong \text{ZMod } n$; constructive Bézout inverse soundness. | Algebraic (Ring) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0299** | `lib/stbc.gi`<br/>`StabChainOp`, `SiftedPerm` | `RequestProject.Gap.Library.Stbc` | Schreier-Sims stabilizer chain sifting soundness & completeness; base-point fixation invariant. | **Support degree** ($\max \Omega$ moved) vs **Storage degree** | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0332a** | `lib/partitio.gi`<br/>`splitCellByPred` | `RequestProject.Gap.Library.Partitio` | Backtrack partition cell splitting: pointwise conservation (`mem_splitCellByPred_iff`), mutual disjointness, length preservation. | Poset / Set Partition | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
@@ -39,7 +40,7 @@ In accordance with the **Shared Terminology Guide v2**, we make no premature cla
 ### Phase 3 Strategic Chunk Track (Orders, Actions & Conjugacy)
 
 | Chunk ID | Target GAP Symbol & File | Lean Module | Primary Mathematical Contract | Degree Qualifier | Target Rung | Execution Phase |
-| :--- | :--- | :--- | :--- | :--- | :---: | :---: |
+| :--- | :--- | :--- | :--- | :--- | :---: | :--- |
 | **GAP-0190**<br/>*(The Crown Jewel)* | `lib/grpperm.gi`<br/>`SizePermGroup` | `RequestProject.Gap.Library.Grpperm` | **Group Order Formula:**<br/>$|G| = \prod_{i=1}^k \|\Delta_i\|$<br/>Order equals product of basic orbit lengths in BSGS. | **Support degree** ($\max_{g \in G} \text{supp}(g)$) | **Rung 3** $\to$ **Rung 4b** | **Phase 3.1 (Immediate)** |
 | **GAP-0247** | `lib/oprtperm.gi`<br/>`OrbitPerms`, `Stabilizer` | `RequestProject.Gap.Library.Oprtperm` | **Orbit-Stabilizer Equivalence:**<br/>$\|G\| = \|\text{Orb}_G(x)\| \cdot \|\text{Stab}_G(x)\|$<br/>Transversal tree coset bijection. | **Support degree** | **Rung 3** $\to$ **Rung 4b** | **Phase 3.2 (Immediate)** |
 | **GAP-0209** | `lib/clasperm.gi`<br/>`ConjugacyClasses` | `RequestProject.Gap.Library.Clasperm` | Cycle type decomposition and conjugacy criterion in $S_n$: $g \sim h \iff \text{cycle\_type}(g) = \text{cycle\_type}(h)$. | **Support degree** | **Rung 3** | **Phase 3.3** |
@@ -66,13 +67,18 @@ $$\mathcal{C} = \langle \text{Anchor}, \text{Pre}, \text{Post}, \text{Frame}, \t
 
 ## 4. Collaborative Interface with Mike DuPont's Ecosystem
 
+**Real-time Collaboration & Community:**
+- **Zulip Channel:** Join discussions at [solfunmeme.zulipchat.com](https://solfunmeme.zulipchat.com/) (Streams: `#general > greetings`, `#general > architecture`).
+- **Standard Reference:** [Shared Terminology Guide v2](SharedTerminologyGuide.md) (Draft for team agreement).
+- **Architecture Documentation:** [Joint Distributed Verification Architecture](ARCHITECTURE.md).
+
 ```mermaid
 flowchart TD
     subgraph OurLab["pCwOrM / ITouch Systems Formal Verification Lab"]
         M["Lean 4 Formal Models (Rung 1)"]
         P["Axiomatic Proofs in Mathlib4 (Rung 3)<br/>Verify.lean (0 sorry audit)"]
         CI["GitHub Actions CI Build (elan / lake cache)"]
-        Relay["mechsrv Relay Bridge<br/>(pcworm server completely protected)"]
+        Relay["Verification Relay Gateway<br/>(Task Spec & Artifact Bridge)"]
     end
 
     subgraph MikeEcosystem["Mike DuPont (@jmikedupont2) Ecosystem"]
