@@ -1,10 +1,10 @@
-name: Lean 4 CI & Axiomatic Verification (Rung 3)
+name: "Lean 4 CI and Axiomatic Verification (Rung 3)"
 
 on:
   push:
-    branches: [ main ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ main ]
+    branches: [ "main" ]
   workflow_dispatch:
 
 concurrency:
@@ -13,31 +13,31 @@ concurrency:
 
 jobs:
   build:
-    name: Build & Verify (Rung 3)
+    name: "Build and Verify (Rung 3)"
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
+      - name: "Checkout repository"
         uses: actions/checkout@v4
 
-      - name: Install elan (Lean 4 version manager)
+      - name: "Install elan"
         run: |
           curl -sSf https://raw.githubusercontent.com/leanprover/elan/master/elan-init.sh | sh -s -- -y --default-toolchain none
           echo "$HOME/.elan/bin" >> $GITHUB_PATH
 
-      - name: Verify Lean & Lake Toolchain
+      - name: "Verify Lean and Lake Toolchain"
         run: |
           lean --version
           lake --version
 
-      - name: Fetch Mathlib Build Cache
+      - name: "Fetch Mathlib Build Cache"
         run: |
           lake exe cache get || true
 
-      - name: Build RequestProject
+      - name: "Build RequestProject"
         run: |
           lake build RequestProject
 
-      - name: Axiomatic Purity Audit (Rung 3: 0 sorry, 0 admit)
+      - name: "Axiomatic Purity Audit (Rung 3: 0 sorry, 0 admit)"
         run: |
           echo "=========================================================="
           echo "Auditing RequestProject for standard Lean 4 core axioms..."
