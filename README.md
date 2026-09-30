@@ -8,6 +8,8 @@
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045504.svg)](https://doi.org/10.5281/zenodo.23045504)
 [![Concept DOI](https://img.shields.io/badge/Concept_DOI-10.5281%2Fzenodo.23045503-blue.svg)](https://doi.org/10.5281/zenodo.23045503)
 [![Verification](https://img.shields.io/badge/Verification-35_Theorems_%7C_0_sorry_%7C_0_admit-brightgreen.svg)](https://github.com/pCwOrM/gap-lean4-port)
+[![lean-worker](https://img.shields.io/badge/Worker-lean--worker-9cf.svg)](https://github.com/meta-introspector/lean-worker)
+[![aristotle-cli-rs](https://img.shields.io/badge/Orchestrator-aristotle--cli--rs-orange.svg)](https://github.com/meta-introspector/aristotle-cli-rs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 This repository provides **machine-checked formal verifications in Lean 4 / Mathlib** for the core computational discrete algebra algorithms and representations of the [GAP System](https://www.gap-system.org/) (Groups, Algorithms, Programming).
@@ -146,7 +148,7 @@ Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
 * **Shared Terminology Standard:** Collaborative formal verification standard defined in [Shared Terminology Guide v2](docs/SharedTerminologyGuide.md) (DuPont–Dağlı Specification).
 * **Rung 0–5 Verification Ledger:** Formal accounting of chunks, anchors, pre/post/frame contracts, and degree qualifiers in [docs/RUNG_LEDGER.md](docs/RUNG_LEDGER.md).
 * **Distributed Architecture:** Dual-engine Lean 4 + eBPF/Nix architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-* **Rung 0–5 Verification Bridge & Worker Packets:** Automated bridge generator ([tools/bridge_generator.py](tools/bridge_generator.py)) and consolidated witness report ([tasks/bridge_witness_report.json](tasks/bridge_witness_report.json)) generating turnkey `harmonic.gap-worker-job/1` packets for Mike DuPont's `lean-worker` and `aristotle-cli-rs`.
+* **Rung 0–5 Verification Bridge & Worker Packets:** Automated bridge generator ([tools/bridge_generator.py](tools/bridge_generator.py)) and consolidated witness report ([tasks/bridge_witness_report.json](tasks/bridge_witness_report.json)) generating turnkey `harmonic.gap-worker-job/1` packets for Mike DuPont's [`lean-worker`](https://github.com/meta-introspector/lean-worker) and [`aristotle-cli-rs`](https://github.com/meta-introspector/aristotle-cli-rs).
 
 ---
 
