@@ -3,20 +3,70 @@
   "taskset_root_cid": "baguqeeraykhbhp2afmcuxp7dpgb72dhnpkng2qpcybegfu3lqqdilezq3hzq",
   "results": [
     {
+      "task_cid": "baguqeerapjualu4ec6mvp5ci22aqjhacuqgdbgfn57lluf67evpluwg4meqa",
+      "task_id": "GAP-0050",
+      "status": "verified",
+      "worker": "pCwOrM-relay",
+      "timestamp": "2026-09-26T14:00:00.000000+00:00",
+      "artifacts": [
+        {
+          "lean_module": "RequestProject.Gap.Permutation",
+          "sha256": "7742cf208fe1afc573e2662567600219fcf2dfe92bda980570d08f97bc1a7c03",
+          "note": "Port of src/permutat.cc (ProdPerm, InvPerm, IdentityPerm, IMAGE)"
+        }
+      ],
+      "notes": "Formalized GAP kernel permutation operations (ProdPerm, InvPerm, IMAGE macro, IdentityPerm) with Mathlib Equiv.Perm anti-homomorphism, 0 sorry, 0 admit, passing lake build with standard axioms [propext, Classical.choice, Quot.sound]."
+    },
+    {
       "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
       "task_id": "GAP-0331",
       "status": "verified",
-      "worker": "pcworm-antigravity",
+      "worker": "pCwOrM-relay",
       "timestamp": "2026-09-27T21:25:25.834702+00:00",
       "artifacts": [
         {
           "lean_module": "RequestProject.Gap.Library.Zmodnz",
-          "sha256": "efc36d7f0b351e62408918ebda8f7478dac4c3eff246de92915a44732af3fa26",
+          "sha256": "b8305b927228775289c78a061669e4e45428d74912ff863c23df3338d67c9bab",
           "note": "Port of lib/zmodnz.gi"
         }
       ],
       "notes": "Formalized lib/zmodnz.gi modular ring & field methods in RequestProject.Gap.Library.Zmodnz with 0 sorry, 0 admit, passing lake build with standard axioms [propext, Classical.choice, Quot.sound]."
+    },
+    {
+      "task_cid": "baguqeeradzipocbvrtw44fhnudpvjqziopiy2du7ldbnrqxqii2wfpcgty5a",
+      "task_id": "GAP-0299",
+      "status": "verified",
+      "worker": "pCwOrM-relay",
+      "timestamp": "2026-09-29T12:00:00.000000+00:00",
+      "artifacts": [
+        {
+          "lean_module": "RequestProject.Gap.Library.Stbc",
+          "sha256": "2e52d6c5689fa91106525979c5a6d8932d9de3523e3162e048d30ea49f1045ec",
+          "note": "Port of lib/stbc.gi (Schreier-Sims Stabilizer Chains)"
+        }
+      ],
+      "notes": "Formalized Schreier-Sims stabilizer chains, transversal trees, sifting reductions, base point fixation invariants, and BSGS membership soundness and completeness with 0 sorry, 0 admit."
+    },
+    {
+      "task_cid": "baguqeerauwvxvghhrqtknlj42uinwn6syqeic3q3ekbopds26jxqmcp2g4xq",
+      "task_id": "GAP-0332",
+      "status": "verified",
+      "worker": "pCwOrM-relay",
+      "timestamp": "2026-09-29T18:00:00.000000+00:00",
+      "artifacts": [
+        {
+          "lean_module": "RequestProject.Gap.Library.Partitio",
+          "sha256": "52eebd391921ee1f28fccf63da6cd69ce7b83f4f264b12f8cbf1db4063eed0c5",
+          "note": "Port of lib/partitio.gi (Ordered Partitions & Backtrack Pruning)"
+        },
+        {
+          "lean_module": "RequestProject.Gap.Library.Zmodnze",
+          "sha256": "168dc327adfd9f96fb7d5f270ee723c0034b7867d20b55a5c8305ba23020bc8a",
+          "note": "Port of lib/zmodnze.gi (Cyclotomic Extension Rings)"
+        }
+      ],
+      "notes": "Formalized ordered partition cell splitting (conservation, disjointness, cardinality) and cyclotomic extension rings with exact size theorem |Z/nZ(eps_m)| = n^m with 0 sorry, 0 admit."
     }
   ],
-  "worker": "pcworm-antigravity"
+  "worker": "pCwOrM-relay"
 }

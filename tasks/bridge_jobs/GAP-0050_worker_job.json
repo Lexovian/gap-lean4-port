@@ -1,0 +1,50 @@
+{
+  "schema": "harmonic.gap-worker-job/1",
+  "task_cid": "baguqeerapjualu4ec6mvp5ci22aqjhacuqgdbgfn57lluf67evpluwg4meqa",
+  "task_id": "GAP-0050",
+  "source_anchor": {
+    "file": "src/permutat.cc",
+    "symbol": "ProdPerm",
+    "layer": "kernel",
+    "c_macro": "IMAGE(i, p, deg)"
+  },
+  "degree_qualifier": {
+    "type": "SupportDegree_vs_StorageDegree",
+    "support_degree": "largestMovedPoint",
+    "storage_degree": "images.length",
+    "invariant": "∀ i ≥ images.length, app p i = i"
+  },
+  "target_rung": 3,
+  "current_rung": 3,
+  "artifacts": [
+    {
+      "lean_module": "RequestProject.Gap.Permutation",
+      "path": "RequestProject/Gap/Permutation.lean",
+      "sha256": "7742cf208fe1afc573e2662567600219fcf2dfe92bda980570d08f97bc1a7c03"
+    }
+  ],
+  "proved_theorems": [
+    "GAP.GapPerm.app_one",
+    "GAP.GapPerm.app_mul",
+    "GAP.GapPerm.app_inv_left",
+    "GAP.GapPerm.app_inv_right",
+    "GAP.GapPerm.toEquiv_one",
+    "GAP.GapPerm.toEquiv_mul",
+    "GAP.GapPerm.toEquiv_inv"
+  ],
+  "axiomatic_verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "admitted_theorems": 0,
+    "sorry_count": 0,
+    "status": "PASSED"
+  },
+  "runtime_trace_boundary": {
+    "target_layer": "kernel",
+    "ebpf_probe_point": "ProdPerm",
+    "trace_format": "harmonic.trace-v1"
+  }
+}

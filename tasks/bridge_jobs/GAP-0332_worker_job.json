@@ -1,0 +1,53 @@
+{
+  "schema": "harmonic.gap-worker-job/1",
+  "task_cid": "baguqeerauwvxvghhrqtknlj42uinwn6syqeic3q3ekbopds26jxqmcp2g4xq",
+  "task_id": "GAP-0332",
+  "source_anchor": {
+    "file": "lib/partitio.gi & lib/zmodnze.gi",
+    "symbol": "splitCellByPred / CyclotomicExtension",
+    "layer": "library",
+    "methods": [
+      "OrderedPartitionSplit",
+      "ZmodnzeCardinality"
+    ]
+  },
+  "degree_qualifier": {
+    "type": "PartitionDisjointness_and_ExtensionDegree",
+    "extension_degree": "m : Nat",
+    "invariant": "Fintype.card (Zmodnze n m) = n ^ m"
+  },
+  "target_rung": 3,
+  "current_rung": 3,
+  "artifacts": [
+    {
+      "lean_module": "RequestProject.Gap.Library.Partitio",
+      "path": "RequestProject/Gap/Library/Partitio.lean",
+      "sha256": "52eebd391921ee1f28fccf63da6cd69ce7b83f4f264b12f8cbf1db4063eed0c5"
+    },
+    {
+      "lean_module": "RequestProject.Gap.Library.Zmodnze",
+      "path": "RequestProject/Gap/Library/Zmodnze.lean",
+      "sha256": "168dc327adfd9f96fb7d5f270ee723c0034b7867d20b55a5c8305ba23020bc8a"
+    }
+  ],
+  "proved_theorems": [
+    "GAP.Library.Partitio.mem_splitCellByPred_iff",
+    "GAP.Library.Partitio.splitCellByPred_disjoint",
+    "GAP.Library.Zmodnze.card_zmodnze_eq_pow"
+  ],
+  "axiomatic_verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "admitted_theorems": 0,
+    "sorry_count": 0,
+    "status": "PASSED"
+  },
+  "runtime_trace_boundary": {
+    "target_layer": "library",
+    "ebpf_probe_point": "splitCellByPred / CyclotomicExtension",
+    "trace_format": "harmonic.trace-v1"
+  }
+}

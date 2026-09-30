@@ -29,7 +29,7 @@ In accordance with the **Shared Terminology Guide v2**, we make no premature cla
 
 | Chunk ID | Source File (GAP Anchor) | Target Lean Model | Key Proved Contract / Property | Degree Qualifier | Current Rung | Axioms Rollup |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| **GAP-Kernel-ProdPerm** | `src/permutat.cc`<br/>`ProdPerm` (`T_PERM`) | `RequestProject.Gap.Permutation` | Permutation image-array memory model; anti-homomorphism to Mathlib `Equiv.Perm` (`toEquivPerm_mul`); shortcut operand reuse frame. | **Support degree** (`largestMovedPoint`) vs **Storage degree** (`degree`) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
+| **GAP-0050**<br/>(`GAP-Kernel-ProdPerm`) | `src/permutat.cc`<br/>`ProdPerm` (`T_PERM`) | `RequestProject.Gap.Permutation` | Permutation image-array memory model; anti-homomorphism to Mathlib `Equiv.Perm` (`toEquivPerm_mul`); shortcut operand reuse frame. | **Support degree** (`largestMovedPoint`) vs **Storage degree** (`degree`) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0331** | `lib/zmodnz.gi`<br/>`InverseOp` | `RequestProject.Gap.Library.Zmodnz` | Bijective ring isomorphism $\mathbb{Z}/n\mathbb{Z} \cong \text{ZMod } n$; constructive Bézout inverse soundness. | Algebraic (Ring) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0299** | `lib/stbc.gi`<br/>`StabChainOp`, `SiftedPerm` | `RequestProject.Gap.Library.Stbc` | Schreier-Sims stabilizer chain sifting soundness & completeness; base-point fixation invariant. | **Support degree** ($\max \Omega$ moved) vs **Storage degree** | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0332a** | `lib/partitio.gi`<br/>`splitCellByPred` | `RequestProject.Gap.Library.Partitio` | Backtrack partition cell splitting: pointwise conservation (`mem_splitCellByPred_iff`), mutual disjointness, length preservation. | Poset / Set Partition | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
@@ -105,8 +105,8 @@ flowchart TD
 ```
 
 1. **Security & Privacy Boundary:**
-   - All external worker requests and bridge communications route strictly through the **`mechsrv` server**.
-   - The primary internal `pcworm` server infrastructure is strictly isolated and never exposed.
+   - All external worker requests and bridge communications route strictly through the **Verification Relay Gateway**.
+   - Internal infrastructure and compute nodes are strictly isolated and never exposed in external communications or logs.
    - All Git commits and GitHub interactions enforce privacy headers (`pCwOrM@users.noreply.github.com`).
 2. **Branch Protection & Frozen Artifacts:**
    - Branch `main` is protected: force pushes and direct commits disabled, PR review required.

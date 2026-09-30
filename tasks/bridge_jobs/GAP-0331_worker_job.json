@@ -1,0 +1,45 @@
+{
+  "schema": "harmonic.gap-worker-job/1",
+  "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
+  "task_id": "GAP-0331",
+  "source_anchor": {
+    "file": "lib/zmodnz.gi",
+    "symbol": "InverseOp",
+    "layer": "library",
+    "method": "ZmodnzInverse"
+  },
+  "degree_qualifier": {
+    "type": "AlgebraicModulus",
+    "modulus": "n : Nat",
+    "invariant": "n > 1 → (Nat.Coprime a n ↔ IsUnit (a : ZMod n))"
+  },
+  "target_rung": 3,
+  "current_rung": 3,
+  "artifacts": [
+    {
+      "lean_module": "RequestProject.Gap.Library.Zmodnz",
+      "path": "RequestProject/Gap/Library/Zmodnz.lean",
+      "sha256": "b8305b927228775289c78a061669e4e45428d74912ff863c23df3338d67c9bab"
+    }
+  ],
+  "proved_theorems": [
+    "GAP.Library.Zmodnz.inv_sound",
+    "GAP.Library.Zmodnz.inv_mul_cancel",
+    "GAP.Library.Zmodnz.bezout_sound"
+  ],
+  "axiomatic_verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "admitted_theorems": 0,
+    "sorry_count": 0,
+    "status": "PASSED"
+  },
+  "runtime_trace_boundary": {
+    "target_layer": "library",
+    "ebpf_probe_point": "InverseOp",
+    "trace_format": "harmonic.trace-v1"
+  }
+}

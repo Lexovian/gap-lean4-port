@@ -3,10 +3,25 @@
   "taskset_root_cid": "baguqeeraykhbhp2afmcuxp7dpgb72dhnpkng2qpcybegfu3lqqdilezq3hzq",
   "results": [
     {
+      "task_cid": "baguqeerapjualu4ec6mvp5ci22aqjhacuqgdbgfn57lluf67evpluwg4meqa",
+      "task_id": "GAP-0050",
+      "status": "verified",
+      "worker": "pCwOrM-relay",
+      "timestamp": "2026-09-26T14:00:00.000000+00:00",
+      "artifacts": [
+        {
+          "lean_module": "RequestProject.Gap.Permutation",
+          "sha256": "7742cf208fe1afc573e2662567600219fcf2dfe92bda980570d08f97bc1a7c03",
+          "note": "Port of src/permutat.cc (ProdPerm, InvPerm, IdentityPerm, IMAGE)"
+        }
+      ],
+      "notes": "Formalized GAP kernel permutation operations (ProdPerm, InvPerm, IMAGE macro, IdentityPerm) with Mathlib Equiv.Perm anti-homomorphism, 0 sorry, 0 admit, passing lake build with standard axioms [propext, Classical.choice, Quot.sound]."
+    },
+    {
       "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
       "task_id": "GAP-0331",
       "status": "verified",
-      "worker": "pcworm-antigravity",
+      "worker": "pCwOrM-relay",
       "timestamp": "2026-09-27T21:25:25.834702+00:00",
       "artifacts": [
         {
@@ -21,7 +36,7 @@
       "task_cid": "baguqeeradzipocbvrtw44fhnudpvjqziopiy2du7ldbnrqxqii2wfpcgty5a",
       "task_id": "GAP-0299",
       "status": "verified",
-      "worker": "pcworm-antigravity",
+      "worker": "pCwOrM-relay",
       "timestamp": "2026-09-29T12:00:00.000000+00:00",
       "artifacts": [
         {
@@ -36,7 +51,7 @@
       "task_cid": "baguqeerauwvxvghhrqtknlj42uinwn6syqeic3q3ekbopds26jxqmcp2g4xq",
       "task_id": "GAP-0332",
       "status": "verified",
-      "worker": "pcworm-antigravity",
+      "worker": "pCwOrM-relay",
       "timestamp": "2026-09-29T18:00:00.000000+00:00",
       "artifacts": [
         {

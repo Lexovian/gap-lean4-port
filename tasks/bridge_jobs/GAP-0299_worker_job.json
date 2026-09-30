@@ -1,0 +1,47 @@
+{
+  "schema": "harmonic.gap-worker-job/1",
+  "task_cid": "baguqeeradzipocbvrtw44fhnudpvjqziopiy2du7ldbnrqxqii2wfpcgty5a",
+  "task_id": "GAP-0299",
+  "source_anchor": {
+    "file": "lib/stbc.gi",
+    "symbol": "StabChainOp",
+    "layer": "library",
+    "algorithm": "SchreierSims"
+  },
+  "degree_qualifier": {
+    "type": "SupportDegree_vs_StorageDegree",
+    "support_degree": "max_moved_point",
+    "storage_degree": "points_allocated",
+    "invariant": "siftOneLevel_fixes_basePoint"
+  },
+  "target_rung": 3,
+  "current_rung": 3,
+  "artifacts": [
+    {
+      "lean_module": "RequestProject.Gap.Library.Stbc",
+      "path": "RequestProject/Gap/Library/Stbc.lean",
+      "sha256": "2e52d6c5689fa91106525979c5a6d8932d9de3523e3162e048d30ea49f1045ec"
+    }
+  ],
+  "proved_theorems": [
+    "GAP.Library.Stbc.siftOneLevel_fixes_basePoint",
+    "GAP.Library.Stbc.siftFull_sound",
+    "GAP.Library.Stbc.siftFull_complete",
+    "GAP.Library.Stbc.membership_soundness"
+  ],
+  "axiomatic_verification": {
+    "allowed_axioms": [
+      "propext",
+      "Classical.choice",
+      "Quot.sound"
+    ],
+    "admitted_theorems": 0,
+    "sorry_count": 0,
+    "status": "PASSED"
+  },
+  "runtime_trace_boundary": {
+    "target_layer": "library",
+    "ebpf_probe_point": "StabChainOp",
+    "trace_format": "harmonic.trace-v1"
+  }
+}

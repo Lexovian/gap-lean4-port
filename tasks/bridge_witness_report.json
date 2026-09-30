@@ -1,0 +1,85 @@
+{
+  "schema": "harmonic.gap-bridge-witness-report/1",
+  "standard": "Shared Terminology Guide v2 (DuPont-Dağlı Rung 0-5)",
+  "gateway_worker": "pCwOrM-relay",
+  "modules_audited": 4,
+  "total_effort_person_days": 94.49000000000001,
+  "verified_chunks": [
+    {
+      "task_id": "GAP-0050",
+      "task_cid": "baguqeerapjualu4ec6mvp5ci22aqjhacuqgdbgfn57lluf67evpluwg4meqa",
+      "source_file": "src/permutat.cc",
+      "lean_modules": [
+        "RequestProject.Gap.Permutation"
+      ],
+      "sha256_hashes": [
+        "7742cf208fe1afc573e2662567600219fcf2dfe92bda980570d08f97bc1a7c03"
+      ],
+      "degree_qualifier": {
+        "type": "SupportDegree_vs_StorageDegree",
+        "support_degree": "largestMovedPoint",
+        "storage_degree": "images.length",
+        "invariant": "∀ i ≥ images.length, app p i = i"
+      },
+      "theorems_proved_count": 7,
+      "job_packet": "tasks/bridge_jobs/GAP-0050_worker_job.json"
+    },
+    {
+      "task_id": "GAP-0331",
+      "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
+      "source_file": "lib/zmodnz.gi",
+      "lean_modules": [
+        "RequestProject.Gap.Library.Zmodnz"
+      ],
+      "sha256_hashes": [
+        "b8305b927228775289c78a061669e4e45428d74912ff863c23df3338d67c9bab"
+      ],
+      "degree_qualifier": {
+        "type": "AlgebraicModulus",
+        "modulus": "n : Nat",
+        "invariant": "n > 1 → (Nat.Coprime a n ↔ IsUnit (a : ZMod n))"
+      },
+      "theorems_proved_count": 3,
+      "job_packet": "tasks/bridge_jobs/GAP-0331_worker_job.json"
+    },
+    {
+      "task_id": "GAP-0299",
+      "task_cid": "baguqeeradzipocbvrtw44fhnudpvjqziopiy2du7ldbnrqxqii2wfpcgty5a",
+      "source_file": "lib/stbc.gi",
+      "lean_modules": [
+        "RequestProject.Gap.Library.Stbc"
+      ],
+      "sha256_hashes": [
+        "2e52d6c5689fa91106525979c5a6d8932d9de3523e3162e048d30ea49f1045ec"
+      ],
+      "degree_qualifier": {
+        "type": "SupportDegree_vs_StorageDegree",
+        "support_degree": "max_moved_point",
+        "storage_degree": "points_allocated",
+        "invariant": "siftOneLevel_fixes_basePoint"
+      },
+      "theorems_proved_count": 4,
+      "job_packet": "tasks/bridge_jobs/GAP-0299_worker_job.json"
+    },
+    {
+      "task_id": "GAP-0332",
+      "task_cid": "baguqeerauwvxvghhrqtknlj42uinwn6syqeic3q3ekbopds26jxqmcp2g4xq",
+      "source_file": "lib/partitio.gi & lib/zmodnze.gi",
+      "lean_modules": [
+        "RequestProject.Gap.Library.Partitio",
+        "RequestProject.Gap.Library.Zmodnze"
+      ],
+      "sha256_hashes": [
+        "52eebd391921ee1f28fccf63da6cd69ce7b83f4f264b12f8cbf1db4063eed0c5",
+        "168dc327adfd9f96fb7d5f270ee723c0034b7867d20b55a5c8305ba23020bc8a"
+      ],
+      "degree_qualifier": {
+        "type": "PartitionDisjointness_and_ExtensionDegree",
+        "extension_degree": "m : Nat",
+        "invariant": "Fintype.card (Zmodnze n m) = n ^ m"
+      },
+      "theorems_proved_count": 3,
+      "job_packet": "tasks/bridge_jobs/GAP-0332_worker_job.json"
+    }
+  ]
+}
