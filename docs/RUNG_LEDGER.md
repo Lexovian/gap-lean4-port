@@ -3,7 +3,7 @@
 **Repository:** `pCwOrM/gap-lean4-port`  
 **CI Status:** [![Lean 4 CI and Axiomatic Verification](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml/badge.svg)](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml)  
 **Axiomatic Baseline:** Zero `sorry`, standard Lean 4 axioms (`propext`, `Classical.choice`, `Quot.sound`)  
-**Frozen Release:** v0.2.0 (Zenodo DOI: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504), arXiv: `submit/8153793`)
+**Frozen Release:** v0.2.0 (Zenodo DOI: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504), arXiv: [arXiv:2609.38492](https://arxiv.org/abs/2609.38492))
 
 ---
 

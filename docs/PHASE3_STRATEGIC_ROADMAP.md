@@ -5,7 +5,7 @@
 **Principal Investigator / Research Lead:** Volkan Dağlı (@pCwOrM) & Family  
 **Collaborator:** Mike DuPont (@jmikedupont2)  
 **Organization:** ITouch Systems Formal Verification Lab  
-**Current Milestone State:** Release v0.2.0 (35 Theorems, 0 sorry, Zenodo DOI: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504), arXiv: `submit/8153793`)  
+**Current Milestone State:** Release v0.2.0 (35 Theorems, 0 sorry, Zenodo DOI: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504), arXiv: [arXiv:2609.38492](https://arxiv.org/abs/2609.38492))  
 **CI Status:** [![Lean 4 CI and Axiomatic Verification](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml/badge.svg)](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml)  
 **Rung Ledger Specification:** [docs/RUNG_LEDGER.md](file:///C:/Users/maat/Documents/antigravity/gap-lean4-port/docs/RUNG_LEDGER.md)  
 **Archival Date:** 2026-09-30  

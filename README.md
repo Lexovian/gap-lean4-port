@@ -1,6 +1,8 @@
 # Formally Verified Lean 4 Port of GAP: Computational Discrete Algebra
 
 [![Lean 4](https://img.shields.io/badge/Lean_4-v4.28.0-blue.svg)](https://lean-lang.org/)
+[![arXiv](https://img.shields.io/badge/arXiv-2609.38492-b31b1b.svg)](https://arxiv.org/abs/2609.38492)
+[![arXiv DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2609.38492-b31b1b.svg)](https://doi.org/10.48550/arXiv.2609.38492)
 [![Lean 4 CI](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml/badge.svg)](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml)
 [![Zulip Chat](https://img.shields.io/badge/zulip-solfunmeme-blue.svg)](https://solfunmeme.zulipchat.com/)
 [![Mathlib 4](https://img.shields.io/badge/Mathlib_4-compatible-green.svg)](https://github.com/leanprover-community/mathlib4)
@@ -11,6 +13,10 @@
 [![lean-worker](https://img.shields.io/badge/Worker-lean--worker-9cf.svg)](https://github.com/meta-introspector/lean-worker)
 [![aristotle-cli-rs](https://img.shields.io/badge/Orchestrator-aristotle--cli--rs-orange.svg)](https://github.com/meta-introspector/aristotle-cli-rs)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+> 📄 **Official Published arXiv Preprint:** [arXiv:2609.38492 [cs.LO]](https://arxiv.org/abs/2609.38492) │ [Direct PDF](https://arxiv.org/pdf/2609.38492) │ DOI: [10.48550/arXiv.2609.38492](https://doi.org/10.48550/arXiv.2609.38492)  
+> *Title:* "Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions"  
+> *Authors:* Volkan Dağlı, Zerrin Dağlı, Dağhan Dağlı • *Zenodo Release DOI:* [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504)
 
 This repository provides **machine-checked formal verifications in Lean 4 / Mathlib** for the core computational discrete algebra algorithms and representations of the [GAP System](https://www.gap-system.org/) (Groups, Algorithms, Programming).
 
@@ -157,6 +163,17 @@ Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
 If you build upon or reference this formal verification, please cite:
 
 ```bibtex
+@article{dagli_2026_gap_lean4_arxiv,
+  author       = {Da{\u{g}}l{\i}, Volkan and Da{\u{g}}l{\i}, Zerrin and Da{\u{g}}l{\i}, Da{\u{g}}han},
+  title        = {{Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions}},
+  journal      = {arXiv preprint arXiv:2609.38492 [cs.LO]},
+  year         = {2026},
+  month        = sep,
+  doi          = {10.48550/arXiv.2609.38492},
+  url          = {https://arxiv.org/abs/2609.38492},
+  note         = {Zenodo DOI: 10.5281/zenodo.23045504; Mathlib 4 Compatible, 35 Theorems, 0 sorry}
+}
+
 @software{dagli_2026_gap_lean4,
   author       = {Dağlı, Volkan and Dağlı, Zerrin and Dağlı, Dağhan},
   title        = {{Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions}},
