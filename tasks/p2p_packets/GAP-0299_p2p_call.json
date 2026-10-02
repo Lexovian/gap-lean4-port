@@ -1,0 +1,32 @@
+{
+  "schema": "harmonic.p2p-call/1",
+  "protocol_version": "lean-worker-v2",
+  "body": {
+    "client": "peer-pcworm-relay",
+    "server": "node-lean-worker-mdupont",
+    "nonce": 1790922655716,
+    "fuelBudget": 500000,
+    "job": {
+      "kind": "checkProof",
+      "task_id": "GAP-0299",
+      "task_cid": "baguqeeradzipocbvrtw44fhnudpvjqziopiy2du7ldbnrqxqii2wfpcgty5a",
+      "lean_module": "RequestProject.Gap.Library.Stbc",
+      "sha256": "2e52d6c5689fa91106525979c5a6d8932d9de3523e3162e048d30ea49f1045ec",
+      "theorems": [
+        "GAP.Library.Stbc.siftOneLevel_fixes_basePoint",
+        "GAP.Library.Stbc.siftFull_sound",
+        "GAP.Library.Stbc.siftFull_complete",
+        "GAP.Library.Stbc.membership_soundness"
+      ],
+      "degree_qualifier": {
+        "type": "SupportDegree_vs_StorageDegree",
+        "support_degree": "max_moved_point",
+        "storage_degree": "points_allocated",
+        "invariant": "siftOneLevel_fixes_basePoint"
+      }
+    }
+  },
+  "auth": "59b5fbe03b5959b1ccaef3e49963bc1fc17cf2dcd8880df31d45285e9fa22acc",
+  "target_endpoint": "minimal/Protocol/Server.lean",
+  "status": "ready_for_dispatch"
+}

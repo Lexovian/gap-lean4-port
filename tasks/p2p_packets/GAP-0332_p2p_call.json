@@ -1,0 +1,30 @@
+{
+  "schema": "harmonic.p2p-call/1",
+  "protocol_version": "lean-worker-v2",
+  "body": {
+    "client": "peer-pcworm-relay",
+    "server": "node-lean-worker-mdupont",
+    "nonce": 1790922655718,
+    "fuelBudget": 500000,
+    "job": {
+      "kind": "checkProof",
+      "task_id": "GAP-0332",
+      "task_cid": "baguqeerauwvxvghhrqtknlj42uinwn6syqeic3q3ekbopds26jxqmcp2g4xq",
+      "lean_module": "RequestProject.Gap.Library.Partitio",
+      "sha256": "52eebd391921ee1f28fccf63da6cd69ce7b83f4f264b12f8cbf1db4063eed0c5",
+      "theorems": [
+        "GAP.Library.Partitio.mem_splitCellByPred_iff",
+        "GAP.Library.Partitio.splitCellByPred_disjoint",
+        "GAP.Library.Zmodnze.card_zmodnze_eq_pow"
+      ],
+      "degree_qualifier": {
+        "type": "PartitionDisjointness_and_ExtensionDegree",
+        "extension_degree": "m : Nat",
+        "invariant": "Fintype.card (Zmodnze n m) = n ^ m"
+      }
+    }
+  },
+  "auth": "a7769f913ed7cc253ebfc02ab0e861860d8681c93b78b2e87cb6d74f288d4e1b",
+  "target_endpoint": "minimal/Protocol/Server.lean",
+  "status": "ready_for_dispatch"
+}

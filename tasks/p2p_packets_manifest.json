@@ -1,0 +1,12 @@
+{
+  "schema": "harmonic.p2p-batch/1",
+  "client": "peer-pcworm-relay",
+  "protocol_spec": "meta-introspector/lean-worker/minimal/Protocol/Server.lean",
+  "total_packets": 4,
+  "packets": [
+    "tasks/p2p_packets/GAP-0050_p2p_call.json",
+    "tasks/p2p_packets/GAP-0299_p2p_call.json",
+    "tasks/p2p_packets/GAP-0331_p2p_call.json",
+    "tasks/p2p_packets/GAP-0332_p2p_call.json"
+  ]
+}

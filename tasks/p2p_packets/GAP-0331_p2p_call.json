@@ -1,0 +1,30 @@
+{
+  "schema": "harmonic.p2p-call/1",
+  "protocol_version": "lean-worker-v2",
+  "body": {
+    "client": "peer-pcworm-relay",
+    "server": "node-lean-worker-mdupont",
+    "nonce": 1790922655716,
+    "fuelBudget": 500000,
+    "job": {
+      "kind": "checkProof",
+      "task_id": "GAP-0331",
+      "task_cid": "baguqeerazyl3tvjkjhhaeyhv5wtgkwk4b7yud6ufwakrd67smmw4int26jcq",
+      "lean_module": "RequestProject.Gap.Library.Zmodnz",
+      "sha256": "b8305b927228775289c78a061669e4e45428d74912ff863c23df3338d67c9bab",
+      "theorems": [
+        "GAP.Library.Zmodnz.inv_sound",
+        "GAP.Library.Zmodnz.inv_mul_cancel",
+        "GAP.Library.Zmodnz.bezout_sound"
+      ],
+      "degree_qualifier": {
+        "type": "AlgebraicModulus",
+        "modulus": "n : Nat",
+        "invariant": "n > 1 → (Nat.Coprime a n ↔ IsUnit (a : ZMod n))"
+      }
+    }
+  },
+  "auth": "bb0dc3ac07b9aef99c4112956eeb9d50b1d843b2e5363e9eedadcb3f715014f6",
+  "target_endpoint": "minimal/Protocol/Server.lean",
+  "status": "ready_for_dispatch"
+}
