@@ -22,6 +22,12 @@ This repository provides **machine-checked formal verifications in Lean 4 / Math
 
 Developed by the **ITouch Systems Formal Verification Lab** (Volkan Dagli [@pCwOrM] & Family).
 
+> [!NOTE]
+> ### 🚀 Fork Purpose: Phase 3 Verification Staging
+> This repository fork is maintained by **Dağhan Dağlı** ([@Lexovian](https://github.com/Lexovian)) to coordinate the implementation, verification architecture, and task roadmaps for **Phase 3 Formal Verifications** (Computational Group Theory, including `GAP-0190` Schreier-Sims Order Product Theorem and `GAP-0247` Orbit-Stabilizer Equivalence).
+>
+> **Notice on Proof Artifacts:** Machine-checked Lean 4 proof modules and formal artifacts are developed and verified within private staging environments. Formal contributions and verified modules will be synchronized upstream to [pCwOrM/gap-lean4-port](https://github.com/pCwOrM/gap-lean4-port) upon milestone completion, Zenodo archiving, and publication.
+
 ---
 
 ## What's New in Release v0.2.0 (Phase 2 Milestone)
