@@ -33,7 +33,7 @@ In accordance with the **Shared Terminology Guide v2**, we make no premature cla
 | **GAP-0331** | `lib/zmodnz.gi`<br/>`InverseOp` | `RequestProject.Gap.Library.Zmodnz` | Bijective ring isomorphism $\mathbb{Z}/n\mathbb{Z} \cong \text{ZMod } n$; constructive Bézout inverse soundness. | Algebraic (Ring) | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0299** | `lib/stbc.gi`<br/>`StabChainOp`, `SiftedPerm` | `RequestProject.Gap.Library.Stbc` | Schreier-Sims stabilizer chain sifting soundness & completeness; base-point fixation invariant. | **Support degree** ($\max \Omega$ moved) vs **Storage degree** | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 | **GAP-0332a** | `lib/partitio.gi`<br/>`splitCellByPred` | `RequestProject.Gap.Library.Partitio` | Backtrack partition cell splitting: pointwise conservation (`mem_splitCellByPred_iff`), mutual disjointness, length preservation. | Poset / Set Partition | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
-| **GAP-0332b** | `lib/zmodnze.gi`<br/>Cyclotomic extensions | `RequestProject.Gap.Library.Zmodnze` | Cyclotomic extension ring cardinality: $|\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)| = n^m$; ring homomorphism soundness. | Ring Extension | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
+| **GAP-0332b** | `lib/zmodnze.gi`<br/>Cyclotomic extensions | `RequestProject.Gap.Library.Zmodnze` | Cyclotomic extension ring cardinality: $\lvert \mathbb{Z}/n\mathbb{Z}(\varepsilon_m) \rvert = n^m$; ring homomorphism soundness. | Ring Extension | **Rung 3 (Proved)** | `propext`<br/>`Classical.choice`<br/>`Quot.sound`<br/>(0 sorry) |
 
 ---
 
@@ -41,9 +41,9 @@ In accordance with the **Shared Terminology Guide v2**, we make no premature cla
 
 | Chunk ID | Target GAP Symbol & File | Lean Module | Primary Mathematical Contract | Degree Qualifier | Target Rung | Execution Phase |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
-| **GAP-0190**<br/>*(The Crown Jewel)* | `lib/grpperm.gi`<br/>`SizePermGroup` | `RequestProject.Gap.Library.Grpperm` | **Group Order Formula:**<br/>$|G| = \prod_{i=1}^k \|\Delta_i\|$<br/>Order equals product of basic orbit lengths in BSGS. | **Support degree** ($\max_{g \in G} \text{supp}(g)$) | **Rung 3** $\to$ **Rung 4b** | **Phase 3.1 (Immediate)** |
-| **GAP-0247** | `lib/oprtperm.gi`<br/>`OrbitPerms`, `Stabilizer` | `RequestProject.Gap.Library.Oprtperm` | **Orbit-Stabilizer Equivalence:**<br/>$\|G\| = \|\text{Orb}_G(x)\| \cdot \|\text{Stab}_G(x)\|$<br/>Transversal tree coset bijection. | **Support degree** | **Rung 3** $\to$ **Rung 4b** | **Phase 3.2 (Immediate)** |
-| **GAP-0209** | `lib/clasperm.gi`<br/>`ConjugacyClasses` | `RequestProject.Gap.Library.Clasperm` | Cycle type decomposition and conjugacy criterion in $S_n$: $g \sim h \iff \text{cycle\_type}(g) = \text{cycle\_type}(h)$. | **Support degree** | **Rung 3** | **Phase 3.3** |
+| **GAP-0190**<br/>*(The Crown Jewel)* | `lib/grpperm.gi`<br/>`SizePermGroup` | `RequestProject.Gap.Library.Grpperm` | **Group Order Formula:**<br/>$\lvert G \rvert = \prod_{i=1}^k \lvert \Delta_i \rvert$<br/>Order equals product of basic orbit lengths in BSGS. | **Support degree** ($\max_{g \in G} \text{supp}(g)$) | **Rung 3** $\to$ **Rung 4b** | **Phase 3.1 (Immediate)** |
+| **GAP-0247** | `lib/oprtperm.gi`<br/>`OrbitPerms`, `Stabilizer` | `RequestProject.Gap.Library.Oprtperm` | **Orbit-Stabilizer Equivalence:**<br/>$\lvert G \rvert = \lvert \operatorname{Orb}_G(x) \rvert \cdot \lvert \operatorname{Stab}_G(x) \rvert$<br/>Transversal tree coset bijection. | **Support degree** | **Rung 3** $\to$ **Rung 4b** | **Phase 3.2 (Immediate)** |
+| **GAP-0209** | `lib/clasperm.gi`<br/>`ConjugacyClasses` | `RequestProject.Gap.Library.Clasperm` | Cycle type decomposition and conjugacy criterion in $S_n$: $g \sim h \iff \operatorname{cycleType}(g) = \operatorname{cycleType}(h)$. | **Support degree** | **Rung 3** | **Phase 3.3** |
 | **GAP-0175** | `lib/grpmat.gi`<br/>`GL`, `SL`, Matrix Groups | `RequestProject.Gap.Library.Grpmat` | Invertibility criterion $\det(M) \in (\mathbb{Z}/p\mathbb{Z})^\times$; matrix group closure and order relations. | Vector Space Dim $n$ | **Rung 3** | **Phase 3.4** |
 
 ---
