@@ -17,7 +17,7 @@
 In strict adherence to the **Shared Terminology Guide v2** established with collaborator Mike DuPont:
 * **What we claim:** We build a Lean 4 model of selected GAP algorithms, prove mathematical properties of the model (Rung 3), and check runtime traces of real binaries against the model (Rung 4a operator-level / Rung 4b boundary-level).
 * **What we do not claim:** We do not claim to have verified the raw C or GAP code directly without qualification. Every report states which rung a result reached on the 0–5 ladder.
-* **Controlled Terminology:** We state *"The model's property is proved"* rather than *"GAP is verified"*. All permutation degrees are strictly qualified as either **Support degree** ($\text{LargestMovedPoint}$) or **Storage degree** (internal array length). All proofs are audited with `#print axioms` (Rung 3).
+* **Controlled Terminology:** We state *"The model's property is proved"* rather than *"GAP is verified"*. All permutation degrees are strictly qualified as either **Support degree** (`LargestMovedPoint`) or **Storage degree** (internal array length). All proofs are audited with `#print axioms` (Rung 3).
 
 Following the completion of:
 1. **GAP-0331 (`lib/zmodnz.gi`):** Modular arithmetic memory models, bijective Mathlib isomorphisms, and constructive Bézout inverses via Extended Euclidean GCD.
@@ -91,8 +91,8 @@ In accordance with our alignment with Mike DuPont, every target task is tracked 
 | Chunk ID | Source File & Anchor | Target Lean Module | Mathematical Contract | Degree Qualifier | Current / Target Rung | Tracing & Verification Tooling |
 | :--- | :--- | :--- | :--- | :--- | :---: | :--- |
 | **GAP-0190**<br/>*(The Crown Jewel)* | `lib/grpperm.gi`<br/>`SizePermGroup` | `RequestProject.Gap.Library.Grpperm` | **Group Order Formula:**<br/>$\lvert G \rvert = \prod_{i=1}^k \lvert \Delta_i \rvert$<br/>Order equals product of basic orbit sizes in valid BSGS chain. | **Support degree** ($\max_{g \in G} \text{supp}(g)$) | **Rung 1** $\to$ **Rung 3** $\to$ **Rung 4b** | Lean 4 Kernel (`Verify.lean`) + Mike's `lean-worker` eBPF boundary probe |
-| **GAP-0247** | `lib/oprtperm.gi`<br/>`OrbitPerms`, `Stabilizer` | `RequestProject.Gap.Library.Oprtperm` | **Orbit-Stabilizer Equivalence:**<br/>$\lvert G \rvert = \lvert \operatorname{Orb}_G(x) \rvert \cdot \lvert \operatorname{Stab}_G(x) \rvert$<br/>Transversal tree coset bijection and action soundness (`OnPoints`, `OnPairs`, `OnSets`). | **Support degree** | **Rung 1** $\to$ **Rung 3** $\to$ **Rung 4b** | Lean 4 Kernel + `lean-worker` boundary trace |
-| **GAP-0209** | `lib/clasperm.gi`<br/>`ConjugacyClasses` | `RequestProject.Gap.Library.Clasperm` | **Conjugacy Criterion:**<br/>$g \sim h \iff \operatorname{cycleType}(g) = \operatorname{cycleType}(h)$ in $S_n$; centralizer order $\lvert C_{S_n}(\sigma) \rvert = \prod_j j^{m_j} m_j!$. | **Support degree** | **Rung 0** $\to$ **Rung 3** | Mathlib Perm.cycleType bridge |
+| **GAP-0247** | `lib/oprtperm.gi`<br/>`OrbitPerms`, `Stabilizer` | `RequestProject.Gap.Library.Oprtperm` | **Orbit-Stabilizer Equivalence:**<br/>$\lvert G \rvert = \lvert \mathrm{Orb}_G(x) \rvert \cdot \lvert \mathrm{Stab}_G(x) \rvert$<br/>Transversal tree coset bijection and action soundness (`OnPoints`, `OnPairs`, `OnSets`). | **Support degree** | **Rung 1** $\to$ **Rung 3** $\to$ **Rung 4b** | Lean 4 Kernel + `lean-worker` boundary trace |
+| **GAP-0209** | `lib/clasperm.gi`<br/>`ConjugacyClasses` | `RequestProject.Gap.Library.Clasperm` | **Conjugacy Criterion:**<br/>$g \sim h \iff \mathrm{cycleType}(g) = \mathrm{cycleType}(h)$ in $S_n$; centralizer order $\lvert C_{S_n}(\sigma) \rvert = \prod_j j^{m_j} m_j!$. | **Support degree** | **Rung 0** $\to$ **Rung 3** | Mathlib Perm.cycleType bridge |
 | **GAP-0175** | `lib/grpmat.gi`<br/>`GL`, `SL`, Matrix Groups | `RequestProject.Gap.Library.Grpmat` | **Matrix Groups over Residue Fields:**<br/>Group laws over $\mathbb{Z}/p\mathbb{Z}$; invertibility via $\det(M) \in (\mathbb{Z}/p\mathbb{Z})^\times$. | Vector Space Dim $n$ | **Rung 0** $\to$ **Rung 3** | Extension of verified `zmodnz.gi` |
 
 ```mermaid
@@ -127,21 +127,21 @@ flowchart LR
 * **Status:** Immediate Launch.
 * **Scope:** Permutation group construction from generators, base maintenance, and group order computation.
 * **The Crown Jewel Theorem:**
-  $$\operatorname{card}(G) = \prod_{i=1}^k |\Delta_i|$$
-  Formally proving that the order of a permutation group represented by a valid stabilizer chain equals the product of the basic orbit sizes $|\Delta_i|$.
-* **Degree Qualifier:** Stated strictly over **Support degree** ($\text{LargestMovedPoint}$). Representation variations in storage degree are separated into structural probes.
+  $$\lvert G \rvert = \prod_{i=1}^k \lvert \Delta_i \rvert$$
+  Formally proving that the order of a permutation group represented by a valid stabilizer chain equals the product of the basic orbit sizes $\lvert \Delta_i \rvert$.
+* **Degree Qualifier:** Stated strictly over **Support degree** (`LargestMovedPoint`). Representation variations in storage degree are separated into structural probes.
 * **Why This Matters:** In abstract group theory, computing group order is non-trivial. In Mathlib, verifying the order of an arbitrary finitely generated permutation group is currently missing. Proving this algorithmically cements `gap-lean4-port` as the premier computational group engine for Lean 4.
 
 #### Step 2 (Immediate Follow-up): `GAP-0247` (`lib/oprtperm.gi` — 23.28 Person-Days)
 * **Status:** Immediate Follow-up.
 * **Scope:** Group actions on points, pairs, and subsets (`OnPoints`, `OnPairs`, `OnSets`).
 * **The Orbit-Stabilizer Theorem:**
-  $$|G| = |\operatorname{Orb}_G(x)| \cdot |\operatorname{Stab}_G(x)|$$
+  $$\lvert G \rvert = \lvert \mathrm{Orb}_G(x) \rvert \cdot \lvert \mathrm{Stab}_G(x) \rvert$$
   Directly proving the concrete bijection between coset representatives in the transversal tree and points in the orbit.
 * **Synthesis:** Once `GAP-0190` and `GAP-0247` land, the core permutation order engine of a computer algebra system will be fully verified end-to-end in Lean 4 for the first time.
 
 #### Step 3 (Secondary Extension): `GAP-0209` & `GAP-0175`
-* **GAP-0209 (`lib/clasperm.gi`):** Permutation conjugacy classes, cycle structures, and centralizer order calculations: $|C_{S_n}(\sigma)| = \prod_j j^{m_j} m_j!$.
+* **GAP-0209 (`lib/clasperm.gi`):** Permutation conjugacy classes, cycle structures, and centralizer order calculations: $\lvert C_{S_n}(\sigma) \rvert = \prod_j j^{m_j} m_j!$.
 * **GAP-0175 (`lib/grpmat.gi`):** Matrix groups over finite fields and modular residue rings $\mathbb{Z}/p\mathbb{Z}$, extending our verified `zmodnz.gi`.
 
 ---
@@ -168,7 +168,7 @@ gantt
 ### Detailed Deliverables for Release v0.3.0:
 1. **`RequestProject.Gap.Library.Grpperm`:**
    - Concrete `PermGroup α` representation with generators and associated `StabChain α`.
-   - Theorem `permGroup_order_eq_prod_basicOrbits`: Machine-checked proof that $|G| = \prod |\Delta_i|$.
+   - Theorem `permGroup_order_eq_prod_basicOrbits`: Machine-checked proof that $\lvert G \rvert = \prod_{i=1}^k \lvert \Delta_i \rvert$.
    - Soundness of elements generation (`all_elements_sound`).
 2. **`RequestProject.Gap.Library.Oprtperm`:**
    - Operational orbit computation: `orbitOfPoint`, `allOrbits`.
