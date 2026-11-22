@@ -1,0 +1,78 @@
+{
+  "metadata": {
+    "title": "Formal Lean 4 Models and Proofs of Permutation Group Orders and Orbit-Stabilizer Algorithms for GAP (Phase 3, Release v0.3.0)",
+    "upload_type": "publication",
+    "publication_type": "preprint",
+    "publication_date": "2026-11-22",
+    "description": "<h3>Paper II (Phase 3, Release v0.3.0): Formal Lean 4 Models &amp; Proofs of Permutation Group Orders and Orbit-Stabilizer Algorithms for GAP</h3><p>Continuing our frozen Phase 1–2 baseline (Paper I, <code>arXiv:2609.38492</code>, Zenodo DOI <code>10.5281/zenodo.23045504</code>) and adhering strictly to Shared Terminology Guide v2 (Rungs 0–5), this publication presents two new Lean 4 (<code>v4.28.0</code> / Mathlib4) models pinned to <code>gap-system/gap</code> tag <code>v4.14.0</code> (commit <code>8e68258d61fb</code>) with <b>0 sorry, 0 admit, and 0 custom axioms</b> across 30 audited theorems in <code>RequestProject/Verify.lean</code> (<b>Rung 3</b>), complemented by an open operator-level witness harness executed against an official GAP 4.12.1 binary (<b>Rung 4a</b>: 100/100 witnesses across 10 finite permutation groups including intransitive support-vs-storage degree embeddings and the sporadic Mathieu group M<sub>11</sub>, 0 violations, 1 synthetic negative check).</p><h4>Core Contributions (Phase 3 — Sections 1 &amp; 2)</h4><ul><li><b>GAP-0190 (<code>lib/grpperm.gi</code>):</b> <code>RequestProject.Gap.Library.Grpperm</code> — <code>PermGroup</code>, support degree (<code>LargestMovedPoint</code>), transversal word factorization, and <code>permGroup_order_eq_prod_basicOrbits</code> (|G| = &prod; |&Delta;<sub>i</sub>|).</li><li><b>GAP-0247 (<code>lib/oprtperm.gi</code>):</b> <code>RequestProject.Gap.Library.Oprtperm</code> — <code>onPoints</code>, <code>onPairs</code>, <code>onSets</code> action laws &amp; cardinality preservation, computable BFS <code>orbitOfPoint</code> proved equal to abstract <code>orbitFinset</code>, domain orbit partitioning, Orbit-Stabilizer identity |G| = |Orb<sub>G</sub>(x)| &middot; |Stab<sub>G</sub>(x)|, and transversal coset bijection.</li><li><b>Reproducible GAP 4 Harness:</b> <code>tools/run_rung4a_gap_witness.py</code> and JSON evidence log <code>docs/reports/GAP_0247_RUNG4A_WITNESS_REPORT.json</code>.</li></ul><p><b>Acknowledgments:</b> Computational infrastructure and server resources for this work were provided by ITouch Systems (Cukurova University Technopark, Adana, Türkiye). The authors gratefully acknowledge Bekirhan Dağlı, partner at ITouch Systems, for infrastructure support and resource allocation.</p>",
+    "creators": [
+      {
+        "name": "Dağlı, Dağhan",
+        "affiliation": "Toros Science High School, MEV (Toros University), Mersin, Türkiye",
+        "orcid": "0009-0003-2492-8313"
+      },
+      {
+        "name": "Dağlı, Volkan",
+        "affiliation": "Anadolu University, Eskişehir, Türkiye; ITouch Systems, Cukurova University Technopark, Adana, Türkiye",
+        "orcid": "0009-0000-1587-8703"
+      },
+      {
+        "name": "Dağlı, Zerrin",
+        "affiliation": "Mersin University, Mersin, Türkiye; Yusuf Kalkavan Anatolian High School, Ministry of National Education, Mersin, Türkiye",
+        "orcid": "0000-0001-9490-6425"
+      }
+    ],
+    "access_right": "open",
+    "license": "apache-2.0",
+    "keywords": [
+      "Lean 4",
+      "Mathlib4",
+      "GAP System",
+      "Computational Group Theory",
+      "Formal Modeling",
+      "Schreier-Sims Algorithm",
+      "Orbit-Stabilizer Theorem",
+      "Permutation Groups",
+      "Interactive Theorem Proving"
+    ],
+    "related_identifiers": [
+      {
+        "scheme": "doi",
+        "identifier": "10.5281/zenodo.23045503",
+        "relation": "continues",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "scheme": "doi",
+        "identifier": "10.5281/zenodo.23045504",
+        "relation": "continues",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "scheme": "arxiv",
+        "identifier": "2609.38492",
+        "relation": "continues",
+        "resource_type": "publication-preprint"
+      },
+      {
+        "scheme": "url",
+        "identifier": "https://github.com/Lexovian/gap-lean4-port",
+        "relation": "isSupplementedBy",
+        "resource_type": "software"
+      }
+    ],
+    "version": "v0.3.0",
+    "communities": [
+      {
+        "identifier": "zenodo"
+      }
+    ],
+    "contributors": [
+      {
+        "name": "Dağlı, Bekirhan",
+        "affiliation": "ITouch Systems, Cukurova University Technopark, Adana, Türkiye",
+        "type": "Sponsor"
+      }
+    ]
+  }
+}

@@ -1,0 +1,286 @@
+{
+  "schema": "gap-lean4-port.rung4a-witness-report/2",
+  "terminology_standard": "Shared Terminology Guide v2",
+  "timestamp_utc": "2026-11-22T18:34:40.175052+00:00",
+  "gap_runtime": {
+    "binary_path": "/usr/bin/gap",
+    "binary_sha256": "9aa736f13150c363d7c31d33513d849482dd52692e7534f51ecfac0d303bb1e3",
+    "gap_version": "4.12.1",
+    "build_datetime": "2024-03-31 18:27:02+0000",
+    "provenance_status": "distribution binary (no pinned Nix derivation); traces cap strictly at Rung 4a (operator-level), not Rung 4b (boundary-level)"
+  },
+  "anchored_chunks": {
+    "GAP-0190": {
+      "repo": "gap-system/gap",
+      "tag": "v4.14.0",
+      "commit": "8e68258d61fbeef94ee1ef07d5aa6320c70ebff7",
+      "file": "lib/grpperm.gi",
+      "symbols": [
+        "SizePermGroup"
+      ],
+      "source_sha256": "0e0e2e4110cb71cb9ffe8794ee4b3b097b4b1c96b8c1df94013a809113aad5a5",
+      "lean_module": "RequestProject.Gap.Library.Grpperm",
+      "lean_sha256": "5538f7b4214aae6f1b542ebe7ce5b32ec61c53844d7e95762d5c302d2b3f89f4",
+      "rung_reached": "Rung 3 (Proved) + Rung 4a (Witnessed, operator-level)"
+    },
+    "GAP-0247": {
+      "repo": "gap-system/gap",
+      "tag": "v4.14.0",
+      "commit": "8e68258d61fbeef94ee1ef07d5aa6320c70ebff7",
+      "file": "lib/oprtperm.gi",
+      "symbols": [
+        "OrbitOp",
+        "OrbitPerms",
+        "OrbitsDomain",
+        "PermGroupStabilizerOp",
+        "OnPoints",
+        "OnPairs",
+        "OnSets"
+      ],
+      "source_sha256": "f90f470d6184d3ea4c645b01a704eef99632637bcaea04a16eeb090787c1c876",
+      "lean_module": "RequestProject.Gap.Library.Oprtperm",
+      "lean_sha256": "82f9772e687f3db3bc1cf6e6e5d3e3242fe97946ee1a818e60f04b9533a7fad9",
+      "rung_reached": "Rung 3 (Proved) + Rung 4a (Witnessed, operator-level)"
+    }
+  },
+  "evidence_summary": {
+    "trace_level": "operator-level (Rung 4a)",
+    "groups_tested": 10,
+    "events": 100,
+    "witness": 100,
+    "out_of_domain": 0,
+    "violation": 0,
+    "undecodable": 0,
+    "synthetic": 1,
+    "synthetic_verdict_reached": "violation"
+  },
+  "reference_row_v2": "GAP:lib/grpperm.gi+lib/oprtperm.gi@v4.14.0 | GAP.Grpperm.* + GAP.Oprtperm.* | [propext, Classical.choice, Quot.sound] | operator-level (4a, GAP 4.12.1) | 100 | 100 | 0 | 0 | 0 | 1 (synthetic->violation) | fresh",
+  "group_witnesses": [
+    {
+      "group": "S_3",
+      "storage_degree": 3,
+      "support_degree_largest_moved_point": 3,
+      "group_order": 6,
+      "basic_orbit_lengths": [
+        3,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        3
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 3,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 7,
+      "verdict": "witness"
+    },
+    {
+      "group": "S_4",
+      "storage_degree": 4,
+      "support_degree_largest_moved_point": 4,
+      "group_order": 24,
+      "basic_orbit_lengths": [
+        4,
+        3,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        4
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 4,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 8,
+      "verdict": "witness"
+    },
+    {
+      "group": "S_5",
+      "storage_degree": 5,
+      "support_degree_largest_moved_point": 5,
+      "group_order": 120,
+      "basic_orbit_lengths": [
+        5,
+        4,
+        3,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        5
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 5,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 9,
+      "verdict": "witness"
+    },
+    {
+      "group": "A_4",
+      "storage_degree": 4,
+      "support_degree_largest_moved_point": 4,
+      "group_order": 12,
+      "basic_orbit_lengths": [
+        4,
+        3
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        4
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 4,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 8,
+      "verdict": "witness"
+    },
+    {
+      "group": "A_5",
+      "storage_degree": 5,
+      "support_degree_largest_moved_point": 5,
+      "group_order": 60,
+      "basic_orbit_lengths": [
+        5,
+        4,
+        3
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        5
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 5,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 9,
+      "verdict": "witness"
+    },
+    {
+      "group": "D_4",
+      "storage_degree": 4,
+      "support_degree_largest_moved_point": 4,
+      "group_order": 8,
+      "basic_orbit_lengths": [
+        4,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        4
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 4,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 8,
+      "verdict": "witness"
+    },
+    {
+      "group": "D_6",
+      "storage_degree": 6,
+      "support_degree_largest_moved_point": 6,
+      "group_order": 12,
+      "basic_orbit_lengths": [
+        6,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        6
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 6,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 10,
+      "verdict": "witness"
+    },
+    {
+      "group": "C_4xC_2_in_S_10",
+      "storage_degree": 10,
+      "support_degree_largest_moved_point": 6,
+      "group_order": 8,
+      "basic_orbit_lengths": [
+        4,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        4,
+        2,
+        1,
+        1,
+        1,
+        1
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 10,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 14,
+      "verdict": "witness"
+    },
+    {
+      "group": "S_3xS_3_in_S_8",
+      "storage_degree": 8,
+      "support_degree_largest_moved_point": 6,
+      "group_order": 36,
+      "basic_orbit_lengths": [
+        3,
+        2,
+        3,
+        2
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        3,
+        3,
+        1,
+        1
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 8,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 12,
+      "verdict": "witness"
+    },
+    {
+      "group": "M_11",
+      "storage_degree": 11,
+      "support_degree_largest_moved_point": 11,
+      "group_order": 7920,
+      "basic_orbit_lengths": [
+        11,
+        10,
+        9,
+        8
+      ],
+      "order_equals_basic_orbit_product": true,
+      "orbit_partition_sizes": [
+        11
+      ],
+      "orbit_partition_valid": true,
+      "orbit_stabilizer_checks": 11,
+      "orbit_stabilizer_all_matched": true,
+      "action_laws_onPoints_onPairs_onSets": true,
+      "points_outside_support_fixed": true,
+      "events": 15,
+      "verdict": "witness"
+    }
+  ]
+}

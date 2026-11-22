@@ -66,7 +66,7 @@ Our existing, fully verified Phase 2 corpus serves as the concrete reference imp
 
 ## 4. Phase 3 Formal Pattern Language Specifications
 
-### 4.1. `GAP-0190` (`lib/grpperm.gi` — The Crown Jewel)
+### 4.1. `GAP-0190` (`lib/grpperm.gi` — Group Order Formula)
 
 * **IPLD Task CID:** `baguqeerabfmumkhx4awa3al6rthhculmjln7lhbwsw72b2elwll5rxyb2e5a`
 * **Source Anchor:** `GAP:lib/grpperm.gi:SizePermGroup`

@@ -1,193 +1,69 @@
-# Formally Verified Lean 4 Port of GAP: Computational Discrete Algebra
+# Formal Lean 4 Models & Axiomatic Proofs of Selected GAP Algorithms
 
 [![Lean 4](https://img.shields.io/badge/Lean_4-v4.28.0-blue.svg)](https://lean-lang.org/)
+[![Mathlib 4](https://img.shields.io/badge/Mathlib_4-v4.28.0-green.svg)](https://github.com/leanprover-community/mathlib4)
+[![Axiom Audit](https://img.shields.io/badge/Verify.lean-30_Theorems_%7C_0_sorry-brightgreen.svg)](RequestProject/Verify.lean)
+[![Rung 4a](https://img.shields.io/badge/Rung_4a-100%2F100_GAP_4.12.1_Witnesses-teal.svg)](docs/reports/GAP_0247_RUNG4A_WITNESS_REPORT.json)
 [![arXiv](https://img.shields.io/badge/arXiv-2609.38492-b31b1b.svg)](https://arxiv.org/abs/2609.38492)
-[![arXiv DOI](https://img.shields.io/badge/DOI-10.48550%2FarXiv.2609.38492-b31b1b.svg)](https://doi.org/10.48550/arXiv.2609.38492)
-[![Lean 4 CI](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml/badge.svg)](https://github.com/pCwOrM/gap-lean4-port/actions/workflows/lean_build.yml)
-[![Zulip Chat](https://img.shields.io/badge/zulip-solfunmeme-blue.svg)](https://solfunmeme.zulipchat.com/)
-[![Mathlib 4](https://img.shields.io/badge/Mathlib_4-compatible-green.svg)](https://github.com/leanprover-community/mathlib4)
-[![Release](https://img.shields.io/badge/Release-v0.2.0-orange.svg)](https://github.com/pCwOrM/gap-lean4-port/releases/tag/v0.2.0)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23045504.svg)](https://doi.org/10.5281/zenodo.23045504)
-[![Concept DOI](https://img.shields.io/badge/Concept_DOI-10.5281%2Fzenodo.23045503-blue.svg)](https://doi.org/10.5281/zenodo.23045503)
-[![Verification](https://img.shields.io/badge/Verification-35_Theorems_%7C_0_sorry_%7C_0_admit-brightgreen.svg)](https://github.com/pCwOrM/gap-lean4-port)
-[![lean-worker](https://img.shields.io/badge/Worker-lean--worker-9cf.svg)](https://github.com/meta-introspector/lean-worker)
-[![aristotle-cli-rs](https://img.shields.io/badge/Orchestrator-aristotle--cli--rs-orange.svg)](https://github.com/meta-introspector/aristotle-cli-rs)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![Paper II DOI](https://img.shields.io/badge/Zenodo_Paper_II_(v0.3.0)-10.5281%2Fzenodo.24448459-blue.svg)](https://doi.org/10.5281/zenodo.24448459)
+[![Paper II Concept DOI](https://img.shields.io/badge/Concept_DOI-10.5281%2Fzenodo.24448458-informational.svg)](https://doi.org/10.5281/zenodo.24448458)
+[![License: Apache-2.0](https://img.shields.io/badge/License-Apache_2.0-orange.svg)](LICENSE)
 
-> 📄 **Official Published arXiv Preprint:** [arXiv:2609.38492 [cs.LO]](https://arxiv.org/abs/2609.38492) │ [Direct PDF](https://arxiv.org/pdf/2609.38492) │ DOI: [10.48550/arXiv.2609.38492](https://doi.org/10.48550/arXiv.2609.38492)  
-> *Title:* "Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions"  
-> *Authors:* Volkan Dağlı, Zerrin Dağlı, Dağhan Dağlı • *Zenodo Release DOI:* [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504)
-
-This repository provides **machine-checked formal verifications in Lean 4 / Mathlib** for the core computational discrete algebra algorithms and representations of the [GAP System](https://www.gap-system.org/) (Groups, Algorithms, Programming).
-
-Developed by the **ITouch Systems Formal Verification Lab** (Volkan Dagli [@pCwOrM] & Family).
-
-> [!NOTE]
-> ### 🚀 Fork Purpose: Phase 3 Verification Staging
-> This repository fork is maintained by **Dağhan Dağlı** ([@Lexovian](https://github.com/Lexovian)) to coordinate the implementation, verification architecture, and task roadmaps for **Phase 3 Formal Verifications** (Computational Group Theory, including `GAP-0190` Schreier-Sims Order Product Theorem and `GAP-0247` Orbit-Stabilizer Equivalence).
->
-> **Notice on Proof Artifacts:** Machine-checked Lean 4 proof modules and formal artifacts are developed and verified within private staging environments. Formal contributions and verified modules will be synchronized upstream to [pCwOrM/gap-lean4-port](https://github.com/pCwOrM/gap-lean4-port) upon milestone completion, Zenodo archiving, and publication.
+> [!IMPORTANT]
+> **Epistemic Scope ([Shared Terminology Guide v2](docs/SharedTerminologyGuide.md))**  
+> This repository builds **Lean 4 models** of selected algorithms from the [GAP System](https://www.gap-system.org/), proves mathematical properties of those models under standard Lean 4 foundations (**Rung 3**, `0 sorry`, `#print axioms` audited), and cross-checks operator-level traces against an official GAP 4 runtime (**Rung 4a**).  
+> We do **not** claim to have formally verified GAP's raw C kernel or GAP runtime source code without boundary-level provenance (Rung 2 human sign-off and Rung 4b boundary tracing remain explicitly open).
 
 ---
 
-## What's New in Release v0.2.0 (Phase 2 Milestone)
+## 1. Verified Module Inventory (Phases 1–3, `v0.3.0-rc`)
 
-Release **v0.2.0** advances beyond static residue structures into **verified operational computational group theory and backtrack combinatorial algorithms**, formalizing three major modules from GAP 4's core library with **0 sorry, 0 admit, and 0 external axioms**:
+All source anchors are pinned against official **`gap-system/gap` tag `v4.14.0`** (`8e68258d61fbeef94ee1ef07d5aa6320c70ebff7`):
 
-1. **GAP-0299 (`lib/stbc.gi`): Schreier-Sims Stabiliser Chains & Transversal Invariants**
-2. **GAP-0332 (`lib/partitio.gi`): Backtrack Ordered Partitions & Cell Refinement Invariants**
-3. **GAP-0332 (`lib/zmodnze.gi`): Rings $\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)$ of Cyclotomic Extensions**
-4. **GAP-0331 (`lib/zmodnz.gi`): Modular Residue Methods, Invertibility & Extended Euclidean GCD**
-
----
-
-## 1. Stabiliser Chains & Schreier-Sims Algorithms (`lib/stbc.gi`)
-
-Module: `RequestProject.Gap.Library.Stbc`  
-GAP Reference: `lib/stbc.gi` (by Heiko Theißen and Ákos Seress)
-
-Faithfully models GAP's stabiliser chain hierarchy, transversal trees, sifting reductions, and Base & Strong Generating Set (BSGS) membership testing:
-
-* **Core Structures:**
-  * `GAP.Stbc.StabLevel`: Models each chain level $(\beta_i, \Delta_i, S_i, u_i)$ with base point, basic orbit, generators, and inverse transversal representatives.
-  * `GAP.Stbc.StabChain`: The complete descending stabiliser chain $[G^{(1)}, G^{(2)}, \dots, G^{(k)}]$.
-* **Operational Algorithms:**
-  * `siftOneLevel`: Single-level coset reduction $g \mapsto u_y^{-1} \cdot g$.
-  * `siftFull` / `siftedPermutation`: Full multi-level Schreier sifting across the base.
-  * `membershipTestKnownBase`: Group membership decision procedure using sifting.
-  * `extendSchreierPoint`: Transversal tree extension step.
-* **Verified Theorems (0 sorry):**
-  * `siftOneLevel_fixes_basePoint`: Proves that single-level sifting strictly fixes the base point $\beta_i$.
-  * `siftFull_fixes_all_basePoints`: Proves that a fully sifted element fixes every base point in the base sequence $(\beta_1, \dots, \beta_k)$.
-  * `siftedPermutation_mem_subgroup_iff`: Invariant preservation during coset reduction.
-  * `membershipTestKnownBase_sound`: Proves that if membership test returns `true`, then $g \in G$.
-  * `membershipTestKnownBase_iff_mem`: Soundness and completeness equivalence for subgroup membership.
-  * `extendSchreierPoint_invariant`: Invariant preservation of the transversal tree under tree extension.
+| Chunk ID | GAP Source (`v4.14.0`) | Lean 4 Module | Key Proved Model Properties | Rung Reached |
+| :--- | :--- | :--- | :--- | :---: |
+| **`GAP-0050`** | `src/permutat.cc` (`ProdPerm`) | `RequestProject.Gap.Permutation` | Image-array permutation model, right-action anti-homomorphism (`toEquiv_mul`), storage vs. support degree separation | **Rung 3** |
+| **`GAP-0331`** | `lib/zmodnz.gi` (`InverseOp`) | `RequestProject.Gap.Library.Zmodnz` | Bijection `ZModnZObj n ≃ ZMod n`, constructive Extended Euclidean GCD inverse (`inverseOpExec_correct`, `isUnit_iff`) | **Rung 3** |
+| **`GAP-0299`** | `lib/stbc.gi` (`StabChainOp`, `SiftedPerm`) | `RequestProject.Gap.Library.Stbc` | Schreier-Sims stabilizer chains, base-point fixation (`siftFull_fixes_all_basePoints`), BSGS membership soundness & completeness | **Rung 3** |
+| **`GAP-0332a`** | `lib/partitio.gi` (`splitCellByPred`) | `RequestProject.Gap.Library.Partitio` | Backtrack ordered partition cell splitting: mutual disjointness, union & cardinality conservation | **Rung 3** |
+| **`GAP-0332b`** | `lib/zmodnze.gi` (`ZmodnZepsObj`) | `RequestProject.Gap.Library.Zmodnze` | Cyclotomic extension ring $\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)$ exact cardinality `card_eq` ($n^m$) | **Rung 3** |
+| **`GAP-0190`** | `lib/grpperm.gi` (`SizePermGroup`) | `RequestProject.Gap.Library.Grpperm` | `PermGroup α`, transversal word factorization, and Schreier-Sims order product formula $\lvert G \rvert = \prod \lvert \Delta_i \rvert$ (`permGroup_order_eq_prod_basicOrbits`) | **Rung 3 + Rung 4a** |
+| **`GAP-0247`** | `lib/oprtperm.gi` (`OrbitOp`, `OrbitsDomain`, `Stabilizer`) | `RequestProject.Gap.Library.Oprtperm` | `onPoints`/`onPairs`/`onSets` action laws (`onSets_card`), support-degree fixation (`onPoints_fixed_outside_support`), computable BFS `orbitOfPoint` = abstract `orbitFinset`, orbit partitioning, Orbit-Stabilizer theorem (`orbit_stabilizer_order_relation`), and transversal coset bijection (`orbit_stabilizer_matches_stabChain`) | **Rung 3 + Rung 4a** |
 
 ---
 
-## 2. Ordered Partitions for Backtrack Searching (`lib/partitio.gi`)
+## 2. Reproducible Verification
 
-Module: `RequestProject.Gap.Library.Partitio`  
-GAP Reference: `lib/partitio.gi` (by Heiko Theißen)
-
-Models ordered partitions and cell refinement operations fundamental to GAP's permutation group backtrack search, partition backtracks, and automorphism computation:
-
-* **Core Structures:**
-  * `GAP.Partitio.OrderedPartition`: Partition of $\Omega$ into ordered, non-empty, pairwise disjoint cells.
-  * `fixcells`: Identifies cells consisting of a single fixed point (size 1).
-  * `splitCellByPred`: Core cell-splitting primitive underlying `SplitCell` and `IsolatePoint`.
-* **Verified Theorems (0 sorry):**
-  * `splitCellByPred_disjoint`: Formally proves that cell splitting always yields mutually disjoint subcells.
-  * `splitCellByPred_union`: Proves exact element conservation (the union of subcells equals the original cell).
-  * `splitCellByPred_length_sum`: Proves cardinality conservation $|C_{yes}| + |C_{no}| = |C|$.
-  * `mem_splitCellByPred_iff`: Characterizes exact predicate-driven membership in split cells.
-
----
-
-## 3. Cyclotomic Extension Rings $\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)$ (`lib/zmodnze.gi`)
-
-Module: `RequestProject.Gap.Library.Zmodnze`  
-GAP Reference: `lib/zmodnze.gi` (by Alexander Konovalov)
-
-Formalizes elements and arithmetic of GAP's cyclotomic extension rings $\mathbb{Z}/n\mathbb{Z}(\varepsilon)$, where $\varepsilon^m = 1$:
-
-* **Core Structures:**
-  * `ZmodnZepsObj`: Formal representation via coefficient vectors `Fin m → GAP.ZModnZObj n`.
-  * `AddCommGroup` and convolution group-ring multiplication `mulOp`.
-* **Verified Theorems (0 sorry):**
-  * `card_eq`: Machine-checks GAP's exact `Size` formula:
-    $$\text{card}(\mathbb{Z}/n\mathbb{Z}(\varepsilon_m)) = n^m$$
-
----
-
-## 4. $\mathbb{Z}/n\mathbb{Z}$ Modular Residue Methods (`lib/zmodnz.gi`)
-
-Module: `RequestProject.Gap.Library.Zmodnz`  
-GAP Reference: `lib/zmodnz.gi` (by Thomas Breuer)
-
-Dual verification architecture combining abstract mathematical isomorphism with operational executable algorithms:
-
-1. **Semantic Model Isomorphism:** Canonical bijection `ZModnZObj n ≃ ZMod n`, deriving `CommRing` and `Field` (for prime $n$), with unit theorem `IsUnit a ↔ a.val.Coprime n`.
-2. **Constructive Executable Algorithms:** Verified `isUnitExec` and constructive `inverseOpExec` via the Extended Euclidean Algorithm (`Nat.gcdA` Bézout coefficients) without non-constructive choice:
-   ```lean
-   theorem inverseOpExec_correct (a : ZModnZObj n) (h : isUnitExec a = true) :
-       ∃ inv : ZModnZObj n, inverseOpExec a = some inv ∧ mulExec a inv = oneExec
-   ```
-
----
-
-## Axiomatic Purity Audit
-
-Every theorem in this repository has been audited with `#print axioms`:
-
-| Module | GAP Source | Theorems | `sorry` | External Axioms | Foundations |
-| :--- | :--- | :---: | :---: | :---: | :--- |
-| `Stbc.lean` | `lib/stbc.gi` | 8 | **0** | **0** | `propext, Classical.choice, Quot.sound` |
-| `Partitio.lean` | `lib/partitio.gi` | 6 | **0** | **0** | `propext, Classical.choice, Quot.sound` |
-| `Zmodnze.lean` | `lib/zmodnze.gi` | 4 | **0** | **0** | `propext, Classical.choice, Quot.sound` |
-| `Zmodnz.lean` | `lib/zmodnz.gi` | 17 | **0** | **0** | `propext, Classical.choice, Quot.sound` |
-| **Total** | | **35** | **0** | **0** | Standard Lean 4 Core |
-
----
-
-## Build Instructions
-
+### A. Rung 3 — Lean 4 Kernel & `#print axioms` Audit (`30 / 30` Theorems)
 ```bash
-# Clone the repository
-git clone https://github.com/pCwOrM/gap-lean4-port.git
-cd gap-lean4-port
-
-# Build the entire verified library
 lake build RequestProject
 ```
+[`RequestProject/Verify.lean`](RequestProject/Verify.lean) runs `#print axioms` across all **30** key theorems spanning `GAP-0050`, `GAP-0331`, `GAP-0299`, `GAP-0332a/b`, `GAP-0190`, and `GAP-0247`. Every theorem depends exclusively on subsets of `[propext, Classical.choice, Quot.sound]` (`0 sorry`, `0 admit`, `0` custom axioms, `0 @[implemented_by]`).
 
----
-
-## Authors & Citation
-
-**ITouch Systems Formal Verification Lab**  
-* Volkan Dagli ([@pCwOrM](https://github.com/pCwOrM)) & Family  
-* Research Lab: Mersin / Istanbul, Turkey  
-
-Correspondence: `ask@answerr.me` | `pcworm@pcworm.net`
-
----
-
-## Community, Collaboration & Standards
-
-* **Zulip Channel:** Join real-time technical discussions on our Zulip realm at [solfunmeme.zulipchat.com](https://solfunmeme.zulipchat.com/) (Streams: `#general > greetings`, `#general > architecture`).
-* **Shared Terminology Standard:** Collaborative formal verification standard defined in [Shared Terminology Guide v2](docs/SharedTerminologyGuide.md) (DuPont–Dağlı Specification).
-* **Rung 0–5 Verification Ledger:** Formal accounting of chunks, anchors, pre/post/frame contracts, and degree qualifiers in [docs/RUNG_LEDGER.md](docs/RUNG_LEDGER.md).
-* **Distributed Architecture:** Dual-engine Lean 4 + eBPF/Nix architecture in [docs/ARCHITECTURE.md](docs/ARCHITECTURE.md).
-* **Rung 0–5 Verification Bridge & Worker Packets:** Automated bridge generator ([tools/bridge_generator.py](tools/bridge_generator.py)) and consolidated witness report ([tasks/bridge_witness_report.json](tasks/bridge_witness_report.json)) generating turnkey `harmonic.gap-worker-job/1` packets for Mike DuPont's [`lean-worker`](https://github.com/meta-introspector/lean-worker) and [`aristotle-cli-rs`](https://github.com/meta-introspector/aristotle-cli-rs).
-
----
-
-### Citation
-
-If you build upon or reference this formal verification, please cite:
-
-```bibtex
-@article{dagli_2026_gap_lean4_arxiv,
-  author       = {Da{\u{g}}l{\i}, Volkan and Da{\u{g}}l{\i}, Zerrin and Da{\u{g}}l{\i}, Da{\u{g}}han},
-  title        = {{Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions}},
-  journal      = {arXiv preprint arXiv:2609.38492 [cs.LO]},
-  year         = {2026},
-  month        = sep,
-  doi          = {10.48550/arXiv.2609.38492},
-  url          = {https://arxiv.org/abs/2609.38492},
-  note         = {Zenodo DOI: 10.5281/zenodo.23045504; Mathlib 4 Compatible, 35 Theorems, 0 sorry}
-}
-
-@software{dagli_2026_gap_lean4,
-  author       = {Dağlı, Volkan and Dağlı, Zerrin and Dağlı, Dağhan},
-  title        = {{Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions}},
-  month        = sep,
-  year         = 2026,
-  publisher    = {Zenodo},
-  version      = {v0.2.0},
-  doi          = {10.5281/zenodo.23045504},
-  url          = {https://doi.org/10.5281/zenodo.23045504}
-}
+### B. Rung 4a — Official GAP 4 Operator-Level Witness Harness (`100 / 100` Witnesses)
+```bash
+python3 tools/run_rung4a_gap_witness.py
 ```
+Executes an official GAP `4.12.1` binary across **10 finite permutation groups** ($S_3, S_4, S_5, A_4, A_5, D_4, D_6$, intransitive $C_4 \times C_2 \hookrightarrow S_{10}$ with support degree $6 <$ storage degree $10$, $S_3 \times S_3 \hookrightarrow S_8$ with support degree $6 <$ storage degree $8$, and sporadic Mathieu group $M_{11}$ of order $7920$), verifying `Size(G)` vs. basic orbit products, `OnPoints`/`OnPairs`/`OnSets`, `OrbitsDomain` partitioning, `Orbit`/`Stabilizer` cardinality identity, and support-degree fixation:
+
+- **Reference Row (Guide v2 §10):**  
+  `GAP:lib/grpperm.gi+lib/oprtperm.gi@v4.14.0 | GAP.Grpperm.* + GAP.Oprtperm.* | [propext, Classical.choice, Quot.sound] | operator-level (4a, GAP 4.12.1) | 100 | 100 | 0 | 0 | 0 | 1 (synthetic->violation) | fresh`
+- **Full JSON Evidence:** [`docs/reports/GAP_0247_RUNG4A_WITNESS_REPORT.json`](docs/reports/GAP_0247_RUNG4A_WITNESS_REPORT.json)
+- **Provenance Qualification:** Executed on a distribution GAP `4.12.1` binary without a pinned Nix derivation; per Shared Terminology Guide v2 §2, this caps strictly at **Rung 4a (operator-level)** and makes no Rung 4b boundary claim.
+
+---
+
+## 3. Documentation & Ledger
+
+- **Epistemic Standard:** [`docs/SharedTerminologyGuide.md`](docs/SharedTerminologyGuide.md)
+- **Rung 0–5 Verification Ledger & Pinned `v4.14.0` Anchors:** [`docs/RUNG_LEDGER.md`](docs/RUNG_LEDGER.md)
+- **Phase 3 Strategic Roadmap:** [`docs/PHASE3_STRATEGIC_ROADMAP.md`](docs/PHASE3_STRATEGIC_ROADMAP.md)
+- **Phase 3 Section 2 Audit Summary:** [`docs/PHASE3_SECTION2_VERIFICATION_AND_RELEASE_PROPOSAL.md`](docs/PHASE3_SECTION2_VERIFICATION_AND_RELEASE_PROPOSAL.md)
+
+---
+
+## 4. Citation & License
+
+- **Paper I (Phases 1–2, frozen `v0.2.0`):** Volkan Dağlı, Zerrin Dağlı, Dağhan Dağlı, *Machine-Checked Computational Group Theory in Lean 4: Operational Schreier-Sims Stabilizer Chains, BSGS Sifting, and Backtrack Ordered Partitions*, [arXiv:2609.38492 [cs.LO]](https://arxiv.org/abs/2609.38492) (Zenodo DOI: [10.5281/zenodo.23045504](https://doi.org/10.5281/zenodo.23045504)).
+- **Paper II (Phase 3, Release `v0.3.0`):** Dağhan Dağlı ([ORCID `0009-0003-2492-8313`](https://orcid.org/0009-0003-2492-8313)), Volkan Dağlı ([ORCID `0009-0000-1587-8703`](https://orcid.org/0009-0000-1587-8703)), Zerrin Dağlı ([ORCID `0000-0001-9490-6425`](https://orcid.org/0000-0001-9490-6425)), *Formal Lean 4 Models and Proofs of Permutation Group Orders and Orbit-Stabilizer Algorithms for GAP* (Zenodo DOI: [10.5281/zenodo.24448459](https://doi.org/10.5281/zenodo.24448459), Concept DOI: [10.5281/zenodo.24448458](https://doi.org/10.5281/zenodo.24448458), `paper/phase3_paper.pdf`).
+- **License:** Licensed under the [Apache License 2.0](LICENSE) (matching the Mathlib4 standard).

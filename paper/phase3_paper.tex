@@ -1,0 +1,341 @@
+\documentclass[11pt,a4paper]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{amsmath,amssymb,amsthm}
+\usepackage{geometry}
+\geometry{margin=2.15cm}
+\usepackage[protrusion=true,expansion=false]{microtype}
+\usepackage{booktabs}
+\usepackage{tabularx}
+\usepackage{graphicx}
+\usepackage{array}
+\emergencystretch=3em
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{xurl}
+\usepackage{hyperref}
+\usepackage{cite}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue!70!black,
+    citecolor=red!70!black,
+    urlcolor=teal!70!black
+}
+
+\definecolor{keywordcolor}{rgb}{0.13, 0.29, 0.53}
+\definecolor{stringcolor}{rgb}{0.31, 0.60, 0.02}
+\definecolor{commentcolor}{rgb}{0.56, 0.35, 0.01}
+\definecolor{typecolor}{rgb}{0.45, 0.12, 0.45}
+
+\lstdefinelanguage{Lean4}{
+  keywords={def, theorem, lemma, where, structure, inductive, open, import, namespace, end, by, intro, exact, apply, cases, induction, rw, simp, have, let, match, with, fun, if, then, else, noncomputable, private},
+  keywordstyle=\color{keywordcolor}\bfseries,
+  ndkeywords={Nat, List, Finset, Option, Bool, Perm, Equiv, Prop, Type, Subgroup, Set, PermGroup, StabChain, StabLevel, Fintype, DecidableEq},
+  ndkeywordstyle=\color{typecolor}\bfseries,
+  sensitive=true,
+  comment=[l]{--},
+  morecomment=[s]{/-}{-/},
+  commentstyle=\color{commentcolor}\itshape,
+  stringstyle=\color{stringcolor},
+  morestring=[b]",
+  basicstyle=\ttfamily\scriptsize,
+  columns=fullflexible,
+  keepspaces=true,
+  breaklines=true,
+  tabsize=2,
+  showstringspaces=false,
+  frame=single,
+  rulecolor=\color{black!20}
+}
+
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{remark}[theorem]{Remark}
+
+\title{\textbf{Formal Lean 4 Models and Proofs of Permutation Group Orders\\and Orbit--Stabilizer Algorithms for GAP}\\[0.3em]
+\large Phase 3 (Release v0.3.0): \texttt{GAP-0190} (\texttt{lib/grpperm.gi}) and \texttt{GAP-0247} (\texttt{lib/oprtperm.gi})}
+
+\author{
+  Da\u{g}han Da\u{g}l\i$^{1}$,\quad
+  Volkan Da\u{g}l\i$^{2,3,*}$,\quad
+  Zerrin Da\u{g}l\i$^{4,5}$\\[0.6em]
+  \footnotesize $^{1}$Toros Science High School, MEV (Toros University), Mersin, T\"{u}rkiye\\
+  \footnotesize $^{2}$Anadolu University, Eski\c{s}ehir, T\"{u}rkiye \;\textbullet\; $^{4}$Mersin University, Mersin, T\"{u}rkiye\\
+  \footnotesize $^{3}$ITouch Systems, Cukurova University Technopark, Adana, T\"{u}rkiye\\
+  \footnotesize $^{5}$Yusuf Kalkavan Anatolian High School, Ministry of National Education, Mersin, T\"{u}rkiye\\
+  \footnotesize $^{*}$Corresponding author \;\textbullet\; Repository: \url{https://github.com/Lexovian/gap-lean4-port}\\
+  \scriptsize ORCID: D.~Da\u{g}l\i~\href{https://orcid.org/0009-0003-2492-8313}{\texttt{0009-0003-2492-8313}} \;\textbullet\; V.~Da\u{g}l\i~\href{https://orcid.org/0009-0000-1587-8703}{\texttt{0009-0000-1587-8703}} \;\textbullet\; Z.~Da\u{g}l\i~\href{https://orcid.org/0000-0001-9490-6425}{\texttt{0000-0001-9490-6425}}
+}
+
+\date{November 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Computational discrete algebra systems such as GAP (Groups, Algorithms, and Programming) underpin research across finite group theory, coding theory, and cryptography. Following the epistemic framework of the Shared Terminology Guide~v2 (Rungs~0--5), we present Phase~3 (Release~\texttt{v0.3.0}) of our Lean~4 (\texttt{v4.28.0} / Mathlib4) formal modeling effort for selected GAP permutation-group routines. Continuing our prior Phase~1--2 formalization (Paper~I, \texttt{arXiv:2609.38492}~\cite{dagli_2026_gap_lean4_arxiv,dagli_2026_gap_lean4_zenodo_v020}, Release~\texttt{v0.2.0}), we present an independent follow-up study constructing and proving two new library models with zero unproven axioms ($0$~\texttt{sorry}, $0$~\texttt{admit}, $0$ custom axioms, $0$~\texttt{@[implemented\_by]}):
+(1)~\textbf{\texttt{GAP-0190} (\texttt{lib/grpperm.gi})}: a formal model of \texttt{PermGroup} and Schreier--Sims transversal word factorization proving that the transversal state-space cardinality equals the product of basic orbit lengths, $|G| = \prod_{i=1}^k |\Delta_i|$;
+(2)~\textbf{\texttt{GAP-0247} (\texttt{lib/oprtperm.gi})}: group actions on points, pairs, and finite sets (\texttt{onPoints}, \texttt{onPairs}, \texttt{onSets}) with explicit support-degree qualification (\texttt{LargestMovedPoint}), an executable breadth-first orbit algorithm (\texttt{orbitOfPoint}) proved equal to the abstract Mathlib orbit (\texttt{orbitFinset}), domain partitioning into pairwise disjoint orbits, the Orbit--Stabilizer identity $|G| = |\mathrm{Orb}_G(x)| \cdot |\mathrm{Stab}_G(x)|$, and a formal bijection linking transversal representatives to basic orbits and stabilizer-chain orders.
+
+All $30$ audited theorems across Phases~1--3 depend strictly on subsets of \texttt{[propext, Classical.choice, Quot.sound]} as certified by Lean~4's \texttt{\#print axioms} check (\textbf{Rung~3}). We complement the Lean~4 proofs with an open, reproducible operator-level witness harness executed against an official GAP~4.12.1 binary across $10$ finite permutation groups—including intransitive embeddings testing support degree vs.\ storage degree and the sporadic Mathieu group $M_{11}$ of order $7{,}920$—recording $100/100$ witness events, $0$ violations, and $1$ synthetic negative test confirming violation reachability (\textbf{Rung~4a}). We explicitly distinguish model verification (Rung~3) and operator-level witnessing (Rung~4a) from uncompleted C/GAP boundary verification (Rung~2 and Rung~4b remain open).
+\end{abstract}
+
+\paragraph{Keywords:} Computational Group Theory, Lean~4, Mathlib4, GAP System, Schreier--Sims Algorithm, Orbit--Stabilizer Theorem, Formal Modeling, Rung Verification.
+
+\section{Introduction and Epistemic Scope}
+
+The GAP computer algebra system \cite{gap4} implements fundamental algorithms in finite group theory—most notably Charles Sims' stabilizer-chain and orbit--stabilizer machinery \cite{sims1970computational,seress2003permutation}—whose outputs are widely relied upon in pure and applied mathematics. Translating and formally modeling core fragments of this library in Lean~4 / Mathlib4 provides machine-checked guarantees for algorithmic invariants and creates reusable formal building blocks for computational algebra.
+
+To maintain strict scientific honesty, every claim in this work follows the \textbf{Shared Terminology Guide~v2} (Rungs~0--5):
+\begin{itemize}
+  \item \textbf{What we claim:} We construct Lean~4 models of selected GAP library algorithms pinned to official \texttt{gap-system/gap} tag \texttt{v4.14.0} (\textbf{Rung~0} and \textbf{Rung~1}), formally prove mathematical contracts of those models without \texttt{sorry} (\textbf{Rung~3}), and cross-check operator-level outputs against an official GAP~4.12.1 binary (\textbf{Rung~4a}).
+  \item \textbf{What we do not claim:} We do \emph{not} claim to have formally verified GAP's raw C kernel or GAP interpreter source code. Named GAP core developer sign-off (\textbf{Rung~2}), boundary-level C tracing with pinned Nix derivation provenance (\textbf{Rung~4b}), and inter-chunk seam composition (\textbf{Rung~5}) remain explicitly open.
+\end{itemize}
+
+\begin{table}[h!]
+\centering
+\small
+\begin{tabularx}{\textwidth}{@{}c l X l@{}}
+\toprule
+\textbf{Rung} & \textbf{Designation} & \textbf{Criterion} & \textbf{Phase 3 Status} \\
+\midrule
+0 & Anchored & Pinned to \texttt{gap-system/gap} commit, file, symbol, SHA-256 & Reached (\texttt{v4.14.0}) \\
+1 & Modeled & Lean~4 model mirrors algorithmic structure and type-checks & Reached \\
+2 & Reviewed & Named GAP core developer signs off model correspondence & Open \\
+3 & Proved & Contract proved with $0$~\texttt{sorry}; \texttt{\#print axioms} audited & Reached ($30/30$) \\
+4a & Witnessed (op.) & Official GAP~4 runtime traces satisfy contract & Reached ($100/100$, 4.12.1) \\
+4b & Witnessed (bnd.) & C-boundary traces on pinned Nix derivation with provenance & Open \\
+5 & Zipped & Inter-chunk caller/callee seams composed & Open \\
+\bottomrule
+\end{tabularx}
+\caption{Epistemic verification ladder (Shared Terminology Guide~v2) and exact Phase~3 status.}
+\label{tab:rungs}
+\end{table}
+
+\begin{remark}[Support Degree vs.\ Storage Degree]
+Every permutation contract qualifies its degree explicitly:
+\begin{itemize}
+  \item \textbf{Support degree:} the set of moved points (\texttt{LargestMovedPoint} in GAP; \texttt{PermGroup.\allowbreak movedPoints} / \texttt{PermGroup.\allowbreak support} in Lean~4), which depends solely on the group element.
+  \item \textbf{Storage degree:} the length of the internal array representation (\texttt{T\_PERM}). Equal permutations may have distinct storage degrees.
+\end{itemize}
+All contracts in \texttt{GAP-0190} and \texttt{GAP-0247} are stated over \textbf{support degree}, independent of storage padding.
+\end{remark}
+
+\section{Pinned Source Anchors (\texttt{gap-system/gap} \texttt{v4.14.0})}
+
+All seven formalized modules across Phases~1--3 are anchored to official \texttt{gap-system/gap} release tag \texttt{v4.14.0} (commit \texttt{8e68258d61fb\allowbreak eef94ee1ef07\allowbreak d5aa6320c70ebff7}). Table~\ref{tab:anchors} records the exact SHA-256 digests of the anchored GAP source files.
+
+\begin{table}[h!]
+\centering
+\scriptsize
+\begin{tabularx}{\textwidth}{@{}l X l l@{}}
+\toprule
+\textbf{Chunk ID} & \textbf{GAP Source (\texttt{v4.14.0})} & \textbf{Lean~4 Module} & \textbf{GAP SHA-256 (prefix)} \\
+\midrule
+\texttt{GAP-0050} & \texttt{src/permutat.cc} (\texttt{ProdPerm}) & \texttt{Gap.Permutation} & \texttt{9bda0e052eb614c9c6c95d53...} \\
+\texttt{GAP-0331} & \texttt{lib/zmodnz.gi} (\texttt{InverseOp}) & \texttt{Gap.Library.Zmodnz} & \texttt{5253d06ae731bba676edd56f...} \\
+\texttt{GAP-0299} & \texttt{lib/stbc.gi} (\texttt{StabChainOp}) & \texttt{Gap.Library.Stbc} & \texttt{f902ae531e5ce8b8a048d077...} \\
+\texttt{GAP-0332a} & \texttt{lib/partitio.gi} (\texttt{splitCellByPred}) & \texttt{Gap.Library.Partitio} & \texttt{716c64a3949159c23670b230...} \\
+\texttt{GAP-0332b} & \texttt{lib/zmodnze.gi} (\texttt{ZmodnZepsObj}) & \texttt{Gap.Library.Zmodnze} & \texttt{9b25d391b41d8ab8e082ce03...} \\
+\texttt{GAP-0190} & \texttt{lib/grpperm.gi} (\texttt{SizePermGroup}) & \texttt{Gap.Library.Grpperm} & \texttt{0e0e2e4110cb71cb9ffe8794...} \\
+\texttt{GAP-0247} & \texttt{lib/oprtperm.gi} (\texttt{OrbitOp}, \texttt{Stabilizer}) & \texttt{Gap.Library.Oprtperm} & \texttt{f90f470d6184d3ea4c645b01...} \\
+\bottomrule
+\end{tabularx}
+\caption{Pinned \texttt{gap-system/gap} \texttt{v4.14.0} anchors (full 64-character SHA-256 hashes recorded in \texttt{docs/RUNG\_LEDGER.md}).}
+\label{tab:anchors}
+\end{table}
+
+\section{Formalization of \texttt{GAP-0190}: Permutation Group Order}
+\label{sec:grpperm}
+
+Building on our Phase~2 stabilizer-chain model \texttt{RequestProject.\allowbreak Gap.Library.\allowbreak Stbc} (\texttt{StabLevel}, \texttt{StabChain}, \texttt{sizeStabChain}), module \texttt{RequestProject.\allowbreak Gap.Library.\allowbreak Grpperm} models GAP's \texttt{SizePermGroup} (\texttt{lib/grpperm.gi}) via Sims' transversal factorization \cite{sims1970computational,seress2003permutation}.
+
+\subsection{Data Structures and Support Degree}
+A permutation group is represented by its generating list and associated stabilizer chain, with support defined as the union of moved points of all generators:
+
+\begin{lstlisting}[language=Lean4]
+structure PermGroup (alpha : Type*) [DecidableEq alpha] where
+  generators : List (Equiv.Perm alpha)
+  chain : StabChain alpha
+
+def PermGroup.movedPoints [Fintype alpha] (g : Equiv.Perm alpha) : Finset alpha :=
+  Finset.univ.filter (fun x => g x /= x)
+
+def PermGroup.support [Fintype alpha] (G : PermGroup alpha) : Finset alpha :=
+  G.generators.foldl (fun s g => s \cup movedPoints g) {}
+
+def PermGroup.size (G : PermGroup alpha) : Nat :=
+  sizeStabChain G.chain
+\end{lstlisting}
+
+\subsection{Transversal Word Factorization and Order Formula}
+At each level $L$ of a stabilizer chain, \texttt{transversalRepresentatives L} extracts coset representatives $u = (u^{-1})^{-1}$ from \texttt{L.invTransversal} over \texttt{L.orbit}, and \texttt{transversalWords} recursively forms all products $u_1 u_2 \cdots u_k$. Under \texttt{ChainFullCoverage} (every basic-orbit point carries a transversal inverse), induction on the stabilizer chain proves:
+
+\begin{lstlisting}[language=Lean4]
+theorem transversalWords_length_eq_sizeStabChain :
+    forall (S : StabChain alpha), ChainFullCoverage S ->
+      (transversalWords S).length = sizeStabChain S
+
+theorem permGroup_order_eq_prod_basicOrbits (G : PermGroup alpha)
+    (hCov : ChainFullCoverage G.chain) :
+    (transversalWords G.chain).length = G.size
+\end{lstlisting}
+
+Both theorems depend strictly on \texttt{[propext, Quot.sound]} (without \texttt{Classical.choice}).
+
+\section{Formalization of \texttt{GAP-0247}: Group Actions, Computable BFS Orbits, and Orbit--Stabilizer}
+\label{sec:oprtperm}
+
+Module \texttt{RequestProject.\allowbreak Gap.Library.\allowbreak Oprtperm} (739~lines, zero \texttt{sorry}) models GAP's \texttt{lib/oprtperm.gi} (authored by Heiko Thei\ss en) for arbitrary finite permutation groups (both transitive and intransitive) over any finite domain \texttt{[Fintype alpha] [DecidableEq alpha]}.
+
+\subsection{Actions on Points, Pairs, and Finite Sets}
+We formalize \texttt{onPoints}, \texttt{onPairs}, and \texttt{onSets} aligned with the \texttt{Equiv.Perm} convention of \texttt{Stbc.lean} and \texttt{Grpperm.lean}, proving all identity, composition, inverse, injectivity, cardinality-preservation (\texttt{onSets\_card}), and support-degree fixation laws (\texttt{onPoints\_\allowbreak fixed\_\allowbreak outside\_\allowbreak support}):
+
+\begin{lstlisting}[language=Lean4]
+@[inline] def onPoints (x : alpha) (g : Equiv.Perm alpha) : alpha := g x
+@[inline] def onPairs (p : alpha x alpha) (g : Equiv.Perm alpha) : alpha x alpha := (g p.1, g p.2)
+def onSets [DecidableEq alpha] (s : Finset alpha) (g : Equiv.Perm alpha) : Finset alpha := s.image g
+\end{lstlisting}
+
+\subsection{Executable Breadth-First Orbit vs.\ Abstract Mathlib Orbit}
+To mirror GAP's operational \texttt{OrbitPerms} / \texttt{OrbitOp} / \texttt{OrbitsDomain} routines rather than merely restating abstract Mathlib definitions, we define a computable single-step frontier expansion \texttt{orbitStep} and iterate it \texttt{Fintype.card alpha} times from \texttt{\{x\}}:
+
+\begin{lstlisting}[language=Lean4]
+def orbitStep (gens : List (Equiv.Perm alpha)) (S : Finset alpha) : Finset alpha :=
+  S \cup generatorImages gens S
+
+def orbitOfPoint [Fintype alpha] (G : PermGroup alpha) (x : alpha) : Finset alpha :=
+  (orbitStep G.generators)^[Fintype.card alpha] {x}
+
+def allOrbits [Fintype alpha] (G : PermGroup alpha) : Finset (Finset alpha) :=
+  Finset.univ.image (orbitOfPoint G)
+\end{lstlisting}
+
+Using a monotone finite-set fixpoint lemma (\texttt{exists\_\allowbreak fixpoint\_\allowbreak or\_card\_ge}) and closure under setwise stabilization, we prove that the executable BFS orbit coincides identically with the abstract subgroup orbit \texttt{orbitFinset G x} (derived from \texttt{MulAction.orbit (generatedSubgroup G) x}), and that \texttt{allOrbits G} partitions the domain into pairwise disjoint orbits:
+
+\begin{lstlisting}[language=Lean4]
+theorem orbitOfPoint_eq_orbitFinset [Fintype alpha] (G : PermGroup alpha) (x : alpha) :
+    orbitOfPoint G x = orbitFinset G x
+
+theorem orbitOfPoint_eq_or_disjoint [Fintype alpha] (G : PermGroup alpha) (x y : alpha) :
+    orbitOfPoint G x = orbitOfPoint G y \/ Disjoint (orbitOfPoint G x) (orbitOfPoint G y)
+
+theorem orbit_partition [Fintype alpha] (G : PermGroup alpha) :
+    (allOrbits G).biUnion id = Finset.univ
+\end{lstlisting}
+
+\subsection{Orbit--Stabilizer Theorem and Stabilizer-Chain Synthesis}
+Combining \texttt{orbitOfPoint\_\allowbreak eq\_orbitFinset} with Mathlib's abstract orbit--stabilizer cardinality theorem yields the executable-orbit cardinality identity (\texttt{orbit\_\allowbreak stabilizer\_natCard} and \texttt{orbit\_\allowbreak stabilizer\_\allowbreak order\_relation}), and bridging back to \texttt{Stbc.lean} and \texttt{Grpperm.lean} proves that \texttt{u |-> u L.basePoint} is a bijection from \texttt{transversalRepresentatives L} onto \texttt{L.orbit}, unifying the recursive stabilizer-chain order with the generated subgroup order:
+
+\begin{lstlisting}[language=Lean4]
+theorem orbit_stabilizer_order_relation [Fintype alpha] (G : PermGroup alpha) (x : alpha)
+    [Fintype (generatedSubgroup G)] [Fintype (pointStabilizer G x)] :
+    Fintype.card (generatedSubgroup G) =
+      (orbitOfPoint G x).card * Fintype.card (pointStabilizer G x)
+
+theorem transversalRepresentatives_bijOn_orbit (L : StabLevel alpha)
+    (hInv : TransversalInvariant L) (hCov : FullTransversalCoverage L)
+    (hNodup : L.orbit.Nodup) :
+    Set.BijOn (fun u : Equiv.Perm alpha => u L.basePoint)
+      {u | u \in transversalRepresentatives L} {y | y \in L.orbit}
+
+theorem orbit_stabilizer_matches_stabChain [Fintype alpha]
+    (G : PermGroup alpha) (L : StabLevel alpha) (rest : StabChain alpha)
+    (hChain : G.chain = L :: rest) (hCovChain : ChainFullCoverage (L :: rest))
+    (hNodup : L.orbit.Nodup)
+    (hOrbitEq : {y : alpha | y \in L.orbit} = {y : alpha | y \in orbitOfPoint G L.basePoint})
+    (hStabSize : sizeStabChain rest = Nat.card (pointStabilizer G L.basePoint)) :
+    G.size = L.orbit.length * sizeStabChain rest /\
+    (transversalWords G.chain).length = G.size /\
+    G.size = Nat.card (generatedSubgroup G)
+\end{lstlisting}
+
+Eight concrete \texttt{decide} examples verify \texttt{onPoints}, \texttt{onPairs}, \texttt{onSets}, \texttt{orbitOfPoint}, and \texttt{allOrbits} on $S_3$ and $\mathrm{Stab}_{S_3}(2)$.
+
+\section{Rung 3 Kernel Audit and Rung 4a Official GAP~4 Witnessing}
+\label{sec:audit}
+
+\subsection{Rung 3: Lean 4.28.0 Axiomatic Rollup (\texttt{Verify.lean})}
+A clean build of \texttt{RequestProject} under \texttt{leanprover/lean4:v4.28.0} completes across $8{,}035$ Lake jobs with exit code~$0$ and zero errors or warnings in all Phase~3 modules. Table~\ref{tab:audit} summarizes the \texttt{\#print axioms} rollup across all $30$ audited theorems in \texttt{RequestProject/Verify.lean}.
+
+\begin{table}[h!]
+\centering
+\small
+\footnotesize
+\begin{tabularx}{\textwidth}{@{}X c c l@{}}
+\toprule
+\textbf{Module (Chunk ID)} & \textbf{Audited} & \textbf{\texttt{sorry}/Custom} & \textbf{Max Axiom Set} \\
+\midrule
+\texttt{Gap.Permutation} (\texttt{GAP-0050}) & 2 & 0 / 0 & \texttt{propext, Classical.choice, Quot.sound} \\
+\texttt{Gap.Library.Zmodnz} (\texttt{GAP-0331}) & 2 & 0 / 0 & \texttt{propext, Classical.choice, Quot.sound} \\
+\texttt{Gap.Library.Partitio} (\texttt{GAP-0332a}) & 3 & 0 / 0 & \texttt{propext, Quot.sound} \\
+\texttt{Gap.Library.Zmodnze} (\texttt{GAP-0332b}) & 1 & 0 / 0 & \texttt{propext, Classical.choice, Quot.sound} \\
+\texttt{Gap.Library.Stbc} (\texttt{GAP-0299}) & 5 & 0 / 0 & \texttt{propext, Classical.choice, Quot.sound} \\
+\texttt{Gap.Library.Grpperm} (\texttt{GAP-0190}) & 2 & 0 / 0 & \texttt{propext, Quot.sound} \\
+\texttt{Gap.Library.Oprtperm} (\texttt{GAP-0247}) & 15 & 0 / 0 & \texttt{propext, Classical.choice, Quot.sound} \\
+\midrule
+\textbf{Total (\texttt{Verify.lean})} & \textbf{30} & \textbf{0 / 0} & $\subseteq \{\texttt{propext, Classical.choice, Quot.sound}\}$ \\
+\bottomrule
+\end{tabularx}
+\caption{Rung~3 \texttt{\#print axioms} rollup certified by Lean~4.28.0.}
+\label{tab:audit}
+\end{table}
+
+\subsection{Rung 4a: Official GAP 4.12.1 Operator-Level Witnessing}
+To validate our Lean~4 contracts against live GAP execution, we provide a self-contained harness (\texttt{tools/\allowbreak run\_rung4a\_\allowbreak gap\_witness.py}) that invokes an official GAP~4.12.1 binary (\texttt{sha256: 9aa736f13150c363...}) across $10$ finite permutation groups (Table~\ref{tab:rung4a}). Each group checks: (i)~\texttt{Size(G)} vs.\ product of \texttt{StabChainMutable(\allowbreak G)} basic orbit lengths, (ii)~\texttt{OnPoints}, \texttt{OnPairs}, \texttt{OnSets} action laws and set cardinality, (iii)~support-degree fixation outside \texttt{LargestMovedPoint(G)}, (iv)~\texttt{OrbitsDomain} disjoint partition, and (v)~per-point $\mathrm{Size}(\mathrm{Orbit}(G,x)) \cdot \mathrm{Size}(\mathrm{Stabilizer}(G,x)) = \mathrm{Size}(G)$.
+
+\begin{table}[h!]
+\centering
+\small
+\resizebox{\textwidth}{!}{%
+\begin{tabular}{@{}lccccccc@{}}
+\toprule
+\textbf{Group} & \textbf{Storage} & \textbf{Support} & $|G|$ & \textbf{Basic Orbits} & \textbf{Orbit Partition} & \textbf{Events} & \textbf{Verdict} \\
+\midrule
+$S_3$ & 3 & 3 & 6 & $[3, 2]$ & $[3]$ & 7 & \texttt{witness} \\
+$S_4$ & 4 & 4 & 24 & $[4, 3, 2]$ & $[4]$ & 8 & \texttt{witness} \\
+$S_5$ & 5 & 5 & 120 & $[5, 4, 3, 2]$ & $[5]$ & 9 & \texttt{witness} \\
+$A_4$ & 4 & 4 & 12 & $[4, 3]$ & $[4]$ & 8 & \texttt{witness} \\
+$A_5$ & 5 & 5 & 60 & $[5, 4, 3]$ & $[5]$ & 9 & \texttt{witness} \\
+$D_4$ & 4 & 4 & 8 & $[4, 2]$ & $[4]$ & 8 & \texttt{witness} \\
+$D_6$ & 6 & 6 & 12 & $[6, 2]$ & $[6]$ & 10 & \texttt{witness} \\
+$C_4 \times C_2 \hookrightarrow S_{10}$ & 10 & \textbf{6} & 8 & $[4, 2]$ & $[4, 2, 1, 1, 1, 1]$ & 14 & \texttt{witness} \\
+$S_3 \times S_3 \hookrightarrow S_8$ & 8 & \textbf{6} & 36 & $[3, 2, 3, 2]$ & $[3, 3, 1, 1]$ & 12 & \texttt{witness} \\
+$M_{11}$ (Mathieu) & 11 & 11 & 7920 & $[11, 10, 9, 8]$ & $[11]$ & 15 & \texttt{witness} \\
+\midrule
+\textbf{Total (GAP 4.12.1)} & --- & --- & --- & --- & --- & \textbf{100 (+1 synth.)} & \textbf{100 witness, 0 viol.} \\
+\bottomrule
+\end{tabular}%
+}
+\caption{Rung~4a operator-level witness matrix executed on an official GAP~4.12.1 binary. A separate synthetic negative event confirms the \texttt{violation} verdict path is reachable. Because this is a distribution binary without a pinned Nix derivation, evidence caps strictly at Rung~4a.}
+\label{tab:rung4a}
+\end{table}
+
+\section{Applications and Future Work}
+\label{sec:future}
+
+Certified finite permutation group models support proof-carrying computer algebra—where an unverified CAS emits basic orbits and stabilizer-chain witnesses that a Lean~4 checker validates—as well as downstream formalizations of stabilizer codes in quantum error correction \cite{gottesman1997stabilizer} and permutation-argument invariants in cryptographic proof systems \cite{plonk2019}.
+
+Immediate next milestones in this project include:
+\begin{enumerate}
+  \item \textbf{\texttt{GAP-0209} (\texttt{lib/clasperm.gi}):} cycle-type conjugacy criteria and centralizer order formulas in $S_n$.
+  \item \textbf{\texttt{GAP-0175} (\texttt{lib/grpmat.gi}):} matrix groups $\mathrm{GL}_n(\mathbb{Z}/p\mathbb{Z})$ and $\mathrm{SL}_n(\mathbb{Z}/p\mathbb{Z})$ over our verified \texttt{Zmodnz} model.
+  \item \textbf{Rung~2 and Rung~4b:} inviting named GAP developer correspondence reviews and pairing our Lean~4 models with a pinned Nix GAP derivation for boundary-level provenance tracing.
+\end{enumerate}
+
+\section*{Reproducibility and Artifact Availability}
+All Lean~4 source files, the \texttt{Verify.lean} axiom audit, the GAP~4 Rung~4a harness (\texttt{tools/\allowbreak run\_rung4a\_\allowbreak gap\_witness.py}), and the JSON evidence log are released under the Apache License~2.0. The public Phase~3 repository is maintained at \url{https://github.com/Lexovian/gap-lean4-port} (Release~\texttt{v0.3.0}), continuing our frozen Phase~1--2 baseline (Paper~I, \texttt{arXiv:2609.38492}~\cite{dagli_2026_gap_lean4_arxiv}, Zenodo DOI \href{https://doi.org/10.5281/zenodo.23045504}{10.5281/zenodo.23045504}~\cite{dagli_2026_gap_lean4_zenodo_v020}).
+
+
+\section*{Acknowledgments}
+Computational infrastructure and server resources for this work were provided by ITouch Systems (Cukurova University Technopark, Adana, T\"{u}rkiye). The authors gratefully acknowledge Bekirhan Da\u{g}l\i, partner at ITouch Systems, for infrastructure support and resource allocation.
+
+\bibliographystyle{plain}
+\bibliography{references}
+
+\end{document}

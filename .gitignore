@@ -4,3 +4,21 @@
 *.c
 *.o
 *.tar.gz
+
+# Hard Air-Gap & Secret Leak Prevention
+*.pem
+*.key
+id_*
+.env*
+*.log
+*.bin
+*.npz
+*.pt
+*.onnx
+*.weights
+scratch/
+tmp/
+temp_*
+*fusion*
+__pycache__/
+*.pyc

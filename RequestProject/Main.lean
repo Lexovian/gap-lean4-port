@@ -5,6 +5,8 @@ import RequestProject.Gap.Library.Zmodnz
 import RequestProject.Gap.Library.Partitio
 import RequestProject.Gap.Library.Zmodnze
 import RequestProject.Gap.Library.Stbc
+import RequestProject.Gap.Library.Grpperm
+import RequestProject.Gap.Library.Oprtperm
 
 open scoped BigOperators
 open scoped Real
@@ -123,3 +125,38 @@ example : Fintype.card (ZmodnZepsObj 3 2) = 9 := by
 
 end GAP.Zmodnze
 
+/-!
+## Demonstration of GAP-0190: Permutation Groups & Group Order (lib/grpperm.gi)
+-/
+
+namespace GAP.Grpperm
+
+open GAP.Stbc
+
+-- Trivial group order: 1
+example : (PermGroup.mk ([] : List (Equiv.Perm (Fin 4))) []).size = 1 := by
+  decide
+
+-- Two-level BSGS chain with basic orbits of size 3 and 2: Total order = 3 * 2 = 6 (S₃ / D₆)
+example (L1 L2 : StabLevel (Fin 5))
+    (h1 : L1.orbit.length = 3) (h2 : L2.orbit.length = 2) :
+    (PermGroup.mk ([] : List (Equiv.Perm (Fin 5))) [L1, L2]).size = 6 := by
+  dsimp [PermGroup.size, sizeStabChain, indicesStabChain]
+  rw [h1, h2]
+  rfl
+
+end GAP.Grpperm
+
+/-!
+## Demonstration of GAP-0247: Actions, Orbits & Orbit-Stabilizer (lib/oprtperm.gi)
+-/
+
+namespace GAP.Oprtperm
+
+-- Transitive orbit of S₃ on Fin 3 has cardinality 3
+example : (orbitOfPoint sym3Group (0 : Fin 3)).card = 3 := by decide
+
+-- Set action preserves cardinality
+example : (onSets ({0, 2} : Finset (Fin 3)) swap01_fin3).card = 2 := by decide
+
+end GAP.Oprtperm

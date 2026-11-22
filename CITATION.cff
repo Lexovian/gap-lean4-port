@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use these Lean 4 models, proofs, or the GAP 4 Rung 4a witness harness, please cite Paper II (Release v0.3.0) and Paper I (arXiv:2609.38492)."
+title: "Formal Lean 4 Models and Proofs of Permutation Group Orders and Orbit-Stabilizer Algorithms for GAP"
+version: "v0.3.0"
+doi: "10.5281/zenodo.24448459"
+date-released: "2026-11-22"
+license: Apache-2.0
+repository-code: "https://github.com/Lexovian/gap-lean4-port"
+authors:
+  - family-names: "Dağlı"
+    given-names: "Dağhan"
+    orcid: "https://orcid.org/0009-0003-2492-8313"
+    affiliation: "Toros Science High School, MEV (Toros University), Mersin, Türkiye"
+  - family-names: "Dağlı"
+    given-names: "Volkan"
+    orcid: "https://orcid.org/0009-0000-1587-8703"
+    affiliation: "Anadolu University, Eskişehir, Türkiye; ITouch Systems, Cukurova University Technopark, Adana, Türkiye"
+  - family-names: "Dağlı"
+    given-names: "Zerrin"
+    orcid: "https://orcid.org/0000-0001-9490-6425"
+    affiliation: "Mersin University, Mersin, Türkiye; Yusuf Kalkavan Anatolian High School, Ministry of National Education, Mersin, Türkiye"
+keywords:
+  - "Lean 4"
+  - "Mathlib4"
+  - "GAP System"
+  - "Computational Group Theory"
+  - "Schreier-Sims Algorithm"
+  - "Orbit-Stabilizer Theorem"

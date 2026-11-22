@@ -3,7 +3,7 @@
 **Tarih:** 28 Eylül 2026  
 **Durum:** Faz 1 Tamamlandı (`GAP-0331`, 13.91 adam-gün %100 doğrulandı ve yayınlandı)  
 **Hedef:** Faz 2 İçin Modüler ve İzole Görev Kurgusu  
-**Altyapı:** 40 VCPU Xeon Sunucu (`207.180.255.35`) & [pCwOrM/gap-lean4-port](https://github.com/pCwOrM/gap-lean4-port)
+**Altyapı:** 40 VCPU Xeon Sunucu & [pCwOrM/gap-lean4-port](https://github.com/pCwOrM/gap-lean4-port)
 
 ---
 
@@ -15,7 +15,7 @@
 * **Yayın & Entegrasyon:**
   * GitHub Deposu: [pCwOrM/gap-lean4-port](https://github.com/pCwOrM/gap-lean4-port)
   * Topluluk Köprüsü: [opencompl/lean-gap/issues/1](https://github.com/opencompl/lean-gap/issues/1)
-  * Kurumsal/Basın Duyurusu: `ask@answerr.me` üzerinden Quanta Magazine ve Baş Araştırmacı arşivine iletildi.
+  * Kurumsal/Basın Duyurusu: Quanta Magazine ve Baş Araştırmacı arşivine iletildi.
 
 ---
 
